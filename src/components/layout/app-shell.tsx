@@ -27,34 +27,28 @@ export function AppShell({
 }: AppShellProps) {
   return (
     <div
-      className={cn(
-        "bg-page relative min-h-dvh overflow-x-hidden text-ink",
-        className,
-      )}
+      className={cn("bg-page relative min-h-dvh text-ink", className)}
     >
-      {backgroundSrc ? (
-        <Image
-          src={backgroundSrc}
-          alt=""
-          fill
-          priority
-          className="pointer-events-none object-cover opacity-40"
-        />
-      ) : null}
+      {/* Clip decorative overflow here — not on the shell — so page scroll stays on the document only. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 overflow-hidden"
+      >
+        {backgroundSrc ? (
+          <Image
+            src={backgroundSrc}
+            alt=""
+            fill
+            priority
+            className="object-cover opacity-40"
+          />
+        ) : null}
 
-      {/* Soft glow orbs — decorative, theme colors via tokens */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-[140px] -left-[120px] size-[520px] rounded-full bg-[color:var(--headline)] opacity-45 blur-[70px] max-md:blur-[40px] motion-reduce:blur-none"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute top-[140px] -right-[160px] size-[640px] rounded-full bg-primary opacity-40 blur-[70px] max-md:blur-[40px] motion-reduce:blur-none"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-[220px] left-[380px] h-[420px] w-[760px] rounded-full bg-hole opacity-70 blur-[70px] max-md:blur-[40px] motion-reduce:blur-none"
-      />
+        {/* Soft glow orbs — decorative, theme colors via tokens */}
+        <div className="absolute -top-[140px] -left-[120px] size-[520px] rounded-full bg-[color:var(--headline)] opacity-45 blur-[70px] max-md:blur-[40px] motion-reduce:blur-none" />
+        <div className="absolute top-[140px] -right-[160px] size-[640px] rounded-full bg-primary opacity-40 blur-[70px] max-md:blur-[40px] motion-reduce:blur-none" />
+        <div className="absolute -bottom-[220px] left-[380px] h-[420px] w-[760px] rounded-full bg-hole opacity-70 blur-[70px] max-md:blur-[40px] motion-reduce:blur-none" />
+      </div>
 
       <div
         className={cn(

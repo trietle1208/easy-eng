@@ -1,0 +1,43 @@
+# dependencies & build
+node_modules
+.pnpm-store
+.next
+out
+build
+coverage
+
+# git & tooling
+.git
+.gitignore
+.gitnexus
+.claude
+.vscode
+.cursor
+
+# env / secrets
+.env*
+!.env.example
+
+# docs & mockups (not needed for FE image)
+mockup
+ui-plan
+docs
+AGENTS.md
+CLAUDE.md
+README.md
+**/*.md
+!public/**
+
+# misc
+.DS_Store
+*.pem
+*.log
+*.tsbuildinfo
+next-env.d.ts
+playwright*
+e2e
+test-results
+.turbo
+Dockerfile*
+docker-compose*
+.dockerignore

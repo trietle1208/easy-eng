@@ -202,6 +202,8 @@
 
   html {
     -webkit-font-smoothing: antialiased;
+    /* clip (not hidden): avoids forcing overflow-y:auto and a second scrollbar */
+    overflow-x: clip;
   }
 
   body {
@@ -210,6 +212,7 @@
     background: var(--bg-gradient);
     color: var(--ink);
     font-family: var(--font-sans);
+    overflow-x: clip;
   }
 
   a {

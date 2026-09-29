@@ -1,0 +1,14 @@
+# Easy English — FE first (BE can be added later as extra services)
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: easy-english-web:local
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
+      HOSTNAME: 0.0.0.0
+    restart: unless-stopped
