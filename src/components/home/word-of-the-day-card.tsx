@@ -1,18 +1,33 @@
 "use client";
 
+import { useState, useTransition } from "react";
 import { Volume2 } from "lucide-react";
 
 import { Highlighter } from "@/components/marks/highlighter";
 import { StickyNote } from "@/components/notebook/sticky-note";
 import { LevelBadge } from "@/components/ui/level-badge";
+import { createWordAction } from "@/lib/actions/create-word";
 import type { WordOfTheDay } from "@/types/home";
+import type { PartOfSpeech } from "@/types/vocabulary";
 
 type WordOfTheDayCardProps = {
   word: WordOfTheDay;
 };
 
+function mapPos(raw: string): PartOfSpeech {
+  const s = raw.toLowerCase();
+  if (s.startsWith("adj")) return "adjective";
+  if (s.startsWith("adv")) return "adverb";
+  if (s.startsWith("verb")) return "verb";
+  if (s.startsWith("phrase")) return "phrase";
+  return "noun";
+}
+
 export function WordOfTheDayCard({ word }: WordOfTheDayCardProps) {
   const parts = word.example.split(word.exampleHighlight);
+  const [pending, startTransition] = useTransition();
+  const [added, setAdded] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   function playPronunciation() {
     if (typeof window === "undefined" || !window.speechSynthesis) return;
@@ -20,6 +35,28 @@ export function WordOfTheDayCard({ word }: WordOfTheDayCardProps) {
     utter.lang = "en-US";
     window.speechSynthesis.cancel();
     window.speechSynthesis.speak(utter);
+  }
+
+  function addToWords() {
+    setError(null);
+    startTransition(async () => {
+      try {
+        await createWordAction({
+          word: word.word,
+          ipa: word.ipa,
+          partOfSpeech: mapPos(word.partOfSpeech),
+          level: word.level,
+          meaningVi: word.meaningVi,
+          definitionEn: "",
+          examples: [word.example],
+          newWordSetTitle: "Word of the day",
+          notes: "From Word of the day",
+        });
+        setAdded(true);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : "Could not add word");
+      }
+    });
   }
 
   return (
@@ -63,10 +100,15 @@ export function WordOfTheDayCard({ word }: WordOfTheDayCardProps) {
 
       <button
         type="button"
-        className="font-hand self-start text-[21px] text-kick"
+        disabled={pending || added}
+        onClick={addToWords}
+        className="font-hand self-start text-[21px] text-kick disabled:opacity-60"
       >
-        + Add to my words
+        {added ? "Added!" : "+ Add to my words"}
       </button>
+      {error ? (
+        <p className="m-0 text-xs font-semibold text-danger">{error}</p>
+      ) : null}
     </StickyNote>
   );
 }

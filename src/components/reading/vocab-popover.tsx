@@ -9,12 +9,21 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { Highlighter } from "@/components/marks/highlighter";
-import { createWord } from "@/lib/data/vocabulary";
+import { createWordAction } from "@/lib/actions/create-word";
 import type { VocabHighlight } from "@/types/reading";
+import type { PartOfSpeech } from "@/types/vocabulary";
 
 type VocabPopoverProps = {
   vocab: VocabHighlight;
 };
+
+function mapPos(raw: string): PartOfSpeech {
+  if (raw.startsWith("adj")) return "adjective";
+  if (raw.startsWith("adv")) return "adverb";
+  if (raw.startsWith("verb")) return "verb";
+  if (raw.startsWith("phrase")) return "phrase";
+  return "noun";
+}
 
 export function VocabPopover({ vocab }: VocabPopoverProps) {
   const [open, setOpen] = useState(false);
@@ -23,24 +32,36 @@ export function VocabPopover({ vocab }: VocabPopoverProps) {
 
   function addToVocabulary() {
     startTransition(async () => {
-      await createWord({
-        word: vocab.word,
-        ipa: vocab.ipa,
-        partOfSpeech: vocab.partOfSpeech.startsWith("adj")
-          ? "adjective"
-          : vocab.partOfSpeech.startsWith("adv")
-            ? "adverb"
-            : vocab.partOfSpeech.startsWith("verb")
-              ? "verb"
-              : "noun",
-        level: vocab.level,
-        meaningVi: vocab.meaningVi,
-        definitionEn: "",
-        examples: [],
-        wordSetId: "at-the-airport",
-        notes: "From reading passage",
-      });
-      setAdded(true);
+      try {
+        await createWordAction({
+          word: vocab.word,
+          ipa: vocab.ipa,
+          partOfSpeech: mapPos(vocab.partOfSpeech),
+          level: vocab.level,
+          meaningVi: vocab.meaningVi,
+          definitionEn: "",
+          examples: [],
+          wordSetId: "at-the-airport",
+          notes: "From reading passage",
+        });
+        setAdded(true);
+      } catch {
+        try {
+          await createWordAction({
+            word: vocab.word,
+            ipa: vocab.ipa,
+            partOfSpeech: mapPos(vocab.partOfSpeech),
+            level: vocab.level,
+            meaningVi: vocab.meaningVi,
+            examples: [],
+            newWordSetTitle: "From reading",
+            notes: "From reading passage",
+          });
+          setAdded(true);
+        } catch {
+          /* keep Add label */
+        }
+      }
     });
   }
 

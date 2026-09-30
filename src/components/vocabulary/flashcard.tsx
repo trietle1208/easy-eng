@@ -1,20 +1,34 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { Volume2 } from "lucide-react";
+import { useEffect, useState, useTransition } from "react";
+import { MoreHorizontal, Volume2 } from "lucide-react";
 
 import { Highlighter } from "@/components/marks/highlighter";
 import { NotebookPage } from "@/components/notebook/notebook-page";
 import { LevelBadge } from "@/components/ui/level-badge";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import {
+  deleteWordAction,
+  gradeReviewAction,
+} from "@/lib/actions/vocabulary";
 import { cn } from "@/lib/utils";
-import type { Word } from "@/types/vocabulary";
+import type { ReviewDue, Word } from "@/types/vocabulary";
 
 type FlashcardProps = {
   word: Word;
   setTitle: string;
   cardIndex: number;
   cardTotal: number;
+  cardId?: string;
+  onGraded?: (next: ReviewDue | null) => void;
+  onDeleted?: () => void;
+  onEdit?: (word: Word) => void;
 };
 
 export function Flashcard({
@@ -22,19 +36,38 @@ export function Flashcard({
   setTitle,
   cardIndex,
   cardTotal,
+  cardId,
+  onGraded,
+  onDeleted,
+  onEdit,
 }: FlashcardProps) {
   const [flipped, setFlipped] = useState(false);
+  const [pending, startTransition] = useTransition();
+
+  useEffect(() => {
+    setFlipped(false);
+  }, [word.id, cardId]);
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
       if (e.key === " " || e.code === "Space") {
         e.preventDefault();
         setFlipped((v) => !v);
+        return;
+      }
+      if (!cardId || pending) return;
+      if (e.key === "1") {
+        e.preventDefault();
+        grade("still_learning");
+      }
+      if (e.key === "2") {
+        e.preventDefault();
+        grade("know_it");
       }
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  });
 
   function speak(lang: "en-GB" | "en-US") {
     if (typeof window === "undefined" || !window.speechSynthesis) return;
@@ -42,6 +75,25 @@ export function Flashcard({
     utter.lang = lang;
     window.speechSynthesis.cancel();
     window.speechSynthesis.speak(utter);
+  }
+
+  function grade(g: "still_learning" | "know_it") {
+    if (!cardId || pending) return;
+    startTransition(async () => {
+      const next = await gradeReviewAction(cardId, g);
+      onGraded?.(next);
+    });
+  }
+
+  function remove() {
+    if (!word.owned || pending) return;
+    if (!window.confirm(`Delete “${word.word}”? This cannot be undone.`)) {
+      return;
+    }
+    startTransition(async () => {
+      await deleteWordAction(word.id);
+      onDeleted?.();
+    });
   }
 
   return (
@@ -55,6 +107,30 @@ export function Flashcard({
         <span>
           Card {cardIndex} of {cardTotal}
         </span>
+        {word.owned ? (
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button
+                type="button"
+                className="inline-flex size-8 items-center justify-center rounded-full border-2 border-line bg-surface"
+                aria-label="Word actions"
+              >
+                <MoreHorizontal className="size-4" />
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuItem onSelect={() => onEdit?.(word)}>
+                Edit word
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                className="text-danger"
+                onSelect={() => remove()}
+              >
+                Delete word
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        ) : null}
       </div>
 
       <button
@@ -143,11 +219,17 @@ export function Flashcard({
           type="button"
           variant="outline"
           size="sm"
-          onClick={() => setFlipped(true)}
+          disabled={!cardId || pending}
+          onClick={() => grade("still_learning")}
         >
           Still learning
         </Button>
-        <Button type="button" size="sm" onClick={() => setFlipped(false)}>
+        <Button
+          type="button"
+          size="sm"
+          disabled={!cardId || pending}
+          onClick={() => grade("know_it")}
+        >
           Know it
         </Button>
       </div>

@@ -1,4 +1,5 @@
 import { ProfileView } from "@/components/profile/profile-view";
+import { requireUser } from "@/lib/auth/session";
 import {
   getAchievements,
   getActivity,
@@ -6,12 +7,17 @@ import {
 } from "@/lib/data/profile";
 
 export default async function ProfilePage() {
-  const [{ profile, stats, levels, settings }, activity, achievements] =
-    await Promise.all([
-      getProfile(),
-      getActivity({ weeks: 26 }),
-      getAchievements(),
-    ]);
+  await requireUser("/profile");
+
+  const [
+    { profile, stats, levels, settings, timezone, goalText },
+    activity,
+    achievements,
+  ] = await Promise.all([
+    getProfile(),
+    getActivity({ weeks: 26 }),
+    getAchievements(),
+  ]);
 
   return (
     <ProfileView
@@ -23,6 +29,8 @@ export default async function ProfilePage() {
       earnedCount={achievements.earnedCount}
       totalAchievements={achievements.total}
       settings={settings}
+      timezone={timezone}
+      goalText={goalText}
     />
   );
 }

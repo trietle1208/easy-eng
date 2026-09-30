@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState, useTransition } from "react";
 
 import { Button } from "@/components/ui/button";
-import { updateSettings } from "@/lib/data/profile";
+import { updateSettingsAction } from "@/lib/actions/update-settings";
 import { cn } from "@/lib/utils";
 import type {
   AppThemeId,
@@ -68,7 +68,7 @@ export function ProfileSettings({ initial }: ProfileSettingsProps) {
 
   function onSave() {
     startTransition(async () => {
-      const next = await updateSettings(draft);
+      const next = await updateSettingsAction(draft);
       setDraft(next);
       if (next.theme) setTheme(next.theme);
       setSavedFlash(true);

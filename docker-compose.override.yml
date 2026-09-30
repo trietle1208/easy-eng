@@ -1,0 +1,5 @@
+# Local development overrides — publishes Postgres for host tools / Vitest.
+services:
+  db:
+    ports:
+      - "${DB_PORT:-5432}:5432"

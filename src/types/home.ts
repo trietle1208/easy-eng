@@ -60,3 +60,9 @@ export type HomeCatalogStats = {
   wordSets: number;
   words: number;
 };
+
+export type Greeting = {
+  userName: string;
+  en: string;
+  vi: string;
+};

@@ -10,11 +10,12 @@ import { Mascot } from "@/components/mascot/mascot";
 import { NotebookPage } from "@/components/notebook/notebook-page";
 import { Button } from "@/components/ui/button";
 import { LevelBadge } from "@/components/ui/level-badge";
+import { signInUrl } from "@/lib/auth/paths";
 import { cn } from "@/lib/utils";
-import type { Quiz, QuizResult } from "@/types/quiz";
+import type { QuizPublic, QuizResult } from "@/types/quiz";
 
 type QuizResultsProps = {
-  quiz: Quiz;
+  quiz: QuizPublic;
   result: QuizResult;
   onTryAgain: () => void;
   onPractiseMistakes: () => void;
@@ -113,6 +114,17 @@ export function QuizResults({
               <br />
               <i className="text-kick">{result.messageVi}</i>
             </p>
+            {!result.progressSaved ? (
+              <p className="m-0 text-sm font-semibold text-muted">
+                <Link
+                  href={signInUrl(`/quiz/${quiz.slug}`)}
+                  className="font-bold text-link underline-offset-2 hover:underline"
+                >
+                  Sign in
+                </Link>{" "}
+                to save this attempt and compare with your next try.
+              </p>
+            ) : null}
             <div className="mt-2 grid grid-cols-2 gap-3 md:grid-cols-4">
               <div className="flex flex-col gap-1.5 rounded-[var(--radius-sketch)] border-2 border-line bg-surface px-4 py-3.5">
                 <b className="font-hand text-[36px] leading-none text-ink-2">

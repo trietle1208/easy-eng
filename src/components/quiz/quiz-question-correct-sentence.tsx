@@ -2,7 +2,7 @@
 
 import { QuizOptionButton } from "@/components/quiz/quiz-option-button";
 import type { QuizQuestionProps } from "@/components/quiz/quiz-question-props";
-import type { CorrectSentenceQuestion } from "@/types/quiz";
+import type { CorrectSentenceQuestionPublic } from "@/types/quiz";
 
 const LETTERS = ["A", "B", "C", "D", "E", "F"];
 
@@ -13,7 +13,7 @@ export function QuizQuestionCorrectSentence({
   onChange,
   showVietnamese,
   showHint,
-}: QuizQuestionProps<CorrectSentenceQuestion>) {
+}: QuizQuestionProps<CorrectSentenceQuestionPublic>) {
   const selected =
     typeof value === "number" ? value : value === null ? null : Number(value);
 

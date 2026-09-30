@@ -34,10 +34,15 @@ export type Paragraph = {
   vi: string;
 };
 
+/** Public question shape — no answer key (scoring via Server Action). */
 export type ComprehensionQuestion = {
   id: string;
   prompt: string;
   choices: string[];
+};
+
+/** Server-only question with answer key for scoring. */
+export type ComprehensionQuestionSecure = ComprehensionQuestion & {
   correctIndex: number;
 };
 
@@ -73,4 +78,6 @@ export type CheckReadingAnswersResult = {
   results: AnswerCheckResult[];
   score: number;
   total: number;
+  /** False for anonymous callers — UI can invite them to sign in. */
+  progressSaved: boolean;
 };

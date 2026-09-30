@@ -1,0 +1,137 @@
+{
+  "sets": [
+    {
+      "id": "at-the-airport",
+      "title": "At the airport",
+      "titleVi": "Ở sân bay",
+      "topic": "Travel",
+      "level": "A2"
+    },
+    {
+      "id": "morning-routines",
+      "title": "Morning routines",
+      "titleVi": "Thói quen buổi sáng",
+      "topic": "Daily life",
+      "level": "A1"
+    },
+    {
+      "id": "job-interviews",
+      "title": "Job interviews",
+      "titleVi": "Phỏng vấn xin việc",
+      "topic": "Work",
+      "level": "B1"
+    },
+    {
+      "id": "vietnamese-street-food",
+      "title": "Vietnamese street food",
+      "titleVi": "Ẩm thực đường phố",
+      "topic": "Food",
+      "level": "A2"
+    },
+    {
+      "id": "office-small-talk",
+      "title": "Office small talk",
+      "titleVi": "Trò chuyện nơi công sở",
+      "topic": "Work",
+      "level": "B2"
+    },
+    {
+      "id": "booking-a-hotel",
+      "title": "Booking a hotel",
+      "titleVi": "Đặt phòng khách sạn",
+      "topic": "Travel",
+      "level": "A2"
+    },
+    {
+      "id": "feelings-moods",
+      "title": "Feelings & moods",
+      "titleVi": "Cảm xúc và tâm trạng",
+      "topic": "Daily life",
+      "level": "B1"
+    },
+    {
+      "id": "in-the-kitchen",
+      "title": "In the kitchen",
+      "titleVi": "Trong nhà bếp",
+      "topic": "Food",
+      "level": "A1"
+    },
+    {
+      "id": "negotiating-a-deal",
+      "title": "Negotiating a deal",
+      "titleVi": "Đàm phán hợp đồng",
+      "topic": "Work",
+      "level": "C1"
+    }
+  ],
+  "words": [
+    {
+      "id": "w-itinerary",
+      "wordSetId": "at-the-airport",
+      "word": "itinerary",
+      "ipa": "/aɪˈtɪn.ər.ər.i/",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "meaningVi": "lịch trình (chuyến đi)",
+      "definitionEn": "a detailed plan of a journey, with places and times",
+      "examples": [
+        {
+          "en": "Could you email me the itinerary for our trip?",
+          "vi": "Bạn gửi email cho mình lịch trình chuyến đi nhé?"
+        },
+        {
+          "en": "Our itinerary includes two days in Hội An.",
+          "vi": "Lịch trình của chúng tôi có hai ngày ở Hội An."
+        }
+      ],
+      "collocations": [
+        "travel itinerary",
+        "a detailed itinerary",
+        "plan an itinerary"
+      ],
+      "notes": null,
+      "imagePath": null,
+      "createdAt": "2026-09-20T08:00:00.000Z"
+    },
+    {
+      "id": "w-boarding-pass",
+      "wordSetId": "at-the-airport",
+      "word": "boarding pass",
+      "ipa": "/ˈbɔː.dɪŋ ˌpɑːs/",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "meaningVi": "thẻ lên máy bay",
+      "definitionEn": "a document that lets you board a plane",
+      "examples": [
+        {
+          "en": "Please show your boarding pass at the gate.",
+          "vi": "Vui lòng xuất trình thẻ lên máy bay tại cổng."
+        }
+      ],
+      "collocations": null,
+      "notes": null,
+      "imagePath": null,
+      "createdAt": "2026-09-21T08:00:00.000Z"
+    },
+    {
+      "id": "w-gate",
+      "wordSetId": "at-the-airport",
+      "word": "gate",
+      "ipa": "/ɡeɪt/",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "meaningVi": "cổng (sân bay)",
+      "definitionEn": "the place where passengers board the plane",
+      "examples": [
+        {
+          "en": "Our flight leaves from gate 12.",
+          "vi": "Chuyến bay của chúng ta khởi hành từ cổng 12."
+        }
+      ],
+      "collocations": null,
+      "notes": null,
+      "imagePath": null,
+      "createdAt": "2026-09-22T08:00:00.000Z"
+    }
+  ]
+}

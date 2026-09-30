@@ -5,6 +5,7 @@ import {
   getAdjacentLessons,
   getGrammarTree,
   getLesson,
+  recordGrammarVisit,
 } from "@/lib/data/grammar";
 
 type Props = {
@@ -20,6 +21,9 @@ export default async function GrammarLessonPage({ params }: Props) {
   ]);
 
   if (!lesson) notFound();
+
+  // Signed-in: mark visit as in-progress for "Continue where you left off".
+  await recordGrammarVisit(lessonSlug);
 
   return <GrammarView tree={tree} lesson={lesson} adjacent={adjacent} />;
 }

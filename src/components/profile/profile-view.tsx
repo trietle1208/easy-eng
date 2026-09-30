@@ -42,6 +42,8 @@ type ProfileViewProps = {
   earnedCount: number;
   totalAchievements: number;
   settings: UserSettings;
+  timezone: string;
+  goalText: string | null;
 };
 
 export function ProfileView({
@@ -53,10 +55,16 @@ export function ProfileView({
   earnedCount,
   totalAchievements,
   settings,
+  timezone,
+  goalText,
 }: ProfileViewProps) {
   return (
     <div className="flex flex-col gap-8 text-on-glass md:gap-[34px]">
-      <ProfileHeader profile={profile} />
+      <ProfileHeader
+        profile={profile}
+        timezone={timezone}
+        goalText={goalText}
+      />
       <ProfileStats stats={stats} />
 
       <div className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_minmax(260px,400px)]">

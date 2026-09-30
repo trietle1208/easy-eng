@@ -17,7 +17,11 @@ import {
 } from "@/components/vocabulary/underline-field";
 import { Button } from "@/components/ui/button";
 import { LevelBadge } from "@/components/ui/level-badge";
-import { createWord } from "@/lib/data/vocabulary";
+import { createWordAction } from "@/lib/actions/create-word";
+import {
+  updateWordAction,
+  uploadWordImageAction,
+} from "@/lib/actions/vocabulary";
 import {
   newWordSchema,
   type NewWordFormValues,
@@ -32,6 +36,7 @@ type AddWordFormProps = {
   wordSets: WordSet[];
   savedCount: number;
   initialAddedToday: Word[];
+  initialWord?: Word | null;
   mode?: "page" | "modal";
   onClose?: () => void;
 };
@@ -40,6 +45,7 @@ export function AddWordForm({
   wordSets,
   savedCount: initialSaved,
   initialAddedToday,
+  initialWord = null,
   mode = "page",
   onClose,
 }: AddWordFormProps) {
@@ -49,21 +55,25 @@ export function AddWordForm({
   const [addedToday, setAddedToday] = useState(initialAddedToday);
   const [lastSaved, setLastSaved] = useState<Word | null>(null);
   const [creatingNewSet, setCreatingNewSet] = useState(false);
+  const [formError, setFormError] = useState<string | null>(null);
+  const editing = Boolean(initialWord);
 
   const form = useForm<NewWordFormValues>({
     resolver: zodResolver(newWordSchema),
     defaultValues: {
-      word: "",
-      ipa: "",
-      partOfSpeech: "noun",
-      level: "A2",
-      meaningVi: "",
-      definitionEn: "",
-      examples: ["", ""],
-      wordSetId: wordSets[0]?.id ?? "",
+      word: initialWord?.word ?? "",
+      ipa: initialWord?.ipa ?? "",
+      partOfSpeech: initialWord?.partOfSpeech ?? "noun",
+      level: initialWord?.level ?? "A2",
+      meaningVi: initialWord?.meaningVi ?? "",
+      definitionEn: initialWord?.definitionEn ?? "",
+      examples: initialWord?.examples?.length
+        ? initialWord.examples.map((e) => e.en)
+        : ["", ""],
+      wordSetId: initialWord?.wordSetId ?? wordSets[0]?.id ?? "",
       newWordSetTitle: "",
-      notes: "",
-      imageUrl: "",
+      notes: initialWord?.notes ?? "",
+      imageUrl: initialWord?.imageUrl ?? "",
     },
     mode: "onSubmit",
   });
@@ -115,32 +125,71 @@ export function AddWordForm({
     setCreatingNewSet(false);
   }
 
+  async function onPickImage(file: File | null) {
+    if (!file) return;
+    setFormError(null);
+    const fd = new FormData();
+    fd.set("file", file);
+    startTransition(async () => {
+      try {
+        const uploaded = await uploadWordImageAction(fd);
+        form.setValue("imageUrl", uploaded.url, { shouldDirty: true });
+      } catch (err) {
+        setFormError(err instanceof Error ? err.message : "Upload failed");
+      }
+    });
+  }
+
   async function save(values: NewWordFormValues, addAnother: boolean) {
     const examples = (values.examples ?? [])
       .map((s) => s.trim())
       .filter(Boolean);
+    setFormError(null);
 
     startTransition(async () => {
-      const created = await createWord({
-        word: values.word,
-        ipa: values.ipa,
-        partOfSpeech: values.partOfSpeech as PartOfSpeech,
-        level: values.level as CefrLevel,
-        meaningVi: values.meaningVi,
-        definitionEn: values.definitionEn,
-        examples,
-        wordSetId: creatingNewSet ? undefined : values.wordSetId || undefined,
-        newWordSetTitle: creatingNewSet
-          ? values.newWordSetTitle
-          : undefined,
-        notes: values.notes,
-        imageUrl: values.imageUrl,
-      });
-      setLastSaved(created);
-      setAddedToday((prev) => [created, ...prev]);
-      setSavedCount((c) => c + 1);
-      if (addAnother) resetFormKeepSet();
-      router.refresh();
+      try {
+        if (editing && initialWord) {
+          const updated = await updateWordAction({
+            id: initialWord.id,
+            word: values.word,
+            ipa: values.ipa,
+            partOfSpeech: values.partOfSpeech as PartOfSpeech,
+            level: values.level as CefrLevel,
+            meaningVi: values.meaningVi,
+            definitionEn: values.definitionEn,
+            examples,
+            notes: values.notes,
+            imageUrl: values.imageUrl || null,
+          });
+          setLastSaved(updated);
+          router.refresh();
+          if (!addAnother) router.push("/vocabulary");
+          return;
+        }
+
+        const created = await createWordAction({
+          word: values.word,
+          ipa: values.ipa,
+          partOfSpeech: values.partOfSpeech as PartOfSpeech,
+          level: values.level as CefrLevel,
+          meaningVi: values.meaningVi,
+          definitionEn: values.definitionEn,
+          examples,
+          wordSetId: creatingNewSet ? undefined : values.wordSetId || undefined,
+          newWordSetTitle: creatingNewSet
+            ? values.newWordSetTitle
+            : undefined,
+          notes: values.notes,
+          imageUrl: values.imageUrl,
+        });
+        setLastSaved(created);
+        setAddedToday((prev) => [created, ...prev]);
+        setSavedCount((c) => c + 1);
+        if (addAnother) resetFormKeepSet();
+        router.refresh();
+      } catch (err) {
+        setFormError(err instanceof Error ? err.message : "Could not save");
+      }
     });
   }
 
@@ -154,14 +203,20 @@ export function AddWordForm({
       <div className="flex flex-wrap items-start gap-3">
         <div className="min-w-0 flex-1">
           <div className="text-kick text-xs font-extrabold tracking-[0.14em] uppercase">
-            Vocabulary · New word
+            Vocabulary · {editing ? "Edit word" : "New word"}
           </div>
           <h1 className="font-hand m-0 text-[clamp(2rem,5vw,2.75rem)] leading-none text-ink">
-            Add a new word
+            {editing ? "Edit word" : "Add a new word"}
           </h1>
           <p className="mt-1 text-sm text-muted">
-            Thêm từ mới vào sổ tay · Fields with{" "}
-            <span className="text-danger">*</span> are required.
+            {editing
+              ? "Cập nhật từ trong sổ tay."
+              : "Thêm từ mới vào sổ tay · Fields with "}
+            {!editing ? (
+              <>
+                <span className="text-danger">*</span> are required.
+              </>
+            ) : null}
           </p>
         </div>
         <div className="text-right text-sm font-bold text-muted">
@@ -387,14 +442,31 @@ export function AddWordForm({
             />
           </UnderlineField>
 
-          <UnderlineField id="imageUrl" label="Image URL" optional>
-            <input
-              id="imageUrl"
-              className={cn(underlineInputClass, "font-sans text-base")}
-              placeholder="https://…"
-              {...form.register("imageUrl")}
-            />
+          <UnderlineField id="imageUrl" label="Image" optional>
+            <div className="flex flex-col gap-2">
+              <input
+                id="imageUrl"
+                className={cn(underlineInputClass, "font-sans text-base")}
+                placeholder="/files/… or upload below"
+                {...form.register("imageUrl")}
+              />
+              <input
+                type="file"
+                accept="image/jpeg,image/png,image/webp"
+                className="text-sm"
+                onChange={(e) => onPickImage(e.target.files?.[0] ?? null)}
+              />
+              <p className="m-0 text-xs text-muted">
+                jpg / png / webp · max 2 MB
+              </p>
+            </div>
           </UnderlineField>
+
+          {formError ? (
+            <p className="m-0 text-sm font-semibold text-danger" role="alert">
+              {formError}
+            </p>
+          ) : null}
 
           <div className="rounded-[var(--radius-sketch)] border-2 border-dashed border-line/40 bg-surface/60 px-4 py-3 text-sm text-muted">
             <div className="font-extrabold text-ink">Pronunciation audio</div>
@@ -406,16 +478,18 @@ export function AddWordForm({
               Cancel
             </Button>
             <div className="flex-1" />
-            <Button
-              type="button"
-              variant="outline"
-              disabled={pending}
-              onClick={form.handleSubmit((v) => save(v, true))}
-            >
-              Save &amp; add another
-            </Button>
+            {!editing ? (
+              <Button
+                type="button"
+                variant="outline"
+                disabled={pending}
+                onClick={form.handleSubmit((v) => save(v, true))}
+              >
+                Save &amp; add another
+              </Button>
+            ) : null}
             <Button type="submit" disabled={pending}>
-              Save word
+              {editing ? "Save changes" : "Save word"}
             </Button>
           </div>
         </form>

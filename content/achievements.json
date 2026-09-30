@@ -1,0 +1,108 @@
+{
+  "achievements": [
+    {
+      "id": "first-page",
+      "title": "First page",
+      "subtitleTemplate": "Finished lesson 1",
+      "icon": "book",
+      "shape": "round",
+      "color": "green",
+      "sortOrder": 0,
+      "rule": {
+        "type": "grammar_completed",
+        "min": 1
+      }
+    },
+    {
+      "id": "streak-7",
+      "title": "7-day streak",
+      "subtitleTemplate": "Earned 4 Sep",
+      "icon": "flame",
+      "shape": "square",
+      "color": "orange",
+      "sortOrder": 1,
+      "rule": {
+        "type": "streak_days",
+        "min": 7
+      }
+    },
+    {
+      "id": "word-collector",
+      "title": "Word collector",
+      "subtitleTemplate": "1,000 words",
+      "icon": "cards",
+      "shape": "round",
+      "color": "blue",
+      "sortOrder": 2,
+      "rule": {
+        "type": "words_saved",
+        "min": 1000
+      }
+    },
+    {
+      "id": "grammar-geek",
+      "title": "Grammar geek",
+      "subtitleTemplate": "50 lessons",
+      "icon": "pencil",
+      "shape": "square",
+      "color": "purple",
+      "sortOrder": 3,
+      "rule": {
+        "type": "grammar_completed",
+        "min": 50
+      }
+    },
+    {
+      "id": "early-bird",
+      "title": "Early bird",
+      "subtitleTemplate": "Studied before 7 am",
+      "icon": "sun",
+      "shape": "round",
+      "color": "gold",
+      "sortOrder": 4,
+      "rule": {
+        "type": "activity_before_hour",
+        "hour": 7
+      }
+    },
+    {
+      "id": "streak-30",
+      "title": "30-day streak",
+      "subtitleTemplate": "23 of 30 days",
+      "icon": "flame",
+      "shape": "square",
+      "color": "orange",
+      "sortOrder": 5,
+      "rule": {
+        "type": "streak_days",
+        "min": 30
+      }
+    },
+    {
+      "id": "night-owl",
+      "title": "Night owl",
+      "subtitleTemplate": "Study after 11 pm",
+      "icon": "moon",
+      "shape": "round",
+      "color": "blue",
+      "sortOrder": 6,
+      "rule": {
+        "type": "activity_after_hour",
+        "hour": 23
+      }
+    },
+    {
+      "id": "b2-unlocked",
+      "title": "B2 unlocked",
+      "subtitleTemplate": "Finish B1",
+      "icon": "trophy",
+      "shape": "square",
+      "color": "gold",
+      "sortOrder": 7,
+      "rule": {
+        "type": "cefr_at_least",
+        "level": "B2"
+      }
+    }
+  ]
+}

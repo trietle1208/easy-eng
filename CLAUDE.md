@@ -2,7 +2,7 @@
 
 Notebook-style English learning UI. Product name in the app: **Easy English**. Folder / GitNexus repo: `chill-english`.
 
-## Status
+## Status — UI (tagged `ui-v1`)
 
 | Phase | Status | Notes |
 |---|---|---|
@@ -18,23 +18,38 @@ Notebook-style English learning UI. Product name in the app: **Easy English**. F
 | 3g — Profile | **done** (2026-09-29) | `ui-plan/phase-3g-report.md` · `/profile` |
 | 4 — Polish | **done** (2026-09-29) | `ui-plan/phase-4-report.md` · a11y/responsive/states |
 
+## Status — Backend phases
+
+| Phase | Status | Notes |
+|---|---|---|
+| 0 — Audit and schema design | **done** (2026-09-30) | `be-plan/phase-0-report.md` |
+| 1 — Infra and server boundary | **done** (2026-09-30) | `be-plan/phase-1-report.md` |
+| 2 — Schema, migrations, seeders | **done** (2026-09-30) | `be-plan/phase-2-report.md` |
+| 3 — Authentication | **done** (2026-09-30) | `be-plan/phase-3-report.md` |
+| 4 — Content read from DB | **done** (2026-09-30) | `be-plan/phase-4-report.md` |
+| 5 — Learning actions / progress | **done** (2026-09-30) | `be-plan/phase-5-report.md` |
+| 6 — Vocabulary CRUD + FSRS | **done** (2026-09-30) | `be-plan/phase-6-report.md` |
+| 7 — Home, progress, profile | **done** (2026-09-30) | `be-plan/phase-7-report.md` |
+| 8 — Hardening, tests, deploy | **done** (2026-09-30) | `be-plan/phase-8-report.md` |
+| 9 — Admin CMS (optional) | **done** (2026-09-30) | `be-plan/phase-9-report.md` |
+
 ## Stack
 
 - Next.js 15 App Router + React 19 + TypeScript + Tailwind **v4** + **pnpm**
 - next-themes: `default` / `blossom` via `data-theme` on `<html>`
 - Fonts: Be Vietnam Pro (body, `vietnamese`), Patrick Hand (hand), JetBrains Mono (IPA/timers)
 - Radix (shadcn-style) + lucide-react + motion + RHF + Zod 4
-- Mock data only in UI phases (no DB/auth/API)
+- Backend target: PostgreSQL 16 + Drizzle + Better Auth (see `be-plan/00-brief.md`)
 
 ## Source of truth
 
-- Values: `mockup/html/` · Look: `mockup/screenshots/` · Plans: `ui-plan/` · Brief: `ui-plan/00-brief.md`
+- Values: `mockup/html/` · Look: `mockup/screenshots/` · UI plans: `ui-plan/` · Backend plans: `be-plan/` · Briefs: `ui-plan/00-brief.md`, `be-plan/00-brief.md`
 
 ## Do not
 
 - Paste mockup HTML 1:1; rebuild behavior in React
 - Hard-code colors outside design tokens
-- Add auth, DB, API routes during UI phases
+- Backend work follows `be-plan/`. Only work on the phase I name, and stop after its report.
 - Start the next phase without approval after the previous report
 
 ## GitNexus
@@ -44,7 +59,7 @@ Indexed as **chill-english**. After substantive code changes: `npx gitnexus anal
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **chill-english** (401 symbols, 572 relationships, 4 execution flows).
+This project is indexed by GitNexus as **easy-eng** (3111 symbols, 5606 relationships, 143 execution flows).
 
 > Index stale? Run `node .gitnexus/run.cjs analyze --index-only` from the project root — it auto-selects an available runner. No `.gitnexus/run.cjs` yet? Bootstrap with `npx`, `bunx`, or `pnpm dlx` — e.g. `bunx gitnexus@latest analyze` (npm 11 npx crash; #1939).
 
@@ -68,10 +83,10 @@ This project is indexed by GitNexus as **chill-english** (401 symbols, 572 relat
 
 | Resource | Use for |
 | --- | --- |
-| `gitnexus://repo/chill-english/context` | Codebase overview, check index freshness |
-| `gitnexus://repo/chill-english/clusters` | All functional areas |
-| `gitnexus://repo/chill-english/processes` | All execution flows |
-| `gitnexus://repo/chill-english/process/{name}` | Step-by-step execution trace |
+| `gitnexus://repo/easy-eng/context` | Codebase overview, check index freshness |
+| `gitnexus://repo/easy-eng/clusters` | All functional areas |
+| `gitnexus://repo/easy-eng/processes` | All execution flows |
+| `gitnexus://repo/easy-eng/process/{name}` | Step-by-step execution trace |
 
 ## CLI
 

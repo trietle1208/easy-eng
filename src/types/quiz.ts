@@ -50,6 +50,29 @@ export type Question =
   | FillBlankQuestion
   | CorrectSentenceQuestion;
 
+/** Public MC — no correctIndex. */
+export type MultipleChoiceQuestionPublic = Omit<
+  MultipleChoiceQuestion,
+  "correctIndex"
+>;
+
+/** Public fill — no correctAnswers / displayAnswer. */
+export type FillBlankQuestionPublic = Omit<
+  FillBlankQuestion,
+  "correctAnswers" | "displayAnswer"
+>;
+
+/** Public sentence — no correctIndex. */
+export type CorrectSentenceQuestionPublic = Omit<
+  CorrectSentenceQuestion,
+  "correctIndex"
+>;
+
+export type QuestionPublic =
+  | MultipleChoiceQuestionPublic
+  | FillBlankQuestionPublic
+  | CorrectSentenceQuestionPublic;
+
 export type QuizQuestionTypeTag = {
   id: QuestionType;
   label: string;
@@ -73,6 +96,11 @@ export type Quiz = {
   encouragementEn: string;
   encouragementVi: string;
   questions: Question[];
+};
+
+/** Public quiz payload for the browser — questions without answer keys. */
+export type QuizPublic = Omit<Quiz, "questions"> & {
+  questions: QuestionPublic[];
 };
 
 export type QuizAttempt = {
@@ -111,6 +139,8 @@ export type QuizResult = {
   headlineEn: string;
   messageEn: string;
   messageVi: string;
+  /** False for anonymous callers — UI can invite them to sign in. */
+  progressSaved: boolean;
 };
 
 /** Stored answer: option index for MC/sentence, free text for fill */

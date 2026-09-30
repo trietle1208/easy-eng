@@ -2,12 +2,14 @@
 
 import { useState, useTransition } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Check, X } from "lucide-react";
 
 import { HandCircle } from "@/components/marks/hand-circle";
 import { HandUnderline } from "@/components/marks/hand-underline";
 import { Button } from "@/components/ui/button";
-import { checkDictation } from "@/lib/data/listening";
+import { checkDictationAction } from "@/lib/actions/check-dictation";
+import { signInUrl } from "@/lib/auth/paths";
 import { cn } from "@/lib/utils";
 import type {
   DictationBlank,
@@ -25,8 +27,10 @@ export function DictationExercise({
   blanks,
   nextSlug,
 }: DictationExerciseProps) {
+  const router = useRouter();
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [results, setResults] = useState<DictationCheckItem[] | null>(null);
+  const [progressSaved, setProgressSaved] = useState(true);
   const [pending, startTransition] = useTransition();
 
   const filled = Object.values(answers).filter((v) => v.trim()).length;
@@ -37,14 +41,19 @@ export function DictationExercise({
 
   function onCheck() {
     startTransition(async () => {
-      const res = await checkDictation(slug, answers);
-      if (res) setResults(res.results);
+      const res = await checkDictationAction(slug, answers);
+      if (res) {
+        setResults(res.results);
+        setProgressSaved(res.progressSaved);
+        if (res.progressSaved) router.refresh();
+      }
     });
   }
 
   function reset() {
     setResults(null);
     setAnswers({});
+    setProgressSaved(true);
   }
 
   return (
@@ -148,6 +157,17 @@ export function DictationExercise({
           </>
         )}
       </div>
+      {results && !progressSaved ? (
+        <p className="m-0 text-sm font-semibold text-muted">
+          <Link
+            href={signInUrl(`/listening/${slug}`)}
+            className="font-bold text-link underline-offset-2 hover:underline"
+          >
+            Sign in
+          </Link>{" "}
+          to save your progress.
+        </p>
+      ) : null}
     </section>
   );
 }

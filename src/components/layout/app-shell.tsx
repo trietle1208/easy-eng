@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { FloatingActions } from "@/components/layout/floating-actions";
 import { Header } from "@/components/layout/header";
+import type { HeaderUser } from "@/components/layout/user-menu";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
 import { GlassPanel } from "@/components/notebook/glass-panel";
 import { cn } from "@/lib/utils";
@@ -15,6 +16,7 @@ type AppShellProps = {
   /** Optional full-bleed background image over the theme gradient. */
   backgroundSrc?: string;
   showFloatingActions?: boolean;
+  user?: HeaderUser | null;
 };
 
 export function AppShell({
@@ -24,6 +26,7 @@ export function AppShell({
   contentClassName,
   backgroundSrc,
   showFloatingActions = true,
+  user = null,
 }: AppShellProps) {
   return (
     <div
@@ -56,7 +59,7 @@ export function AppShell({
           wide ? "max-w-[1440px]" : "max-w-[1440px]",
         )}
       >
-        <Header />
+        <Header user={user} />
 
         <GlassPanel
           as="main"

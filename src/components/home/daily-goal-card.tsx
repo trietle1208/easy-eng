@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState, useTransition } from "react";
 import { Check, Flame, Pause, Play } from "lucide-react";
 
 import { ProgressBar } from "@/components/ui/progress-bar";
+import { recordStudySessionAction } from "@/lib/actions/record-study-session";
 import { cn } from "@/lib/utils";
 import type { DailyGoal } from "@/types/home";
 
@@ -22,20 +23,66 @@ function formatTime(totalSeconds: number) {
 export function DailyGoalCard({ goal }: DailyGoalCardProps) {
   const [mode, setMode] = useState<TimerMode>("study");
   const [running, setRunning] = useState(false);
-  const [seconds, setSeconds] = useState(goal.studySeconds);
+  const [seconds, setSeconds] = useState(0);
+  const elapsedRef = useRef(0);
+  const [, startTransition] = useTransition();
 
   useEffect(() => {
-    setSeconds(mode === "study" ? goal.studySeconds : goal.pomodoroSeconds);
     setRunning(false);
-  }, [mode, goal.studySeconds, goal.pomodoroSeconds]);
+    elapsedRef.current = 0;
+    setSeconds(mode === "study" ? 0 : goal.pomodoroSeconds);
+  }, [mode, goal.pomodoroSeconds]);
 
   useEffect(() => {
     if (!running) return;
     const id = window.setInterval(() => {
-      setSeconds((prev) => Math.max(0, prev - 1));
+      if (mode === "study") {
+        setSeconds((prev) => {
+          const next = prev + 1;
+          elapsedRef.current = next;
+          return next;
+        });
+        return;
+      }
+      setSeconds((prev) => {
+        const next = Math.max(0, prev - 1);
+        elapsedRef.current = goal.pomodoroSeconds - next;
+        if (next === 0) {
+          setRunning(false);
+          const duration = goal.pomodoroSeconds;
+          if (duration >= 60) {
+            startTransition(async () => {
+              await recordStudySessionAction({
+                durationSeconds: duration,
+                mode: "pomodoro",
+              });
+            });
+          }
+        }
+        return next;
+      });
     }, 1000);
     return () => window.clearInterval(id);
-  }, [running]);
+  }, [running, mode, goal.pomodoroSeconds]);
+
+  function toggleRunning() {
+    if (running && mode === "study") {
+      const duration = elapsedRef.current;
+      setRunning(false);
+      if (duration >= 60) {
+        startTransition(async () => {
+          await recordStudySessionAction({
+            durationSeconds: duration,
+            mode: "study",
+          });
+        });
+        setSeconds(0);
+        elapsedRef.current = 0;
+      }
+      return;
+    }
+    setRunning((v) => !v);
+  }
 
   const wordsPct = (goal.newWords.current / goal.newWords.target) * 100;
   const grammarPct = (goal.grammar.current / goal.grammar.target) * 100;
@@ -161,7 +208,7 @@ export function DailyGoalCard({ goal }: DailyGoalCardProps) {
         <button
           type="button"
           aria-label={running ? "Pause timer" : "Start timer"}
-          onClick={() => setRunning((v) => !v)}
+          onClick={toggleRunning}
           className="flex size-[46px] items-center justify-center rounded-full border-2 border-line bg-primary text-on-primary"
         >
           {running ? (

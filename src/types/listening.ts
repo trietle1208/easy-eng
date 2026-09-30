@@ -23,11 +23,16 @@ export type TranscriptSentence = {
   end: number;
 };
 
+/** Public blank — no answer/accept (scoring via Server Action). */
 export type DictationBlank = {
   id: string;
   /** Full sentence with `___` where the blank is */
   promptBefore: string;
   promptAfter: string;
+};
+
+/** Server-only blank with answer keys for scoring. */
+export type DictationBlankSecure = DictationBlank & {
   answer: string;
   /** Acceptable alternate answers (lowercase compare) */
   accept?: string[];
@@ -63,4 +68,6 @@ export type CheckDictationResult = {
   results: DictationCheckItem[];
   score: number;
   total: number;
+  /** False for anonymous callers — UI can invite them to sign in. */
+  progressSaved: boolean;
 };

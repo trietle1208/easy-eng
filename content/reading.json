@@ -1,0 +1,450 @@
+{
+  "passages": [
+    {
+      "id": "a-morning-at-ben-thanh-market",
+      "slug": "a-morning-at-ben-thanh-market",
+      "title": "A Morning at Bến Thành Market",
+      "topic": "Travel",
+      "level": "A2",
+      "minutes": 3,
+      "wordCount": 180,
+      "newWordCount": 4,
+      "familyLabel": "Travel · Passage",
+      "sortOrder": 0,
+      "paragraphs": [
+        {
+          "id": "a-morning-at-ben-thanh-market:p1",
+          "sortOrder": 0,
+          "vi": "Bản dịch tiếng Việt sẽ hiện khi bạn bật nút dịch.",
+          "segments": [
+            {
+              "type": "text",
+              "text": "A Morning at Bến Thành Market — open this card to practise everyday English reading. Full story content is available for The Night Bus to Đà Lạt."
+            }
+          ]
+        }
+      ],
+      "vocabulary": [],
+      "questions": [
+        {
+          "id": "a-morning-at-ben-thanh-market:q1",
+          "sortOrder": 0,
+          "prompt": "What is this passage mainly about?",
+          "choices": [
+            "A Morning at Bến Thành Market",
+            "A cooking recipe",
+            "A grammar rule",
+            "A listening tip"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "why-cats-sleep-so-much",
+      "slug": "why-cats-sleep-so-much",
+      "title": "Why Cats Sleep So Much",
+      "topic": "Science",
+      "level": "A2",
+      "minutes": 3,
+      "wordCount": 180,
+      "newWordCount": 4,
+      "familyLabel": "Science · Passage",
+      "sortOrder": 1,
+      "paragraphs": [
+        {
+          "id": "why-cats-sleep-so-much:p1",
+          "sortOrder": 0,
+          "vi": "Bản dịch tiếng Việt sẽ hiện khi bạn bật nút dịch.",
+          "segments": [
+            {
+              "type": "text",
+              "text": "Why Cats Sleep So Much — open this card to practise everyday English reading. Full story content is available for The Night Bus to Đà Lạt."
+            }
+          ]
+        }
+      ],
+      "vocabulary": [],
+      "questions": [
+        {
+          "id": "why-cats-sleep-so-much:q1",
+          "sortOrder": 0,
+          "prompt": "What is this passage mainly about?",
+          "choices": [
+            "Why Cats Sleep So Much",
+            "A cooking recipe",
+            "A grammar rule",
+            "A listening tip"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "the-night-bus-to-da-lat",
+      "slug": "the-night-bus-to-da-lat",
+      "title": "The Night Bus to Đà Lạt",
+      "topic": "Travel",
+      "level": "B1",
+      "minutes": 4,
+      "wordCount": 212,
+      "newWordCount": 6,
+      "familyLabel": "Travel · Passage 3 of 7",
+      "sortOrder": 2,
+      "paragraphs": [
+        {
+          "id": "the-night-bus-to-da-lat:p1",
+          "sortOrder": 0,
+          "vi": "Tháng Mười Hai năm ngoái, Minh quyết định đến Đà Lạt lần đầu. Vé máy bay dịp lễ rất đắt nên anh đặt một chỗ trên xe khách đêm từ Sài Gòn. Xe chạy lúc mười giờ, và hầu hết hành khách đã ngủ trước khi ra khỏi thành phố.",
+          "segments": [
+            {
+              "type": "text",
+              "text": "Last December, Minh decided to visit Đà Lạt for the first time. Flights were expensive during the holidays, so he booked a seat on the night bus from Saigon. The bus left at ten o’clock, and most passengers fell asleep before it reached the edge of the city."
+            }
+          ]
+        },
+        {
+          "id": "the-night-bus-to-da-lat:p2",
+          "sortOrder": 1,
+          "vi": "Khoảng nửa đêm đường trở nên quanh co khi xe bắt đầu leo núi. Anh hơi buồn ngủ, nhưng những khúc cua gắt liên tục đánh thức anh.",
+          "segments": [
+            {
+              "type": "text",
+              "text": "Around midnight the road became "
+            },
+            {
+              "type": "vocab",
+              "vocabId": "the-night-bus-to-da-lat:winding"
+            },
+            {
+              "type": "text",
+              "text": " as the bus began to climb into the mountains. He felt a little "
+            },
+            {
+              "type": "vocab",
+              "vocabId": "the-night-bus-to-da-lat:drowsy"
+            },
+            {
+              "type": "text",
+              "text": ", but the sharp turns kept waking him up."
+            }
+          ]
+        },
+        {
+          "id": "the-night-bus-to-da-lat:p3",
+          "sortOrder": 2,
+          "vi": "Khi mặt trời lên, cảnh vật bên ngoài đã hoàn toàn thay đổi. Thay cho ruộng lúa là những rừng thông phủ sương mỏng. Không khí lùa qua cửa sổ mát lạnh — gần như lạnh. Minh miễn cưỡng mặc chiếc áo khoác mà mẹ đã xếp cho anh.",
+          "segments": [
+            {
+              "type": "text",
+              "text": "When the sun came up, the "
+            },
+            {
+              "type": "vocab",
+              "vocabId": "the-night-bus-to-da-lat:scenery"
+            },
+            {
+              "type": "text",
+              "text": " outside had completely changed. Instead of rice fields, there were pine forests covered in thin mist. The air coming through the window was cool — almost cold. Minh "
+            },
+            {
+              "type": "vocab",
+              "vocabId": "the-night-bus-to-da-lat:reluctantly"
+            },
+            {
+              "type": "text",
+              "text": " put on the jacket his mother had packed for him."
+            }
+          ]
+        },
+        {
+          "id": "the-night-bus-to-da-lat:p4",
+          "sortOrder": 3,
+          "vi": "Xe đến nơi lúc bảy giờ. Một người bán hàng rong gần bến xe đang bán sữa đậu nành nóng và bánh tráng nướng. Minh mua cả hai, ngồi trên chiếc ghế nhựa nhỏ và ngắm đồi núi. Chuyến đi thật dài, nhưng khung cảnh thì đẹp đến ngỡ ngàng.",
+          "segments": [
+            {
+              "type": "text",
+              "text": "The bus arrived at seven. A street "
+            },
+            {
+              "type": "vocab",
+              "vocabId": "the-night-bus-to-da-lat:vendor"
+            },
+            {
+              "type": "text",
+              "text": " near the station was selling hot soy milk and grilled rice paper. Minh bought both, sat on a small plastic stool, and looked at the hills. The trip had been long, but the view was "
+            },
+            {
+              "type": "vocab",
+              "vocabId": "the-night-bus-to-da-lat:breathtaking"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "the-night-bus-to-da-lat:winding",
+          "word": "winding",
+          "ipa": "/ˈwaɪn.dɪŋ/",
+          "partOfSpeech": "adj.",
+          "meaningVi": "quanh co, uốn lượn",
+          "level": "B1"
+        },
+        {
+          "id": "the-night-bus-to-da-lat:drowsy",
+          "word": "drowsy",
+          "ipa": "/ˈdraʊ.zi/",
+          "partOfSpeech": "adj.",
+          "meaningVi": "buồn ngủ, uể oải",
+          "level": "B1"
+        },
+        {
+          "id": "the-night-bus-to-da-lat:scenery",
+          "word": "scenery",
+          "ipa": "/ˈsiː.nər.i/",
+          "partOfSpeech": "noun",
+          "meaningVi": "phong cảnh, cảnh vật",
+          "level": "A2"
+        },
+        {
+          "id": "the-night-bus-to-da-lat:reluctantly",
+          "word": "reluctantly",
+          "ipa": "/rɪˈlʌk.tənt.li/",
+          "partOfSpeech": "adv.",
+          "meaningVi": "miễn cưỡng, bất đắc dĩ",
+          "level": "B1"
+        },
+        {
+          "id": "the-night-bus-to-da-lat:vendor",
+          "word": "vendor",
+          "ipa": "/ˈven.dər/",
+          "partOfSpeech": "noun",
+          "meaningVi": "người bán hàng (rong)",
+          "level": "B1"
+        },
+        {
+          "id": "the-night-bus-to-da-lat:breathtaking",
+          "word": "breathtaking",
+          "ipa": "/ˈbreθˌteɪ.kɪŋ/",
+          "partOfSpeech": "adj.",
+          "meaningVi": "đẹp đến nghẹt thở, ngoạn mục",
+          "level": "B2"
+        }
+      ],
+      "questions": [
+        {
+          "id": "the-night-bus-to-da-lat:q1",
+          "sortOrder": 0,
+          "prompt": "Why did Minh take the night bus?",
+          "choices": [
+            "He wanted to sleep on the way",
+            "Flights were expensive during the holidays",
+            "His mother booked the ticket",
+            "There were no flights to Đà Lạt"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "the-night-bus-to-da-lat:q2",
+          "sortOrder": 1,
+          "prompt": "What kept waking Minh up?",
+          "choices": [
+            "The podcast he was listening to",
+            "The lights of the small towns",
+            "The sharp turns on the mountain road",
+            "The cold air from the window"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "the-night-bus-to-da-lat:q3",
+          "sortOrder": 2,
+          "prompt": "“Minh reluctantly put on the jacket” means he put it on…",
+          "choices": [
+            "happily",
+            "very quickly",
+            "without really wanting to",
+            "because it was new"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "the-night-bus-to-da-lat:q4",
+          "sortOrder": 3,
+          "prompt": "What did Minh do when he arrived?",
+          "choices": [
+            "He went straight to his hotel",
+            "He had breakfast from a street vendor",
+            "He took photos of the station",
+            "He called his mother"
+          ],
+          "correctIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "working-from-a-cafe",
+      "slug": "working-from-a-cafe",
+      "title": "Working From a Café",
+      "topic": "Work",
+      "level": "B1",
+      "minutes": 4,
+      "wordCount": 180,
+      "newWordCount": 4,
+      "familyLabel": "Work · Passage",
+      "sortOrder": 3,
+      "paragraphs": [
+        {
+          "id": "working-from-a-cafe:p1",
+          "sortOrder": 0,
+          "vi": "Bản dịch tiếng Việt sẽ hiện khi bạn bật nút dịch.",
+          "segments": [
+            {
+              "type": "text",
+              "text": "Working From a Café — open this card to practise everyday English reading. Full story content is available for The Night Bus to Đà Lạt."
+            }
+          ]
+        }
+      ],
+      "vocabulary": [],
+      "questions": [
+        {
+          "id": "working-from-a-cafe:q1",
+          "sortOrder": 0,
+          "prompt": "What is this passage mainly about?",
+          "choices": [
+            "Working From a Café",
+            "A cooking recipe",
+            "A grammar rule",
+            "A listening tip"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "the-rice-terraces-of-sa-pa",
+      "slug": "the-rice-terraces-of-sa-pa",
+      "title": "The Rice Terraces of Sa Pa",
+      "topic": "Culture",
+      "level": "B2",
+      "minutes": 5,
+      "wordCount": 180,
+      "newWordCount": 4,
+      "familyLabel": "Culture · Passage",
+      "sortOrder": 4,
+      "paragraphs": [
+        {
+          "id": "the-rice-terraces-of-sa-pa:p1",
+          "sortOrder": 0,
+          "vi": "Bản dịch tiếng Việt sẽ hiện khi bạn bật nút dịch.",
+          "segments": [
+            {
+              "type": "text",
+              "text": "The Rice Terraces of Sa Pa — open this card to practise everyday English reading. Full story content is available for The Night Bus to Đà Lạt."
+            }
+          ]
+        }
+      ],
+      "vocabulary": [],
+      "questions": [
+        {
+          "id": "the-rice-terraces-of-sa-pa:q1",
+          "sortOrder": 0,
+          "prompt": "What is this passage mainly about?",
+          "choices": [
+            "The Rice Terraces of Sa Pa",
+            "A cooking recipe",
+            "A grammar rule",
+            "A listening tip"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "how-podcasts-changed-radio",
+      "slug": "how-podcasts-changed-radio",
+      "title": "How Podcasts Changed Radio",
+      "topic": "Culture",
+      "level": "B2",
+      "minutes": 5,
+      "wordCount": 180,
+      "newWordCount": 4,
+      "familyLabel": "Culture · Passage",
+      "sortOrder": 5,
+      "paragraphs": [
+        {
+          "id": "how-podcasts-changed-radio:p1",
+          "sortOrder": 0,
+          "vi": "Bản dịch tiếng Việt sẽ hiện khi bạn bật nút dịch.",
+          "segments": [
+            {
+              "type": "text",
+              "text": "How Podcasts Changed Radio — open this card to practise everyday English reading. Full story content is available for The Night Bus to Đà Lạt."
+            }
+          ]
+        }
+      ],
+      "vocabulary": [],
+      "questions": [
+        {
+          "id": "how-podcasts-changed-radio:q1",
+          "sortOrder": 0,
+          "prompt": "What is this passage mainly about?",
+          "choices": [
+            "How Podcasts Changed Radio",
+            "A cooking recipe",
+            "A grammar rule",
+            "A listening tip"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "the-economics-of-street-food",
+      "slug": "the-economics-of-street-food",
+      "title": "The Economics of Street Food",
+      "topic": "Business",
+      "level": "C1",
+      "minutes": 6,
+      "wordCount": 180,
+      "newWordCount": 4,
+      "familyLabel": "Business · Passage",
+      "sortOrder": 6,
+      "paragraphs": [
+        {
+          "id": "the-economics-of-street-food:p1",
+          "sortOrder": 0,
+          "vi": "Bản dịch tiếng Việt sẽ hiện khi bạn bật nút dịch.",
+          "segments": [
+            {
+              "type": "text",
+              "text": "The Economics of Street Food — open this card to practise everyday English reading. Full story content is available for The Night Bus to Đà Lạt."
+            }
+          ]
+        }
+      ],
+      "vocabulary": [],
+      "questions": [
+        {
+          "id": "the-economics-of-street-food:q1",
+          "sortOrder": 0,
+          "prompt": "What is this passage mainly about?",
+          "choices": [
+            "The Economics of Street Food",
+            "A cooking recipe",
+            "A grammar rule",
+            "A listening tip"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  ]
+}

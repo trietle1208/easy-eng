@@ -1,7 +1,7 @@
 "use client";
 
 import type { QuizQuestionProps } from "@/components/quiz/quiz-question-props";
-import type { FillBlankQuestion } from "@/types/quiz";
+import type { FillBlankQuestionPublic } from "@/types/quiz";
 
 export function QuizQuestionFillBlank({
   question,
@@ -10,7 +10,7 @@ export function QuizQuestionFillBlank({
   onChange,
   showVietnamese,
   showHint,
-}: QuizQuestionProps<FillBlankQuestion>) {
+}: QuizQuestionProps<FillBlankQuestionPublic>) {
   const text = typeof value === "string" ? value : "";
 
   return (

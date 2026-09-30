@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 import { Mascot } from "@/components/mascot/mascot";
 import { Button } from "@/components/ui/button";
-import type { Greeting } from "@/lib/data/home";
+import type { Greeting } from "@/types/home";
 
 type HomeHeroProps = {
   greeting: Greeting;

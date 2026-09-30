@@ -1,0 +1,339 @@
+{
+  "lessons": [
+    {
+      "id": "ordering-a-coffee",
+      "slug": "ordering-a-coffee",
+      "title": "Ordering a coffee",
+      "topic": "Daily life",
+      "level": "A1",
+      "durationSeconds": 84,
+      "audioPath": "listening/checking-in-at-the-airport.wav",
+      "speakers": 2,
+      "accent": "Neutral accent",
+      "familyLabel": "Daily life · Lesson",
+      "sortOrder": 0,
+      "transcript": [
+        {
+          "id": "ordering-a-coffee:s1",
+          "sortOrder": 0,
+          "speaker": "Speaker",
+          "text": "Ordering a coffee — open the featured airport lesson for the full exercise.",
+          "startMs": 0,
+          "endMs": 5000
+        }
+      ],
+      "blanks": [
+        {
+          "id": "ordering-a-coffee:b1",
+          "sortOrder": 0,
+          "promptBefore": "This is a ",
+          "promptAfter": " placeholder.",
+          "answer": "listening",
+          "accept": null
+        }
+      ]
+    },
+    {
+      "id": "asking-for-directions-in-ha-noi",
+      "slug": "asking-for-directions-in-ha-noi",
+      "title": "Asking for directions in Hà Nội",
+      "topic": "Travel",
+      "level": "A2",
+      "durationSeconds": 125,
+      "audioPath": "listening/checking-in-at-the-airport.wav",
+      "speakers": 2,
+      "accent": "Neutral accent",
+      "familyLabel": "Travel · Lesson",
+      "sortOrder": 1,
+      "transcript": [
+        {
+          "id": "asking-for-directions-in-ha-noi:s1",
+          "sortOrder": 0,
+          "speaker": "Speaker",
+          "text": "Asking for directions in Hà Nội — open the featured airport lesson for the full exercise.",
+          "startMs": 0,
+          "endMs": 5000
+        }
+      ],
+      "blanks": [
+        {
+          "id": "asking-for-directions-in-ha-noi:b1",
+          "sortOrder": 0,
+          "promptBefore": "This is a ",
+          "promptAfter": " placeholder.",
+          "answer": "listening",
+          "accept": null
+        }
+      ]
+    },
+    {
+      "id": "checking-in-at-the-airport",
+      "slug": "checking-in-at-the-airport",
+      "title": "Checking in at the airport",
+      "topic": "Travel",
+      "level": "A2",
+      "durationSeconds": 160,
+      "audioPath": "listening/checking-in-at-the-airport.wav",
+      "speakers": 2,
+      "accent": "British accent",
+      "familyLabel": "Travel · Lesson 3 of 12",
+      "sortOrder": 2,
+      "transcript": [
+        {
+          "id": "checking-in-at-the-airport:s1",
+          "sortOrder": 0,
+          "speaker": "Agent",
+          "text": "Good morning. Where are you flying to today?",
+          "startMs": 0,
+          "endMs": 4000
+        },
+        {
+          "id": "checking-in-at-the-airport:s2",
+          "sortOrder": 1,
+          "speaker": "Lan",
+          "text": "Hi, I’m flying to Singapore.",
+          "startMs": 4000,
+          "endMs": 7000
+        },
+        {
+          "id": "checking-in-at-the-airport:s3",
+          "sortOrder": 2,
+          "speaker": "Agent",
+          "text": "Can I see your passport and booking reference, please?",
+          "startMs": 7000,
+          "endMs": 12000
+        },
+        {
+          "id": "checking-in-at-the-airport:s4",
+          "sortOrder": 3,
+          "speaker": "Lan",
+          "text": "Sure, here you are.",
+          "startMs": 12000,
+          "endMs": 15000
+        },
+        {
+          "id": "checking-in-at-the-airport:s5",
+          "sortOrder": 4,
+          "speaker": "Agent",
+          "text": "Thank you. Are you checking in any bags?",
+          "startMs": 15000,
+          "endMs": 19000
+        },
+        {
+          "id": "checking-in-at-the-airport:s6",
+          "sortOrder": 5,
+          "speaker": "Lan",
+          "text": "Just one suitcase. Is there a weight limit?",
+          "startMs": 19000,
+          "endMs": 23000
+        },
+        {
+          "id": "checking-in-at-the-airport:s7",
+          "sortOrder": 6,
+          "speaker": "Agent",
+          "text": "Yes, it’s twenty-three kilos. Could you put it on the scale?",
+          "startMs": 23000,
+          "endMs": 29000
+        },
+        {
+          "id": "checking-in-at-the-airport:s8",
+          "sortOrder": 7,
+          "speaker": "Agent",
+          "text": "Would you prefer a window or an aisle seat?",
+          "startMs": 29000,
+          "endMs": 33000
+        },
+        {
+          "id": "checking-in-at-the-airport:s9",
+          "sortOrder": 8,
+          "speaker": "Lan",
+          "text": "A window seat, please.",
+          "startMs": 33000,
+          "endMs": 36000
+        },
+        {
+          "id": "checking-in-at-the-airport:s10",
+          "sortOrder": 9,
+          "speaker": "Agent",
+          "text": "Here’s your boarding pass. Boarding starts at gate twelve at nine forty.",
+          "startMs": 36000,
+          "endMs": 42000
+        }
+      ],
+      "blanks": [
+        {
+          "id": "checking-in-at-the-airport:b1",
+          "sortOrder": 0,
+          "promptBefore": "Can I see your ",
+          "promptAfter": " and booking reference, please?",
+          "answer": "passport",
+          "accept": null
+        },
+        {
+          "id": "checking-in-at-the-airport:b2",
+          "sortOrder": 1,
+          "promptBefore": "Thank you. Are you checking in any ",
+          "promptAfter": "?",
+          "answer": "bags",
+          "accept": null
+        },
+        {
+          "id": "checking-in-at-the-airport:b3",
+          "sortOrder": 2,
+          "promptBefore": "Just one suitcase. Is there a weight ",
+          "promptAfter": "?",
+          "answer": "limit",
+          "accept": null
+        },
+        {
+          "id": "checking-in-at-the-airport:b4",
+          "sortOrder": 3,
+          "promptBefore": "Would you prefer a window or an ",
+          "promptAfter": " seat?",
+          "answer": "aisle",
+          "accept": null
+        },
+        {
+          "id": "checking-in-at-the-airport:b5",
+          "sortOrder": 4,
+          "promptBefore": "Boarding starts at ",
+          "promptAfter": " twelve at nine forty.",
+          "answer": "gate",
+          "accept": null
+        }
+      ]
+    },
+    {
+      "id": "a-voicemail-from-your-landlord",
+      "slug": "a-voicemail-from-your-landlord",
+      "title": "A voicemail from your landlord",
+      "topic": "Daily life",
+      "level": "B1",
+      "durationSeconds": 118,
+      "audioPath": "listening/checking-in-at-the-airport.wav",
+      "speakers": 2,
+      "accent": "Neutral accent",
+      "familyLabel": "Daily life · Lesson",
+      "sortOrder": 3,
+      "transcript": [
+        {
+          "id": "a-voicemail-from-your-landlord:s1",
+          "sortOrder": 0,
+          "speaker": "Speaker",
+          "text": "A voicemail from your landlord — open the featured airport lesson for the full exercise.",
+          "startMs": 0,
+          "endMs": 5000
+        }
+      ],
+      "blanks": [
+        {
+          "id": "a-voicemail-from-your-landlord:b1",
+          "sortOrder": 0,
+          "promptBefore": "This is a ",
+          "promptAfter": " placeholder.",
+          "answer": "listening",
+          "accept": null
+        }
+      ]
+    },
+    {
+      "id": "team-meeting-project-update",
+      "slug": "team-meeting-project-update",
+      "title": "Team meeting: project update",
+      "topic": "Work",
+      "level": "B1",
+      "durationSeconds": 192,
+      "audioPath": "listening/checking-in-at-the-airport.wav",
+      "speakers": 2,
+      "accent": "Neutral accent",
+      "familyLabel": "Work · Lesson",
+      "sortOrder": 4,
+      "transcript": [
+        {
+          "id": "team-meeting-project-update:s1",
+          "sortOrder": 0,
+          "speaker": "Speaker",
+          "text": "Team meeting: project update — open the featured airport lesson for the full exercise.",
+          "startMs": 0,
+          "endMs": 5000
+        }
+      ],
+      "blanks": [
+        {
+          "id": "team-meeting-project-update:b1",
+          "sortOrder": 0,
+          "promptBefore": "This is a ",
+          "promptAfter": " placeholder.",
+          "answer": "listening",
+          "accept": null
+        }
+      ]
+    },
+    {
+      "id": "podcast-the-joy-of-slow-travel",
+      "slug": "podcast-the-joy-of-slow-travel",
+      "title": "Podcast: the joy of slow travel",
+      "topic": "Culture",
+      "level": "B2",
+      "durationSeconds": 270,
+      "audioPath": "listening/checking-in-at-the-airport.wav",
+      "speakers": 2,
+      "accent": "Neutral accent",
+      "familyLabel": "Culture · Lesson",
+      "sortOrder": 5,
+      "transcript": [
+        {
+          "id": "podcast-the-joy-of-slow-travel:s1",
+          "sortOrder": 0,
+          "speaker": "Speaker",
+          "text": "Podcast: the joy of slow travel — open the featured airport lesson for the full exercise.",
+          "startMs": 0,
+          "endMs": 5000
+        }
+      ],
+      "blanks": [
+        {
+          "id": "podcast-the-joy-of-slow-travel:b1",
+          "sortOrder": 0,
+          "promptBefore": "This is a ",
+          "promptAfter": " placeholder.",
+          "answer": "listening",
+          "accept": null
+        }
+      ]
+    },
+    {
+      "id": "rice-prices-and-the-weather",
+      "slug": "rice-prices-and-the-weather",
+      "title": "Rice prices and the weather",
+      "topic": "News",
+      "level": "C1",
+      "durationSeconds": 225,
+      "audioPath": "listening/checking-in-at-the-airport.wav",
+      "speakers": 2,
+      "accent": "Neutral accent",
+      "familyLabel": "News · Lesson",
+      "sortOrder": 6,
+      "transcript": [
+        {
+          "id": "rice-prices-and-the-weather:s1",
+          "sortOrder": 0,
+          "speaker": "Speaker",
+          "text": "Rice prices and the weather — open the featured airport lesson for the full exercise.",
+          "startMs": 0,
+          "endMs": 5000
+        }
+      ],
+      "blanks": [
+        {
+          "id": "rice-prices-and-the-weather:b1",
+          "sortOrder": 0,
+          "promptBefore": "This is a ",
+          "promptAfter": " placeholder.",
+          "answer": "listening",
+          "accept": null
+        }
+      ]
+    }
+  ]
+}

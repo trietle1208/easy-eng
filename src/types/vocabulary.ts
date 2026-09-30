@@ -34,6 +34,8 @@ export type Word = {
   notes?: string;
   imageUrl?: string;
   createdAt: string;
+  /** True when the signed-in user owns this word (editable/deletable). */
+  owned?: boolean;
 };
 
 export type WordSetTopic =
@@ -67,6 +69,8 @@ export type WordSet = {
   learnedCount: number;
   /** recently studied | new | done */
   status: "active" | "new" | "done";
+  /** True when the signed-in user owns this set (editable/deletable). */
+  owned?: boolean;
 };
 
 export type WordSetFilters = {
@@ -86,8 +90,32 @@ export type NewWordInput = {
   wordSetId?: string;
   newWordSetTitle?: string;
   notes?: string;
+  /** Public `/files/...` URL or storage key written by upload action */
   imageUrl?: string;
 };
+
+export type UpdateWordInput = {
+  id: string;
+  word?: string;
+  ipa?: string;
+  partOfSpeech?: PartOfSpeech;
+  level?: CefrLevel;
+  meaningVi?: string;
+  definitionEn?: string;
+  examples?: string[];
+  notes?: string;
+  imageUrl?: string | null;
+};
+
+export type UpdateWordSetInput = {
+  id: string;
+  title?: string;
+  titleVi?: string;
+  topic?: WordSetTopic;
+  level?: CefrLevel;
+};
+
+export type ReviewGrade = "still_learning" | "know_it";
 
 export type ReviewDue = {
   count: number;
@@ -95,4 +123,6 @@ export type ReviewDue = {
   setTitle: string;
   cardIndex: number;
   cardTotal: number;
+  /** user_word_cards.id — required to grade */
+  cardId: string;
 };

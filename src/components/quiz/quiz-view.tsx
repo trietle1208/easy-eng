@@ -1,16 +1,17 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 
 import { QuizQuestions } from "@/components/quiz/quiz-questions";
 import { QuizResults } from "@/components/quiz/quiz-results";
 import { QuizStart } from "@/components/quiz/quiz-start";
-import { submitQuiz } from "@/lib/data/quiz";
+import { submitQuizAction } from "@/lib/actions/submit-quiz";
 import type {
-  Quiz,
   QuizAnswerValue,
   QuizAnswersMap,
   QuizAttempt,
+  QuizPublic,
   QuizResult,
 } from "@/types/quiz";
 
@@ -30,7 +31,7 @@ type PersistedState = {
 };
 
 type QuizViewProps = {
-  quiz: Quiz;
+  quiz: QuizPublic;
   lastAttempt: QuizAttempt | null;
 };
 
@@ -78,6 +79,7 @@ const initialState = (): PersistedState => ({
 });
 
 export function QuizView({ quiz, lastAttempt }: QuizViewProps) {
+  const router = useRouter();
   const [hydrated, setHydrated] = useState(false);
   const [state, setState] = useState<PersistedState>(initialState);
   const [secondsLeft, setSecondsLeft] = useState(quiz.timeLimitSeconds);
@@ -87,7 +89,7 @@ export function QuizView({ quiz, lastAttempt }: QuizViewProps) {
     ? quiz.questions.filter((q) => state.practiseIds!.includes(q.id))
     : quiz.questions;
 
-  const activeQuiz: Quiz = {
+  const activeQuiz: QuizPublic = {
     ...quiz,
     questions: activeQuestions.length ? activeQuestions : quiz.questions,
   };
@@ -117,8 +119,10 @@ export function QuizView({ quiz, lastAttempt }: QuizViewProps) {
       const used = startedAt
         ? Math.round((Date.now() - startedAt) / 1000)
         : quiz.timeLimitSeconds;
-      const result = await submitQuiz(quiz.slug, answers, used, {
+      const clientAttemptId = crypto.randomUUID();
+      const result = await submitQuizAction(quiz.slug, answers, used, {
         questionIds: state.practiseIds ?? undefined,
+        clientAttemptId,
       });
       submitting.current = false;
       if (!result) return;
@@ -129,8 +133,9 @@ export function QuizView({ quiz, lastAttempt }: QuizViewProps) {
         endsAt: null,
         showHint: false,
       }));
+      if (result.progressSaved) router.refresh();
     },
-    [quiz.slug, quiz.timeLimitSeconds, state.practiseIds],
+    [quiz.slug, quiz.timeLimitSeconds, router, state.practiseIds],
   );
 
   useEffect(() => {

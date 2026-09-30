@@ -2,22 +2,36 @@
 
 ## Project
 
-Next.js 15 UI for **Easy English** (repo folder `chill-english`). Mockups in `mockup/`; phase plans in `ui-plan/`. Package manager: **pnpm**.
+Next.js 15 app for **Easy English** (repo folder `chill-english`). Mockups in `mockup/`; UI plans in `ui-plan/`; backend plans in `be-plan/`. Package manager: **pnpm**.
 
 ## Current phase
 
-**Phase 3g (Profile) + Phase 4 (Polish) complete.**  
-Reports: `ui-plan/phase-3g-report.md`, `ui-plan/phase-4-report.md`.
+**Backend** — All phases 0–9 complete (`be-plan/phase-9-report.md` — admin CMS at `/admin`). Promote an admin with `pnpm db:promote-admin -- <email>` or `pnpm db:seed -- --admin`.
+UI is tagged `ui-v1` (phases 0–4 complete). Backend work follows `be-plan/`. Only work on the phase I name, and stop after its report.
 
-UI phases finished. Do **not** start backend/auth/DB work until the user approves.
+## Backend phases
+
+| Phase | Status | Notes |
+|---|---|---|
+| 0 — Audit and schema design | **done** (2026-09-30) | `be-plan/phase-0-report.md` |
+| 1 — Infra and server boundary | **done** (2026-09-30) | `be-plan/phase-1-report.md` |
+| 2 — Schema, migrations, seeders | **done** (2026-09-30) | `be-plan/phase-2-report.md` |
+| 3 — Authentication | **done** (2026-09-30) | `be-plan/phase-3-report.md` |
+| 4 — Content read from DB | **done** (2026-09-30) | `be-plan/phase-4-report.md` |
+| 5 — Learning actions / progress | **done** (2026-09-30) | `be-plan/phase-5-report.md` |
+| 6 — Vocabulary CRUD + FSRS | **done** (2026-09-30) | `be-plan/phase-6-report.md` |
+| 7 — Home, progress, profile | **done** (2026-09-30) | `be-plan/phase-7-report.md` |
+| 8 — Hardening, tests, deploy | **done** (2026-09-30) | `be-plan/phase-8-report.md` |
+| 9 — Admin CMS (optional) | **done** (2026-09-30) | `be-plan/phase-9-report.md` |
 
 ## Conventions (from brief)
 
-- UI + client interaction only; typed mock data via `src/lib/data/` later (not direct mock imports from pages)
+- Keep the `src/lib/data/` UI contract; replace mock implementations with DB-backed ones
 - Tokens as CSS variables; themes `default` and `blossom` (`data-theme`)
 - Server Components by default; `"use client"` only for interaction
-- Product name: **Easy English**; mock user: **Linh**
+- Product name: **Easy English**
 - No hard-coded colors outside token definitions
+- Backend work follows `be-plan/`. Only work on the phase I name, and stop after its report.
 
 ## Paths
 
@@ -25,17 +39,18 @@ UI phases finished. Do **not** start backend/auth/DB work until the user approve
 |---|---|
 | `mockup/screenshot/` | `mockup/screenshots/` |
 | `docs/ui-plan/` | plans + reports in `ui-plan/` (mirrored under `docs/ui-plan/` when useful) |
+| Backend brief / phases | `be-plan/00-brief.md` and `be-plan/0N-phase-*.md` |
 
 ## After each completed phase
 
-1. Note status on the phase markdown file
+1. Note status on the phase markdown file / write `be-plan/phase-N-report.md`
 2. Update this file and `CLAUDE.md`
 3. Refresh GitNexus: `npx gitnexus analyze`
 
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **chill-english** (401 symbols, 572 relationships, 4 execution flows).
+This project is indexed by GitNexus as **easy-eng** (3111 symbols, 5606 relationships, 143 execution flows).
 
 > Index stale? Run `node .gitnexus/run.cjs analyze --index-only` from the project root — it auto-selects an available runner. No `.gitnexus/run.cjs` yet? Bootstrap with `npx`, `bunx`, or `pnpm dlx` — e.g. `bunx gitnexus@latest analyze` (npm 11 npx crash; #1939).
 
@@ -59,10 +74,10 @@ This project is indexed by GitNexus as **chill-english** (401 symbols, 572 relat
 
 | Resource | Use for |
 | --- | --- |
-| `gitnexus://repo/chill-english/context` | Codebase overview, check index freshness |
-| `gitnexus://repo/chill-english/clusters` | All functional areas |
-| `gitnexus://repo/chill-english/processes` | All execution flows |
-| `gitnexus://repo/chill-english/process/{name}` | Step-by-step execution trace |
+| `gitnexus://repo/easy-eng/context` | Codebase overview, check index freshness |
+| `gitnexus://repo/easy-eng/clusters` | All functional areas |
+| `gitnexus://repo/easy-eng/processes` | All execution flows |
+| `gitnexus://repo/easy-eng/process/{name}` | Step-by-step execution trace |
 
 ## CLI
 

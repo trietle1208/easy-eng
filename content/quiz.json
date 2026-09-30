@@ -1,0 +1,553 @@
+{
+  "quizzes": [
+    {
+      "id": "present-perfect-vs-past-simple",
+      "slug": "present-perfect-vs-past-simple",
+      "title": "Present perfect vs. past simple",
+      "kickEn": "Grammar quiz",
+      "kickVi": "Kiểm tra ngữ pháp",
+      "breadcrumb": "Grammar › Tenses & time › Present perfect",
+      "level": "B1",
+      "descriptionEn": "Test yourself on when to say have done and when to say did.",
+      "descriptionVi": "Khi nào dùng hiện tại hoàn thành, khi nào dùng quá khứ đơn?",
+      "timeLimitSeconds": 480,
+      "passScore": 7,
+      "questionTypes": [
+        {
+          "id": "multiple_choice",
+          "label": "Multiple choice"
+        },
+        {
+          "id": "fill_blank",
+          "label": "Fill in the blank"
+        },
+        {
+          "id": "correct_sentence",
+          "label": "Choose the correct sentence"
+        }
+      ],
+      "lessonHref": "/grammar/present-perfect-vs-past-simple",
+      "nextHref": "/grammar/future-plans-going-to",
+      "nextLabel": "Next: Future plans",
+      "encouragementEn": "You've got this, Linh!",
+      "encouragementVi": "Đọc kỹ đề nhé.",
+      "questions": [
+        {
+          "id": "present-perfect-vs-past-simple:q1",
+          "sortOrder": 0,
+          "type": "multiple_choice",
+          "instructionVi": "Chọn đáp án đúng",
+          "promptVi": "Tôi đã đến Đà Nẵng ba lần.",
+          "hintEn": "“three times” = experience up to now → present perfect.",
+          "explanationEn": "Experiences with no finished time → present perfect.",
+          "explanationVi": "Kinh nghiệm đến hiện tại → hiện tại hoàn thành.",
+          "reviewBefore": "I ",
+          "reviewAfter": " to Đà Nẵng three times.",
+          "payload": {
+            "stemBefore": "I",
+            "stemAfter": "to Đà Nẵng three times.",
+            "options": [
+              "was",
+              "have been",
+              "went",
+              "am"
+            ],
+            "correctIndex": 1
+          }
+        },
+        {
+          "id": "present-perfect-vs-past-simple:q2",
+          "sortOrder": 1,
+          "type": "fill_blank",
+          "instructionVi": "Điền dạng đúng của động từ",
+          "promptVi": "Chúng tôi chuyển đến đây năm 2020.",
+          "hintEn": "“in 2020” is a finished time → past simple.",
+          "explanationEn": "“in 2020” is finished time → past simple.",
+          "explanationVi": "Có mốc thời gian đã qua → quá khứ đơn.",
+          "reviewBefore": "We ",
+          "reviewAfter": " here in 2020.",
+          "payload": {
+            "stemBefore": "We",
+            "stemAfter": "here in 2020.",
+            "verbHint": "move",
+            "wordBank": [
+              "moved",
+              "have moved",
+              "were moving",
+              "move"
+            ],
+            "correctAnswers": [
+              "moved"
+            ],
+            "displayAnswer": "moved"
+          }
+        },
+        {
+          "id": "present-perfect-vs-past-simple:q3",
+          "sortOrder": 2,
+          "type": "correct_sentence",
+          "instructionVi": "Chọn câu đúng ngữ pháp",
+          "promptVi": "Câu nào đúng?",
+          "hintEn": "“ever” + experience → present perfect.",
+          "explanationEn": "“ever” asks about life experience → present perfect.",
+          "explanationVi": "“ever” hỏi kinh nghiệm → hiện tại hoàn thành.",
+          "reviewBefore": "",
+          "reviewAfter": "",
+          "payload": {
+            "promptEn": "Which sentence is correct?",
+            "options": [
+              "Did you ever eat durian?",
+              "Have you ever eaten durian?",
+              "Have you ever ate durian?",
+              "Do you ever eaten durian?"
+            ],
+            "correctIndex": 1
+          }
+        },
+        {
+          "id": "present-perfect-vs-past-simple:q4",
+          "sortOrder": 3,
+          "type": "multiple_choice",
+          "instructionVi": "Chọn đáp án đúng",
+          "promptVi": "Tôi làm mất chìa khóa rồi — giờ không vào nhà được.",
+          "hintEn": "The result matters now (can't enter) → present perfect.",
+          "explanationEn": "Present result of a past action → present perfect.",
+          "explanationVi": "Kết quả vẫn ảnh hưởng hiện tại → hiện tại hoàn thành.",
+          "reviewBefore": "I ",
+          "reviewAfter": " my keys. I can't get into my flat.",
+          "payload": {
+            "stemBefore": "I",
+            "stemAfter": "my keys. I can't get into my flat.",
+            "options": [
+              "lost",
+              "have lost",
+              "was losing",
+              "had lose"
+            ],
+            "correctIndex": 1
+          }
+        },
+        {
+          "id": "present-perfect-vs-past-simple:q5",
+          "sortOrder": 4,
+          "type": "fill_blank",
+          "instructionVi": "Điền dạng đúng của động từ",
+          "promptVi": "Cô ấy đã sống ở Huế từ năm 2019 (đến giờ vẫn sống).",
+          "hintEn": "“since 2019” — it started in the past and is still true now.",
+          "explanationEn": "“since” + starting point still true → present perfect.",
+          "explanationVi": "“since” + vẫn còn đúng → hiện tại hoàn thành.",
+          "reviewBefore": "She ",
+          "reviewAfter": " in Huế since 2019.",
+          "payload": {
+            "stemBefore": "She",
+            "stemAfter": "in Huế since 2019.",
+            "verbHint": "live",
+            "wordBank": [
+              "lived",
+              "has lived",
+              "was living",
+              "is living"
+            ],
+            "correctAnswers": [
+              "has lived",
+              "have lived"
+            ],
+            "displayAnswer": "has lived"
+          }
+        },
+        {
+          "id": "present-perfect-vs-past-simple:q6",
+          "sortOrder": 5,
+          "type": "correct_sentence",
+          "instructionVi": "Chọn câu đúng ngữ pháp",
+          "promptVi": "Câu nào đúng?",
+          "hintEn": "“last week” is finished time → past simple.",
+          "explanationEn": "Finished time words (last week) → past simple.",
+          "explanationVi": "Có mốc thời gian đã kết thúc → quá khứ đơn.",
+          "reviewBefore": "",
+          "reviewAfter": "",
+          "payload": {
+            "promptEn": "Which sentence is correct?",
+            "options": [
+              "I have seen that film last week.",
+              "I saw that film last week.",
+              "I have saw that film last week.",
+              "I seen that film last week."
+            ],
+            "correctIndex": 1
+          }
+        },
+        {
+          "id": "present-perfect-vs-past-simple:q7",
+          "sortOrder": 6,
+          "type": "multiple_choice",
+          "instructionVi": "Chọn đáp án đúng",
+          "promptVi": "Bạn đến Hà Nội khi nào?",
+          "hintEn": "“When…?” asks about a finished time → did.",
+          "explanationEn": "“When…?” asks about a finished time → did.",
+          "explanationVi": "Hỏi “khi nào” → dùng quá khứ đơn.",
+          "reviewBefore": "When ",
+          "reviewAfter": " you arrive in Hà Nội?",
+          "payload": {
+            "stemBefore": "When",
+            "stemAfter": "you arrive in Hà Nội?",
+            "options": [
+              "have",
+              "did",
+              "do",
+              "are"
+            ],
+            "correctIndex": 1
+          }
+        },
+        {
+          "id": "present-perfect-vs-past-simple:q8",
+          "sortOrder": 7,
+          "type": "fill_blank",
+          "instructionVi": "Điền dạng đúng của động từ",
+          "promptVi": "Tôi chưa làm xong bài tập.",
+          "hintEn": "“yet” often goes with present perfect negative.",
+          "explanationEn": "“yet” + unfinished → present perfect negative.",
+          "explanationVi": "“yet” + chưa xong → hiện tại hoàn thành phủ định.",
+          "reviewBefore": "I ",
+          "reviewAfter": " my homework yet.",
+          "payload": {
+            "stemBefore": "I",
+            "stemAfter": "my homework yet.",
+            "verbHint": "finish",
+            "wordBank": [
+              "didn't finish",
+              "haven't finished",
+              "not finished",
+              "wasn't finish"
+            ],
+            "correctAnswers": [
+              "haven't finished",
+              "have not finished"
+            ],
+            "displayAnswer": "haven't finished"
+          }
+        },
+        {
+          "id": "present-perfect-vs-past-simple:q9",
+          "sortOrder": 8,
+          "type": "multiple_choice",
+          "instructionVi": "Chọn đáp án đúng",
+          "promptVi": "Cô ấy vừa mới rời văn phòng.",
+          "hintEn": "“just” sits between have/has and the past participle.",
+          "explanationEn": "have/has + just + past participle.",
+          "explanationVi": "have/has + just + quá khứ phân từ.",
+          "reviewBefore": "She has ",
+          "reviewAfter": " left the office.",
+          "payload": {
+            "stemBefore": "She has",
+            "stemAfter": "left the office.",
+            "options": [
+              "yet",
+              "just",
+              "already ago",
+              "since"
+            ],
+            "correctIndex": 1
+          }
+        },
+        {
+          "id": "present-perfect-vs-past-simple:q10",
+          "sortOrder": 9,
+          "type": "correct_sentence",
+          "instructionVi": "Chọn câu đúng ngữ pháp",
+          "promptVi": "Câu nào đúng?",
+          "hintEn": "“since May” → action started then and continues.",
+          "explanationEn": "“since” + starting point → present perfect.",
+          "explanationVi": "“since” + mốc bắt đầu → hiện tại hoàn thành.",
+          "reviewBefore": "",
+          "reviewAfter": "",
+          "payload": {
+            "promptEn": "Which sentence is correct?",
+            "options": [
+              "She works here since May.",
+              "She has worked here since May.",
+              "She worked here since May.",
+              "She is working here since May."
+            ],
+            "correctIndex": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "use-subject-verb-clauses",
+      "slug": "use-subject-verb-clauses",
+      "title": "Use subject + verb clauses",
+      "kickEn": "Grammar quiz",
+      "kickVi": "Kiểm tra ngữ pháp",
+      "breadcrumb": "Grammar › Sentence foundations › Basic clauses",
+      "level": "A1",
+      "descriptionEn": "Check that every sentence has a clear subject and a matching verb.",
+      "descriptionVi": "Mỗi câu cần đủ chủ ngữ và động từ phù hợp.",
+      "timeLimitSeconds": 300,
+      "passScore": 7,
+      "questionTypes": [
+        {
+          "id": "multiple_choice",
+          "label": "Multiple choice"
+        },
+        {
+          "id": "fill_blank",
+          "label": "Fill in the blank"
+        },
+        {
+          "id": "correct_sentence",
+          "label": "Choose the correct sentence"
+        }
+      ],
+      "lessonHref": "/grammar/use-subject-verb-clauses",
+      "nextHref": "/grammar/use-subject-verb-object-clauses",
+      "nextLabel": "Next: SVO clauses",
+      "encouragementEn": "You've got this, Linh!",
+      "encouragementVi": "Đọc kỹ đề nhé.",
+      "questions": [
+        {
+          "id": "use-subject-verb-clauses:sv1",
+          "sortOrder": 0,
+          "type": "multiple_choice",
+          "instructionVi": "Chọn đáp án đúng",
+          "promptVi": "Cô ấy đi làm bằng xe buýt.",
+          "hintEn": "He / she / it needs -s in the present simple.",
+          "explanationEn": "He / she / it → verb + -s.",
+          "explanationVi": "Ngôi thứ 3 số ít thêm -s.",
+          "reviewBefore": "She ",
+          "reviewAfter": " to work by bus.",
+          "payload": {
+            "stemBefore": "She",
+            "stemAfter": "to work by bus.",
+            "options": [
+              "go",
+              "goes",
+              "going",
+              "gone"
+            ],
+            "correctIndex": 1
+          }
+        },
+        {
+          "id": "use-subject-verb-clauses:sv2",
+          "sortOrder": 1,
+          "type": "fill_blank",
+          "instructionVi": "Điền dạng đúng của động từ",
+          "promptVi": "Trời mưa nhiều ở Huế vào tháng 10.",
+          "hintEn": "Weather sentences need a subject — usually “It”.",
+          "explanationEn": "English always needs a subject — even for weather.",
+          "explanationVi": "Không bỏ chủ ngữ: dùng “It”.",
+          "reviewBefore": "",
+          "reviewAfter": " a lot in Huế in October.",
+          "payload": {
+            "stemBefore": "",
+            "stemAfter": "a lot in Huế in October.",
+            "verbHint": "rain",
+            "wordBank": [
+              "Rains",
+              "It rains",
+              "Is raining",
+              "Rain"
+            ],
+            "correctAnswers": [
+              "it rains",
+              "It rains"
+            ],
+            "displayAnswer": "It rains"
+          }
+        },
+        {
+          "id": "use-subject-verb-clauses:sv3",
+          "sortOrder": 2,
+          "type": "correct_sentence",
+          "instructionVi": "Chọn câu đúng ngữ pháp",
+          "promptVi": "Câu nào đúng?",
+          "hintEn": "Adjectives need a form of be.",
+          "explanationEn": "Adjectives aren't verbs — add be.",
+          "explanationVi": "Tính từ cần “to be” đi kèm.",
+          "reviewBefore": "",
+          "reviewAfter": "",
+          "payload": {
+            "promptEn": "Which sentence is correct?",
+            "options": [
+              "The children very happy today.",
+              "The children are very happy today.",
+              "The children is very happy today.",
+              "The children be very happy today."
+            ],
+            "correctIndex": 1
+          }
+        },
+        {
+          "id": "use-subject-verb-clauses:sv4",
+          "sortOrder": 3,
+          "type": "multiple_choice",
+          "instructionVi": "Chọn đáp án đúng",
+          "promptVi": "Tôi chạy bộ mỗi sáng.",
+          "hintEn": "I / you / we / they → base verb.",
+          "explanationEn": "I + base verb for habits.",
+          "explanationVi": "I + động từ nguyên mẫu cho thói quen.",
+          "reviewBefore": "I ",
+          "reviewAfter": " every morning.",
+          "payload": {
+            "stemBefore": "I",
+            "stemAfter": "every morning.",
+            "options": [
+              "runs",
+              "run",
+              "running",
+              "ran"
+            ],
+            "correctIndex": 1
+          }
+        },
+        {
+          "id": "use-subject-verb-clauses:sv5",
+          "sortOrder": 4,
+          "type": "fill_blank",
+          "instructionVi": "Điền dạng đúng của động từ",
+          "promptVi": "Em bé đã khóc.",
+          "hintEn": "A finished past action — past simple.",
+          "explanationEn": "Finished past action → past simple.",
+          "explanationVi": "Hành động đã kết thúc → quá khứ đơn.",
+          "reviewBefore": "The baby ",
+          "reviewAfter": ".",
+          "payload": {
+            "stemBefore": "The baby",
+            "stemAfter": ".",
+            "verbHint": "cry",
+            "wordBank": [
+              "cry",
+              "cries",
+              "cried",
+              "crying"
+            ],
+            "correctAnswers": [
+              "cried"
+            ],
+            "displayAnswer": "cried"
+          }
+        },
+        {
+          "id": "use-subject-verb-clauses:sv6",
+          "sortOrder": 5,
+          "type": "correct_sentence",
+          "instructionVi": "Chọn câu đúng ngữ pháp",
+          "promptVi": "Câu nào đúng?",
+          "hintEn": "She needs -s on the verb.",
+          "explanationEn": "He / she / it → works.",
+          "explanationVi": "Ngôi thứ 3 số ít → works.",
+          "reviewBefore": "",
+          "reviewAfter": "",
+          "payload": {
+            "promptEn": "Which sentence is correct?",
+            "options": [
+              "She work at a bakery.",
+              "She works at a bakery.",
+              "She working at a bakery.",
+              "She is works at a bakery."
+            ],
+            "correctIndex": 1
+          }
+        },
+        {
+          "id": "use-subject-verb-clauses:sv7",
+          "sortOrder": 6,
+          "type": "multiple_choice",
+          "instructionVi": "Chọn đáp án đúng",
+          "promptVi": "Giá cả đã tăng vào năm ngoái.",
+          "hintEn": "Plural subject + past verb.",
+          "explanationEn": "Plural subject “Prices” + past verb.",
+          "explanationVi": "Chủ ngữ số nhiều + động từ quá khứ.",
+          "reviewBefore": "Prices ",
+          "reviewAfter": " up last year.",
+          "payload": {
+            "stemBefore": "Prices",
+            "stemAfter": "up last year.",
+            "options": [
+              "goes",
+              "went",
+              "going",
+              "go"
+            ],
+            "correctIndex": 1
+          }
+        },
+        {
+          "id": "use-subject-verb-clauses:sv8",
+          "sortOrder": 7,
+          "type": "fill_blank",
+          "instructionVi": "Điền dạng đúng của động từ",
+          "promptVi": "Chúng tôi sống gần sông.",
+          "hintEn": "We + base verb.",
+          "explanationEn": "We + base verb in the present.",
+          "explanationVi": "We + động từ nguyên mẫu.",
+          "reviewBefore": "We ",
+          "reviewAfter": " near the river.",
+          "payload": {
+            "stemBefore": "We",
+            "stemAfter": "near the river.",
+            "verbHint": "live",
+            "wordBank": [
+              "lives",
+              "live",
+              "living",
+              "lived"
+            ],
+            "correctAnswers": [
+              "live"
+            ],
+            "displayAnswer": "live"
+          }
+        },
+        {
+          "id": "use-subject-verb-clauses:sv9",
+          "sortOrder": 8,
+          "type": "multiple_choice",
+          "instructionVi": "Chọn đáp án đúng",
+          "promptVi": "Họ đã đến sớm.",
+          "hintEn": "Finished past event.",
+          "explanationEn": "Finished past event → past simple.",
+          "explanationVi": "Sự việc đã qua → quá khứ đơn.",
+          "reviewBefore": "They ",
+          "reviewAfter": " early.",
+          "payload": {
+            "stemBefore": "They",
+            "stemAfter": "early.",
+            "options": [
+              "arrive",
+              "arrives",
+              "arrived",
+              "arriving"
+            ],
+            "correctIndex": 2
+          }
+        },
+        {
+          "id": "use-subject-verb-clauses:sv10",
+          "sortOrder": 9,
+          "type": "correct_sentence",
+          "instructionVi": "Chọn câu đúng ngữ pháp",
+          "promptVi": "Câu nào đúng?",
+          "hintEn": "Subject + verb is enough for a complete sentence.",
+          "explanationEn": "A complete sentence needs subject + verb.",
+          "explanationVi": "Câu hoàn chỉnh cần chủ ngữ + động từ.",
+          "reviewBefore": "",
+          "reviewAfter": "",
+          "payload": {
+            "promptEn": "Which sentence is correct?",
+            "options": [
+              "Practise every day.",
+              "I practise every day.",
+              "Practising every day.",
+              "Every day practise."
+            ],
+            "correctIndex": 1
+          }
+        }
+      ]
+    }
+  ]
+}

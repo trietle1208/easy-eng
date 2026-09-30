@@ -95,3 +95,10 @@ export type UserSettings = {
 };
 
 export type UpdateSettingsInput = Partial<UserSettings>;
+
+export type UpdateProfileInput = {
+  displayName?: string;
+  level?: CefrLevel;
+  timezone?: string;
+  goalText?: string | null;
+};

@@ -13,12 +13,12 @@ import { NotebookPage } from "@/components/notebook/notebook-page";
 import { StickyNote } from "@/components/notebook/sticky-note";
 import { Button } from "@/components/ui/button";
 import { LevelBadge } from "@/components/ui/level-badge";
-import { formatQuizDuration } from "@/lib/data/quiz";
-import type { Quiz, QuizAttempt } from "@/types/quiz";
+import { formatQuizDuration } from "@/lib/format";
+import type { QuizAttempt, QuizPublic } from "@/types/quiz";
 import { cn } from "@/lib/utils";
 
 type QuizStartProps = {
-  quiz: Quiz;
+  quiz: QuizPublic;
   lastAttempt: QuizAttempt | null;
   showVietnameseHints: boolean;
   onToggleHints: (on: boolean) => void;

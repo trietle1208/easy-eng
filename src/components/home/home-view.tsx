@@ -9,11 +9,11 @@ import { DailyGoalCard } from "@/components/home/daily-goal-card";
 import { HomeHero } from "@/components/home/home-hero";
 import { WordOfTheDayCard } from "@/components/home/word-of-the-day-card";
 import { LevelChips } from "@/components/ui/level-chips";
-import type { Greeting } from "@/lib/data/home";
 import type { CefrLevel } from "@/types/cefr";
 import type {
   ContinueItem,
   DailyGoal,
+  Greeting,
   SectionEntry,
   WordOfTheDay,
 } from "@/types/home";

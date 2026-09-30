@@ -1,0 +1,1452 @@
+{
+  "families": [
+    {
+      "id": "sentence-foundations",
+      "title": "1. Sentence foundations",
+      "sortOrder": 0
+    },
+    {
+      "id": "tenses-time",
+      "title": "2. Tenses & time",
+      "sortOrder": 1
+    },
+    {
+      "id": "questions-negatives",
+      "title": "3. Questions & negatives",
+      "sortOrder": 2
+    },
+    {
+      "id": "modal-verbs",
+      "title": "4. Modal verbs",
+      "sortOrder": 3
+    },
+    {
+      "id": "nouns-determiners",
+      "title": "5. Nouns & determiners",
+      "sortOrder": 4
+    },
+    {
+      "id": "adjectives-adverbs",
+      "title": "6. Adjectives & adverbs",
+      "sortOrder": 5
+    },
+    {
+      "id": "clauses-linking",
+      "title": "7. Clauses & linking",
+      "sortOrder": 6
+    }
+  ],
+  "groups": [
+    {
+      "id": "basic-clause-patterns",
+      "familyId": "sentence-foundations",
+      "title": "1.1 Basic clause patterns",
+      "sortOrder": 0
+    },
+    {
+      "id": "basic-word-order",
+      "familyId": "sentence-foundations",
+      "title": "1.2 Basic word order",
+      "sortOrder": 1
+    },
+    {
+      "id": "be-have-do",
+      "familyId": "sentence-foundations",
+      "title": "1.3 The verbs be, have and do",
+      "sortOrder": 2
+    },
+    {
+      "id": "imperatives",
+      "familyId": "sentence-foundations",
+      "title": "1.4 Imperatives",
+      "sortOrder": 3
+    },
+    {
+      "id": "present-tenses",
+      "familyId": "tenses-time",
+      "title": "2.1 Present tenses",
+      "sortOrder": 0
+    },
+    {
+      "id": "past-tenses",
+      "familyId": "tenses-time",
+      "title": "2.2 Past tenses",
+      "sortOrder": 1
+    },
+    {
+      "id": "perfect-tenses",
+      "familyId": "tenses-time",
+      "title": "2.3 Perfect tenses",
+      "sortOrder": 2
+    },
+    {
+      "id": "future-forms",
+      "familyId": "tenses-time",
+      "title": "2.4 Future forms",
+      "sortOrder": 3
+    },
+    {
+      "id": "yes-no-questions",
+      "familyId": "questions-negatives",
+      "title": "3.1 Yes/no questions",
+      "sortOrder": 0
+    },
+    {
+      "id": "ability-permission",
+      "familyId": "modal-verbs",
+      "title": "4.1 Ability & permission",
+      "sortOrder": 0
+    },
+    {
+      "id": "articles",
+      "familyId": "nouns-determiners",
+      "title": "5.1 Articles",
+      "sortOrder": 0
+    },
+    {
+      "id": "adjective-order",
+      "familyId": "adjectives-adverbs",
+      "title": "6.1 Adjective order",
+      "sortOrder": 0
+    },
+    {
+      "id": "coordinating",
+      "familyId": "clauses-linking",
+      "title": "7.1 Coordinating conjunctions",
+      "sortOrder": 0
+    }
+  ],
+  "lessons": [
+    {
+      "id": "use-subject-verb-clauses",
+      "slug": "use-subject-verb-clauses",
+      "title": "Use subject + verb clauses",
+      "level": "A1",
+      "familyId": "sentence-foundations",
+      "groupId": "basic-clause-patterns",
+      "sortOrder": 0,
+      "readMinutes": 4,
+      "introEn": "A subject + verb clause is the simplest complete sentence in English. It tells us who or what (the subject) and what they do (the verb). Some verbs need nothing after them: She smiled. The bus arrived.",
+      "introVi": "Câu đơn giản nhất = Ai / Cái gì + làm gì. Tiếng Anh luôn cần đủ cả hai phần.",
+      "useWhenEn": "you make simple statements about actions and events.",
+      "useWhenVi": "Dùng khi kể về hành động, sự việc đơn giản.",
+      "structure": [
+        {
+          "formula": "Subject + Verb",
+          "explanation": "The subject is usually a noun or pronoun. The verb tells us the action or state."
+        },
+        {
+          "formula": "He / She / It + Verb-s / -es",
+          "explanation": "In the present simple, add -s or -es after he, she, it and singular nouns. — Ngôi thứ ba số ít thêm -s/-es."
+        },
+        {
+          "formula": "Subject + Verb + (place / time)",
+          "explanation": "You can add where or when — but the sentence is already complete without it."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I run every morning.",
+          "explanation": "Subject “I” + verb “run” — a daily habit. · Tôi chạy bộ mỗi sáng."
+        },
+        {
+          "sentence": "The baby cried.",
+          "explanation": "Subject “The baby” + verb “cried” — a finished action; nothing else is needed. · Em bé đã khóc."
+        },
+        {
+          "sentence": "She works at a bakery.",
+          "explanation": "He / she / it → “works” with -s. · Cô ấy làm việc ở tiệm bánh."
+        },
+        {
+          "sentence": "Prices went up last year.",
+          "explanation": "Subject “Prices” + verb “went up”; “last year” only adds time. · Giá cả đã tăng vào năm ngoái."
+        },
+        {
+          "sentence": "We live near the river.",
+          "explanation": "Subject “We” + verb “live”; “near the river” adds place. · Chúng tôi sống gần sông."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " to school by bus.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        },
+        {
+          "before": "",
+          "wrong": "Rains",
+          "after": " a lot in Huế in October.",
+          "correct": "It rains",
+          "noteEn": "English always needs a subject — even for weather!",
+          "noteVi": "Không bỏ chủ ngữ: dùng “It”."
+        },
+        {
+          "before": "The children ",
+          "wrong": "",
+          "after": " very happy today.",
+          "correct": "are",
+          "noteEn": "Adjectives aren't verbs — add be.",
+          "noteVi": "Tính từ cần “to be” đi kèm.",
+          "missing": true
+        }
+      ],
+      "practiceQuizSlug": "use-subject-verb-clauses",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "use-subject-verb-object-clauses",
+      "slug": "use-subject-verb-object-clauses",
+      "title": "Use subject + verb + object clauses",
+      "level": "A1",
+      "familyId": "sentence-foundations",
+      "groupId": "basic-clause-patterns",
+      "sortOrder": 1,
+      "readMinutes": 4,
+      "introEn": "Many verbs need an object — someone or something that receives the action. Pattern: Subject + Verb + Object.",
+      "introVi": "Nhiều động từ cần tân ngữ — ai/cái gì nhận hành động.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb + Object",
+          "explanation": "The object answers “who?” or “what?” after the verb."
+        },
+        {
+          "formula": "Subject + Verb + someone / something",
+          "explanation": "Objects are usually nouns, pronouns, or noun phrases."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I read a book.",
+          "explanation": "“a book” is the object. · Tôi đọc một cuốn sách."
+        },
+        {
+          "sentence": "She called her friend.",
+          "explanation": "“her friend” receives the action. · Cô ấy gọi bạn."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "use-subject-verb-object-clauses",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "use-linking-verbs-with-complements",
+      "slug": "use-linking-verbs-with-complements",
+      "title": "Use linking verbs with complements",
+      "level": "A2",
+      "familyId": "sentence-foundations",
+      "groupId": "basic-clause-patterns",
+      "sortOrder": 2,
+      "readMinutes": 4,
+      "introEn": "Linking verbs connect the subject to a description: be, seem, feel, look, become.",
+      "introVi": "Động từ nối liên kết chủ ngữ với phần mô tả.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Linking verb + Complement",
+          "explanation": "The complement describes or renames the subject."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "The soup tastes great.",
+          "explanation": "“tastes” links subject to the adjective. · Súp rất ngon."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "use-linking-verbs-with-complements",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "use-verbs-with-two-objects",
+      "slug": "use-verbs-with-two-objects",
+      "title": "Use verbs with two objects",
+      "level": "B1",
+      "familyId": "sentence-foundations",
+      "groupId": "basic-clause-patterns",
+      "sortOrder": 3,
+      "readMinutes": 4,
+      "introEn": "Use verbs with two objects helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "use-verbs-with-two-objects",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "use-object-complements",
+      "slug": "use-object-complements",
+      "title": "Use object complements",
+      "level": "B2",
+      "familyId": "sentence-foundations",
+      "groupId": "basic-clause-patterns",
+      "sortOrder": 4,
+      "readMinutes": 4,
+      "introEn": "Use object complements helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "use-object-complements",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "put-subjects-before-verbs",
+      "slug": "put-subjects-before-verbs",
+      "title": "Put subjects before verbs in statements",
+      "level": "A1",
+      "familyId": "sentence-foundations",
+      "groupId": "basic-word-order",
+      "sortOrder": 0,
+      "readMinutes": 4,
+      "introEn": "Put subjects before verbs in statements helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "put-subjects-before-verbs",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "put-objects-after-transitive-verbs",
+      "slug": "put-objects-after-transitive-verbs",
+      "title": "Put objects after transitive verbs",
+      "level": "A2",
+      "familyId": "sentence-foundations",
+      "groupId": "basic-word-order",
+      "sortOrder": 1,
+      "readMinutes": 4,
+      "introEn": "Put objects after transitive verbs helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "put-objects-after-transitive-verbs",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "place-expressions-of-place-and-time",
+      "slug": "place-expressions-of-place-and-time",
+      "title": "Place expressions of place and time",
+      "level": "B1",
+      "familyId": "sentence-foundations",
+      "groupId": "basic-word-order",
+      "sortOrder": 2,
+      "readMinutes": 4,
+      "introEn": "Place expressions of place and time helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "place-expressions-of-place-and-time",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "order-manner-place-and-time",
+      "slug": "order-manner-place-and-time",
+      "title": "Order manner, place and time adverbials",
+      "level": "B2",
+      "familyId": "sentence-foundations",
+      "groupId": "basic-word-order",
+      "sortOrder": 3,
+      "readMinutes": 4,
+      "introEn": "Order manner, place and time adverbials helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "order-manner-place-and-time",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "use-be-in-simple-sentences",
+      "slug": "use-be-in-simple-sentences",
+      "title": "Use be in simple sentences",
+      "level": "A1",
+      "familyId": "sentence-foundations",
+      "groupId": "be-have-do",
+      "sortOrder": 0,
+      "readMinutes": 4,
+      "introEn": "Use be in simple sentences helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "use-be-in-simple-sentences",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "use-have-for-possession",
+      "slug": "use-have-for-possession",
+      "title": "Use have for possession",
+      "level": "A1",
+      "familyId": "sentence-foundations",
+      "groupId": "be-have-do",
+      "sortOrder": 1,
+      "readMinutes": 4,
+      "introEn": "Use have for possession helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "use-have-for-possession",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "use-do-for-emphasis",
+      "slug": "use-do-for-emphasis",
+      "title": "Use do for emphasis",
+      "level": "A2",
+      "familyId": "sentence-foundations",
+      "groupId": "be-have-do",
+      "sortOrder": 2,
+      "readMinutes": 4,
+      "introEn": "Use do for emphasis helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "use-do-for-emphasis",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "choose-be-have-or-do",
+      "slug": "choose-be-have-or-do",
+      "title": "Choose be, have or do",
+      "level": "A2",
+      "familyId": "sentence-foundations",
+      "groupId": "be-have-do",
+      "sortOrder": 3,
+      "readMinutes": 4,
+      "introEn": "Choose be, have or do helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "choose-be-have-or-do",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "give-simple-instructions",
+      "slug": "give-simple-instructions",
+      "title": "Give simple instructions",
+      "level": "A1",
+      "familyId": "sentence-foundations",
+      "groupId": "imperatives",
+      "sortOrder": 0,
+      "readMinutes": 4,
+      "introEn": "Give simple instructions helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "give-simple-instructions",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "make-polite-requests",
+      "slug": "make-polite-requests",
+      "title": "Make polite requests",
+      "level": "A2",
+      "familyId": "sentence-foundations",
+      "groupId": "imperatives",
+      "sortOrder": 1,
+      "readMinutes": 4,
+      "introEn": "Make polite requests helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "make-polite-requests",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "use-negative-imperatives",
+      "slug": "use-negative-imperatives",
+      "title": "Use negative imperatives",
+      "level": "A2",
+      "familyId": "sentence-foundations",
+      "groupId": "imperatives",
+      "sortOrder": 2,
+      "readMinutes": 4,
+      "introEn": "Use negative imperatives helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "use-negative-imperatives",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "soften-commands-with-please",
+      "slug": "soften-commands-with-please",
+      "title": "Soften commands with please",
+      "level": "B1",
+      "familyId": "sentence-foundations",
+      "groupId": "imperatives",
+      "sortOrder": 3,
+      "readMinutes": 4,
+      "introEn": "Soften commands with please helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "soften-commands-with-please",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "imperatives-for-directions",
+      "slug": "imperatives-for-directions",
+      "title": "Use imperatives for directions",
+      "level": "B1",
+      "familyId": "sentence-foundations",
+      "groupId": "imperatives",
+      "sortOrder": 4,
+      "readMinutes": 4,
+      "introEn": "Use imperatives for directions helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "imperatives-for-directions",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "present-simple-habits",
+      "slug": "present-simple-habits",
+      "title": "Talk about habits with present simple",
+      "level": "A1",
+      "familyId": "tenses-time",
+      "groupId": "present-tenses",
+      "sortOrder": 0,
+      "readMinutes": 4,
+      "introEn": "Talk about habits with present simple helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "present-simple-habits",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "present-continuous-now",
+      "slug": "present-continuous-now",
+      "title": "Describe actions happening now",
+      "level": "A1",
+      "familyId": "tenses-time",
+      "groupId": "present-tenses",
+      "sortOrder": 1,
+      "readMinutes": 4,
+      "introEn": "Describe actions happening now helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "present-continuous-now",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "past-simple-finished",
+      "slug": "past-simple-finished",
+      "title": "Talk about finished past events",
+      "level": "A2",
+      "familyId": "tenses-time",
+      "groupId": "past-tenses",
+      "sortOrder": 0,
+      "readMinutes": 4,
+      "introEn": "Talk about finished past events helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "past-simple-finished",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "present-perfect-vs-past-simple",
+      "slug": "present-perfect-vs-past-simple",
+      "title": "Present perfect vs. past simple",
+      "level": "B1",
+      "familyId": "tenses-time",
+      "groupId": "perfect-tenses",
+      "sortOrder": 0,
+      "readMinutes": 4,
+      "introEn": "Use present perfect for experience or results that connect to now; past simple for finished time.",
+      "introVi": "Present perfect nối với hiện tại; past simple cho thời điểm đã kết thúc.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "have / has + past participle",
+          "explanation": "Present perfect focuses on the result or experience."
+        },
+        {
+          "formula": "Verb-ed / irregular past",
+          "explanation": "Past simple needs a finished time (yesterday, in 2019…)."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I have visited Đà Nẵng.",
+          "explanation": "Experience — time not specified. · Tôi đã từng đến Đà Nẵng."
+        },
+        {
+          "sentence": "I visited Đà Nẵng last year.",
+          "explanation": "Finished time with “last year”. · Tôi đến Đà Nẵng năm ngoái."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "I ",
+          "wrong": "have seen",
+          "after": " her yesterday.",
+          "correct": "saw",
+          "noteEn": "Yesterday → past simple!",
+          "noteVi": "Có mốc thời gian cụ thể → dùng past simple."
+        }
+      ],
+      "practiceQuizSlug": "present-perfect-vs-past-simple",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "future-plans-going-to",
+      "slug": "future-plans-going-to",
+      "title": "Talk about plans with going to",
+      "level": "A2",
+      "familyId": "tenses-time",
+      "groupId": "future-forms",
+      "sortOrder": 0,
+      "readMinutes": 4,
+      "introEn": "Talk about plans with going to helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "future-plans-going-to",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "form-yes-no-questions",
+      "slug": "form-yes-no-questions",
+      "title": "Form yes/no questions",
+      "level": "A1",
+      "familyId": "questions-negatives",
+      "groupId": "yes-no-questions",
+      "sortOrder": 0,
+      "readMinutes": 4,
+      "introEn": "Form yes/no questions helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "form-yes-no-questions",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "answer-yes-no-short",
+      "slug": "answer-yes-no-short",
+      "title": "Give short yes/no answers",
+      "level": "A1",
+      "familyId": "questions-negatives",
+      "groupId": "yes-no-questions",
+      "sortOrder": 1,
+      "readMinutes": 4,
+      "introEn": "Give short yes/no answers helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "answer-yes-no-short",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "can-for-ability",
+      "slug": "can-for-ability",
+      "title": "Use can for ability",
+      "level": "A1",
+      "familyId": "modal-verbs",
+      "groupId": "ability-permission",
+      "sortOrder": 0,
+      "readMinutes": 4,
+      "introEn": "Use can for ability helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "can-for-ability",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "could-for-past-ability",
+      "slug": "could-for-past-ability",
+      "title": "Use could for past ability",
+      "level": "A2",
+      "familyId": "modal-verbs",
+      "groupId": "ability-permission",
+      "sortOrder": 1,
+      "readMinutes": 4,
+      "introEn": "Use could for past ability helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "could-for-past-ability",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "a-an-with-singular",
+      "slug": "a-an-with-singular",
+      "title": "Use a/an with singular nouns",
+      "level": "A1",
+      "familyId": "nouns-determiners",
+      "groupId": "articles",
+      "sortOrder": 0,
+      "readMinutes": 4,
+      "introEn": "Use a/an with singular nouns helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "a-an-with-singular",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "order-opinion-fact-adjectives",
+      "slug": "order-opinion-fact-adjectives",
+      "title": "Order opinion and fact adjectives",
+      "level": "B1",
+      "familyId": "adjectives-adverbs",
+      "groupId": "adjective-order",
+      "sortOrder": 0,
+      "readMinutes": 4,
+      "introEn": "Order opinion and fact adjectives helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "order-opinion-fact-adjectives",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    },
+    {
+      "id": "link-ideas-with-and-but",
+      "slug": "link-ideas-with-and-but",
+      "title": "Link ideas with and / but",
+      "level": "A2",
+      "familyId": "clauses-linking",
+      "groupId": "coordinating",
+      "sortOrder": 0,
+      "readMinutes": 4,
+      "introEn": "Link ideas with and / but helps you build clearer English sentences step by step.",
+      "introVi": "Bài này giúp bạn viết câu tiếng Anh rõ ràng hơn từng bước.",
+      "useWhenEn": "you practise this pattern in everyday speaking and writing.",
+      "useWhenVi": "Dùng khi luyện mẫu câu trong giao tiếp hàng ngày.",
+      "structure": [
+        {
+          "formula": "Subject + Verb (+ …)",
+          "explanation": "Start with who or what, then the action. Add detail only when needed."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I practise every day.",
+          "explanation": "A simple complete sentence. · Tôi luyện tập mỗi ngày."
+        },
+        {
+          "sentence": "They arrived early.",
+          "explanation": "Subject + verb is enough. · Họ đã đến sớm."
+        }
+      ],
+      "mistakes": [
+        {
+          "before": "She ",
+          "wrong": "go",
+          "after": " home late.",
+          "correct": "goes",
+          "noteEn": "He / she / it needs -s!",
+          "noteVi": "Ngôi thứ 3 số ít: thêm -s / -es."
+        }
+      ],
+      "practiceQuizSlug": "link-ideas-with-and-but",
+      "practiceQuestionCount": 10,
+      "practiceMinutes": 5
+    }
+  ]
+}

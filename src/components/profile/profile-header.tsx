@@ -1,15 +1,27 @@
+"use client";
+
 import { Pencil } from "lucide-react";
+import { useState } from "react";
 
 import { Mascot } from "@/components/mascot/mascot";
+import { EditProfileDialog } from "@/components/profile/edit-profile-dialog";
 import { Button } from "@/components/ui/button";
 import { LevelBadge } from "@/components/ui/level-badge";
 import type { UserProfile } from "@/types/profile";
 
 type ProfileHeaderProps = {
   profile: UserProfile;
+  timezone: string;
+  goalText: string | null;
 };
 
-export function ProfileHeader({ profile }: ProfileHeaderProps) {
+export function ProfileHeader({
+  profile,
+  timezone,
+  goalText,
+}: ProfileHeaderProps) {
+  const [open, setOpen] = useState(false);
+
   return (
     <section className="flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-[30px]">
       <div className="relative size-[120px] shrink-0">
@@ -47,12 +59,19 @@ export function ProfileHeader({ profile }: ProfileHeaderProps) {
         type="button"
         variant="ghost"
         className="shrink-0 self-start sm:self-center"
-        disabled
-        title="Edit profile arrives with the backend"
+        onClick={() => setOpen(true)}
       >
         <Pencil className="size-[18px]" aria-hidden />
         Edit profile
       </Button>
+
+      <EditProfileDialog
+        open={open}
+        onOpenChange={setOpen}
+        profile={profile}
+        timezone={timezone}
+        goalText={goalText}
+      />
     </section>
   );
 }

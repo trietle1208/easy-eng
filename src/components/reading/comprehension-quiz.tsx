@@ -5,12 +5,16 @@ import { Check, X } from "lucide-react";
 import { HandCircle } from "@/components/marks/hand-circle";
 import { HandUnderline } from "@/components/marks/hand-underline";
 import { Button } from "@/components/ui/button";
-import { checkReadingAnswers } from "@/lib/data/reading";
+import Link from "next/link";
+
+import { checkReadingAnswersAction } from "@/lib/actions/check-reading-answers";
+import { signInUrl } from "@/lib/auth/paths";
 import { cn } from "@/lib/utils";
 import type {
   AnswerCheckResult,
   ComprehensionQuestion,
 } from "@/types/reading";
+import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 
 type ComprehensionQuizProps = {
@@ -22,8 +26,10 @@ export function ComprehensionQuiz({
   slug,
   questions,
 }: ComprehensionQuizProps) {
+  const router = useRouter();
   const [answers, setAnswers] = useState<Record<string, number | null>>({});
   const [results, setResults] = useState<AnswerCheckResult[] | null>(null);
+  const [progressSaved, setProgressSaved] = useState(true);
   const [pending, startTransition] = useTransition();
 
   const answered = Object.values(answers).filter((v) => v !== null && v !== undefined).length;
@@ -35,8 +41,12 @@ export function ComprehensionQuiz({
 
   function onCheck() {
     startTransition(async () => {
-      const res = await checkReadingAnswers(slug, answers);
-      if (res) setResults(res.results);
+      const res = await checkReadingAnswersAction(slug, answers);
+      if (res) {
+        setResults(res.results);
+        setProgressSaved(res.progressSaved);
+        if (res.progressSaved) router.refresh();
+      }
     });
   }
 
@@ -146,12 +156,24 @@ export function ComprehensionQuiz({
             onClick={() => {
               setResults(null);
               setAnswers({});
+              setProgressSaved(true);
             }}
           >
             Try again
           </button>
         ) : null}
       </div>
+      {results && !progressSaved ? (
+        <p className="m-0 text-sm font-semibold text-muted">
+          <Link
+            href={signInUrl(`/reading/${slug}`)}
+            className="font-bold text-link underline-offset-2 hover:underline"
+          >
+            Sign in
+          </Link>{" "}
+          to save your progress.
+        </p>
+      ) : null}
     </section>
   );
 }

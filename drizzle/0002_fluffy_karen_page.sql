@@ -1,0 +1,2 @@
+ALTER TABLE "quiz_attempts" ADD COLUMN "client_attempt_id" text;--> statement-breakpoint
+ALTER TABLE "quiz_attempts" ADD CONSTRAINT "quiz_attempts_user_client_attempt_uidx" UNIQUE("user_id","client_attempt_id");

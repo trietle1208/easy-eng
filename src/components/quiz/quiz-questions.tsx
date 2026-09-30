@@ -8,17 +8,17 @@ import { QuizPencilProgress } from "@/components/quiz/quiz-pencil-progress";
 import { QuizQuestionView } from "@/components/quiz/quiz-question-view";
 import { Button } from "@/components/ui/button";
 import { LevelBadge } from "@/components/ui/level-badge";
-import { formatTimer } from "@/lib/data/quiz";
+import { formatTimer } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import type {
-  Question,
-  Quiz,
+  QuestionPublic,
   QuizAnswerValue,
   QuizAnswersMap,
+  QuizPublic,
 } from "@/types/quiz";
 
 type QuizQuestionsProps = {
-  quiz: Quiz;
+  quiz: QuizPublic;
   currentIndex: number;
   answers: QuizAnswersMap;
   secondsLeft: number;
@@ -33,7 +33,7 @@ type QuizQuestionsProps = {
   isLast: boolean;
 };
 
-function hasAnswer(q: Question, value: QuizAnswerValue): boolean {
+function hasAnswer(q: QuestionPublic, value: QuizAnswerValue): boolean {
   if (value === null || value === undefined) return false;
   if (q.type === "fill_blank") return String(value).trim().length > 0;
   return typeof value === "number" && !Number.isNaN(value) && value >= 0;

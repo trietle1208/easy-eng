@@ -2,7 +2,7 @@
 
 import { QuizOptionButton } from "@/components/quiz/quiz-option-button";
 import type { QuizQuestionProps } from "@/components/quiz/quiz-question-props";
-import type { MultipleChoiceQuestion } from "@/types/quiz";
+import type { MultipleChoiceQuestionPublic } from "@/types/quiz";
 
 const LETTERS = ["A", "B", "C", "D", "E", "F"];
 
@@ -13,7 +13,7 @@ export function QuizQuestionMultipleChoice({
   onChange,
   showVietnamese,
   showHint,
-}: QuizQuestionProps<MultipleChoiceQuestion>) {
+}: QuizQuestionProps<MultipleChoiceQuestionPublic>) {
   const selected =
     typeof value === "number" ? value : value === null ? null : Number(value);
 

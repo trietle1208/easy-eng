@@ -3,7 +3,6 @@
 import Link from "next/link";
 import {
   Bell,
-  ChevronDown,
   Menu,
   Trophy,
   X,
@@ -12,17 +11,32 @@ import { useState } from "react";
 
 import { MainNav } from "@/components/layout/main-nav";
 import { ThemeSwitcher } from "@/components/layout/theme-switcher";
+import {
+  UserMenu,
+  type HeaderUser,
+} from "@/components/layout/user-menu";
 import { Mascot } from "@/components/mascot/mascot";
 import { Button } from "@/components/ui/button";
+import { authClient } from "@/lib/auth/client";
 import { NAV_ITEMS } from "@/lib/nav";
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 type HeaderProps = {
   className?: string;
+  user: HeaderUser | null;
 };
 
-export function Header({ className }: HeaderProps) {
+export function Header({ className, user }: HeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const router = useRouter();
+
+  async function onSignOut() {
+    await authClient.signOut();
+    setMobileOpen(false);
+    router.push("/");
+    router.refresh();
+  }
 
   return (
     <header
@@ -47,37 +61,31 @@ export function Header({ className }: HeaderProps) {
       <div className="ml-auto flex items-center gap-2">
         <ThemeSwitcher />
 
-        <button
-          type="button"
-          className="relative hidden size-[46px] items-center justify-center rounded-full border border-soft-border bg-pill text-on-glass backdrop-blur-[10px] sm:inline-flex"
-          aria-label="Notifications, 2 new"
-        >
-          <Bell className="size-[21px]" aria-hidden />
-          <span
-            className="bg-notif absolute top-[9px] right-[10px] size-2.5 rounded-full border-2 border-[color:var(--hole)]"
-            aria-hidden
-          />
-        </button>
+        {user ? (
+          <>
+            <button
+              type="button"
+              className="relative hidden size-[46px] items-center justify-center rounded-full border border-soft-border bg-pill text-on-glass backdrop-blur-[10px] sm:inline-flex"
+              aria-label="Notifications, 2 new"
+            >
+              <Bell className="size-[21px]" aria-hidden />
+              <span
+                className="bg-notif absolute top-[9px] right-[10px] size-2.5 rounded-full border-2 border-[color:var(--hole)]"
+                aria-hidden
+              />
+            </button>
 
-        <button
-          type="button"
-          className="hidden size-[46px] items-center justify-center rounded-full border border-soft-border bg-pill text-on-glass backdrop-blur-[10px] md:inline-flex"
-          aria-label="Achievements"
-        >
-          <Trophy className="size-[21px]" aria-hidden />
-        </button>
+            <button
+              type="button"
+              className="hidden size-[46px] items-center justify-center rounded-full border border-soft-border bg-pill text-on-glass backdrop-blur-[10px] md:inline-flex"
+              aria-label="Achievements"
+            >
+              <Trophy className="size-[21px]" aria-hidden />
+            </button>
+          </>
+        ) : null}
 
-        <Link
-          href="/profile"
-          aria-label="Your profile"
-          className="hidden h-12 items-center gap-2.5 rounded-[var(--radius-pill)] border border-soft-border bg-pill pr-3.5 pl-1.5 text-[15px] font-bold text-on-glass backdrop-blur-[10px] sm:inline-flex"
-        >
-          <span className="font-hand flex size-[38px] items-center justify-center rounded-full bg-primary-soft text-[22px] text-kick">
-            L
-          </span>
-          Linh
-          <ChevronDown className="size-4 opacity-80" aria-hidden />
-        </Link>
+        <UserMenu user={user} />
 
         <Button
           type="button"
@@ -105,13 +113,32 @@ export function Header({ className }: HeaderProps) {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/profile"
-              className="rounded-xl px-3 py-3 text-base font-bold text-on-glass hover:bg-soft"
-              onClick={() => setMobileOpen(false)}
-            >
-              Profile · Linh
-            </Link>
+            {user ? (
+              <>
+                <Link
+                  href="/profile"
+                  className="rounded-xl px-3 py-3 text-base font-bold text-on-glass hover:bg-soft"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Profile · {user.name.split(/\s+/)[0]}
+                </Link>
+                <button
+                  type="button"
+                  className="rounded-xl px-3 py-3 text-left text-base font-bold text-on-glass hover:bg-soft"
+                  onClick={() => void onSignOut()}
+                >
+                  Sign out
+                </button>
+              </>
+            ) : (
+              <Link
+                href="/sign-in"
+                className="rounded-xl px-3 py-3 text-base font-bold text-on-glass hover:bg-soft"
+                onClick={() => setMobileOpen(false)}
+              >
+                Sign in
+              </Link>
+            )}
           </nav>
         </div>
       ) : null}

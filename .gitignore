@@ -12,6 +12,9 @@
 
 # testing
 /coverage
+/playwright-report/
+/test-results/
+/blob-report/
 
 # next.js
 /.next/
@@ -32,6 +35,13 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+
+# local uploads (Docker volume / STORAGE_DIR)
+/storage/
+
+# bundled Docker migrator (produced at image build)
+/scripts/migrate.cjs
 
 # vercel
 .vercel
@@ -43,3 +53,4 @@ next-env.d.ts
 # tooling
 .pnpm-store/
 .gitnexus/
+.gitnexus-home/

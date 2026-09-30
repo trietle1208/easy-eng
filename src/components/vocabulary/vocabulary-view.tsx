@@ -1,7 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useTransition } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Plus, Search } from "lucide-react";
 
 import { Flashcard } from "@/components/vocabulary/flashcard";
@@ -9,11 +10,13 @@ import { WordSetCard } from "@/components/vocabulary/word-set-card";
 import { StickyNote } from "@/components/notebook/sticky-note";
 import { Button } from "@/components/ui/button";
 import { LevelBadge } from "@/components/ui/level-badge";
+import { startWordSetAction } from "@/lib/actions/vocabulary";
 import { cn } from "@/lib/utils";
 import type { CefrLevel } from "@/types/cefr";
 import { CEFR_LEVELS } from "@/types/cefr";
 import type {
   ReviewDue,
+  Word,
   WordSet,
   WordSetTopic,
 } from "@/types/vocabulary";
@@ -22,17 +25,24 @@ import { WORD_SET_TOPICS } from "@/types/vocabulary";
 type VocabularyViewProps = {
   sets: WordSet[];
   topicCounts: Record<WordSetTopic | "all", number>;
-  review: ReviewDue;
+  review: ReviewDue | null;
 };
 
 export function VocabularyView({
   sets,
   topicCounts,
-  review,
+  review: initialReview,
 }: VocabularyViewProps) {
+  const router = useRouter();
   const [query, setQuery] = useState("");
   const [level, setLevel] = useState<CefrLevel | "all">("all");
   const [topic, setTopic] = useState<WordSetTopic | "all">("all");
+  const [review, setReview] = useState<ReviewDue | null>(initialReview);
+  const [pending, startTransition] = useTransition();
+
+  useEffect(() => {
+    setReview(initialReview);
+  }, [initialReview]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -48,6 +58,28 @@ export function VocabularyView({
     });
   }, [sets, query, level, topic]);
 
+  function refresh() {
+    router.refresh();
+  }
+
+  function onGraded(next: ReviewDue | null) {
+    setReview(next);
+    refresh();
+  }
+
+  function startFirstSet() {
+    const target = filtered[0] ?? sets[0];
+    if (!target) return;
+    startTransition(async () => {
+      await startWordSetAction(target.id);
+      refresh();
+    });
+  }
+
+  function onEditWord(word: Word) {
+    router.push(`/vocabulary/new?edit=${encodeURIComponent(word.id)}`);
+  }
+
   return (
     <div className="flex flex-col gap-8 lg:flex-row lg:gap-10">
       <div className="flex min-w-0 flex-1 flex-col gap-6">
@@ -57,7 +89,7 @@ export function VocabularyView({
               Vocabulary
             </h1>
             <p className="mt-1 text-sm text-on-glass-2">
-              Từ vựng theo chủ đề · 86 sets · 2,140 words
+              Từ vựng theo chủ đề · {topicCounts.all} sets
             </p>
           </div>
           <Button asChild size="sm" className="shrink-0">
@@ -127,13 +159,13 @@ export function VocabularyView({
         <div className="flex items-baseline gap-3">
           <h2 className="font-hand m-0 text-[28px] text-on-glass">Word sets</h2>
           <span className="text-sm text-on-glass-2">
-            Bộ từ · sorted by recently studied
+            Bộ từ · sorted by title
           </span>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {filtered.map((set) => (
-            <WordSetCard key={set.id} set={set} />
+            <WordSetCard key={set.id} set={set} onChanged={refresh} />
           ))}
           {filtered.length === 0 ? (
             <p className="col-span-full text-on-glass-2">
@@ -153,25 +185,59 @@ export function VocabularyView({
           </p>
           <div className="flex items-baseline gap-2">
             <span className="font-hand text-4xl leading-none">
-              {review.count}
+              {review?.count ?? 0}
             </span>
             <span className="text-sm font-bold">words</span>
             <div className="flex-1" />
             <button
               type="button"
-              className="font-hand text-xl text-kick"
+              disabled={pending}
+              onClick={() => {
+                if (review) {
+                  document
+                    .getElementById("review-flashcard")
+                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
+                  return;
+                }
+                startFirstSet();
+              }}
+              className="font-hand text-xl text-kick disabled:opacity-50"
             >
               Review
             </button>
           </div>
         </StickyNote>
 
-        <Flashcard
-          word={review.word}
-          setTitle={review.setTitle}
-          cardIndex={review.cardIndex}
-          cardTotal={review.cardTotal}
-        />
+        {review ? (
+          <div id="review-flashcard">
+            <Flashcard
+              word={review.word}
+              setTitle={review.setTitle}
+              cardIndex={review.cardIndex}
+              cardTotal={review.cardTotal}
+              cardId={review.cardId}
+              onGraded={onGraded}
+              onDeleted={refresh}
+              onEdit={onEditWord}
+            />
+          </div>
+        ) : (
+          <StickyNote color="pink" rotate={1} className="gap-2 text-ink">
+            <div className="font-hand text-xl">Nothing due right now</div>
+            <p className="m-0 text-sm text-muted">
+              Start a word set to create review cards, or come back when
+              something is due.
+            </p>
+            <Button
+              type="button"
+              size="sm"
+              disabled={pending || sets.length === 0}
+              onClick={startFirstSet}
+            >
+              Start a set
+            </Button>
+          </StickyNote>
+        )}
       </aside>
     </div>
   );
