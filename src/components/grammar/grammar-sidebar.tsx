@@ -6,6 +6,7 @@ import { ChevronDown, ChevronRight } from "lucide-react";
 
 import { ProgressBar } from "@/components/ui/progress-bar";
 import { LevelBadge } from "@/components/ui/level-badge";
+import { SelectField } from "@/components/ui/select-field";
 import { StickyNote } from "@/components/notebook/sticky-note";
 import { cn } from "@/lib/utils";
 import type { CefrLevel } from "@/types/cefr";
@@ -71,56 +72,38 @@ export function GrammarSidebar({
       </div>
 
       <div className="grid grid-cols-2 gap-2.5">
-        <label className="sr-only" htmlFor="grammar-family">
-          Grammar family
-        </label>
-        <div className="relative">
-          <select
-            id="grammar-family"
-            value={familyId}
-            onChange={(e) => {
-              onFamilyChange(e.target.value);
-              onGroupChange("all");
-            }}
-            className="h-[42px] w-full appearance-none rounded-xl border border-soft-border bg-[rgba(255,240,220,.12)] pr-[30px] pl-3 text-[13px] font-bold text-on-glass"
-          >
-            <option value="all">All families</option>
-            {tree.familyOptions.map((f) => (
-              <option key={f.id} value={f.id}>
-                {f.title}
-              </option>
-            ))}
-          </select>
-          <ChevronDown
-            aria-hidden
-            className="pointer-events-none absolute top-[13px] right-2.5 size-4 text-on-glass"
-            strokeWidth={2.4}
-          />
-        </div>
+        <SelectField
+          id="grammar-family"
+          aria-label="Grammar family"
+          variant="soft"
+          value={familyId}
+          onValueChange={(next) => {
+            onFamilyChange(next);
+            onGroupChange("all");
+          }}
+          options={[
+            { value: "all", label: "All families" },
+            ...tree.familyOptions.map((f) => ({
+              value: f.id,
+              label: f.title,
+            })),
+          ]}
+        />
 
-        <label className="sr-only" htmlFor="grammar-point">
-          Grammar point
-        </label>
-        <div className="relative">
-          <select
-            id="grammar-point"
-            value={groupId}
-            onChange={(e) => onGroupChange(e.target.value)}
-            className="h-[42px] w-full appearance-none rounded-xl border border-soft-border bg-[rgba(255,240,220,.12)] pr-[30px] pl-3 text-[13px] font-bold text-on-glass"
-          >
-            <option value="all">All grammar</option>
-            {groupOptions.map((g) => (
-              <option key={g.id} value={g.id}>
-                {g.title}
-              </option>
-            ))}
-          </select>
-          <ChevronDown
-            aria-hidden
-            className="pointer-events-none absolute top-[13px] right-2.5 size-4 text-on-glass"
-            strokeWidth={2.4}
-          />
-        </div>
+        <SelectField
+          id="grammar-point"
+          aria-label="Grammar point"
+          variant="soft"
+          value={groupId}
+          onValueChange={onGroupChange}
+          options={[
+            { value: "all", label: "All grammar" },
+            ...groupOptions.map((g) => ({
+              value: g.id,
+              label: g.title,
+            })),
+          ]}
+        />
       </div>
 
       <div

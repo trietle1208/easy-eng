@@ -15,6 +15,11 @@ type ActivityHeatmapProps = {
   activity: ActivitySummary;
 };
 
+const CELL = 22;
+const GAP = 6;
+const LABEL_W = 40;
+const STEP = CELL + GAP;
+
 const heatClass: Record<0 | 1 | 2 | 3 | 4, string> = {
   0: "bg-heat-0 border-dashed border-line/25",
   1: "bg-heat-1 border-line/40",
@@ -47,7 +52,7 @@ export function ActivityHeatmap({ activity }: ActivityHeatmapProps) {
   }, [activity.days, activity.weeks]);
 
   return (
-    <section className="flex flex-col gap-3.5 rounded-[8px_16px_10px_14px] bg-paper p-5 text-ink shadow-[var(--paper-shadow)] md:p-6 md:px-7">
+    <section className="flex flex-col gap-3.5 rounded-[8px_16px_10px_14px] bg-paper p-5 text-ink shadow-[var(--paper-shadow)] transition-[box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:shadow-[0_22px_48px_rgba(25,12,4,.42),0_2px_0_rgba(0,0,0,.06)] md:p-6 md:px-7">
       <div className="flex flex-wrap items-baseline gap-2.5">
         <h2 className="font-hand m-0 text-[clamp(1.5rem,3vw,2rem)] leading-none">
           Study activity
@@ -59,12 +64,15 @@ export function ActivityHeatmap({ activity }: ActivityHeatmapProps) {
         </span>
       </div>
 
-      <div className="relative hidden h-[18px] text-[12px] leading-[18px] font-bold text-muted sm:block">
+      <div
+        className="relative hidden h-[18px] text-[12px] leading-[18px] font-bold text-muted sm:block"
+        style={{ paddingLeft: LABEL_W }}
+      >
         {activity.monthLabels.map((m) => (
           <span
             key={`${m.label}-${m.weekIndex}`}
             className="absolute"
-            style={{ left: `${36 + m.weekIndex * 23}px` }}
+            style={{ left: `${LABEL_W + m.weekIndex * STEP}px` }}
           >
             {m.label}
           </span>
@@ -75,15 +83,18 @@ export function ActivityHeatmap({ activity }: ActivityHeatmapProps) {
         <div
           role="img"
           aria-label={`Study activity heatmap for the last ${activity.weeks} weeks`}
-          className="flex gap-1.5 overflow-x-auto pb-1"
+          className="flex gap-1.5 overflow-x-auto pb-2"
         >
-          <div className="flex w-9 shrink-0 flex-col gap-1.5 text-[11px] leading-[18px] font-bold text-muted">
+          <div
+            className="flex shrink-0 flex-col gap-1.5 text-[11px] leading-[22px] font-bold text-muted"
+            style={{ width: LABEL_W }}
+          >
             <span>Mon</span>
-            <span className="h-[18px]" />
+            <span className="h-[22px]" />
             <span>Wed</span>
-            <span className="h-[18px]" />
+            <span className="h-[22px]" />
             <span>Fri</span>
-            <span className="h-[18px]" />
+            <span className="h-[22px]" />
             <span>Sun</span>
           </div>
 
@@ -95,7 +106,7 @@ export function ActivityHeatmap({ activity }: ActivityHeatmapProps) {
                     <span
                       key={day.date}
                       className={cn(
-                        "size-[18px] rounded-[4px_6px_3px_5px/5px_3px_6px_4px] border border-transparent",
+                        "size-[22px] rounded-[5px_7px_4px_6px/6px_4px_7px_5px] border border-transparent",
                         rotates[di % 3],
                       )}
                       aria-hidden
@@ -108,7 +119,7 @@ export function ActivityHeatmap({ activity }: ActivityHeatmapProps) {
                       <button
                         type="button"
                         className={cn(
-                          "size-[18px] rounded-[4px_6px_3px_5px/5px_3px_6px_4px] border-[1.5px]",
+                          "size-[22px] rounded-[5px_7px_4px_6px/6px_4px_7px_5px] border-[1.5px] transition-transform duration-150 hover:scale-110",
                           heatClass[day.intensity],
                           rotates[di % 3],
                         )}
@@ -134,7 +145,7 @@ export function ActivityHeatmap({ activity }: ActivityHeatmapProps) {
           <span
             key={n}
             className={cn(
-              "size-[18px] rounded-[4px_6px_3px_5px/5px_3px_6px_4px] border-[1.5px]",
+              "size-[22px] rounded-[5px_7px_4px_6px/6px_4px_7px_5px] border-[1.5px]",
               heatClass[n],
             )}
             aria-hidden

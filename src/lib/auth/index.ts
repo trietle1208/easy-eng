@@ -1,6 +1,10 @@
 import "server-only";
 
-export { auth, isGoogleAuthEnabled } from "@/lib/auth/auth";
+export {
+  auth,
+  isGoogleAuthEnabled,
+  isEmailVerificationRequired,
+} from "@/lib/auth/auth";
 export {
   getCurrentUser,
   requireUser,

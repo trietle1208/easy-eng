@@ -6,6 +6,7 @@ import { Check, Headphones } from "lucide-react";
 
 import { LevelBadge } from "@/components/ui/level-badge";
 import { ProgressBar } from "@/components/ui/progress-bar";
+import { SelectField } from "@/components/ui/select-field";
 import { cn } from "@/lib/utils";
 import type { CefrLevel } from "@/types/cefr";
 import { CEFR_LEVELS } from "@/types/cefr";
@@ -48,26 +49,17 @@ export function ReadingSidebar({
         </p>
       </div>
 
-      <div>
-        <label className="sr-only" htmlFor="reading-topic">
-          Topic
-        </label>
-        <select
-          id="reading-topic"
-          value={topic}
-          onChange={(e) =>
-            setTopic(e.target.value as ReadingTopic | "all")
-          }
-          className="h-10 w-full appearance-none rounded-xl border border-soft-border bg-[rgba(255,240,220,.12)] px-3 text-sm font-bold text-on-glass"
-        >
-          <option value="all">All topics</option>
-          {READING_TOPICS.map((t) => (
-            <option key={t} value={t}>
-              {t}
-            </option>
-          ))}
-        </select>
-      </div>
+      <SelectField
+        id="reading-topic"
+        aria-label="Topic"
+        variant="soft"
+        value={topic}
+        onValueChange={(next) => setTopic(next as ReadingTopic | "all")}
+        options={[
+          { value: "all", label: "All topics" },
+          ...READING_TOPICS.map((t) => ({ value: t, label: t })),
+        ]}
+      />
 
       <div
         role="group"

@@ -7,12 +7,14 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 import { AuthAlert } from "@/components/auth/auth-alert";
-import { Button } from "@/components/ui/button";
 import {
-  UnderlineField,
-  underlineInputClass,
-} from "@/components/vocabulary/underline-field";
+  AuthField,
+  authInputClass,
+  authSubmitClass,
+} from "@/components/auth/auth-field";
+import { Button } from "@/components/ui/button";
 import { authClient } from "@/lib/auth/client";
+import { mapAuthError } from "@/lib/auth/map-auth-error";
 import { resetPasswordSchema } from "@/lib/schemas/auth";
 
 type FormValues = z.infer<typeof resetPasswordSchema>;
@@ -23,7 +25,9 @@ export function ResetPasswordForm() {
   const token = searchParams.get("token");
   const errorParam = searchParams.get("error");
   const [formError, setFormError] = useState<string | null>(
-    errorParam ? "This reset link is invalid or has expired." : null,
+    errorParam
+      ? "This reset link isn’t valid anymore. Request a new one from Forgot password."
+      : null,
   );
   const [pending, setPending] = useState(false);
 
@@ -38,7 +42,7 @@ export function ResetPasswordForm() {
 
   async function onSubmit(values: FormValues) {
     if (!token) {
-      setFormError("Missing reset token. Request a new link.");
+      setFormError("That reset link is incomplete. Request a new one from Forgot password.");
       return;
     }
     setFormError(null);
@@ -49,13 +53,18 @@ export function ResetPasswordForm() {
         token,
       });
       if (error) {
-        setFormError(error.message || "Couldn’t reset password.");
+        setFormError(
+          mapAuthError(
+            error,
+            "We couldn’t update your password. Please try again.",
+          ),
+        );
         return;
       }
       router.push("/sign-in?reset=1");
       router.refresh();
     } catch {
-      setFormError("Something went wrong. Please try again.");
+      setFormError("Something went wrong — please try again in a moment.");
     } finally {
       setPending(false);
     }
@@ -63,7 +72,7 @@ export function ResetPasswordForm() {
 
   if (!token && !errorParam) {
     return (
-      <AuthAlert>
+      <AuthAlert tone="info">
         Open the link from your email to choose a new password.
       </AuthAlert>
     );
@@ -73,7 +82,7 @@ export function ResetPasswordForm() {
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5" noValidate>
       {formError ? <AuthAlert>{formError}</AuthAlert> : null}
 
-      <UnderlineField
+      <AuthField
         id="password"
         label="New password"
         error={errors.password?.message}
@@ -83,12 +92,13 @@ export function ResetPasswordForm() {
           id="password"
           type="password"
           autoComplete="new-password"
-          className={underlineInputClass}
+          placeholder="At least 8 characters"
+          className={authInputClass}
           {...register("password")}
         />
-      </UnderlineField>
+      </AuthField>
 
-      <UnderlineField
+      <AuthField
         id="confirmPassword"
         label="Confirm password"
         error={errors.confirmPassword?.message}
@@ -97,12 +107,17 @@ export function ResetPasswordForm() {
           id="confirmPassword"
           type="password"
           autoComplete="new-password"
-          className={underlineInputClass}
+          placeholder="Type it again"
+          className={authInputClass}
           {...register("confirmPassword")}
         />
-      </UnderlineField>
+      </AuthField>
 
-      <Button type="submit" disabled={pending || !token} className="w-full">
+      <Button
+        type="submit"
+        disabled={pending || !token}
+        className={authSubmitClass}
+      >
         {pending ? "Saving…" : "Save new password"}
       </Button>
     </form>

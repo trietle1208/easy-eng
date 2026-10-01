@@ -83,7 +83,7 @@ export function ProfileSettings({ initial }: ProfileSettingsProps) {
     : draft.theme;
 
   return (
-    <section className="flex flex-col gap-[18px] rounded-[10px_16px_12px_8px] bg-paper p-5 text-ink shadow-[var(--paper-shadow)] md:p-7 md:px-[30px]">
+    <section className="flex flex-col gap-[18px] rounded-[10px_16px_12px_8px] bg-paper p-5 text-ink shadow-[var(--paper-shadow)] transition-[box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:shadow-[0_22px_48px_rgba(25,12,4,.42),0_2px_0_rgba(0,0,0,.06)] md:p-7 md:px-[30px]">
       <div className="flex flex-wrap items-baseline gap-2.5">
         <h2 className="font-hand m-0 text-[clamp(1.5rem,3vw,2rem)] leading-none">
           Settings

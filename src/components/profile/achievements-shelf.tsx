@@ -58,7 +58,7 @@ export function AchievementsShelf({
         </span>
       </div>
 
-      <div className="px-1 md:px-5">
+      <div className="overflow-x-clip px-1 md:px-5">
         <div className="relative z-[1] mb-[-8px] grid grid-cols-4 gap-3 sm:grid-cols-4 md:grid-cols-8 md:gap-3">
           {items.map((item, i) => {
             const Icon = iconMap[item.icon];
@@ -66,34 +66,38 @@ export function AchievementsShelf({
             return (
               <div
                 key={item.id}
-                className={cn(
-                  "stk relative mx-auto flex size-20 items-center justify-center border-[5px] border-surface text-white shadow-[0_8px_14px_rgba(0,0,0,.35)] sm:size-24",
-                  item.shape === "round" ? "rounded-full" : "rounded-[26px]",
-                  item.earned
-                    ? colorBg[item.color]
-                    : "bg-[color:var(--muted)] opacity-55 grayscale",
-                )}
-                style={{ transform: `rotate(${rotate}deg)` }}
-                title={
-                  item.earned
-                    ? `${item.title} · earned`
-                    : `${item.title} · locked`
-                }
+                className="mx-auto transition-transform duration-200 ease-out hover:z-[2] hover:scale-110"
               >
-                <Icon className="size-9 sm:size-10" aria-hidden />
-                {!item.earned ? (
-                  <span
-                    className="absolute -right-1.5 -bottom-1 flex size-8 items-center justify-center rounded-full border-2 border-surface bg-line text-on-glass"
-                    aria-hidden
-                  >
-                    <Lock className="size-3.5" />
+                <div
+                  className={cn(
+                    "stk relative flex size-20 items-center justify-center border-[5px] border-surface text-white shadow-[0_8px_14px_rgba(0,0,0,.35)] transition-shadow duration-200 hover:shadow-[0_14px_24px_rgba(0,0,0,.45)] sm:size-24",
+                    item.shape === "round" ? "rounded-full" : "rounded-[26px]",
+                    item.earned
+                      ? colorBg[item.color]
+                      : "bg-[color:var(--muted)] opacity-55 grayscale",
+                  )}
+                  style={{ transform: `rotate(${rotate}deg)` }}
+                  title={
+                    item.earned
+                      ? `${item.title} · earned`
+                      : `${item.title} · locked`
+                  }
+                >
+                  <Icon className="size-9 sm:size-10" aria-hidden />
+                  {!item.earned ? (
+                    <span
+                      className="absolute -right-1.5 -bottom-1 flex size-8 items-center justify-center rounded-full border-2 border-surface bg-line text-on-glass"
+                      aria-hidden
+                    >
+                      <Lock className="size-3.5" />
+                    </span>
+                  ) : null}
+                  <span className="sr-only">
+                    {item.earned
+                      ? `${item.title}, earned`
+                      : `${item.title}, locked`}
                   </span>
-                ) : null}
-                <span className="sr-only">
-                  {item.earned
-                    ? `${item.title}, earned`
-                    : `${item.title}, locked`}
-                </span>
+                </div>
               </div>
             );
           })}

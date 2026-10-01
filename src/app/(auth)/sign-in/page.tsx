@@ -15,7 +15,7 @@ export default function SignInPage() {
           New here?{" "}
           <Link
             href="/sign-up"
-            className="font-semibold text-kick underline-offset-2 hover:underline"
+            className="font-semibold text-kick underline underline-offset-2"
           >
             Create an account
           </Link>

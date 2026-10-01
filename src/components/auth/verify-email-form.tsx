@@ -7,12 +7,14 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 import { AuthAlert } from "@/components/auth/auth-alert";
-import { Button } from "@/components/ui/button";
 import {
-  UnderlineField,
-  underlineInputClass,
-} from "@/components/vocabulary/underline-field";
+  AuthField,
+  authInputClass,
+  authSubmitClass,
+} from "@/components/auth/auth-field";
+import { Button } from "@/components/ui/button";
 import { authClient } from "@/lib/auth/client";
+import { mapAuthError } from "@/lib/auth/map-auth-error";
 import { resendVerificationSchema } from "@/lib/schemas/auth";
 
 type FormValues = z.infer<typeof resendVerificationSchema>;
@@ -42,12 +44,17 @@ export function VerifyEmailForm() {
         callbackURL: "/",
       });
       if (error) {
-        setFormError(error.message || "Couldn’t send verification email.");
+        setFormError(
+          mapAuthError(
+            error,
+            "We couldn’t send that email. Please try again.",
+          ),
+        );
         return;
       }
       setSent(true);
     } catch {
-      setFormError("Something went wrong. Please try again.");
+      setFormError("Something went wrong — please try again in a moment.");
     } finally {
       setPending(false);
     }
@@ -56,26 +63,27 @@ export function VerifyEmailForm() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5" noValidate>
       <AuthAlert tone="info">
-        We sent a verification link after you signed up. In development it is also printed in the server console.
+        We sent a verification link when you signed up — check your inbox (and spam, just in case).
       </AuthAlert>
       {formError ? <AuthAlert>{formError}</AuthAlert> : null}
       {sent ? (
         <AuthAlert tone="success">
-          Verification email sent — check your inbox or the console.
+          Verification email sent — check your inbox.
         </AuthAlert>
       ) : null}
 
-      <UnderlineField id="email" label="Email" error={errors.email?.message}>
+      <AuthField id="email" label="Email" error={errors.email?.message}>
         <input
           id="email"
           type="email"
           autoComplete="email"
-          className={underlineInputClass}
+          placeholder="you@example.com"
+          className={authInputClass}
           {...register("email")}
         />
-      </UnderlineField>
+      </AuthField>
 
-      <Button type="submit" disabled={pending} className="w-full">
+      <Button type="submit" disabled={pending} className={authSubmitClass}>
         {pending ? "Sending…" : "Resend verification email"}
       </Button>
     </form>

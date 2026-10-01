@@ -17,6 +17,14 @@ import { getMailer } from "@/lib/mail";
 const googleEnabled =
   Boolean(env.GOOGLE_CLIENT_ID) && Boolean(env.GOOGLE_CLIENT_SECRET);
 
+/** Next often lands on :3001 when :3000 is already taken (e.g. Docker). */
+const devLocalOrigins = [
+  "http://localhost:3000",
+  "http://localhost:3001",
+  "http://127.0.0.1:3000",
+  "http://127.0.0.1:3001",
+];
+
 export const auth = betterAuth({
   database: drizzleAdapter(db, {
     provider: "pg",
@@ -29,6 +37,10 @@ export const auth = betterAuth({
   }),
   secret: env.BETTER_AUTH_SECRET,
   baseURL: env.BETTER_AUTH_URL,
+  trustedOrigins: [
+    env.BETTER_AUTH_URL,
+    ...(env.NODE_ENV !== "production" ? devLocalOrigins : []),
+  ],
   user: {
     additionalFields: {
       cefrLevel: {
@@ -59,7 +71,7 @@ export const auth = betterAuth({
   },
   emailAndPassword: {
     enabled: true,
-    requireEmailVerification: true,
+    requireEmailVerification: env.REQUIRE_EMAIL_VERIFICATION,
     revokeSessionsOnPasswordReset: true,
     minPasswordLength: 8,
     sendResetPassword: async ({ user, url }) => {
@@ -74,7 +86,7 @@ export const auth = betterAuth({
     },
   },
   emailVerification: {
-    sendOnSignUp: true,
+    sendOnSignUp: env.REQUIRE_EMAIL_VERIFICATION,
     autoSignInAfterVerification: true,
     sendVerificationEmail: async ({ user, url }) => {
       const mail = getMailer();
@@ -120,3 +132,4 @@ export const auth = betterAuth({
 
 export type Session = typeof auth.$Infer.Session;
 export const isGoogleAuthEnabled = googleEnabled;
+export const isEmailVerificationRequired = env.REQUIRE_EMAIL_VERIFICATION;

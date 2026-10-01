@@ -14,7 +14,7 @@ export default function VerifyEmailPage() {
           Ready to continue?{" "}
           <Link
             href="/sign-in"
-            className="font-semibold text-kick underline-offset-2 hover:underline"
+            className="font-semibold text-kick underline underline-offset-2"
           >
             Sign in
           </Link>

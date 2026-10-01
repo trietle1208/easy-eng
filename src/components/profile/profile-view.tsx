@@ -59,24 +59,25 @@ export function ProfileView({
   goalText,
 }: ProfileViewProps) {
   return (
-    <div className="flex flex-col gap-8 text-on-glass md:gap-[34px]">
+    <div className="flex flex-col gap-8 text-on-glass md:gap-9">
       <ProfileHeader
         profile={profile}
         timezone={timezone}
         goalText={goalText}
       />
-      <ProfileStats stats={stats} />
 
-      <div className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_minmax(260px,400px)]">
-        <ActivityHeatmap activity={activity} />
-        <LevelProgressPanel levels={levels} />
-      </div>
+      <ProfileStats stats={stats} />
 
       <AchievementsShelf
         items={achievements}
         earnedCount={earnedCount}
         total={totalAchievements}
       />
+
+      <div className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_minmax(280px,340px)]">
+        <ActivityHeatmap activity={activity} />
+        <LevelProgressPanel levels={levels} />
+      </div>
 
       <ProfileSettings initial={settings} />
     </div>

@@ -1,19 +1,18 @@
 import Link from "next/link";
 import {
   BookOpen,
+  ChevronDown,
   ChevronLeft,
   ChevronRight,
   Pencil,
   Star,
 } from "lucide-react";
 
-import { HandUnderline } from "@/components/marks/hand-underline";
-import { Highlighter } from "@/components/marks/highlighter";
 import { NotebookPage } from "@/components/notebook/notebook-page";
+import { StickyNote } from "@/components/notebook/sticky-note";
 import { Mascot } from "@/components/mascot/mascot";
 import { Button } from "@/components/ui/button";
 import { LevelBadge } from "@/components/ui/level-badge";
-import { HandCircle } from "@/components/marks/hand-circle";
 import { cn } from "@/lib/utils";
 import type { AdjacentLessons, GrammarLesson } from "@/types/grammar";
 
@@ -21,6 +20,8 @@ type GrammarLessonPanelProps = {
   lesson: GrammarLesson;
   adjacent: AdjacentLessons;
 };
+
+const mistakeRotates = [-1.4, 1.2, -0.6] as const;
 
 export function GrammarLessonPanel({
   lesson,
@@ -32,13 +33,13 @@ export function GrammarLessonPanel({
       withRings
       ringCount={18}
       withRules
-      className="relative flex min-w-0 flex-1 flex-col gap-[30px] rounded-[6px_18px_18px_6px] py-10 pr-8 pl-[100px] md:pr-[52px]"
+      className="relative flex min-w-0 flex-1 flex-col gap-8 rounded-[6px_18px_18px_6px] py-10 pr-8 pl-[100px] md:pr-[52px]"
     >
       <div className="absolute right-[58px] bottom-full mb-[-6px]">
         <Mascot pose="peek" size={78} alt="" />
       </div>
 
-      <header className="flex flex-col gap-3.5">
+      <header className="flex flex-col gap-4">
         <div className="flex flex-wrap items-center gap-2.5">
           <span className="text-kick text-xs font-extrabold tracking-[0.16em] uppercase">
             {lesson.groupTitle}
@@ -50,50 +51,51 @@ export function GrammarLessonPanel({
           </span>
         </div>
 
-        <div className="flex flex-wrap items-center gap-4">
-          <h2 className="font-hand m-0 text-[clamp(2rem,4vw,3.5rem)] leading-none text-ink-2">
-            {lesson.title}
-          </h2>
+        <h2 className="m-0 text-[clamp(1.85rem,3.6vw,2.75rem)] leading-[1.1] font-extrabold tracking-tight text-ink-2">
+          {lesson.title}
+        </h2>
+
+        <div className="flex flex-wrap items-center gap-3">
           <LevelBadge level={lesson.level} className="px-2.5 py-1.5 text-sm" />
           <Star
             aria-hidden
-            className="size-10 rotate-12 text-[color:#D9A82A]"
+            className="size-7 rotate-12 text-[color:#D9A82A]"
             strokeWidth={2.2}
             fill="none"
           />
-        </div>
-
-        <div
-          role="tablist"
-          aria-label="Lesson view"
-          className="flex flex-wrap gap-2"
-        >
-          <button
-            type="button"
-            role="tab"
-            aria-selected
-            className="inline-flex h-10 items-center gap-2 rounded-[var(--radius-pill)] border-[1.5px] border-line bg-primary-soft px-4 text-sm font-bold text-ink"
+          <div className="flex-1" />
+          <div
+            role="tablist"
+            aria-label="Lesson view"
+            className="flex flex-wrap gap-2"
           >
-            <BookOpen className="size-[17px]" strokeWidth={2} aria-hidden />
-            View knowledge
-          </button>
-          <Link
-            href={`/quiz/${lesson.practiceQuizSlug}`}
-            role="tab"
-            aria-selected={false}
-            className="inline-flex h-10 items-center gap-2 rounded-[var(--radius-pill)] border-[1.5px] border-line bg-surface px-4 text-sm font-bold text-ink"
-          >
-            <Pencil className="size-[17px]" strokeWidth={2} aria-hidden />
-            Practice
-          </Link>
+            <button
+              type="button"
+              role="tab"
+              aria-selected
+              className="inline-flex h-10 items-center gap-2 rounded-[var(--radius-pill)] border-2 border-primary bg-[color-mix(in_srgb,var(--primary)_18%,var(--surface))] px-4 text-sm font-bold text-ink"
+            >
+              <BookOpen className="size-[17px]" strokeWidth={2} aria-hidden />
+              View knowledge
+            </button>
+            <Link
+              href={`/quiz/${lesson.practiceQuizSlug}`}
+              role="tab"
+              aria-selected={false}
+              className="inline-flex h-10 items-center gap-2 rounded-[var(--radius-pill)] border-2 border-line/35 bg-surface px-4 text-sm font-bold text-ink"
+            >
+              <Pencil className="size-[17px]" strokeWidth={2} aria-hidden />
+              Practice
+            </Link>
+          </div>
         </div>
       </header>
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3.5">
         <p className="m-0 text-lg leading-[1.7] text-ink">
           {renderBoldParts(lesson.introEn)}
         </p>
-        <p className="font-hand m-0 text-[22px] leading-snug text-link">
+        <p className="m-0 rounded-[12px] bg-[color-mix(in_srgb,var(--primary-soft)_72%,white)] px-4 py-3 text-[17px] leading-snug font-semibold text-kick">
           {lesson.introVi}
         </p>
         <div className="flex flex-wrap items-baseline gap-3">
@@ -107,166 +109,145 @@ export function GrammarLessonPanel({
         </div>
       </div>
 
-      <section className="radius-sketch flex flex-col gap-[18px] border-2 border-line bg-[color-mix(in_srgb,var(--primary-soft)_55%,transparent)] px-7 py-6">
-        <h3 className="font-hand m-0 flex items-baseline gap-2.5 text-[27px] tracking-[0.06em] text-ink-2 uppercase">
-          Structure{" "}
-          <small className="text-[15px] font-semibold tracking-normal text-muted normal-case">
-            · Cấu trúc
+      <StickyNote
+        color="yellow"
+        rotate={-0.8}
+        className="gap-4 rounded-[4px_4px_18px_4px] px-6 pt-8 pb-6"
+      >
+        <h3 className="m-0 flex flex-wrap items-baseline gap-2 text-[15px] font-extrabold tracking-[0.14em] text-ink-2 uppercase">
+          Structure
+          <small className="text-[14px] font-semibold tracking-normal text-muted normal-case">
+            Cấu trúc
           </small>
         </h3>
-        {lesson.structure.map((item) => (
-          <div key={item.formula} className="flex flex-col gap-2">
-            <div>
-              <Highlighter className="font-mono text-lg font-bold text-ink-2">
-                {item.formula}
-              </Highlighter>
-            </div>
-            <div className="text-base leading-relaxed text-accent italic">
-              {item.explanation}
-            </div>
-          </div>
-        ))}
-      </section>
+        <div className="flex flex-col gap-3">
+          {lesson.structure.map((item) => {
+            const { en, vi } = splitEnVi(item.explanation);
+            return (
+              <div
+                key={item.formula}
+                className="rounded-[10px] border border-line/10 bg-surface px-4 py-3.5 shadow-[0_2px_6px_rgba(25,12,4,.06)]"
+              >
+                <div className="font-mono text-base font-bold text-ink-2">
+                  {item.formula}
+                </div>
+                <p className="mt-1.5 m-0 text-[15px] leading-relaxed text-ink">
+                  {en}
+                </p>
+                {vi ? (
+                  <p className="mt-1 m-0 text-[14px] leading-snug text-kick">
+                    {vi}
+                  </p>
+                ) : null}
+              </div>
+            );
+          })}
+        </div>
+      </StickyNote>
 
-      <section className="flex flex-col gap-5">
-        <h3 className="font-hand m-0 flex items-baseline gap-2.5 text-[27px] tracking-[0.06em] text-ink-2 uppercase">
-          <span className="rounded-[6px_12px_4px_10px] bg-[linear-gradient(100deg,transparent_0%,rgba(163,207,132,.8)_4%,rgba(163,207,132,.72)_96%,transparent_100%)] px-3 pt-0.5 pb-px [background:linear-gradient(100deg,transparent_0%,color-mix(in_srgb,var(--hatch-2)_80%,transparent)_4%,color-mix(in_srgb,var(--hatch-2)_72%,transparent)_96%,transparent_100%)]">
+      <section className="flex flex-col gap-4">
+        <h3 className="m-0 flex flex-wrap items-baseline gap-2.5 text-[15px] font-extrabold tracking-[0.14em] text-ink-2 uppercase">
+          <span className="rounded-[8px] bg-[color-mix(in_srgb,var(--hatch-2)_85%,white)] px-3 py-1.5 text-ink-2">
             Examples
           </span>
-          <small className="text-[15px] font-semibold tracking-normal text-muted normal-case">
-            · Ví dụ
+          <small className="text-[14px] font-semibold tracking-normal text-muted normal-case">
+            Ví dụ
           </small>
         </h3>
-        <div className="flex flex-col gap-5">
-          {lesson.examples.map((ex, i) => (
-            <div key={ex.sentence} className="flex gap-3.5">
-              <span className="font-hand w-[22px] shrink-0 text-2xl leading-tight text-accent">
-                {i + 1}.
-              </span>
-              <div className="flex flex-col gap-2">
-                <HandUnderline
-                  color="primary"
-                  className="self-start text-xl font-semibold text-ink-2"
-                >
-                  {ex.sentence}
-                </HandUnderline>
-                <span className="text-base leading-relaxed text-muted italic">
-                  {ex.explanation}
-                </span>
-              </div>
-            </div>
-          ))}
+        <div className="grid grid-cols-1 gap-3.5 md:grid-cols-2">
+          {lesson.examples.map((ex, i) => {
+            const { en, vi } = splitEnVi(ex.explanation);
+            return (
+              <article
+                key={ex.sentence}
+                className="relative flex flex-col gap-2 rounded-[14px] border border-line/12 bg-surface px-4 pt-4 pb-3.5 shadow-[0_4px_12px_rgba(25,12,4,.08)]"
+              >
+                <div className="flex items-start justify-between gap-2">
+                  <p className="m-0 text-[17px] leading-snug font-bold text-ink-2">
+                    <span className="mr-1.5 text-kick">#{i + 1}</span>
+                    {ex.sentence}
+                  </p>
+                  <span
+                    className="mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full border border-line/20 text-muted"
+                    aria-hidden
+                  >
+                    <ChevronDown className="size-3.5" strokeWidth={2.4} />
+                  </span>
+                </div>
+                <p className="m-0 text-[14px] leading-relaxed text-muted">
+                  {en}
+                </p>
+                {vi ? (
+                  <p className="m-0 text-[14px] leading-snug text-kick">{vi}</p>
+                ) : null}
+              </article>
+            );
+          })}
         </div>
       </section>
 
-      <section className="flex flex-col gap-1">
-        <h3 className="font-hand m-0 flex items-baseline gap-2.5 text-[27px] tracking-[0.06em] text-ink-2 uppercase">
-          <span className="rounded-[6px_12px_4px_10px] bg-[linear-gradient(100deg,transparent_0%,rgba(255,168,150,.75)_4%,rgba(255,168,150,.7)_96%,transparent_100%)] px-3 pt-0.5 pb-px">
+      <section className="flex flex-col gap-5">
+        <h3 className="m-0 flex flex-wrap items-baseline gap-2.5 text-[15px] font-extrabold tracking-[0.14em] text-ink-2 uppercase">
+          <span className="rounded-[8px] bg-[color-mix(in_srgb,var(--danger)_22%,white)] px-3 py-1.5 text-[color:var(--danger)]">
             Common mistakes
           </span>
-          <small className="text-[15px] font-semibold tracking-normal text-muted normal-case">
-            · Lỗi thường gặp
+          <small className="text-[14px] font-semibold tracking-normal text-muted normal-case">
+            Lỗi thường gặp
           </small>
         </h3>
 
-        {lesson.mistakes.map((m, i) => (
-          <div
-            key={`${m.correct}-${i}`}
-            className={cn(
-              "grid grid-cols-1 items-center gap-4 border-b-[1.5px] border-dashed border-line/20 py-8 md:grid-cols-[minmax(0,1fr)_262px]",
-              i === lesson.mistakes.length - 1 && "border-b-0",
-            )}
-          >
-            <div className="text-[21px] leading-snug font-semibold text-ink-2">
-              {m.before}
-              <span className="relative mx-1 inline-block px-1">
-                <span className="font-hand absolute bottom-full left-1/2 mb-2 -translate-x-1/2 -rotate-[4deg] text-[28px] leading-none whitespace-nowrap text-success">
-                  {m.correct}
-                </span>
-                {m.missing ? (
-                  <HandCircle color="danger">
-                    <span className="inline-block px-1.5 text-danger" aria-hidden>
-                      △
-                    </span>
-                  </HandCircle>
-                ) : (
-                  <HandCircle color="danger">
-                    <span className="text-ink-2">{m.wrong}</span>
-                  </HandCircle>
-                )}
-              </span>
-              {m.after}
-            </div>
-            <div className="flex items-start gap-1.5">
-              <svg
-                aria-hidden
-                width="44"
-                height="26"
-                viewBox="0 0 44 26"
-                className="mt-0.5 shrink-0 text-line"
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+          {lesson.mistakes.map((m, i) => {
+            const wrongPhrase = m.missing
+              ? `${m.before}△${m.after}`
+              : `${m.before}${m.wrong}${m.after}`;
+            const correctPhrase = `${m.before}${m.correct}${m.after}`;
+            return (
+              <StickyNote
+                key={`${m.correct}-${i}`}
+                color="pink"
+                rotate={mistakeRotates[i % mistakeRotates.length]}
+                className="gap-3 rounded-[4px_4px_18px_4px] px-4 pt-7 pb-4"
               >
-                <path
-                  d="M42 8 C 30 1, 14 3, 4 16"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M3 6 L 3 17 L 13 15"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <div className="font-hand text-[21px] leading-tight text-ink-2">
-                {m.noteEn.includes("-s") || m.noteEn.includes("be") ? (
-                  <>
-                    {m.noteEn.split(/(-s|be)/).map((part, idx) =>
-                      part === "-s" || part === "be" ? (
-                        <span key={idx} className="text-danger">
-                          {part}
-                        </span>
-                      ) : (
-                        <span key={idx}>{part}</span>
-                      ),
-                    )}
-                  </>
-                ) : (
-                  m.noteEn
-                )}
-                <div className="text-lg text-muted">{m.noteVi}</div>
-              </div>
-            </div>
-          </div>
-        ))}
+                <div className="flex flex-col gap-1">
+                  <span className="text-[11px] font-extrabold tracking-[0.14em] text-danger uppercase">
+                    Instead of
+                  </span>
+                  <span className="text-[16px] leading-snug font-semibold text-danger line-through decoration-2">
+                    {wrongPhrase}
+                  </span>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <span className="text-[11px] font-extrabold tracking-[0.14em] text-success uppercase">
+                    Write
+                  </span>
+                  <span className="text-[16px] leading-snug font-bold text-success">
+                    {correctPhrase}
+                  </span>
+                </div>
+                <p className="m-0 text-[13px] leading-snug text-ink">
+                  {m.noteEn}
+                </p>
+                <p className="m-0 text-[13px] leading-snug text-muted">
+                  {m.noteVi}
+                </p>
+              </StickyNote>
+            );
+          })}
+        </div>
       </section>
 
-      <footer className="mt-auto flex flex-col items-stretch gap-4 border-t-2 border-dashed border-line/25 pt-6 sm:flex-row sm:items-center">
-        {adjacent.previous ? (
-          <Link
-            href={`/grammar/${adjacent.previous.slug}`}
-            className="flex w-full items-center gap-2.5 text-ink sm:w-[250px]"
-          >
-            <span className="flex size-11 shrink-0 items-center justify-center rounded-full border-2 border-line bg-surface">
+      <footer className="mt-auto flex flex-col items-stretch gap-4 border-t-2 border-dashed border-line/25 pt-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-wrap items-center gap-3.5">
+          {adjacent.previous ? (
+            <Link
+              href={`/grammar/${adjacent.previous.slug}`}
+              className="flex size-11 shrink-0 items-center justify-center rounded-full border-2 border-line bg-surface text-ink"
+              aria-label={`Previous: ${adjacent.previous.title}`}
+            >
               <ChevronLeft className="size-[18px]" strokeWidth={2.4} />
-            </span>
-            <span>
-              <small className="mb-1 block text-[11px] font-extrabold tracking-[0.14em] text-muted uppercase">
-                Previous
-              </small>
-              <b className="text-[15px] leading-snug font-extrabold">
-                {adjacent.previous.title}
-              </b>
-            </span>
-          </Link>
-        ) : (
-          <div className="hidden sm:block sm:w-[250px]" />
-        )}
-
-        <div className="flex flex-1 flex-col items-center gap-2">
+            </Link>
+          ) : null}
           <Button asChild>
             <Link href={`/quiz/${lesson.practiceQuizSlug}`}>
               <Pencil className="size-[19px]" strokeWidth={2.2} aria-hidden />
@@ -282,7 +263,9 @@ export function GrammarLessonPanel({
         {adjacent.next ? (
           <Link
             href={`/grammar/${adjacent.next.slug}`}
-            className="flex w-full items-center justify-end gap-2.5 text-right text-ink sm:w-[250px]"
+            className={cn(
+              "flex w-full items-center justify-end gap-2.5 text-right text-ink sm:w-auto sm:max-w-[280px]",
+            )}
           >
             <span>
               <small className="mb-1 block text-[11px] font-extrabold tracking-[0.14em] text-muted uppercase">
@@ -297,7 +280,7 @@ export function GrammarLessonPanel({
             </span>
           </Link>
         ) : (
-          <div className="hidden sm:block sm:w-[250px]" />
+          <div className="hidden sm:block" />
         )}
       </footer>
     </NotebookPage>
@@ -305,7 +288,6 @@ export function GrammarLessonPanel({
 }
 
 function renderBoldParts(text: string) {
-  // Light emphasis for phrases wrapped in known bold markers from mock copy
   const pieces = text.split(/\b(who or what|what they do)\b/g);
   return pieces.map((part, i) =>
     part === "who or what" || part === "what they do" ? (
@@ -314,4 +296,24 @@ function renderBoldParts(text: string) {
       <span key={i}>{part}</span>
     ),
   );
+}
+
+function splitEnVi(text: string): { en: string; vi?: string } {
+  const byMidDot = text.split(/\s·\s/);
+  if (byMidDot.length >= 2) {
+    return { en: byMidDot[0]!, vi: byMidDot.slice(1).join(" · ") };
+  }
+
+  const byEmDash = text.split(/\s—\s/);
+  if (byEmDash.length >= 2) {
+    const last = byEmDash[byEmDash.length - 1]!;
+    if (/[àáảãạăằắẳẵặâầấẩẫậèéẻẽẹêềếểễệìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữựỳýỷỹỵđ]/i.test(last)) {
+      return {
+        en: byEmDash.slice(0, -1).join(" — "),
+        vi: last,
+      };
+    }
+  }
+
+  return { en: text };
 }

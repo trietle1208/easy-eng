@@ -7,12 +7,14 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 import { AuthAlert } from "@/components/auth/auth-alert";
-import { Button } from "@/components/ui/button";
 import {
-  UnderlineField,
-  underlineInputClass,
-} from "@/components/vocabulary/underline-field";
+  AuthField,
+  authInputClass,
+  authSubmitClass,
+} from "@/components/auth/auth-field";
+import { Button } from "@/components/ui/button";
 import { authClient } from "@/lib/auth/client";
+import { mapAuthError } from "@/lib/auth/map-auth-error";
 import { signInSchema, type SignInInput } from "@/lib/schemas/auth";
 
 type SignInFormProps = {
@@ -48,17 +50,22 @@ export function SignInForm({ googleEnabled }: SignInFormProps) {
       if (error) {
         if (error.status === 403) {
           setFormError(
-            "Please verify your email first — check your inbox (or the server console in development).",
+            "Please verify your email first — open the link we sent to your inbox.",
           );
         } else {
-          setFormError(error.message || "Couldn’t sign in. Check your email and password.");
+          setFormError(
+            mapAuthError(
+              error,
+              "That email or password doesn’t look right. Try again?",
+            ),
+          );
         }
         return;
       }
       router.push(callbackUrl);
       router.refresh();
     } catch {
-      setFormError("Something went wrong. Please try again.");
+      setFormError("Something went wrong — please try again in a moment.");
     } finally {
       setPending(false);
     }
@@ -73,7 +80,7 @@ export function SignInForm({ googleEnabled }: SignInFormProps) {
         callbackURL: callbackUrl,
       });
     } catch {
-      setFormError("Google sign-in failed. Try again.");
+      setFormError("Google sign-in didn’t work. Please try again.");
       setPending(false);
     }
   }
@@ -87,17 +94,18 @@ export function SignInForm({ googleEnabled }: SignInFormProps) {
       ) : null}
       {formError ? <AuthAlert>{formError}</AuthAlert> : null}
 
-      <UnderlineField id="email" label="Email" error={errors.email?.message}>
+      <AuthField id="email" label="Email" error={errors.email?.message}>
         <input
           id="email"
           type="email"
           autoComplete="email"
-          className={underlineInputClass}
+          placeholder="you@example.com"
+          className={authInputClass}
           {...register("email")}
         />
-      </UnderlineField>
+      </AuthField>
 
-      <UnderlineField
+      <AuthField
         id="password"
         label="Password"
         error={errors.password?.message}
@@ -106,32 +114,33 @@ export function SignInForm({ googleEnabled }: SignInFormProps) {
           id="password"
           type="password"
           autoComplete="current-password"
-          className={underlineInputClass}
+          placeholder="Your password"
+          className={authInputClass}
           {...register("password")}
         />
-      </UnderlineField>
+      </AuthField>
 
       <div className="-mt-2 flex justify-end">
         <Link
           href="/forgot-password"
-          className="text-sm font-semibold text-kick underline-offset-2 hover:underline"
+          className="text-sm font-semibold text-kick underline underline-offset-2"
         >
           Forgot password?
         </Link>
       </div>
 
-      <Button type="submit" disabled={pending} className="w-full">
+      <Button type="submit" disabled={pending} className={authSubmitClass}>
         {pending ? "Signing in…" : "Sign in"}
       </Button>
 
       {googleEnabled ? (
         <>
-          <p className="font-hand m-0 text-center text-lg text-muted">or</p>
+          <p className="m-0 text-center text-sm text-muted">or</p>
           <Button
             type="button"
             variant="outline"
             disabled={pending}
-            className="w-full"
+            className="h-[52px] w-full rounded-2xl border-[3px] border-line shadow-[3px_3px_0_var(--line)]"
             onClick={onGoogle}
           >
             Continue with Google

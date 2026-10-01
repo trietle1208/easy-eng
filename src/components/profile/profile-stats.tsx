@@ -54,32 +54,36 @@ export function ProfileStats({ stats }: ProfileStatsProps) {
   return (
     <section
       aria-label="Stats"
-      className="grid grid-cols-1 gap-5 pt-2 sm:grid-cols-2 lg:grid-cols-4 lg:gap-7"
+      className="grid grid-cols-1 gap-5 pt-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-7"
     >
       {cards.map((card) => {
         const Icon = card.icon;
         return (
-          <StickyNote
+          <div
             key={card.key}
-            color={card.color}
-            rotate={card.rotate}
-            className="gap-1 rounded-[2px_2px_18px_2px] px-[22px] pt-[26px] pb-5 text-ink"
+            className="group/stat transition-transform duration-200 ease-out hover:-translate-y-1.5"
           >
-            <div
-              className={`flex size-10 items-center justify-center rounded-full border-2 border-line bg-white/55 ${card.iconClass}`}
+            <StickyNote
+              color={card.color}
+              rotate={card.rotate}
+              className="gap-1 rounded-[2px_2px_18px_2px] px-[22px] pt-[26px] pb-5 text-ink shadow-[var(--sticky-shadow)] transition-[box-shadow,filter] duration-200 group-hover/stat:shadow-[0_20px_34px_rgba(25,12,4,.45),0_6px_12px_rgba(25,12,4,.2)] group-hover/stat:brightness-[1.03]"
             >
-              <Icon className="size-[22px]" aria-hidden strokeWidth={2} />
-            </div>
-            <div className="font-hand mt-2 text-[clamp(2.25rem,4vw,3.625rem)] leading-[0.95] text-ink-2">
-              {card.value(stats)}
-            </div>
-            <div className="text-base leading-tight font-extrabold">
-              {card.label}
-            </div>
-            <div className="text-[13px] text-[color:var(--muted)]">
-              {card.sub(stats)}
-            </div>
-          </StickyNote>
+              <div
+                className={`flex size-10 items-center justify-center rounded-full border-2 border-line bg-white/55 ${card.iconClass}`}
+              >
+                <Icon className="size-[22px]" aria-hidden strokeWidth={2} />
+              </div>
+              <div className="font-hand mt-2 text-[clamp(2.25rem,4vw,3.625rem)] leading-[0.95] text-ink-2">
+                {card.value(stats)}
+              </div>
+              <div className="text-base leading-tight font-extrabold">
+                {card.label}
+              </div>
+              <div className="text-[13px] text-[color:var(--muted)]">
+                {card.sub(stats)}
+              </div>
+            </StickyNote>
+          </div>
         );
       })}
     </section>

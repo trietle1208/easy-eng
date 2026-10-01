@@ -8,6 +8,11 @@ const envSchema = z.object({
   DATABASE_URL_TEST: z.string().optional(),
   BETTER_AUTH_SECRET: z.string().min(16, "BETTER_AUTH_SECRET must be ≥16 chars"),
   BETTER_AUTH_URL: z.string().url(),
+  /** Off by default for personal use — set `true` to require inbox verification. */
+  REQUIRE_EMAIL_VERIFICATION: z.preprocess(
+    (v) => v === true || v === "true" || v === "1",
+    z.boolean(),
+  ).default(false),
   GOOGLE_CLIENT_ID: z.string().optional().default(""),
   GOOGLE_CLIENT_SECRET: z.string().optional().default(""),
   SMTP_HOST: z.string().optional().default(""),
@@ -42,6 +47,9 @@ function loadEnv(): Env {
       BETTER_AUTH_SECRET:
         process.env.BETTER_AUTH_SECRET ?? "skip-validation-secret",
       BETTER_AUTH_URL: process.env.BETTER_AUTH_URL ?? "http://localhost:3000",
+      REQUIRE_EMAIL_VERIFICATION:
+        process.env.REQUIRE_EMAIL_VERIFICATION === "true" ||
+        process.env.REQUIRE_EMAIL_VERIFICATION === "1",
       GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID ?? "",
       GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET ?? "",
       SMTP_HOST: process.env.SMTP_HOST ?? "",

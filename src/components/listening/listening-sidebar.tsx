@@ -6,6 +6,7 @@ import { Check } from "lucide-react";
 
 import { formatTime } from "@/components/listening/audio-player";
 import { LevelBadge } from "@/components/ui/level-badge";
+import { SelectField } from "@/components/ui/select-field";
 import { cn } from "@/lib/utils";
 import type { CefrLevel } from "@/types/cefr";
 import { CEFR_LEVELS } from "@/types/cefr";
@@ -44,26 +45,17 @@ export function ListeningSidebar({
         </p>
       </div>
 
-      <div>
-        <label className="sr-only" htmlFor="listening-topic">
-          Topic
-        </label>
-        <select
-          id="listening-topic"
-          value={topic}
-          onChange={(e) =>
-            setTopic(e.target.value as ListeningTopic | "all")
-          }
-          className="h-10 w-full appearance-none rounded-xl border border-soft-border bg-[rgba(255,240,220,.12)] px-3 text-sm font-bold text-on-glass"
-        >
-          <option value="all">All topics</option>
-          {LISTENING_TOPICS.map((t) => (
-            <option key={t} value={t}>
-              {t}
-            </option>
-          ))}
-        </select>
-      </div>
+      <SelectField
+        id="listening-topic"
+        aria-label="Topic"
+        variant="soft"
+        value={topic}
+        onValueChange={(next) => setTopic(next as ListeningTopic | "all")}
+        options={[
+          { value: "all", label: "All topics" },
+          ...LISTENING_TOPICS.map((t) => ({ value: t, label: t })),
+        ]}
+      />
 
       <div
         role="group"
