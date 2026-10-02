@@ -36,6 +36,13 @@
       "when": 1790761000000,
       "tag": "0004_good_wolfpack",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1790917527121,
+      "tag": "0005_shiny_ghost_rider",
+      "breakpoints": true
     }
   ]
 }

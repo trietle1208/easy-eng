@@ -46,7 +46,6 @@ import type {
   Word,
   WordSet,
   WordSetFilters,
-  WordSetTopic,
 } from "@/types/vocabulary";
 import { WORD_SET_TOPICS as TOPICS } from "@/types/vocabulary";
 
@@ -250,6 +249,7 @@ export async function getWordSets(
       id: words.id,
       wordSetId: words.wordSetId,
       ownerId: words.ownerId,
+      word: words.word,
     })
     .from(words)
     .where(
@@ -290,12 +290,22 @@ export async function getWordSets(
 
   const foldedQuery = query ? foldSearch(query) : "";
 
+  const headsBySet = new Map<string, string[]>();
+  for (const w of wordRows) {
+    const list = headsBySet.get(w.wordSetId) ?? [];
+    list.push(w.word);
+    headsBySet.set(w.wordSetId, list);
+  }
+
   return setRows
     .filter((s) => {
       if (level !== "all" && s.level !== level) return false;
       if (topic !== "all" && s.topic !== topic) return false;
       if (!foldedQuery) return true;
+      const heads = headsBySet.get(s.id) ?? [];
+      const headHit = heads.some((h) => foldSearch(h).includes(foldedQuery));
       return (
+        headHit ||
         foldSearch(s.title).includes(foldedQuery) ||
         foldSearch(s.titleVi).includes(foldedQuery) ||
         foldSearch(s.topic).includes(foldedQuery)
@@ -303,7 +313,7 @@ export async function getWordSets(
     })
     .map((s) => {
       const c = counts.get(s.id) ?? { total: 0, learned: 0 };
-      return mapWordSet(
+      const mapped = mapWordSet(
         {
           id: s.id,
           title: s.title,
@@ -316,17 +326,18 @@ export async function getWordSets(
         c.learned,
         s.ownerId === user.id,
       );
+      return { ...mapped, wordHeads: headsBySet.get(s.id) ?? [] };
     });
 }
 
 export async function getTopicCounts(): Promise<
-  Record<WordSetTopic | "all", number>
+  Record<string, number> & { all: number }
 > {
   const user = await getCurrentUser();
-  const result = Object.fromEntries(
-    TOPICS.map((t) => [t, 0]),
-  ) as Record<WordSetTopic | "all", number>;
-  result.all = 0;
+  const result: Record<string, number> & { all: number } = {
+    all: 0,
+    ...Object.fromEntries(TOPICS.map((t) => [t, 0])),
+  };
   if (!user) return result;
 
   const rows = await db
@@ -336,9 +347,11 @@ export async function getTopicCounts(): Promise<
     .groupBy(wordSets.topic);
 
   for (const row of rows) {
-    const topic = row.topic as WordSetTopic;
-    if (topic in result) {
+    const topic = row.topic;
+    if (topic in result && topic !== "all") {
       result[topic] = Number(row.n);
+      result.all += Number(row.n);
+    } else {
       result.all += Number(row.n);
     }
   }
@@ -576,6 +589,8 @@ export async function createWord(input: NewWordInput): Promise<Word> {
     examples,
     notes: input.notes?.trim() || null,
     imagePath,
+    source: "user",
+    reviewStatus: "human_reviewed",
     createdAt: now,
   });
 

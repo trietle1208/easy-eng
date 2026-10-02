@@ -6,13 +6,15 @@
  *   pnpm db:seed -- --demo    # content + demo user "Linh"
  *   pnpm db:seed -- --admin   # promote/create admin from SEED_ADMIN_EMAIL
  *                             # (create needs SEED_ADMIN_PASSWORD; combine with --content)
+ *   pnpm db:seed -- --content --only-new  # insert missing rows; never update
+ *   pnpm db:seed -- --content --force     # allow --content when NODE_ENV=production
  */
 import { createHash } from "node:crypto";
 import { copyFileSync, mkdirSync, readFileSync, existsSync } from "node:fs";
 import path from "node:path";
 
 import { hashPassword } from "better-auth/crypto";
-import { eq, sql } from "drizzle-orm";
+import { eq, inArray, sql } from "drizzle-orm";
 import { drizzle, type NodePgDatabase } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
 
@@ -35,15 +37,32 @@ import * as schema from "../src/db/schema";
 type Db = NodePgDatabase<typeof schema>;
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
+const SEED_CHUNK = 500;
 
 function parseArgs(argv: string[]) {
   const flags = new Set(argv.filter((a) => a.startsWith("--")));
   // Default: content. --demo implies content + demo. Explicit --content alone = content only.
   const demo = flags.has("--demo");
   const admin = flags.has("--admin");
+  const onlyNew = flags.has("--only-new");
+  const force = flags.has("--force");
   // `--admin` alone must not re-seed content; no flags at all = content.
-  const content = demo || flags.has("--content") || flags.size === 0;
-  return { content, demo, admin };
+  // `--only-new` / `--force` alone still imply content.
+  const content =
+    demo ||
+    flags.has("--content") ||
+    onlyNew ||
+    force ||
+    flags.size === 0;
+  return { content, demo, admin, onlyNew, force };
+}
+
+function chunked<T>(items: T[], size: number): T[][] {
+  const out: T[][] = [];
+  for (let i = 0; i < items.length; i += size) {
+    out.push(items.slice(i, i + size));
+  }
+  return out;
 }
 
 function loadJson<T>(
@@ -444,72 +463,123 @@ async function seedQuiz(db: Db, data: QuizContent) {
   console.log(`[seed] quiz: ${data.quizzes.length} quizzes`);
 }
 
-async function seedVocabulary(db: Db, data: VocabularyContent) {
+async function seedVocabulary(
+  db: Db,
+  data: VocabularyContent,
+  opts: { onlyNew: boolean },
+) {
   await db.transaction(async (tx) => {
-    for (const s of data.sets) {
-      await tx
-        .insert(schema.wordSets)
-        .values({
-          id: s.id,
-          title: s.title,
-          titleVi: s.titleVi,
-          topic: s.topic,
-          level: s.level,
-          ownerId: null,
-          status: "published",
-        })
-        .onConflictDoUpdate({
-          target: schema.wordSets.id,
-          set: {
-            title: s.title,
-            titleVi: s.titleVi,
-            topic: s.topic,
-            level: s.level,
-            ownerId: null,
-            status: "published",
-          },
-        });
+    const setRows = data.sets.map((s, i) => ({
+      id: s.id,
+      title: s.title,
+      titleVi: s.titleVi,
+      topic: s.topic,
+      level: s.level,
+      ownerId: null as string | null,
+      status: (s.status ?? "published") as "draft" | "published",
+      sortOrder: s.sortOrder ?? i,
+    }));
+
+    for (const batch of chunked(setRows, SEED_CHUNK)) {
+      if (opts.onlyNew) {
+        await tx
+          .insert(schema.wordSets)
+          .values(batch)
+          .onConflictDoNothing({ target: schema.wordSets.id });
+      } else {
+        await tx
+          .insert(schema.wordSets)
+          .values(batch)
+          .onConflictDoUpdate({
+            target: schema.wordSets.id,
+            set: {
+              title: sql`excluded.title`,
+              titleVi: sql`excluded.title_vi`,
+              topic: sql`excluded.topic`,
+              level: sql`excluded.level`,
+              ownerId: null,
+              status: sql`excluded.status`,
+              sortOrder: sql`excluded.sort_order`,
+            },
+          });
+      }
     }
-    for (const w of data.words) {
+
+    const wordRows = data.words.map((w, i) => ({
+      id: w.id,
+      wordSetId: w.wordSetId,
+      ownerId: null as string | null,
+      word: w.word,
+      ipa: w.ipa,
+      partOfSpeech: w.partOfSpeech,
+      level: w.level,
+      meaningVi: w.meaningVi,
+      definitionEn: w.definitionEn,
+      examples: w.examples,
+      collocations: w.collocations ?? null,
+      notes: w.notes ?? null,
+      imagePath: w.imagePath ?? null,
+      source: w.source ?? "manual",
+      sortOrder: w.sortOrder ?? i,
+      reviewStatus: (w.reviewStatus ?? "human_reviewed") as
+        | "ai_generated"
+        | "ai_checked"
+        | "human_reviewed",
+      ipaStatus: w.ipaStatus ?? null,
+      createdAt: w.createdAt ? new Date(w.createdAt) : new Date(),
+    }));
+
+    for (const batch of chunked(wordRows, SEED_CHUNK)) {
+      if (opts.onlyNew) {
+        await tx
+          .insert(schema.words)
+          .values(batch)
+          .onConflictDoNothing({ target: schema.words.id });
+        continue;
+      }
+
+      // Upsert, but never overwrite admin-owned system rows.
+      const ids = batch.map((w) => w.id);
+      const existing = await tx
+        .select({ id: schema.words.id, source: schema.words.source })
+        .from(schema.words)
+        .where(inArray(schema.words.id, ids));
+      const protectedIds = new Set(
+        existing.filter((r) => r.source === "admin").map((r) => r.id),
+      );
+
+      const writable = batch.filter((w) => !protectedIds.has(w.id));
+      if (writable.length === 0) continue;
+
       await tx
         .insert(schema.words)
-        .values({
-          id: w.id,
-          wordSetId: w.wordSetId,
-          ownerId: null,
-          word: w.word,
-          ipa: w.ipa,
-          partOfSpeech: w.partOfSpeech,
-          level: w.level,
-          meaningVi: w.meaningVi,
-          definitionEn: w.definitionEn,
-          examples: w.examples,
-          collocations: w.collocations ?? null,
-          notes: w.notes ?? null,
-          imagePath: w.imagePath ?? null,
-          createdAt: w.createdAt ? new Date(w.createdAt) : new Date(),
-        })
+        .values(writable)
         .onConflictDoUpdate({
           target: schema.words.id,
           set: {
-            wordSetId: w.wordSetId,
+            wordSetId: sql`excluded.word_set_id`,
             ownerId: null,
-            word: w.word,
-            ipa: w.ipa,
-            partOfSpeech: w.partOfSpeech,
-            level: w.level,
-            meaningVi: w.meaningVi,
-            definitionEn: w.definitionEn,
-            examples: w.examples,
-            collocations: w.collocations ?? null,
-            notes: w.notes ?? null,
-            imagePath: w.imagePath ?? null,
+            word: sql`excluded.word`,
+            ipa: sql`excluded.ipa`,
+            partOfSpeech: sql`excluded.part_of_speech`,
+            level: sql`excluded.level`,
+            meaningVi: sql`excluded.meaning_vi`,
+            definitionEn: sql`excluded.definition_en`,
+            examples: sql`excluded.examples`,
+            collocations: sql`excluded.collocations`,
+            notes: sql`excluded.notes`,
+            imagePath: sql`excluded.image_path`,
+            source: sql`excluded.source`,
+            sortOrder: sql`excluded.sort_order`,
+            reviewStatus: sql`excluded.review_status`,
+            ipaStatus: sql`excluded.ipa_status`,
           },
         });
     }
   });
   console.log(
-    `[seed] vocabulary: ${data.sets.length} sets, ${data.words.length} words`,
+    `[seed] vocabulary: ${data.sets.length} sets, ${data.words.length} words` +
+      (opts.onlyNew ? " (--only-new)" : ""),
   );
 }
 
@@ -971,9 +1041,17 @@ async function contentFingerprint(db: Db) {
 }
 
 async function main() {
-  const { content, demo, admin } = parseArgs(process.argv.slice(2));
+  const { content, demo, admin, onlyNew, force } = parseArgs(
+    process.argv.slice(2),
+  );
   const url = process.env.DATABASE_URL;
   if (!url) throw new Error("DATABASE_URL is required");
+
+  if (content && process.env.NODE_ENV === "production" && !force) {
+    throw new Error(
+      "Refusing to seed --content when NODE_ENV=production (pass --force to override).",
+    );
+  }
 
   // Validate all JSON before writing anything.
   const grammar = loadJson("grammar.json", grammarContentSchema);
@@ -995,7 +1073,7 @@ async function main() {
       await seedGrammar(db, grammar);
       await seedReading(db, reading);
       await seedListening(db, listening);
-      await seedVocabulary(db, vocabulary);
+      await seedVocabulary(db, vocabulary, { onlyNew });
       await seedAchievements(db, achievements);
       copySeedAudio(listening);
       console.log(

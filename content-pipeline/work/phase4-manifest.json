@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-10-02T09:30:00.000Z",
+  "promptVersion": "enrich.v1",
+  "source": "cefrj-1.5+ai",
+  "classifiedTotal": 3000,
+  "enrichedTotal": 3000,
+  "failedTotal": 0,
+  "byLevel": { "A1": 800, "A2": 900, "B1": 800, "B2": 500 },
+  "cashApiCostUsd": 0,
+  "runtime": "cursor-only",
+  "budgetCapPerSession": 200,
+  "batchSize": 25,
+  "usage": {
+    "anthropicRequests": 0,
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "note": "D7 Cursor-only — no Anthropic usage; Phase 0 $6–8 Batches estimate N/A"
+  },
+  "stage": "full_complete",
+  "reviewStatus": "ai_generated"
+}

@@ -13,7 +13,8 @@ import {
 } from "@/db/schema";
 import { closeTestPool, getTestPool, resetTestDatabase } from "@/db/test-utils";
 import type { CurrentUser } from "@/lib/auth/session";
-import { emptyCardRow, gradeCard, foldSearch } from "@/lib/fsrs";
+import { foldSearch } from "@/lib/fold-search";
+import { emptyCardRow, gradeCard } from "@/lib/fsrs";
 import {
   createWord,
   deleteWord,

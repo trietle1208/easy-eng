@@ -33,6 +33,19 @@ Notebook-style English learning UI. Product name in the app: **Easy English**. F
 | 8 — Hardening, tests, deploy | **done** (2026-09-30) | `be-plan/phase-8-report.md` |
 | 9 — Admin CMS (optional) | **done** (2026-09-30) | `be-plan/phase-9-report.md` |
 
+## Status — Vocabulary content
+
+| Phase | Status | Notes |
+|---|---|---|
+| 0 — Audit, sources, decisions | **done** (2026-10-02) | `content-plan/phase-0-report.md` · approved (Cursor-only / $0 API) |
+| 1 — Schema / platform | **done** (2026-10-02) | `content-plan/phase-1-report.md` |
+| 2 — Skeleton | **approved** (2026-10-02) | `content-plan/phase-2-report.md` · 3,000 words · POS-stratified |
+| 3 — Topics / sets | **approved** (2026-10-02) | `content-plan/phase-3-report.md` · 131 sets · Cursor classifier |
+| 4 — Enrichment | **approved** (2026-10-02) | `content-plan/phase-4-report.md` · 3000/3000 · $0 API |
+| 5 — Validation | **done** (2026-10-02) | `content-plan/phase-5-report.md` · 3000 ai_checked · 533 queue |
+| 6 — Human review | **done / awaiting approval** (2026-10-02) | `content-plan/phase-6-report.md` · gate 0.81% accept · 904 human_reviewed |
+| 7 — Import / rollout | pending | `content-plan/08-phase-7-import-rollout.md` |
+
 ## Stack
 
 - Next.js 15 App Router + React 19 + TypeScript + Tailwind **v4** + **pnpm**
@@ -43,7 +56,7 @@ Notebook-style English learning UI. Product name in the app: **Easy English**. F
 
 ## Source of truth
 
-- Values: `mockup/html/` · Look: `mockup/screenshots/` · UI plans: `ui-plan/` · Backend plans: `be-plan/` · Briefs: `ui-plan/00-brief.md`, `be-plan/00-brief.md`
+- Values: `mockup/html/` · Look: `mockup/screenshots/` · UI plans: `ui-plan/` · Backend plans: `be-plan/` · Content plans: `content-plan/` · Briefs: `ui-plan/00-brief.md`, `be-plan/00-brief.md`, `content-plan/00-brief.md`
 
 ## Do not
 

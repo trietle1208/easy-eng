@@ -1,0 +1,310 @@
+{
+  "phase": 3,
+  "classified": 3000,
+  "lowConfidenceUnder0_7": 0,
+  "setCount": 131,
+  "sizeMin": 12,
+  "sizeMax": 30,
+  "folds": [
+    {
+      "topicId": "Technology",
+      "fromLevel": "A1",
+      "toLevel": "B1",
+      "wordCount": 1,
+      "wordIds": [
+        "w-phone-verb"
+      ]
+    },
+    {
+      "topicId": "Grammar words",
+      "fromLevel": "B2",
+      "toLevel": "A1",
+      "wordCount": 4,
+      "wordIds": [
+        "w-following-preposition",
+        "w-now-conjunction",
+        "w-owing-to-preposition",
+        "w-though-adverb"
+      ]
+    },
+    {
+      "topicId": "Appearance",
+      "fromLevel": "B2",
+      "toLevel": "A1",
+      "wordCount": 5,
+      "wordIds": [
+        "w-fabric-noun",
+        "w-grand-adjective",
+        "w-linen-noun",
+        "w-micro-noun",
+        "w-well-built-adjective"
+      ]
+    },
+    {
+      "topicId": "Communication",
+      "fromLevel": "B1",
+      "toLevel": "A2",
+      "wordCount": 6,
+      "wordIds": [
+        "w-instance-noun",
+        "w-mention-verb",
+        "w-promise-verb",
+        "w-respond-verb",
+        "w-sign-verb",
+        "w-smile-verb"
+      ]
+    },
+    {
+      "topicId": "Technology",
+      "fromLevel": "B2",
+      "toLevel": "B1",
+      "wordCount": 6,
+      "wordIds": [
+        "w-chemotherapy-noun",
+        "w-data-noun",
+        "w-file-verb",
+        "w-functional-adjective",
+        "w-screen-verb",
+        "w-technical-adjective"
+      ]
+    },
+    {
+      "topicId": "Sports",
+      "fromLevel": "B2",
+      "toLevel": "A1",
+      "wordCount": 7,
+      "wordIds": [
+        "w-arena-noun",
+        "w-jump-noun",
+        "w-parade-noun",
+        "w-recreation-noun",
+        "w-relaxation-noun",
+        "w-spectacle-noun",
+        "w-transport-verb"
+      ]
+    },
+    {
+      "topicId": "Communication",
+      "fromLevel": "B2",
+      "toLevel": "A2",
+      "wordCount": 8,
+      "wordIds": [
+        "w-clause-noun",
+        "w-colon-noun",
+        "w-conjunction-noun",
+        "w-first-language-phrase",
+        "w-oral-adjective",
+        "w-query-noun",
+        "w-sentence-verb",
+        "w-sound-adjective"
+      ]
+    },
+    {
+      "topicId": "Nature",
+      "fromLevel": "B2",
+      "toLevel": "B1",
+      "wordCount": 8,
+      "wordIds": [
+        "w-cool-verb",
+        "w-fluid-adjective",
+        "w-growing-adjective",
+        "w-mist-noun",
+        "w-rock-verb",
+        "w-rural-adjective",
+        "w-urban-adjective",
+        "w-wind-verb"
+      ]
+    },
+    {
+      "topicId": "Technology",
+      "fromLevel": "A2",
+      "toLevel": "B1",
+      "wordCount": 9,
+      "wordIds": [
+        "w-artificial-adjective",
+        "w-automatic-adjective",
+        "w-click-verb",
+        "w-electric-adjective",
+        "w-mobile-adjective",
+        "w-online-adjective",
+        "w-plastic-adjective",
+        "w-post-verb",
+        "w-software-noun"
+      ]
+    },
+    {
+      "topicId": "Food",
+      "fromLevel": "B2",
+      "toLevel": "A1",
+      "wordCount": 10,
+      "wordIds": [
+        "w-alcoholic-noun",
+        "w-barley-noun",
+        "w-berry-noun",
+        "w-cherry-noun",
+        "w-grain-noun",
+        "w-junk-food-phrase",
+        "w-nut-noun",
+        "w-recipe-noun",
+        "w-water-verb",
+        "w-wheat-noun"
+      ]
+    },
+    {
+      "topicId": "Appearance",
+      "fromLevel": "B1",
+      "toLevel": "A1",
+      "wordCount": 11,
+      "wordIds": [
+        "w-brand-new-adjective",
+        "w-collar-noun",
+        "w-cotton-noun",
+        "w-fur-noun",
+        "w-model-adjective",
+        "w-model-verb",
+        "w-old-fashioned-adjective",
+        "w-plain-adjective",
+        "w-serious-adjective",
+        "w-silk-noun",
+        "w-well-dressed-adjective"
+      ]
+    }
+  ],
+  "methods": {
+    "fallback": 413,
+    "pos_rule": 67,
+    "pattern": 145,
+    "cefrj_tag": 1605,
+    "lexicon": 424,
+    "correction": 345,
+    "heuristic": 1
+  },
+  "byTopic": {
+    "Daily life": {
+      "A1": 165,
+      "A2": 249,
+      "B1": 218,
+      "B2": 137,
+      "total": 769
+    },
+    "Work": {
+      "A1": 28,
+      "A2": 38,
+      "B1": 75,
+      "B2": 51,
+      "total": 192
+    },
+    "Travel": {
+      "A1": 33,
+      "A2": 57,
+      "B1": 55,
+      "B2": 16,
+      "total": 161
+    },
+    "Food": {
+      "A1": 60,
+      "A2": 45,
+      "B1": 18,
+      "B2": 10,
+      "total": 133
+    },
+    "Health": {
+      "A1": 32,
+      "A2": 25,
+      "B1": 36,
+      "B2": 23,
+      "total": 116
+    },
+    "School": {
+      "A1": 34,
+      "A2": 56,
+      "B1": 83,
+      "B2": 48,
+      "total": 221
+    },
+    "Technology": {
+      "A1": 1,
+      "A2": 9,
+      "B1": 13,
+      "B2": 6,
+      "total": 29
+    },
+    "Feelings": {
+      "A1": 25,
+      "A2": 22,
+      "B1": 12,
+      "B2": 13,
+      "total": 72
+    },
+    "People": {
+      "A1": 65,
+      "A2": 61,
+      "B1": 37,
+      "B2": 40,
+      "total": 203
+    },
+    "Home": {
+      "A1": 86,
+      "A2": 57,
+      "B1": 45,
+      "B2": 30,
+      "total": 218
+    },
+    "Shopping": {
+      "A1": 56,
+      "A2": 69,
+      "B1": 32,
+      "B2": 19,
+      "total": 176
+    },
+    "Nature": {
+      "A1": 14,
+      "A2": 12,
+      "B1": 19,
+      "B2": 8,
+      "total": 53
+    },
+    "Sports": {
+      "A1": 71,
+      "A2": 53,
+      "B1": 17,
+      "B2": 7,
+      "total": 148
+    },
+    "Media": {
+      "A1": 13,
+      "A2": 28,
+      "B1": 32,
+      "B2": 18,
+      "total": 91
+    },
+    "Society": {
+      "A1": 19,
+      "A2": 46,
+      "B1": 76,
+      "B2": 57,
+      "total": 198
+    },
+    "Communication": {
+      "A1": 17,
+      "A2": 23,
+      "B1": 6,
+      "B2": 8,
+      "total": 54
+    },
+    "Appearance": {
+      "A1": 46,
+      "A2": 25,
+      "B1": 11,
+      "B2": 5,
+      "total": 87
+    },
+    "Grammar words": {
+      "A1": 35,
+      "A2": 25,
+      "B1": 15,
+      "B2": 4,
+      "total": 79
+    }
+  }
+}

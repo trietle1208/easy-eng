@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-10-02T09:42:36.594Z",
+  "promptVersion": "review.v1",
+  "totals": {
+    "words": 3000,
+    "aiChecked": 3000,
+    "needsHuman": 0,
+    "catalogIssues": 0,
+    "regeneratedQueued": 0
+  },
+  "topIssues": [
+    {
+      "code": "LEVEL_LEAK",
+      "count": 523
+    },
+    {
+      "code": "IPA_MISSING",
+      "count": 7
+    },
+    {
+      "code": "BANNED",
+      "count": 4
+    }
+  ],
+  "hashes": {
+    "note": "validated.jsonl is git-ignored; regenerate via pnpm content:validate"
+  }
+}

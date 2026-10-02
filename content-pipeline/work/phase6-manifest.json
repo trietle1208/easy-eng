@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-10-02T09:57:30.000Z",
+  "decided": 904,
+  "appliedFixes": 4,
+  "dropped": 5,
+  "keptAfterImport": 2995,
+  "refilled": 5,
+  "finalTotal": 3000,
+  "humanReviewed": 904,
+  "aiCheckedRemaining": 2096,
+  "needsHuman": 0,
+  "byLevelFinal": {
+    "A1": 800,
+    "A2": 900,
+    "B1": 800,
+    "B2": 500
+  },
+  "droppedIds": [
+    "w-murder-noun",
+    "w-murder-verb",
+    "w-suicide-noun",
+    "w-terrorism-noun",
+    "w-terrorist-noun"
+  ],
+  "refillIds": [
+    "w-return-noun",
+    "w-format-verb",
+    "w-boot-noun",
+    "w-ferry-noun",
+    "w-fountain-noun"
+  ],
+  "qualityGate": {
+    "band": "accept",
+    "errorRate": 0.008086253369272238,
+    "sampleSize": 371,
+    "fixOrDrop": 3,
+    "byLevel": {
+      "A1": { "sample": 71, "fixOrDrop": 1, "errorRate": 0.014084507042253521 },
+      "A2": { "sample": 112, "fixOrDrop": 0, "errorRate": 0 },
+      "B1": { "sample": 113, "fixOrDrop": 2, "errorRate": 0.017699115044247787 },
+      "B2": { "sample": 75, "fixOrDrop": 0, "errorRate": 0 }
+    },
+    "thresholds": {
+      "accept": 0.03,
+      "warn": 0.08
+    }
+  },
+  "hashes": {
+    "note": "validated.jsonl git-ignored; review-filled.csv / quality-gate.md / phase6-manifest committed"
+  }
+}

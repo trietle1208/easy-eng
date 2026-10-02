@@ -1,0 +1,112 @@
+{
+  "topics": [
+    {
+      "id": "Daily life",
+      "title": "Daily life",
+      "titleVi": "Cuộc sống hàng ngày",
+      "scope": "Everyday routines, time-of-day, general verbs and objects"
+    },
+    {
+      "id": "Work",
+      "title": "Work",
+      "titleVi": "Công việc",
+      "scope": "Jobs, office, business tasks"
+    },
+    {
+      "id": "Travel",
+      "title": "Travel",
+      "titleVi": "Du lịch",
+      "scope": "Trips, transport, hotels, directions"
+    },
+    {
+      "id": "Food",
+      "title": "Food",
+      "titleVi": "Ẩm thực",
+      "scope": "Food, drink, cooking, restaurants"
+    },
+    {
+      "id": "Health",
+      "title": "Health",
+      "titleVi": "Sức khỏe",
+      "scope": "Body, illness, fitness, medical"
+    },
+    {
+      "id": "School",
+      "title": "School",
+      "titleVi": "Trường học",
+      "scope": "Study, subjects, exams, campus"
+    },
+    {
+      "id": "Technology",
+      "title": "Technology",
+      "titleVi": "Công nghệ",
+      "scope": "Devices, internet, software"
+    },
+    {
+      "id": "Feelings",
+      "title": "Feelings",
+      "titleVi": "Cảm xúc",
+      "scope": "Emotions, moods, attitudes"
+    },
+    {
+      "id": "People",
+      "title": "People",
+      "titleVi": "Con người & quan hệ",
+      "scope": "Family, friends, social roles, relationships"
+    },
+    {
+      "id": "Home",
+      "title": "Home",
+      "titleVi": "Nhà cửa",
+      "scope": "Housing, rooms, furniture, chores"
+    },
+    {
+      "id": "Shopping",
+      "title": "Shopping",
+      "titleVi": "Mua sắm & tiền bạc",
+      "scope": "Shops, prices, money, payments"
+    },
+    {
+      "id": "Nature",
+      "title": "Nature",
+      "titleVi": "Thiên nhiên & môi trường",
+      "scope": "Weather, animals, plants, environment"
+    },
+    {
+      "id": "Sports",
+      "title": "Sports",
+      "titleVi": "Thể thao & sở thích",
+      "scope": "Sports, games, hobbies, leisure"
+    },
+    {
+      "id": "Media",
+      "title": "Media",
+      "titleVi": "Truyền thông & giải trí",
+      "scope": "TV, film, music, news, books"
+    },
+    {
+      "id": "Society",
+      "title": "Society",
+      "titleVi": "Xã hội & đời sống công",
+      "scope": "Civic life, law, culture, community"
+    },
+    {
+      "id": "Communication",
+      "title": "Communication",
+      "titleVi": "Giao tiếp",
+      "scope": "Speaking, writing, messages, signs"
+    },
+    {
+      "id": "Appearance",
+      "title": "Appearance",
+      "titleVi": "Ngoại hình & tính cách",
+      "scope": "Clothes, looks, personality traits"
+    },
+    {
+      "id": "Grammar words",
+      "title": "Grammar words",
+      "titleVi": "Từ ngữ pháp",
+      "scope": "Prepositions, conjunctions, interjections, discourse markers"
+    }
+  ]
+}

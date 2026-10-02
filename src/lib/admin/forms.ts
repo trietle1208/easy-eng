@@ -141,9 +141,23 @@ export function fieldsFor(kind: ContentKind, ctx: FormContext): FieldSpec[] {
         { name: "id", label: "Set id (slug)", type: "text", required: true, lockOnEdit: true },
         { name: "title", label: "Title", type: "text", required: true },
         { name: "titleVi", label: "Title (VI)", type: "text" },
-        { name: "topic", label: "Topic", type: "text", required: true },
+        { name: "topic", label: "Topic", type: "text", required: true, help: "Must match an id in content/topics.json" },
         { name: "level", label: "Level", type: "select", options: CEFR_OPTIONS, required: true },
-        { name: "words", label: "Words (JSON)", type: "json", rows: 16, help: "[{ word, partOfSpeech, meaningVi, level, ipa?, definitionEn?, examples? }] — id / wordSetId optional" },
+        { name: "sortOrder", label: "Sort order", type: "number" },
+        {
+          name: "reviewSummary",
+          label: "Review / source (read-only)",
+          type: "text",
+          lockOnEdit: true,
+          help: "Aggregate of word reviewStatus + source — edit per word in the JSON below",
+        },
+        {
+          name: "words",
+          label: "Words (JSON)",
+          type: "json",
+          rows: 16,
+          help: "[{ word, partOfSpeech, meaningVi, level, ipa?, definitionEn?, examples?, source?, sortOrder?, reviewStatus?, ipaStatus? }] — id / wordSetId optional",
+        },
       ];
   }
 }
@@ -196,7 +210,13 @@ export function defaultValues(kind: ContentKind): FormValues {
     case "vocabulary":
       return {
         id: "", title: "", titleVi: "", topic: "Daily life", level: "A1",
-        words: j([{ word: "example", partOfSpeech: "noun", level: "A1", meaningVi: "ví dụ", ipa: "", definitionEn: "", examples: [] }]),
+        sortOrder: "0",
+        reviewSummary: "",
+        words: j([{
+          word: "example", partOfSpeech: "noun", level: "A1", meaningVi: "ví dụ",
+          ipa: "", definitionEn: "", examples: [], source: "admin",
+          reviewStatus: "human_reviewed", sortOrder: 0,
+        }]),
       };
   }
 }
@@ -210,12 +230,23 @@ export function entityToValues(
   const spec = fieldsFor(kind, { groups: [] });
   if (kind === "vocabulary") {
     const b = entity as WordSetBundle;
+    const reviewCounts = b.words.reduce<Record<string, number>>((acc, w) => {
+      const key = `${w.reviewStatus ?? "human_reviewed"}/${w.source ?? "admin"}`;
+      acc[key] = (acc[key] ?? 0) + 1;
+      return acc;
+    }, {});
+    const reviewSummary =
+      Object.entries(reviewCounts)
+        .map(([k, n]) => `${n}× ${k}`)
+        .join(", ") || "no words";
     return {
       id: b.set.id,
       title: b.set.title,
       titleVi: b.set.titleVi,
       topic: b.set.topic,
       level: b.set.level,
+      sortOrder: String(b.set.sortOrder ?? 0),
+      reviewSummary,
       words: j(
         b.words.map((w) => ({
           id: w.id,
@@ -228,6 +259,10 @@ export function entityToValues(
           examples: w.examples,
           collocations: w.collocations ?? null,
           notes: w.notes ?? null,
+          source: w.source ?? "admin",
+          sortOrder: w.sortOrder ?? 0,
+          reviewStatus: w.reviewStatus ?? "human_reviewed",
+          ipaStatus: w.ipaStatus ?? null,
         })),
       ),
     };
@@ -512,6 +547,7 @@ export function buildWordSetBundle(
     sortOrder: false,
     defaults: { ipa: "", definitionEn: "", examples: [], wordSetId: id },
   });
+  const sortRaw = c.raw("sortOrder");
   const draft = {
     set: {
       id,
@@ -519,11 +555,12 @@ export function buildWordSetBundle(
       titleVi: c.raw("titleVi"),
       topic: c.str("topic"),
       level: c.str("level"),
+      sortOrder: sortRaw === "" ? 0 : Number(sortRaw),
     },
     words: Array.isArray(words)
       ? words.map((w) =>
           w && typeof w === "object"
-            ? { ...(w as object), wordSetId: id }
+            ? { ...(w as object), wordSetId: id, source: (w as { source?: string }).source ?? "admin" }
             : w,
         )
       : words,

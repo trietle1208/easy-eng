@@ -22,6 +22,9 @@ function mapPos(raw: string): PartOfSpeech {
   if (raw.startsWith("adv")) return "adverb";
   if (raw.startsWith("verb")) return "verb";
   if (raw.startsWith("phrase")) return "phrase";
+  if (raw.startsWith("prep")) return "preposition";
+  if (raw.startsWith("conj")) return "conjunction";
+  if (raw.startsWith("interj")) return "interjection";
   return "noun";
 }
 

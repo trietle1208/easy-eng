@@ -1,0 +1,1002 @@
+[
+  {
+    "hw": "video",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "video",
+    "topic": "Technology",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "knee",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "knee",
+    "topic": "Health",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "weather",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "weather",
+    "topic": "Nature",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "burger",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "burger",
+    "topic": "Food",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "meat",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "meat",
+    "topic": "Food",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "climb",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "climb",
+    "topic": "Sports",
+    "confidence": 0.85,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "history",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "history",
+    "topic": "School",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "sign",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "sign",
+    "topic": "Communication",
+    "confidence": 0.55,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "television",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "television",
+    "topic": "Media",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "floor",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "floor",
+    "topic": "Home",
+    "confidence": 0.85,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "kite",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "kite",
+    "topic": "Sports",
+    "confidence": 0.7,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "party",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "party",
+    "topic": "People",
+    "confidence": 0.75,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "temple",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "temple",
+    "topic": "Society",
+    "confidence": 0.7,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "cloth",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "cloth",
+    "topic": "Appearance",
+    "confidence": 0.7,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "ground",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "ground",
+    "topic": "Nature",
+    "confidence": 0.55,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "uncle",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "uncle",
+    "topic": "People",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "cloud",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "cloud",
+    "topic": "Nature",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "cookie",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "cookie",
+    "topic": "Food",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "map",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "map",
+    "topic": "Travel",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "grammar",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "grammar",
+    "topic": "School",
+    "confidence": 0.85,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "DVD",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "DVD",
+    "topic": "Media",
+    "confidence": 0.85,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "smoking",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "smoking",
+    "topic": "Health",
+    "confidence": 0.8,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "apple",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "apple",
+    "topic": "Food",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "name",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "name",
+    "topic": "People",
+    "confidence": 0.7,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "baseball",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "baseball",
+    "topic": "Sports",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "snack",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "snack",
+    "topic": "Food",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "blanket",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "blanket",
+    "topic": "Home",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "toe",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "toe",
+    "topic": "Health",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "fence",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "fence",
+    "topic": "Home",
+    "confidence": 0.75,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "pasta",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "pasta",
+    "topic": "Food",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "government",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "government",
+    "topic": "Society",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "drawer",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "drawer",
+    "topic": "Home",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "task",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "task",
+    "topic": "Work",
+    "confidence": 0.7,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "climbing",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "climbing",
+    "topic": "Sports",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "pill",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "pill",
+    "topic": "Health",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "bench",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "bench",
+    "topic": "Daily life",
+    "confidence": 0.5,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "running",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "running",
+    "topic": "Sports",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "lane",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "lane",
+    "topic": "Travel",
+    "confidence": 0.6,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "skiing",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "skiing",
+    "topic": "Sports",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "forest",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "forest",
+    "topic": "Nature",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "stomachache",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "stomachache",
+    "topic": "Health",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "cycling",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "cycling",
+    "topic": "Sports",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "castle",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "castle",
+    "topic": "Travel",
+    "confidence": 0.65,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "cab",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "cab",
+    "topic": "Travel",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "refrigerator",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "refrigerator",
+    "topic": "Home",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "journey",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "journey",
+    "topic": "Travel",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "fisherman",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "fisherman",
+    "topic": "Work",
+    "confidence": 0.7,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "sitting room",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "sitting room",
+    "topic": "Home",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "tram",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "tram",
+    "topic": "Travel",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "suit",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "suit",
+    "topic": "Appearance",
+    "confidence": 0.85,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "carriage",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "carriage",
+    "topic": "Travel",
+    "confidence": 0.75,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "slavery",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "slavery",
+    "topic": "Society",
+    "confidence": 0.85,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "vet",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "vet",
+    "topic": "Health",
+    "confidence": 0.8,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "ceremony",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "ceremony",
+    "topic": "Society",
+    "confidence": 0.75,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "swimmer",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "swimmer",
+    "topic": "Sports",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "runaway",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "runaway",
+    "topic": "People",
+    "confidence": 0.55,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "sweatshirt",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "sweatshirt",
+    "topic": "Appearance",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "reservation",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "reservation",
+    "topic": "Travel",
+    "confidence": 0.8,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "burglar",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "burglar",
+    "topic": "Society",
+    "confidence": 0.8,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "rail",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "rail",
+    "topic": "Travel",
+    "confidence": 0.75,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "mankind",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "mankind",
+    "topic": "Society",
+    "confidence": 0.7,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "suicide",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "suicide",
+    "topic": "Health",
+    "confidence": 0.6,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "hairdresser",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "hairdresser",
+    "topic": "Work",
+    "confidence": 0.85,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "biology",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "biology",
+    "topic": "School",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "print",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "print",
+    "topic": "Communication",
+    "confidence": 0.55,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "theft",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "theft",
+    "topic": "Society",
+    "confidence": 0.85,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "designer",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "designer",
+    "topic": "Work",
+    "confidence": 0.8,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "biography",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "biography",
+    "topic": "Media",
+    "confidence": 0.7,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "gymnastics",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "gymnastics",
+    "topic": "Sports",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "powder",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "powder",
+    "topic": "Daily life",
+    "confidence": 0.5,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "lighter",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "lighter",
+    "topic": "Daily life",
+    "confidence": 0.55,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "columnist",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "columnist",
+    "topic": "Media",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "volcano",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "volcano",
+    "topic": "Nature",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "puzzle",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "puzzle",
+    "topic": "Sports",
+    "confidence": 0.65,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "muscle",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "muscle",
+    "topic": "Health",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "blast",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "blast",
+    "topic": "Daily life",
+    "confidence": 0.4,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "pessimist",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "pessimist",
+    "topic": "Feelings",
+    "confidence": 0.8,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "grain",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "grain",
+    "topic": "Nature",
+    "confidence": 0.7,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "assessment",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "assessment",
+    "topic": "School",
+    "confidence": 0.85,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "resignation",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "resignation",
+    "topic": "Work",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "ballet",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "ballet",
+    "topic": "Sports",
+    "confidence": 0.8,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "mutton",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "mutton",
+    "topic": "Food",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "bathhouse",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "bathhouse",
+    "topic": "Home",
+    "confidence": 0.7,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "legislation",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "legislation",
+    "topic": "Society",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "collocation",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "collocation",
+    "topic": "School",
+    "confidence": 0.7,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "peach",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "peach",
+    "topic": "Food",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "embassy",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "embassy",
+    "topic": "Society",
+    "confidence": 0.85,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "comprehension",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "comprehension",
+    "topic": "School",
+    "confidence": 0.8,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "seesaw",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "seesaw",
+    "topic": "Sports",
+    "confidence": 0.7,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "compress",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "compress",
+    "topic": "Health",
+    "confidence": 0.55,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "bun",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "bun",
+    "topic": "Food",
+    "confidence": 0.9,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "crew",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "crew",
+    "topic": "Work",
+    "confidence": 0.75,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "nerve",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "nerve",
+    "topic": "Health",
+    "confidence": 0.7,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "label",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "label",
+    "topic": "Shopping",
+    "confidence": 0.55,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "cellist",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "cellist",
+    "topic": "Media",
+    "confidence": 0.85,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "smokestack",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "smokestack",
+    "topic": "Nature",
+    "confidence": 0.55,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "rental",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "rental",
+    "topic": "Shopping",
+    "confidence": 0.7,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "bomber",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "bomber",
+    "topic": "Society",
+    "confidence": 0.65,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "plague",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "plague",
+    "topic": "Health",
+    "confidence": 0.7,
+    "method": "human_dry_run"
+  },
+  {
+    "hw": "pharmacist",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "pharmacist",
+    "topic": "Health",
+    "confidence": 0.95,
+    "method": "human_dry_run"
+  }
+]

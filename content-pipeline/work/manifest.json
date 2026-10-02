@@ -1,0 +1,355 @@
+{
+  "generatedAt": "2026-10-02T06:17:08.461Z",
+  "source": "cefrj-1.5",
+  "quotas": {
+    "A1": 800,
+    "A2": 900,
+    "B1": 800,
+    "B2": 500
+  },
+  "totals": {
+    "selected": 3000,
+    "byLevel": {
+      "A1": 800,
+      "A2": 900,
+      "B1": 800,
+      "B2": 500
+    },
+    "byPos": {
+      "adverb": 223,
+      "preposition": 43,
+      "noun": 1620,
+      "verb": 490,
+      "adjective": 548,
+      "conjunction": 18,
+      "phrase": 52,
+      "interjection": 6
+    },
+    "flagged": 1618,
+    "ipaMissing": 7,
+    "ipaDictionary": 2993,
+    "multiWord": 62,
+    "withFrequencyRank": 2927
+  },
+  "rejected": {
+    "total": 192,
+    "byReason": {
+      "closed_class": 191,
+      "reserved_existing_word": 1
+    },
+    "samples": [
+      {
+        "line": 2,
+        "headword": "a",
+        "pos": "determiner",
+        "reason": "closed_class:determiner"
+      },
+      {
+        "line": 199,
+        "headword": "all",
+        "pos": "determiner",
+        "reason": "closed_class:determiner"
+      },
+      {
+        "line": 200,
+        "headword": "all",
+        "pos": "pronoun",
+        "reason": "closed_class:pronoun"
+      },
+      {
+        "line": 233,
+        "headword": "am",
+        "pos": "be-verb",
+        "reason": "closed_class:be-verb"
+      },
+      {
+        "line": 256,
+        "headword": "an",
+        "pos": "determiner",
+        "reason": "closed_class:determiner"
+      },
+      {
+        "line": 289,
+        "headword": "another",
+        "pos": "determiner",
+        "reason": "closed_class:determiner"
+      },
+      {
+        "line": 290,
+        "headword": "another",
+        "pos": "pronoun",
+        "reason": "closed_class:pronoun"
+      },
+      {
+        "line": 309,
+        "headword": "any",
+        "pos": "determiner",
+        "reason": "closed_class:determiner"
+      },
+      {
+        "line": 310,
+        "headword": "any",
+        "pos": "pronoun",
+        "reason": "closed_class:pronoun"
+      },
+      {
+        "line": 311,
+        "headword": "anybody",
+        "pos": "pronoun",
+        "reason": "closed_class:pronoun"
+      },
+      {
+        "line": 314,
+        "headword": "anyone",
+        "pos": "pronoun",
+        "reason": "closed_class:pronoun"
+      },
+      {
+        "line": 315,
+        "headword": "anything",
+        "pos": "pronoun",
+        "reason": "closed_class:pronoun"
+      },
+      {
+        "line": 357,
+        "headword": "are",
+        "pos": "be-verb",
+        "reason": "closed_class:be-verb"
+      },
+      {
+        "line": 585,
+        "headword": "be",
+        "pos": "be-verb",
+        "reason": "closed_class:be-verb"
+      },
+      {
+        "line": 611,
+        "headword": "been",
+        "pos": "be-verb",
+        "reason": "closed_class:be-verb"
+      },
+      {
+        "line": 784,
+        "headword": "both",
+        "pos": "determiner",
+        "reason": "closed_class:determiner"
+      },
+      {
+        "line": 785,
+        "headword": "both",
+        "pos": "pronoun",
+        "reason": "closed_class:pronoun"
+      },
+      {
+        "line": 961,
+        "headword": "can",
+        "pos": "modal auxiliary",
+        "reason": "closed_class:modal auxiliary"
+      },
+      {
+        "line": 1518,
+        "headword": "could",
+        "pos": "modal auxiliary",
+        "reason": "closed_class:modal auxiliary"
+      },
+      {
+        "line": 1862,
+        "headword": "did",
+        "pos": "do-verb",
+        "reason": "closed_class:do-verb"
+      },
+      {
+        "line": 1997,
+        "headword": "do",
+        "pos": "do-verb",
+        "reason": "closed_class:do-verb"
+      },
+      {
+        "line": 2003,
+        "headword": "does",
+        "pos": "do-verb",
+        "reason": "closed_class:do-verb"
+      },
+      {
+        "line": 2005,
+        "headword": "doing",
+        "pos": "do-verb",
+        "reason": "closed_class:do-verb"
+      },
+      {
+        "line": 2013,
+        "headword": "done",
+        "pos": "do-verb",
+        "reason": "closed_class:do-verb"
+      },
+      {
+        "line": 2044,
+        "headword": "dozen",
+        "pos": "determiner",
+        "reason": "closed_class:determiner"
+      },
+      {
+        "line": 2108,
+        "headword": "each",
+        "pos": "determiner",
+        "reason": "closed_class:determiner"
+      },
+      {
+        "line": 2109,
+        "headword": "each",
+        "pos": "pronoun",
+        "reason": "closed_class:pronoun"
+      },
+      {
+        "line": 2110,
+        "headword": "each other",
+        "pos": "pronoun",
+        "reason": "closed_class:pronoun"
+      },
+      {
+        "line": 2168,
+        "headword": "eight",
+        "pos": "number",
+        "reason": "closed_class:number"
+      },
+      {
+        "line": 2169,
+        "headword": "eighteen",
+        "pos": "number",
+        "reason": "closed_class:number"
+      },
+      {
+        "line": 2170,
+        "headword": "eighty",
+        "pos": "number",
+        "reason": "closed_class:number"
+      },
+      {
+        "line": 2173,
+        "headword": "either",
+        "pos": "determiner",
+        "reason": "closed_class:determiner"
+      },
+      {
+        "line": 2174,
+        "headword": "either",
+        "pos": "pronoun",
+        "reason": "closed_class:pronoun"
+      },
+      {
+        "line": 2196,
+        "headword": "eleven",
+        "pos": "number",
+        "reason": "closed_class:number"
+      },
+      {
+        "line": 2266,
+        "headword": "enough",
+        "pos": "determiner",
+        "reason": "closed_class:determiner"
+      },
+      {
+        "line": 2267,
+        "headword": "enough",
+        "pos": "pronoun",
+        "reason": "closed_class:pronoun"
+      },
+      {
+        "line": 2343,
+        "headword": "every",
+        "pos": "determiner",
+        "reason": "closed_class:determiner"
+      },
+      {
+        "line": 2344,
+        "headword": "everybody",
+        "pos": "pronoun",
+        "reason": "closed_class:pronoun"
+      },
+      {
+        "line": 2346,
+        "headword": "everyone",
+        "pos": "pronoun",
+        "reason": "closed_class:pronoun"
+      },
+      {
+        "line": 2347,
+        "headword": "everything",
+        "pos": "pronoun",
+        "reason": "closed_class:pronoun"
+      },
+      {
+        "line": 2578,
+        "headword": "few",
+        "pos": "determiner",
+        "reason": "closed_class:determiner"
+      },
+      {
+        "line": 2579,
+        "headword": "few",
+        "pos": "pronoun",
+        "reason": "closed_class:pronoun"
+      },
+      {
+        "line": 2585,
+        "headword": "fifteen",
+        "pos": "number",
+        "reason": "closed_class:number"
+      },
+      {
+        "line": 2587,
+        "headword": "fifty",
+        "pos": "number",
+        "reason": "closed_class:number"
+      },
+      {
+        "line": 2652,
+        "headword": "five",
+        "pos": "number",
+        "reason": "closed_class:number"
+      },
+      {
+        "line": 2759,
+        "headword": "forty",
+        "pos": "number",
+        "reason": "closed_class:number"
+      },
+      {
+        "line": 2765,
+        "headword": "four",
+        "pos": "number",
+        "reason": "closed_class:number"
+      },
+      {
+        "line": 2766,
+        "headword": "fourteen",
+        "pos": "number",
+        "reason": "closed_class:number"
+      },
+      {
+        "line": 2870,
+        "headword": "gate",
+        "pos": "noun",
+        "reason": "reserved_existing_word"
+      },
+      {
+        "line": 3080,
+        "headword": "had",
+        "pos": "have-verb",
+        "reason": "closed_class:have-verb"
+      }
+    ]
+  },
+  "reservedExcluded": [
+    {
+      "word": "gate",
+      "partOfSpeech": "noun"
+    }
+  ],
+  "quotaTolerancePct": 2,
+  "withinQuotaTolerance": true,
+  "hashes": {
+    "skeletonSha256": "35d55e45d3bce89e66e81eb988c15b3dbca4cbcac9a5f573edd735283245a12c",
+    "cefrjSha256": "b0dd3c635f1c9a4fdf1490c7e5b7c48e8bbe55b652ad0c9860a95f98e10ae498"
+  }
+}

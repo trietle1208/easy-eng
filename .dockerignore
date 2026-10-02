@@ -21,6 +21,9 @@ coverage
 # docs & mockups (not needed for FE image)
 mockup
 ui-plan
+be-plan
+content-plan
+content-pipeline
 docs
 AGENTS.md
 CLAUDE.md

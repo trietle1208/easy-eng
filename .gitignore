@@ -54,3 +54,18 @@ next-env.d.ts
 .pnpm-store/
 .gitnexus/
 .gitnexus-home/
+
+# vocabulary content pipeline intermediates (manifests + topic report committed)
+content-pipeline/work/*
+!content-pipeline/work/manifest.json
+!content-pipeline/work/phase3-manifest.json
+!content-pipeline/work/phase4-manifest.json
+!content-pipeline/work/phase5-manifest.json
+!content-pipeline/work/phase6-manifest.json
+!content-pipeline/work/topic-report.csv
+!content-pipeline/work/pilot.csv
+!content-pipeline/work/validation-report.md
+!content-pipeline/work/review-queue.csv
+!content-pipeline/work/quality-gate.md
+!content-pipeline/work/review-filled.csv
+!content-pipeline/work/review-dropped.jsonl

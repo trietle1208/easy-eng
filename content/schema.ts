@@ -190,6 +190,30 @@ export const quizContentSchema = z.object({
   ),
 });
 
+export const topicEntrySchema = z.object({
+  id: z.string().min(1),
+  title: z.string().min(1),
+  titleVi: z.string().min(1),
+  scope: z.string().min(1),
+});
+
+export const topicsContentSchema = z.object({
+  topics: z.array(topicEntrySchema).min(1),
+});
+
+export type TopicsContent = z.infer<typeof topicsContentSchema>;
+export type TopicEntry = z.infer<typeof topicEntrySchema>;
+
+const reviewStatusSchema = z.enum([
+  "ai_generated",
+  "ai_checked",
+  "human_reviewed",
+]);
+
+const ipaStatusSchema = z.enum(["from_dict", "proposed", "missing"]);
+
+const contentStatusSchema = z.enum(["draft", "published"]);
+
 export const vocabularyContentSchema = z.object({
   sets: z.array(
     z.object({
@@ -198,6 +222,8 @@ export const vocabularyContentSchema = z.object({
       titleVi: z.string(),
       topic: z.string().min(1),
       level: cefrSchema,
+      status: contentStatusSchema.optional(),
+      sortOrder: z.number().int().optional(),
     }),
   ),
   words: z.array(
@@ -219,6 +245,10 @@ export const vocabularyContentSchema = z.object({
       collocations: z.array(z.string()).nullable().optional(),
       notes: z.string().nullable().optional(),
       imagePath: z.string().nullable().optional(),
+      source: z.string().min(1).optional(),
+      sortOrder: z.number().int().optional(),
+      reviewStatus: reviewStatusSchema.optional(),
+      ipaStatus: ipaStatusSchema.nullable().optional(),
       createdAt: z.string().datetime().optional(),
     }),
   ),

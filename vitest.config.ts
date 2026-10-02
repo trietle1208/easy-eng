@@ -4,7 +4,12 @@ import path from "node:path";
 export default defineConfig({
   test: {
     environment: "node",
-    include: ["src/**/*.test.ts", "src/**/__tests__/**/*.test.ts"],
+    include: [
+      "src/**/*.test.ts",
+      "src/**/__tests__/**/*.test.ts",
+      "content-pipeline/**/*.test.ts",
+      "content-pipeline/**/__tests__/**/*.test.ts",
+    ],
     fileParallelism: false,
     pool: "forks",
     poolOptions: {

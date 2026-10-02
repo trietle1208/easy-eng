@@ -37,16 +37,31 @@ function wordRowToEntity(w: typeof words.$inferSelect): WordEntity {
     collocations: w.collocations ?? null,
     notes: w.notes ?? null,
     imagePath: w.imagePath ?? null,
+    source: w.source,
+    sortOrder: w.sortOrder,
+    reviewStatus: w.reviewStatus as WordEntity["reviewStatus"],
+    ipaStatus: w.ipaStatus as WordEntity["ipaStatus"],
     createdAt: w.createdAt.toISOString(),
   };
 }
 
-export async function listWordSets(): Promise<AdminListRow[]> {
+export async function listWordSets(filters?: {
+  status?: ContentStatus | "all";
+  topic?: string | "all";
+}): Promise<AdminListRow[]> {
+  const status = filters?.status ?? "all";
+  const topic = filters?.topic ?? "all";
   const sets = await db
     .select()
     .from(wordSets)
-    .where(isNull(wordSets.ownerId))
-    .orderBy(asc(wordSets.title));
+    .where(
+      and(
+        isNull(wordSets.ownerId),
+        status !== "all" ? eq(wordSets.status, status) : undefined,
+        topic !== "all" ? eq(wordSets.topic, topic) : undefined,
+      ),
+    )
+    .orderBy(asc(wordSets.sortOrder), asc(wordSets.title));
   const counts = await db
     .select({ wordSetId: words.wordSetId, n: count() })
     .from(words)
@@ -60,7 +75,8 @@ export async function listWordSets(): Promise<AdminListRow[]> {
     level: s.level,
     status: asStatus(s.status),
     updatedAt: s.createdAt,
-    meta: `${s.topic} · ${byId.get(s.id) ?? 0} words`,
+    meta: `${s.topic} · ${byId.get(s.id) ?? 0} words · sort ${s.sortOrder}`,
+    topic: s.topic,
   }));
 }
 
@@ -77,7 +93,7 @@ export async function getWordSetBundle(
     .select()
     .from(words)
     .where(and(eq(words.wordSetId, id), isNull(words.ownerId)))
-    .orderBy(asc(words.createdAt), asc(words.word));
+    .orderBy(asc(words.sortOrder), asc(words.createdAt), asc(words.word));
   return {
     status: asStatus(set.status),
     bundle: {
@@ -87,6 +103,8 @@ export async function getWordSetBundle(
         titleVi: set.titleVi,
         topic: set.topic,
         level: set.level as Cefr,
+        status: asStatus(set.status),
+        sortOrder: set.sortOrder,
       },
       words: rows.map(wordRowToEntity),
     },
@@ -127,6 +145,7 @@ export async function upsertWordSet(
     topic: set.topic,
     level: set.level,
     ownerId: null,
+    sortOrder: set.sortOrder ?? 0,
   };
   const st = statusColumns(status);
   await tx
@@ -135,7 +154,7 @@ export async function upsertWordSet(
     .onConflictDoUpdate({ target: wordSets.id, set: { ...values, ...st.update } });
 
   // Upsert (never delete-all): learners' FSRS cards reference word ids.
-  for (const w of bundle.words) {
+  for (const [i, w] of bundle.words.entries()) {
     const row = {
       wordSetId: set.id,
       ownerId: null,
@@ -149,6 +168,10 @@ export async function upsertWordSet(
       collocations: w.collocations ?? null,
       notes: w.notes ?? null,
       imagePath: w.imagePath ?? null,
+      source: w.source ?? "admin",
+      sortOrder: w.sortOrder ?? i,
+      reviewStatus: w.reviewStatus ?? "human_reviewed",
+      ipaStatus: w.ipaStatus ?? null,
     };
     await tx
       .insert(words)
@@ -222,6 +245,8 @@ export async function exportVocabulary(
       titleVi: s.titleVi,
       topic: s.topic,
       level: s.level as Cefr,
+      status: asStatus(s.status),
+      sortOrder: s.sortOrder,
     })),
     words: rows.map(wordRowToEntity),
   };

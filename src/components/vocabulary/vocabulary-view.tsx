@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState, useTransition } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Check, Plus, Search } from "lucide-react";
+import { Check, ChevronDown, Plus, Search } from "lucide-react";
 
 import { Flashcard } from "@/components/vocabulary/flashcard";
 import { WordSetCard } from "@/components/vocabulary/word-set-card";
@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { LevelBadge } from "@/components/ui/level-badge";
 import { SelectField } from "@/components/ui/select-field";
 import { startWordSetAction } from "@/lib/actions/vocabulary";
+import { foldSearch } from "@/lib/fold-search";
 import { cn } from "@/lib/utils";
 import type { CefrLevel } from "@/types/cefr";
 import { CEFR_LEVELS } from "@/types/cefr";
@@ -22,6 +23,9 @@ import type {
   WordSetTopic,
 } from "@/types/vocabulary";
 import { WORD_SET_TOPICS } from "@/types/vocabulary";
+
+const PAGE_SIZE = 24;
+const TOPIC_PREVIEW = 8;
 
 type VocabularyViewProps = {
   sets: WordSet[];
@@ -37,6 +41,8 @@ export function VocabularyView({
   const [level, setLevel] = useState<CefrLevel | "all">("all");
   const [topic, setTopic] = useState<WordSetTopic | "all">("all");
   const [hideEmpty, setHideEmpty] = useState(false);
+  const [showAllTopics, setShowAllTopics] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [review, setReview] = useState<ReviewDue | null>(initialReview);
   const [pending, startTransition] = useTransition();
 
@@ -44,13 +50,23 @@ export function VocabularyView({
     setReview(initialReview);
   }, [initialReview]);
 
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [query, level, topic, hideEmpty]);
+
   const matchesQuery = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    return (set: WordSet) =>
-      !q ||
-      set.title.toLowerCase().includes(q) ||
-      set.titleVi.toLowerCase().includes(q) ||
-      set.topic.toLowerCase().includes(q);
+    const q = foldSearch(query);
+    return (set: WordSet) => {
+      if (!q) return true;
+      if (
+        foldSearch(set.title).includes(q) ||
+        foldSearch(set.titleVi).includes(q) ||
+        foldSearch(set.topic).includes(q)
+      ) {
+        return true;
+      }
+      return (set.wordHeads ?? []).some((w) => foldSearch(w).includes(q));
+    };
   }, [query]);
 
   // Each facet's counts ignore its own filter so the other options stay useful.
@@ -72,16 +88,16 @@ export function VocabularyView({
   }, [visible, topic]);
 
   const topicCounts = useMemo(() => {
-    const counts = Object.fromEntries(
+    const counts: Record<string, number> = Object.fromEntries(
       WORD_SET_TOPICS.map((t) => [t, 0]),
-    ) as Record<WordSetTopic, number>;
+    );
     let all = 0;
     for (const s of visible) {
       if (level !== "all" && s.level !== level) continue;
-      counts[s.topic] += 1;
+      counts[s.topic] = (counts[s.topic] ?? 0) + 1;
       all += 1;
     }
-    return { all, ...counts };
+    return { all, ...counts } as { all: number } & Record<string, number>;
   }, [visible, level]);
 
   const filtered = useMemo(
@@ -93,6 +109,17 @@ export function VocabularyView({
       ),
     [visible, level, topic],
   );
+
+  const paged = filtered.slice(0, visibleCount);
+  const hasMoreSets = filtered.length > paged.length;
+
+  const desktopTopics = showAllTopics
+    ? WORD_SET_TOPICS
+    : WORD_SET_TOPICS.slice(0, TOPIC_PREVIEW);
+  const selectedHidden =
+    topic !== "all" &&
+    !showAllTopics &&
+    !desktopTopics.includes(topic);
 
   function refresh() {
     router.refresh();
@@ -162,7 +189,7 @@ export function VocabularyView({
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search vocabulary"
+            placeholder="Search sets or words"
             className="h-14 w-full rounded-full border border-soft-border bg-soft pr-4 pl-12 text-base font-semibold text-on-glass placeholder:text-on-glass-2/70"
           />
         </label>
@@ -197,7 +224,7 @@ export function VocabularyView({
           </div>
 
           <div className="grid gap-3 md:grid-cols-2 md:gap-4">
-            {filtered.map((set) => (
+            {paged.map((set) => (
               <WordSetCard key={set.id} set={set} onChanged={refresh} />
             ))}
             {filtered.length === 0 ? (
@@ -206,6 +233,17 @@ export function VocabularyView({
               </p>
             ) : null}
           </div>
+          {hasMoreSets ? (
+            <div className="flex justify-center">
+              <Button
+                type="button"
+                variant="outline"
+                onClick={() => setVisibleCount((n) => n + PAGE_SIZE)}
+              >
+                Load more ({filtered.length - paged.length} left)
+              </Button>
+            </div>
+          ) : null}
         </div>
       </div>
 
@@ -288,7 +326,7 @@ export function VocabularyView({
             <div
               role="group"
               aria-labelledby="vocab-topic-label"
-              className="flex flex-col gap-1.5"
+              className="flex max-h-[min(52vh,420px)] flex-col gap-1.5 overflow-y-auto pr-1"
             >
               <TopicRow
                 pressed={topic === "all"}
@@ -296,7 +334,15 @@ export function VocabularyView({
                 label="All topics"
                 count={topicCounts.all}
               />
-              {WORD_SET_TOPICS.map((t) => (
+              {selectedHidden ? (
+                <TopicRow
+                  pressed
+                  onClick={() => setTopic(topic)}
+                  label={topic}
+                  count={topicCounts[topic]}
+                />
+              ) : null}
+              {desktopTopics.map((t) => (
                 <TopicRow
                   key={t}
                   pressed={topic === t}
@@ -306,6 +352,24 @@ export function VocabularyView({
                 />
               ))}
             </div>
+            {WORD_SET_TOPICS.length > TOPIC_PREVIEW ? (
+              <button
+                type="button"
+                onClick={() => setShowAllTopics((v) => !v)}
+                className="inline-flex items-center gap-1 self-start text-sm font-bold text-on-glass-2 hover:text-on-glass"
+              >
+                <ChevronDown
+                  className={cn(
+                    "size-4 transition-transform",
+                    showAllTopics && "rotate-180",
+                  )}
+                  aria-hidden
+                />
+                {showAllTopics
+                  ? "Fewer topics"
+                  : `More topics (${WORD_SET_TOPICS.length - TOPIC_PREVIEW})`}
+              </button>
+            ) : null}
           </section>
 
           <HideEmptyToggle checked={hideEmpty} onChange={setHideEmpty} />

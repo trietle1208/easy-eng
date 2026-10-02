@@ -4,21 +4,48 @@ import { notFound } from "next/navigation";
 import { AdminPage, StatusBadge } from "@/components/admin/admin-page";
 import { StatusActions } from "@/components/admin/status-actions";
 import { TaxonomyForms } from "@/components/admin/taxonomy-forms";
+import { VocabListFilters } from "@/components/admin/vocab-list-filters";
 import { Button } from "@/components/ui/button";
 import { getGrammarTaxonomy } from "@/lib/admin/grammar";
 import { listByKind } from "@/lib/admin/load";
-import { isContentKind, KIND_LABELS } from "@/lib/admin/validate";
+import {
+  CONTENT_STATUSES,
+  isContentKind,
+  KIND_LABELS,
+  type ContentStatus,
+} from "@/lib/admin/validate";
 import { requireAdmin } from "@/lib/auth/session";
 
-type Props = { params: Promise<{ kind: string }> };
+type Props = {
+  params: Promise<{ kind: string }>;
+  searchParams: Promise<{ status?: string; topic?: string }>;
+};
 
-export default async function AdminKindListPage({ params }: Props) {
+export default async function AdminKindListPage({
+  params,
+  searchParams,
+}: Props) {
   await requireAdmin();
   const { kind } = await params;
+  const sp = await searchParams;
   if (!isContentKind(kind)) notFound();
 
+  const statusFilter =
+    kind === "vocabulary" &&
+    sp.status &&
+    (CONTENT_STATUSES as readonly string[]).includes(sp.status)
+      ? (sp.status as ContentStatus)
+      : "all";
+  const topicFilter =
+    kind === "vocabulary" && sp.topic?.trim() ? sp.topic.trim() : "all";
+
   const [rows, taxonomy] = await Promise.all([
-    listByKind(kind),
+    listByKind(
+      kind,
+      kind === "vocabulary"
+        ? { status: statusFilter, topic: topicFilter }
+        : undefined,
+    ),
     kind === "grammar" ? getGrammarTaxonomy() : Promise.resolve(null),
   ]);
 
@@ -37,6 +64,9 @@ export default async function AdminKindListPage({ params }: Props) {
         </>
       }
     >
+      {kind === "vocabulary" ? (
+        <VocabListFilters status={statusFilter} topic={topicFilter} />
+      ) : null}
       {taxonomy ? <TaxonomyForms families={taxonomy.families} /> : null}
 
       {rows.length === 0 ? (

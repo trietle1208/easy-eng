@@ -1,0 +1,702 @@
+[
+  {
+    "hw": "video",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "video"
+  },
+  {
+    "hw": "knee",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "knee"
+  },
+  {
+    "hw": "weather",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "weather"
+  },
+  {
+    "hw": "burger",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "burger"
+  },
+  {
+    "hw": "meat",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "meat"
+  },
+  {
+    "hw": "climb",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "climb"
+  },
+  {
+    "hw": "history",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "history"
+  },
+  {
+    "hw": "sign",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "sign"
+  },
+  {
+    "hw": "television",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "television"
+  },
+  {
+    "hw": "floor",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "floor"
+  },
+  {
+    "hw": "kite",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "kite"
+  },
+  {
+    "hw": "party",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "party"
+  },
+  {
+    "hw": "temple",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "temple"
+  },
+  {
+    "hw": "cloth",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "cloth"
+  },
+  {
+    "hw": "ground",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "ground"
+  },
+  {
+    "hw": "uncle",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "uncle"
+  },
+  {
+    "hw": "cloud",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "cloud"
+  },
+  {
+    "hw": "cookie",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "cookie"
+  },
+  {
+    "hw": "map",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "map"
+  },
+  {
+    "hw": "grammar",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "grammar"
+  },
+  {
+    "hw": "DVD",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "DVD"
+  },
+  {
+    "hw": "smoking",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "smoking"
+  },
+  {
+    "hw": "apple",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "apple"
+  },
+  {
+    "hw": "name",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "name"
+  },
+  {
+    "hw": "baseball",
+    "pos": "noun",
+    "cefr": "A1",
+    "flag": true,
+    "primary": "baseball"
+  },
+  {
+    "hw": "snack",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "snack"
+  },
+  {
+    "hw": "blanket",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "blanket"
+  },
+  {
+    "hw": "toe",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "toe"
+  },
+  {
+    "hw": "fence",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "fence"
+  },
+  {
+    "hw": "pasta",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "pasta"
+  },
+  {
+    "hw": "government",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "government"
+  },
+  {
+    "hw": "drawer",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "drawer"
+  },
+  {
+    "hw": "task",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "task"
+  },
+  {
+    "hw": "climbing",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "climbing"
+  },
+  {
+    "hw": "pill",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "pill"
+  },
+  {
+    "hw": "bench",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "bench"
+  },
+  {
+    "hw": "running",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "running"
+  },
+  {
+    "hw": "lane",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "lane"
+  },
+  {
+    "hw": "skiing",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "skiing"
+  },
+  {
+    "hw": "forest",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "forest"
+  },
+  {
+    "hw": "stomachache",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "stomachache"
+  },
+  {
+    "hw": "cycling",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "cycling"
+  },
+  {
+    "hw": "castle",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "castle"
+  },
+  {
+    "hw": "cab",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "cab"
+  },
+  {
+    "hw": "refrigerator",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "refrigerator"
+  },
+  {
+    "hw": "journey",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "journey"
+  },
+  {
+    "hw": "fisherman",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "fisherman"
+  },
+  {
+    "hw": "sitting room",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "sitting room"
+  },
+  {
+    "hw": "tram",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "tram"
+  },
+  {
+    "hw": "suit",
+    "pos": "noun",
+    "cefr": "A2",
+    "flag": true,
+    "primary": "suit"
+  },
+  {
+    "hw": "carriage",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "carriage"
+  },
+  {
+    "hw": "slavery",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "slavery"
+  },
+  {
+    "hw": "vet",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "vet"
+  },
+  {
+    "hw": "ceremony",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "ceremony"
+  },
+  {
+    "hw": "swimmer",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "swimmer"
+  },
+  {
+    "hw": "runaway",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "runaway"
+  },
+  {
+    "hw": "sweatshirt",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "sweatshirt"
+  },
+  {
+    "hw": "reservation",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "reservation"
+  },
+  {
+    "hw": "burglar",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "burglar"
+  },
+  {
+    "hw": "rail",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "rail"
+  },
+  {
+    "hw": "mankind",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "mankind"
+  },
+  {
+    "hw": "suicide",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "suicide"
+  },
+  {
+    "hw": "hairdresser",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "hairdresser"
+  },
+  {
+    "hw": "biology",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "biology"
+  },
+  {
+    "hw": "print",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "print"
+  },
+  {
+    "hw": "theft",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "theft"
+  },
+  {
+    "hw": "designer",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "designer"
+  },
+  {
+    "hw": "biography",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "biography"
+  },
+  {
+    "hw": "gymnastics",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "gymnastics"
+  },
+  {
+    "hw": "powder",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "powder"
+  },
+  {
+    "hw": "lighter",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "lighter"
+  },
+  {
+    "hw": "columnist",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "columnist"
+  },
+  {
+    "hw": "volcano",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "volcano"
+  },
+  {
+    "hw": "puzzle",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "puzzle"
+  },
+  {
+    "hw": "muscle",
+    "pos": "noun",
+    "cefr": "B1",
+    "flag": true,
+    "primary": "muscle"
+  },
+  {
+    "hw": "blast",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "blast"
+  },
+  {
+    "hw": "pessimist",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "pessimist"
+  },
+  {
+    "hw": "grain",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "grain"
+  },
+  {
+    "hw": "assessment",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "assessment"
+  },
+  {
+    "hw": "resignation",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "resignation"
+  },
+  {
+    "hw": "ballet",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "ballet"
+  },
+  {
+    "hw": "mutton",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "mutton"
+  },
+  {
+    "hw": "bathhouse",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "bathhouse"
+  },
+  {
+    "hw": "legislation",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "legislation"
+  },
+  {
+    "hw": "collocation",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "collocation"
+  },
+  {
+    "hw": "peach",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "peach"
+  },
+  {
+    "hw": "embassy",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "embassy"
+  },
+  {
+    "hw": "comprehension",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "comprehension"
+  },
+  {
+    "hw": "seesaw",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "seesaw"
+  },
+  {
+    "hw": "compress",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "compress"
+  },
+  {
+    "hw": "bun",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "bun"
+  },
+  {
+    "hw": "crew",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "crew"
+  },
+  {
+    "hw": "nerve",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "nerve"
+  },
+  {
+    "hw": "label",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "label"
+  },
+  {
+    "hw": "cellist",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "cellist"
+  },
+  {
+    "hw": "smokestack",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "smokestack"
+  },
+  {
+    "hw": "rental",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "rental"
+  },
+  {
+    "hw": "bomber",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "bomber"
+  },
+  {
+    "hw": "plague",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "plague"
+  },
+  {
+    "hw": "pharmacist",
+    "pos": "noun",
+    "cefr": "B2",
+    "flag": true,
+    "primary": "pharmacist"
+  }
+]

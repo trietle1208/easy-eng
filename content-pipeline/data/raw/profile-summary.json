@@ -1,0 +1,70 @@
+{
+  "total_rows": 7799,
+  "unique_headwords": 6863,
+  "variants": 167,
+  "multiword": 144,
+  "closed_class_rows": 200,
+  "multi_level_headwords": 573,
+  "multi_pos_headwords": 850,
+  "levels": {
+    "A1": {
+      "rows": 1164,
+      "unique_hw": 1064,
+      "flagged_rows": 480
+    },
+    "A2": {
+      "rows": 1411,
+      "unique_hw": 1352,
+      "flagged_rows": 469
+    },
+    "B1": {
+      "rows": 2446,
+      "unique_hw": 2354,
+      "flagged_rows": 658
+    },
+    "B2": {
+      "rows": 2778,
+      "unique_hw": 2691,
+      "flagged_rows": 550
+    }
+  },
+  "pos": {
+    "noun": 4091,
+    "adjective": 1494,
+    "verb": 1349,
+    "adverb": 552,
+    "pronoun": 83,
+    "preposition": 76,
+    "determiner": 46,
+    "conjunction": 37,
+    "number": 30,
+    "modal auxiliary": 13,
+    "be-verb": 10,
+    "interjection": 9,
+    "do-verb": 5,
+    "have-verb": 3,
+    "infinitive-to": 1
+  },
+  "exclude_pos": {
+    "be-verb": 10,
+    "determiner": 46,
+    "do-verb": 5,
+    "have-verb": 3,
+    "infinitive-to": 1,
+    "modal auxiliary": 13,
+    "number": 30,
+    "pronoun": 83
+  },
+  "kept_after_policy": {
+    "A1": 1033,
+    "A2": 1370,
+    "B1": 2432,
+    "B2": 2773
+  },
+  "flagged_kept": {
+    "A1": 480,
+    "A2": 469,
+    "B1": 658,
+    "B2": 550
+  }
+}

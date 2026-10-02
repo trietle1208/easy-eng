@@ -1,19 +1,38 @@
 import type { CefrLevel } from "@/types/cefr";
+import topicsJson from "../../content/topics.json";
+import { topicsContentSchema } from "../../content/schema";
 
-export type PartOfSpeech =
-  | "noun"
-  | "verb"
-  | "adjective"
-  | "adverb"
-  | "phrase";
+const topicsData = topicsContentSchema.parse(topicsJson);
 
-export const PARTS_OF_SPEECH: PartOfSpeech[] = [
+/** Topic ids stored on word_sets.topic — single source: content/topics.json */
+export const WORD_SET_TOPICS = topicsData.topics.map((t) => t.id) as [
+  string,
+  ...string[],
+];
+
+export type WordSetTopic = (typeof WORD_SET_TOPICS)[number];
+
+export const TOPIC_ENTRIES = topicsData.topics;
+
+export const PARTS_OF_SPEECH = [
   "noun",
   "verb",
   "adjective",
   "adverb",
   "phrase",
-];
+  "preposition",
+  "conjunction",
+  "interjection",
+] as const;
+
+export type PartOfSpeech = (typeof PARTS_OF_SPEECH)[number];
+
+export type ReviewStatus =
+  | "ai_generated"
+  | "ai_checked"
+  | "human_reviewed";
+
+export type IpaStatus = "from_dict" | "proposed" | "missing";
 
 export type WordExample = {
   en: string;
@@ -33,31 +52,14 @@ export type Word = {
   collocations?: string[];
   notes?: string;
   imageUrl?: string;
+  source?: string;
+  sortOrder?: number;
+  reviewStatus?: ReviewStatus;
+  ipaStatus?: IpaStatus | null;
   createdAt: string;
   /** True when the signed-in user owns this word (editable/deletable). */
   owned?: boolean;
 };
-
-export type WordSetTopic =
-  | "Daily life"
-  | "Work"
-  | "Travel"
-  | "Food"
-  | "Health"
-  | "School"
-  | "Technology"
-  | "Feelings";
-
-export const WORD_SET_TOPICS: WordSetTopic[] = [
-  "Daily life",
-  "Work",
-  "Travel",
-  "Food",
-  "Health",
-  "School",
-  "Technology",
-  "Feelings",
-];
 
 export type WordSet = {
   id: string;
@@ -71,6 +73,8 @@ export type WordSet = {
   status: "active" | "new" | "done";
   /** True when the signed-in user owns this set (editable/deletable). */
   owned?: boolean;
+  /** Headwords in the set (for accent-insensitive word search). */
+  wordHeads?: string[];
 };
 
 export type WordSetFilters = {

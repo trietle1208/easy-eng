@@ -10,6 +10,7 @@ import {
   text,
   timestamp,
   unique,
+  uniqueIndex,
 } from "drizzle-orm/pg-core";
 
 import { user } from "./auth";
@@ -28,6 +29,7 @@ export const wordSets = pgTable(
     }),
     /** System sets (owner null): draft | published for catalog visibility */
     status: text("status").notNull().default("published"),
+    sortOrder: integer("sort_order").notNull().default(0),
     createdAt: timestamp("created_at", { withTimezone: true })
       .notNull()
       .defaultNow(),
@@ -35,6 +37,7 @@ export const wordSets = pgTable(
   (t) => [
     index("word_sets_owner_id_idx").on(t.ownerId),
     index("word_sets_topic_level_idx").on(t.topic, t.level),
+    index("word_sets_sort_order_idx").on(t.sortOrder),
     check("word_sets_level_check", cefrCheck(t.level)),
     check("word_sets_status_check", sql`${t.status} in ('draft', 'published')`),
   ],
@@ -62,6 +65,10 @@ export const words = pgTable(
     collocations: jsonb("collocations").$type<string[] | null>(),
     notes: text("notes"),
     imagePath: text("image_path"),
+    source: text("source").notNull().default("manual"),
+    sortOrder: integer("sort_order").notNull().default(0),
+    reviewStatus: text("review_status").notNull().default("human_reviewed"),
+    ipaStatus: text("ipa_status"),
     createdAt: timestamp("created_at", { withTimezone: true })
       .notNull()
       .defaultNow(),
@@ -69,7 +76,19 @@ export const words = pgTable(
   (t) => [
     index("words_word_set_id_idx").on(t.wordSetId),
     index("words_owner_created_idx").on(t.ownerId, t.createdAt),
+    index("words_set_sort_order_idx").on(t.wordSetId, t.sortOrder),
+    uniqueIndex("words_system_word_pos_uidx")
+      .on(sql`lower(${t.word})`, t.partOfSpeech)
+      .where(sql`${t.ownerId} is null`),
     check("words_level_check", cefrCheck(t.level)),
+    check(
+      "words_review_status_check",
+      sql`${t.reviewStatus} in ('ai_generated', 'ai_checked', 'human_reviewed')`,
+    ),
+    check(
+      "words_ipa_status_check",
+      sql`${t.ipaStatus} is null or ${t.ipaStatus} in ('from_dict', 'proposed', 'missing')`,
+    ),
   ],
 );
 

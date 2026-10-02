@@ -1,0 +1,345 @@
+{"id":"w-alone-adverb","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-best-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-best-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-better-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-bright-adjective","topicId":"Appearance","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-broken-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-careful-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-correct-adjective","topicId":"School","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-dark-adjective","topicId":"Appearance","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-dear-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-different-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-due-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-fair-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-fast-adjective","topicId":"Sports","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-first-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-first-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-following-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-front-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-heavy-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-ideal-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-key-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-later-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-left-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-little-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-little-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-middle-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-off-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-only-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-own-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-past-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-personal-adjective","topicId":"People","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-slow-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-strange-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-strict-adjective","topicId":"School","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-successful-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-thick-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-well-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-well-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-acceptable-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-additional-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-advanced-adjective","topicId":"School","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-alone-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-ancient-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-appropriate-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-armed-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-artificial-adjective","topicId":"Technology","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-average-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-basic-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-better-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-classic-adjective","topicId":"Media","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-comfortable-adjective","topicId":"Home","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-complete-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-convenient-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-creative-adjective","topicId":"Media","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-dangerous-adjective","topicId":"Health","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-deep-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-developed-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-direct-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-double-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-east-adjective","topicId":"Travel","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-east-adverb","topicId":"Travel","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-enormous-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-extra-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-extra-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-face-verb","topicId":"People","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-familiar-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-far-adverb","topicId":"Travel","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-final-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-frank-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-further-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-given-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-helpful-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-impossible-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-inner-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-instant-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-latter-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-left-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-left-noun","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-level-noun","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-likely-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-logical-adjective","topicId":"School","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-loose-adjective","topicId":"Appearance","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-lost-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-magic-adjective","topicId":"Media","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-missing-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-model-noun","topicId":"Appearance","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-modern-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-negative-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-north-adjective","topicId":"Travel","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-north-adverb","topicId":"Travel","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-north-noun","topicId":"Travel","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-off-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-official-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-opposite-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-organized-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-original-adjective","topicId":"Media","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-pacific-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-plastic-adjective","topicId":"Technology","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-popular-adjective","topicId":"Media","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-powerful-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-precise-adjective","topicId":"School","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-private-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-progressive-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-proper-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-quick-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-recent-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-regular-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-remote-adjective","topicId":"Travel","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-round-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-safe-adjective","topicId":"Health","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-separate-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-significant-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-similar-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-single-adjective","topicId":"People","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-smooth-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-soft-adjective","topicId":"Appearance","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-south-adjective","topicId":"Travel","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-south-adverb","topicId":"Travel","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-south-noun","topicId":"Travel","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-specific-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-split-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-square-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-straight-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-sudden-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-suitable-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-third-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-traditional-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-unknown-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-unlike-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-unusual-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-used-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-useful-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-violent-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-weekly-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-well-known-adjective","topicId":"Media","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-able-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-absolute-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-abstract-adjective","topicId":"School","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-active-adjective","topicId":"Sports","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-alternative-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-annual-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-anti-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-apparent-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-bound-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-brief-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-broad-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-capable-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-central-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-chief-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-complete-verb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-complex-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-conscious-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-considerable-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-continuous-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-contrary-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-critical-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-current-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-dependent-adjective","topicId":"People","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-direct-verb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-eastern-adjective","topicId":"Travel","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-effective-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-efficient-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-entire-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-equal-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-essential-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-even-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-evident-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-experienced-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-extreme-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-formal-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-former-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-further-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-future-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-huge-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-immediate-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-independent-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-internal-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-involved-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-joint-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-lead-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-lead-verb","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-leading-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-level-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-limited-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-liquid-adjective","topicId":"Nature","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-main-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-marked-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-mass-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-maximum-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-medium-adjective","topicId":"Media","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-mere-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-minimum-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-model-adjective","topicId":"Appearance","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-model-verb","topicId":"Appearance","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-mutual-adjective","topicId":"People","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-narrow-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-near-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-near-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-northern-adjective","topicId":"Travel","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-numerous-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-obvious-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-opposite-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-ordinary-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-out-of-date-adjective","topicId":"Technology","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-own-verb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-paid-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-partial-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-past-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-permanent-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-positive-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-practical-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-prepared-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-previous-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-public-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-pure-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-quality-adjective","topicId":"Shopping","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-rapid-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-rare-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-reasonable-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-regional-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-responsible-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-round-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-secret-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-secure-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-select-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-severe-adjective","topicId":"Health","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-sharp-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-slow-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-slow-verb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-solid-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-southern-adjective","topicId":"Travel","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-stable-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-strategic-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-substantial-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-sufficient-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-superior-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-top-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-total-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-typical-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-unable-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-unique-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-up-to-date-adjective","topicId":"Technology","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-upper-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-valuable-adjective","topicId":"Shopping","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-various-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-vast-adjective","topicId":"Nature","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-vice-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-visible-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-waste-adjective","topicId":"Nature","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-waste-verb","topicId":"Nature","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-actual-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-acute-adjective","topicId":"Health","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-adequate-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-adopted-adjective","topicId":"People","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-attached-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-characteristic-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-comprehensive-adjective","topicId":"School","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-concrete-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-consistent-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-constant-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-contemporary-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-conventional-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-correct-verb","topicId":"School","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-corresponding-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-crucial-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-deep-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-detailed-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-developing-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-distinguished-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-divided-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-double-verb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-dynamic-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-equal-verb","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-estimated-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-evil-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-existing-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-expected-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-extensive-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-external-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-far-adjective","topicId":"Travel","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-fellow-adjective","topicId":"People","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-fixed-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-fluid-adjective","topicId":"Nature","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-functional-adjective","topicId":"Technology","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-fundamental-adjective","topicId":"School","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-grand-adjective","topicId":"Appearance","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-gross-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-growing-adjective","topicId":"Nature","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-identical-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-improved-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-initial-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-inside-adjective","topicId":"Home","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-known-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-later-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-latter-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-level-verb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-liberal-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-long-term-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-moral-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-moving-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-multiple-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-non-smoking-adjective","topicId":"Health","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-objective-adjective","topicId":"School","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-oral-adjective","topicId":"Communication","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-outside-adjective","topicId":"Home","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-overall-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-overall-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-particular-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-potential-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-primary-adjective","topicId":"School","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-prime-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-prior-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-proposed-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-related-adjective","topicId":"People","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-relevant-adjective","topicId":"School","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-remaining-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-revolutionary-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-round-verb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-secondary-adjective","topicId":"School","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-select-verb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-sensitive-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-separate-verb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-sexual-adjective","topicId":"Health","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-sharp-adverb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-short-term-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-split-verb","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-standard-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-ultimate-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-understanding-adjective","topicId":"Feelings","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-united-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-universal-adjective","topicId":"Society","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-very-adjective","topicId":"Daily life","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-vital-adjective","topicId":"Health","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-well-balanced-adjective","topicId":"Health","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-well-organized-adjective","topicId":"Work","confidence":0.8,"reason":"cursor correction batch"}
+{"id":"w-aware-adjective","topicId":"Feelings","confidence":0.85,"reason":"awareness / feeling"}
+{"id":"w-darling-noun","topicId":"People","confidence":0.9,"reason":"term of endearment"}
+{"id":"w-government-noun","topicId":"Society","confidence":0.92,"reason":"civic noun"}
+{"id":"w-court-noun","topicId":"Society","confidence":0.92,"reason":"legal noun"}
+{"id":"w-museum-noun","topicId":"Media","confidence":0.92,"reason":"culture place"}
+{"id":"w-software-noun","topicId":"Technology","confidence":0.92,"reason":"computing"}
+{"id":"w-television-noun","topicId":"Media","confidence":0.92,"reason":"broadcast media"}
+{"id":"w-party-noun","topicId":"People","confidence":0.92,"reason":"social gathering"}
+{"id":"w-police-station-phrase","topicId":"Society","confidence":0.92,"reason":"civic place"}
+{"id":"w-post-office-phrase","topicId":"Communication","confidence":0.92,"reason":"mail service"}

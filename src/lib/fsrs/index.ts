@@ -101,13 +101,6 @@ export function gradeCard(
   };
 }
 
-/** Fold Vietnamese/Latin accents for case-insensitive search. */
-export function foldSearch(s: string): string {
-  return s
-    .normalize("NFD")
-    .replace(/\p{M}/gu, "")
-    .toLowerCase()
-    .trim();
-}
+export { foldSearch } from "@/lib/fold-search";
 
 export { Rating, State };

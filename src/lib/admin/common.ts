@@ -18,6 +18,8 @@ export type AdminListRow = {
   updatedAt: Date | null;
   /** Short extra info shown in the list (topic, counts, …). */
   meta: string;
+  /** Present for vocabulary sets (filter chips). */
+  topic?: string;
 };
 
 export function asStatus(value: string): ContentStatus {

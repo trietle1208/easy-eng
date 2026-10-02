@@ -6,8 +6,21 @@ Next.js 15 app for **Easy English** (repo folder `chill-english`). Mockups in `m
 
 ## Current phase
 
-**Backend** — All phases 0–9 complete (`be-plan/phase-9-report.md` — admin CMS at `/admin`). Promote an admin with `pnpm db:promote-admin -- <email>` or `pnpm db:seed -- --admin`.
-UI is tagged `ui-v1` (phases 0–4 complete). Backend work follows `be-plan/`. Only work on the phase I name, and stop after its report.
+**Vocabulary content** — Phase 6 **done / awaiting approval** (`content-plan/phase-6-report.md`). Cursor-only AI ($0 API). Do not start Phase 7 until explicitly asked.
+Backend phases 0–9 complete (`be-plan/phase-9-report.md`). UI tagged `ui-v1`. Only work on the phase I name, and stop after its report.
+
+## Vocabulary content phases
+
+| Phase | Status | Notes |
+|---|---|---|
+| 0 — Audit, sources, decisions | **done** (2026-10-02) | `content-plan/phase-0-report.md` · approved (Cursor-only / $0 API) |
+| 1 — Schema / platform | **done** (2026-10-02) | `content-plan/phase-1-report.md` |
+| 2 — Skeleton | **approved** (2026-10-02) | `content-plan/phase-2-report.md` · 3,000 words · POS-stratified |
+| 3 — Topics / sets | **approved** (2026-10-02) | `content-plan/phase-3-report.md` · 131 sets · Cursor classifier |
+| 4 — Enrichment | **approved** (2026-10-02) | `content-plan/phase-4-report.md` · 3000/3000 · $0 API |
+| 5 — Validation | **done** (2026-10-02) | `content-plan/phase-5-report.md` · 3000 ai_checked · 533 queue |
+| 6 — Human review | **done / awaiting approval** (2026-10-02) | `content-plan/phase-6-report.md` · gate 0.81% accept · 904 human_reviewed |
+| 7 — Import / rollout | pending | `content-plan/08-phase-7-import-rollout.md` |
 
 ## Backend phases
 
@@ -40,10 +53,11 @@ UI is tagged `ui-v1` (phases 0–4 complete). Backend work follows `be-plan/`. O
 | `mockup/screenshot/` | `mockup/screenshots/` |
 | `docs/ui-plan/` | plans + reports in `ui-plan/` (mirrored under `docs/ui-plan/` when useful) |
 | Backend brief / phases | `be-plan/00-brief.md` and `be-plan/0N-phase-*.md` |
+| Vocabulary content | `content-plan/00-brief.md` and `content-plan/0N-phase-*.md` |
 
 ## After each completed phase
 
-1. Note status on the phase markdown file / write `be-plan/phase-N-report.md`
+1. Note status on the phase markdown file / write `be-plan/phase-N-report.md` or `content-plan/phase-N-report.md`
 2. Update this file and `CLAUDE.md`
 3. Refresh GitNexus: `npx gitnexus analyze`
 

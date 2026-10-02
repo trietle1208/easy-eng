@@ -9,7 +9,10 @@ import { getReading, listReading } from "@/lib/admin/reading";
 import type { ContentKind, ContentStatus } from "@/lib/admin/validate";
 import { getWordSetBundle, listWordSets } from "@/lib/admin/vocabulary";
 
-export async function listByKind(kind: ContentKind): Promise<AdminListRow[]> {
+export async function listByKind(
+  kind: ContentKind,
+  filters?: { status?: ContentStatus | "all"; topic?: string | "all" },
+): Promise<AdminListRow[]> {
   switch (kind) {
     case "grammar":
       return listGrammar();
@@ -20,7 +23,7 @@ export async function listByKind(kind: ContentKind): Promise<AdminListRow[]> {
     case "quiz":
       return listQuizzes();
     case "vocabulary":
-      return listWordSets();
+      return listWordSets(filters);
   }
 }
 
