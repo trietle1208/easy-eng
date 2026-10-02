@@ -29,3 +29,8 @@ export const submitQuizSchema = z.object({
 export const recordGrammarVisitSchema = z.object({
   slug: z.string().min(1),
 });
+
+export const setGrammarCompletedSchema = z.object({
+  slug: z.string().min(1),
+  completed: z.boolean(),
+});

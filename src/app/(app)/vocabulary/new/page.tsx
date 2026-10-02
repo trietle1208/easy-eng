@@ -8,12 +8,12 @@ import {
 } from "@/lib/data/vocabulary";
 
 type Props = {
-  searchParams: Promise<{ edit?: string }>;
+  searchParams: Promise<{ edit?: string; set?: string }>;
 };
 
 export default async function AddWordPage({ searchParams }: Props) {
   await requireUser("/vocabulary/new");
-  const { edit } = await searchParams;
+  const { edit, set } = await searchParams;
 
   const [wordSets, savedCount, addedToday, initialWord] = await Promise.all([
     getWordSets(),
@@ -28,6 +28,7 @@ export default async function AddWordPage({ searchParams }: Props) {
       savedCount={savedCount}
       initialAddedToday={addedToday}
       initialWord={initialWord?.owned ? initialWord : null}
+      initialSetId={set}
       mode="page"
     />
   );

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 
 import { GrammarView } from "@/components/grammar/grammar-view";
+import { getCurrentUser } from "@/lib/auth/session";
 import {
   getAdjacentLessons,
   getGrammarTree,
@@ -25,5 +26,20 @@ export default async function GrammarLessonPage({ params }: Props) {
   // Signed-in: mark visit as in-progress for "Continue where you left off".
   await recordGrammarVisit(lessonSlug);
 
-  return <GrammarView tree={tree} lesson={lesson} adjacent={adjacent} />;
+  const user = await getCurrentUser();
+  const completed = user
+    ? tree.families
+        .flatMap((f) => f.groups)
+        .flatMap((g) => g.lessons)
+        .some((l) => l.slug === lessonSlug && l.completed)
+    : undefined;
+
+  return (
+    <GrammarView
+      tree={tree}
+      lesson={lesson}
+      adjacent={adjacent}
+      completed={completed}
+    />
+  );
 }

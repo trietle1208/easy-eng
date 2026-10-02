@@ -19,6 +19,10 @@ export type GrammarLessonSummary = {
   level: CefrLevel;
   groupId: string;
   familyId: string;
+  /** Signed-in only: lesson finished (via its practice quiz). */
+  completed?: boolean;
+  /** Signed-in only: lesson visited but not finished. */
+  inProgress?: boolean;
 };
 
 export type LessonStructureItem = {

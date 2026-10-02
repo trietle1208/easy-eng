@@ -17,9 +17,16 @@ type GrammarViewProps = {
   tree: GrammarTree;
   lesson: GrammarLesson;
   adjacent: AdjacentLessons;
+  /** Signed-in only; omit to hide the "Mark as complete" button. */
+  completed?: boolean;
 };
 
-export function GrammarView({ tree, lesson, adjacent }: GrammarViewProps) {
+export function GrammarView({
+  tree,
+  lesson,
+  adjacent,
+  completed,
+}: GrammarViewProps) {
   const [level, setLevel] = useState<CefrLevel | "all">("all");
   const [familyId, setFamilyId] = useState("all");
   const [groupId, setGroupId] = useState("all");
@@ -64,7 +71,11 @@ export function GrammarView({ tree, lesson, adjacent }: GrammarViewProps) {
             onGroupChange={setGroupId}
           />
         </MobileCollapsibleAside>
-        <GrammarLessonPanel lesson={lesson} adjacent={adjacent} />
+        <GrammarLessonPanel
+          lesson={lesson}
+          adjacent={adjacent}
+          completed={completed}
+        />
       </div>
     </div>
   );

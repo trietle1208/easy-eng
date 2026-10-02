@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { ChevronDown, ChevronRight } from "lucide-react";
+import { Check, ChevronDown, ChevronRight } from "lucide-react";
 
 import { ProgressBar } from "@/components/ui/progress-bar";
 import { LevelBadge } from "@/components/ui/level-badge";
@@ -235,6 +235,19 @@ export function GrammarSidebar({
                                     {lesson.title}
                                   </span>
                                   <LevelBadge level={lesson.level} />
+                                  {lesson.completed ? (
+                                    <Check
+                                      className="mt-0.5 size-4 shrink-0 text-primary"
+                                      strokeWidth={3}
+                                      aria-label="Completed"
+                                    />
+                                  ) : lesson.inProgress ? (
+                                    <span
+                                      className="mt-1.5 size-2.5 shrink-0 rounded-full border-2 border-on-glass-2"
+                                      role="img"
+                                      aria-label="In progress"
+                                    />
+                                  ) : null}
                                 </Link>
                               );
                             })

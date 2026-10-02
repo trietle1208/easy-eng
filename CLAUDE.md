@@ -59,7 +59,7 @@ Indexed as **chill-english**. After substantive code changes: `npx gitnexus anal
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **easy-eng** (3111 symbols, 5606 relationships, 143 execution flows).
+This project is indexed by GitNexus as **easy-eng** (4507 symbols, 9333 relationships, 364 execution flows).
 
 > Index stale? Run `node .gitnexus/run.cjs analyze --index-only` from the project root — it auto-selects an available runner. No `.gitnexus/run.cjs` yet? Bootstrap with `npx`, `bunx`, or `pnpm dlx` — e.g. `bunx gitnexus@latest analyze` (npm 11 npx crash; #1939).
 

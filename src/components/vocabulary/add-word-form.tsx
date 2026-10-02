@@ -37,6 +37,8 @@ type AddWordFormProps = {
   savedCount: number;
   initialAddedToday: Word[];
   initialWord?: Word | null;
+  /** Preselect this word set when adding (ignored while editing). */
+  initialSetId?: string;
   mode?: "page" | "modal";
   onClose?: () => void;
 };
@@ -46,6 +48,7 @@ export function AddWordForm({
   savedCount: initialSaved,
   initialAddedToday,
   initialWord = null,
+  initialSetId,
   mode = "page",
   onClose,
 }: AddWordFormProps) {
@@ -70,7 +73,11 @@ export function AddWordForm({
       examples: initialWord?.examples?.length
         ? initialWord.examples.map((e) => e.en)
         : ["", ""],
-      wordSetId: initialWord?.wordSetId ?? wordSets[0]?.id ?? "",
+      wordSetId:
+        initialWord?.wordSetId ??
+        wordSets.find((s) => s.id === initialSetId)?.id ??
+        wordSets[0]?.id ??
+        "",
       newWordSetTitle: "",
       notes: initialWord?.notes ?? "",
       imageUrl: initialWord?.imageUrl ?? "",

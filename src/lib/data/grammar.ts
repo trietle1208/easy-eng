@@ -1,6 +1,6 @@
 import "server-only";
 
-import { and, asc, eq, inArray } from "drizzle-orm";
+import { and, asc, eq } from "drizzle-orm";
 
 import { db } from "@/db";
 import {
@@ -20,6 +20,7 @@ import {
   type GrammarGroupRow,
   type GrammarLessonRow,
 } from "@/lib/data/mappers/grammar";
+import { flagsFor, loadProgressFlags } from "@/lib/data/progress-flags";
 import { upsertLessonProgress } from "@/lib/data/progress-write";
 import type {
   AdjacentLessons,
@@ -152,6 +153,44 @@ export async function recordGrammarVisit(slug: string): Promise<void> {
   });
 }
 
+/**
+ * Manually mark a grammar lesson completed (or undo back to in-progress).
+ * No activity event on purpose: only the practice quiz counts toward goals.
+ */
+export async function setGrammarCompleted(
+  slug: string,
+  completed: boolean,
+): Promise<void> {
+  const user = await getCurrentUser();
+  if (!user) return;
+
+  const rows = await loadAllLessonsOrdered();
+  if (!rows.some((r) => r.lesson.slug === slug)) return;
+
+  if (completed) {
+    await upsertLessonProgress({
+      userId: user.id,
+      contentKind: "grammar",
+      contentId: slug,
+      status: "completed",
+      progressPercent: 100,
+    });
+    return;
+  }
+
+  // upsertLessonProgress never downgrades `completed`, so undo writes directly.
+  await db
+    .update(userLessonProgress)
+    .set({ status: "in_progress", progressPercent: 10, updatedAt: new Date() })
+    .where(
+      and(
+        eq(userLessonProgress.userId, user.id),
+        eq(userLessonProgress.contentKind, "grammar"),
+        eq(userLessonProgress.contentId, slug),
+      ),
+    );
+}
+
 export async function getAdjacentLessons(
   slug: string,
 ): Promise<AdjacentLessons> {
@@ -173,6 +212,15 @@ export async function getGrammarTree(
 
   const [{ families: familyRows, groups: groupRows }, lessonRows] =
     await Promise.all([loadCatalogMeta(), loadAllLessonsOrdered()]);
+
+  const user = await getCurrentUser();
+  const progress = user
+    ? await loadProgressFlags(
+        user.id,
+        "grammar",
+        lessonRows.map((r) => r.lesson.slug),
+      )
+    : new Map();
 
   const familyOptions = familyRows.map((f) => ({
     id: f.id,
@@ -201,7 +249,14 @@ export async function getGrammarTree(
         .map((group) => {
           const lessons = filteredRows
             .filter((r) => r.lesson.groupId === group.id)
-            .map((r) => mapGrammarLessonSummary(toLessonRow(r)));
+            .map((r) => {
+              const flags = flagsFor(progress, r.lesson.slug);
+              return {
+                ...mapGrammarLessonSummary(toLessonRow(r)),
+                completed: flags.completed,
+                inProgress: flags.inProgress || undefined,
+              };
+            });
           return { id: group.id, title: group.title, lessons };
         })
         .filter((g) => g.lessons.length > 0);
@@ -240,33 +295,13 @@ export async function getGrammarTree(
       ? familyRows.find((f) => f.id === familyId)
       : familyRows[0];
 
-  let done = 0;
-  const total = progressFamily
-    ? lessonRows.filter((r) => r.lesson.familyId === progressFamily.id).length
-    : 0;
-
-  const user = await getCurrentUser();
-  if (user && progressFamily) {
-    const slugs = lessonRows
-      .filter((r) => r.lesson.familyId === progressFamily.id)
-      .map((r) => r.lesson.slug);
-    if (slugs.length > 0) {
-      const progressRows = await db
-        .select({
-          contentId: userLessonProgress.contentId,
-          status: userLessonProgress.status,
-        })
-        .from(userLessonProgress)
-        .where(
-          and(
-            eq(userLessonProgress.userId, user.id),
-            eq(userLessonProgress.contentKind, "grammar"),
-            inArray(userLessonProgress.contentId, slugs),
-          ),
-        );
-      done = progressRows.filter((r) => r.status === "completed").length;
-    }
-  }
+  const progressLessons = progressFamily
+    ? lessonRows.filter((r) => r.lesson.familyId === progressFamily.id)
+    : [];
+  const total = progressLessons.length;
+  const done = progressLessons.filter(
+    (r) => flagsFor(progress, r.lesson.slug).completed,
+  ).length;
 
   return {
     families,

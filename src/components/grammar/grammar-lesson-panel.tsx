@@ -8,6 +8,7 @@ import {
   Star,
 } from "lucide-react";
 
+import { GrammarCompleteButton } from "@/components/grammar/grammar-complete-button";
 import { NotebookPage } from "@/components/notebook/notebook-page";
 import { StickyNote } from "@/components/notebook/sticky-note";
 import { Mascot } from "@/components/mascot/mascot";
@@ -19,13 +20,31 @@ import type { AdjacentLessons, GrammarLesson } from "@/types/grammar";
 type GrammarLessonPanelProps = {
   lesson: GrammarLesson;
   adjacent: AdjacentLessons;
+  /** Signed-in only; omit to hide the "Mark as complete" button. */
+  completed?: boolean;
 };
 
 const mistakeRotates = [-1.4, 1.2, -0.6] as const;
 
+function SectionCard({
+  className,
+  ...props
+}: React.ComponentProps<"section">) {
+  return (
+    <section
+      className={cn(
+        "flex flex-col gap-5 rounded-[18px] border-2 border-line/15 bg-surface p-5 shadow-[0_6px_18px_rgba(25,12,4,.1)] md:p-6",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
 export function GrammarLessonPanel({
   lesson,
   adjacent,
+  completed,
 }: GrammarLessonPanelProps) {
   return (
     <NotebookPage
@@ -91,61 +110,72 @@ export function GrammarLessonPanel({
         </div>
       </header>
 
-      <div className="flex flex-col gap-3.5">
-        <p className="m-0 text-lg leading-[1.7] text-ink">
-          {renderBoldParts(lesson.introEn)}
-        </p>
-        <p className="m-0 rounded-[12px] bg-[color-mix(in_srgb,var(--primary-soft)_72%,white)] px-4 py-3 text-[17px] leading-snug font-semibold text-kick">
-          {lesson.introVi}
-        </p>
-        <div className="flex flex-wrap items-baseline gap-3">
-          <span className="text-xs font-extrabold tracking-[0.16em] text-accent uppercase">
-            Use when
+      <SectionCard>
+        <h3 className="m-0 flex flex-wrap items-baseline gap-2.5 text-[15px] font-extrabold tracking-[0.14em] text-ink-2 uppercase">
+          <span className="rounded-[8px] bg-[color-mix(in_srgb,var(--primary-soft)_85%,white)] px-3 py-1.5 text-ink-2">
+            Knowledge
           </span>
-          <span className="text-base">
-            {lesson.useWhenEn}{" "}
-            <i className="text-muted">· {lesson.useWhenVi}</i>
-          </span>
-        </div>
-      </div>
-
-      <StickyNote
-        color="yellow"
-        rotate={-0.8}
-        className="gap-4 rounded-[4px_4px_18px_4px] px-6 pt-8 pb-6"
-      >
-        <h3 className="m-0 flex flex-wrap items-baseline gap-2 text-[15px] font-extrabold tracking-[0.14em] text-ink-2 uppercase">
-          Structure
           <small className="text-[14px] font-semibold tracking-normal text-muted normal-case">
-            Cấu trúc
+            Kiến thức
           </small>
         </h3>
-        <div className="flex flex-col gap-3">
-          {lesson.structure.map((item) => {
-            const { en, vi } = splitEnVi(item.explanation);
-            return (
-              <div
-                key={item.formula}
-                className="rounded-[10px] border border-line/10 bg-surface px-4 py-3.5 shadow-[0_2px_6px_rgba(25,12,4,.06)]"
-              >
-                <div className="font-mono text-base font-bold text-ink-2">
-                  {item.formula}
-                </div>
-                <p className="mt-1.5 m-0 text-[15px] leading-relaxed text-ink">
-                  {en}
-                </p>
-                {vi ? (
-                  <p className="mt-1 m-0 text-[14px] leading-snug text-kick">
-                    {vi}
-                  </p>
-                ) : null}
-              </div>
-            );
-          })}
-        </div>
-      </StickyNote>
 
-      <section className="flex flex-col gap-4">
+        <div className="flex flex-col gap-3.5">
+          <p className="m-0 text-lg leading-[1.7] text-ink">
+            {renderBoldParts(lesson.introEn)}
+          </p>
+          <p className="m-0 rounded-[12px] bg-[color-mix(in_srgb,var(--primary-soft)_72%,white)] px-4 py-3 text-[17px] leading-snug font-semibold text-kick">
+            {lesson.introVi}
+          </p>
+          <div className="flex flex-wrap items-baseline gap-3">
+            <span className="text-xs font-extrabold tracking-[0.16em] text-accent uppercase">
+              Use when
+            </span>
+            <span className="text-base">
+              {lesson.useWhenEn}{" "}
+              <i className="text-muted">· {lesson.useWhenVi}</i>
+            </span>
+          </div>
+        </div>
+
+        <StickyNote
+          color="yellow"
+          rotate={-0.8}
+          className="gap-4 rounded-[4px_4px_18px_4px] px-6 pt-8 pb-6"
+        >
+          <h3 className="m-0 flex flex-wrap items-baseline gap-2 text-[15px] font-extrabold tracking-[0.14em] text-ink-2 uppercase">
+            Structure
+            <small className="text-[14px] font-semibold tracking-normal text-muted normal-case">
+              Cấu trúc
+            </small>
+          </h3>
+          <div className="flex flex-col gap-3">
+            {lesson.structure.map((item) => {
+              const { en, vi } = splitEnVi(item.explanation);
+              return (
+                <div
+                  key={item.formula}
+                  className="rounded-[10px] border border-line/10 bg-surface px-4 py-3.5 shadow-[0_2px_6px_rgba(25,12,4,.06)]"
+                >
+                  <div className="font-mono text-base font-bold text-ink-2">
+                    {item.formula}
+                  </div>
+                  <p className="mt-1.5 m-0 text-[15px] leading-relaxed text-ink">
+                    {en}
+                  </p>
+                  {vi ? (
+                    <p className="mt-1 m-0 text-[14px] leading-snug text-kick">
+                      {vi}
+                    </p>
+                  ) : null}
+                </div>
+              );
+            })}
+          </div>
+        </StickyNote>
+      </SectionCard>
+
+      <SectionCard>
         <h3 className="m-0 flex flex-wrap items-baseline gap-2.5 text-[15px] font-extrabold tracking-[0.14em] text-ink-2 uppercase">
           <span className="rounded-[8px] bg-[color-mix(in_srgb,var(--hatch-2)_85%,white)] px-3 py-1.5 text-ink-2">
             Examples
@@ -184,9 +214,9 @@ export function GrammarLessonPanel({
             );
           })}
         </div>
-      </section>
+      </SectionCard>
 
-      <section className="flex flex-col gap-5">
+      <SectionCard>
         <h3 className="m-0 flex flex-wrap items-baseline gap-2.5 text-[15px] font-extrabold tracking-[0.14em] text-ink-2 uppercase">
           <span className="rounded-[8px] bg-[color-mix(in_srgb,var(--danger)_22%,white)] px-3 py-1.5 text-[color:var(--danger)]">
             Common mistakes
@@ -235,53 +265,76 @@ export function GrammarLessonPanel({
             );
           })}
         </div>
-      </section>
+      </SectionCard>
 
-      <footer className="mt-auto flex flex-col items-stretch gap-4 border-t-2 border-dashed border-line/25 pt-6 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex flex-wrap items-center gap-3.5">
-          {adjacent.previous ? (
-            <Link
-              href={`/grammar/${adjacent.previous.slug}`}
-              className="flex size-11 shrink-0 items-center justify-center rounded-full border-2 border-line bg-surface text-ink"
-              aria-label={`Previous: ${adjacent.previous.title}`}
-            >
-              <ChevronLeft className="size-[18px]" strokeWidth={2.4} />
-            </Link>
-          ) : null}
+      <footer className="mt-auto flex flex-col gap-6">
+        <SectionCard
+          aria-label="Practice"
+          className="flex-row flex-wrap items-center gap-x-3.5 gap-y-3 bg-[color-mix(in_srgb,var(--primary-soft)_72%,var(--surface))]"
+        >
           <Button asChild>
             <Link href={`/quiz/${lesson.practiceQuizSlug}`}>
               <Pencil className="size-[19px]" strokeWidth={2.2} aria-hidden />
               Practice this
             </Link>
           </Button>
-          <span className="text-[13px] font-semibold text-muted">
+          {completed !== undefined ? (
+            <GrammarCompleteButton
+              key={lesson.slug}
+              slug={lesson.slug}
+              completed={completed}
+            />
+          ) : null}
+          <span className="basis-full text-[13px] font-semibold text-muted">
             {lesson.practiceQuestionCount} questions · about{" "}
             {lesson.practiceMinutes} minutes
           </span>
-        </div>
+        </SectionCard>
 
-        {adjacent.next ? (
-          <Link
-            href={`/grammar/${adjacent.next.slug}`}
-            className={cn(
-              "flex w-full items-center justify-end gap-2.5 text-right text-ink sm:w-auto sm:max-w-[280px]",
-            )}
-          >
-            <span>
-              <small className="mb-1 block text-[11px] font-extrabold tracking-[0.14em] text-muted uppercase">
-                Next
-              </small>
-              <b className="text-[15px] leading-snug font-extrabold">
-                {adjacent.next.title}
-              </b>
-            </span>
-            <span className="flex size-11 shrink-0 items-center justify-center rounded-full border-2 border-line bg-surface">
-              <ChevronRight className="size-[18px]" strokeWidth={2.4} />
-            </span>
-          </Link>
-        ) : (
-          <div className="hidden sm:block" />
-        )}
+        <div className="flex items-center justify-between gap-4 px-1">
+          {adjacent.previous ? (
+            <Link
+              href={`/grammar/${adjacent.previous.slug}`}
+              aria-label={`Previous: ${adjacent.previous.title}`}
+              className="flex min-w-0 max-w-[46%] items-center gap-2.5 text-left text-ink"
+            >
+              <span className="flex size-11 shrink-0 items-center justify-center rounded-full border-2 border-line bg-surface">
+                <ChevronLeft className="size-[18px]" strokeWidth={2.4} />
+              </span>
+              <span className="min-w-0">
+                <small className="mb-1 block text-[11px] font-extrabold tracking-[0.14em] text-muted uppercase">
+                  Previous
+                </small>
+                <b className="text-[15px] leading-snug font-extrabold">
+                  {adjacent.previous.title}
+                </b>
+              </span>
+            </Link>
+          ) : (
+            <div />
+          )}
+
+          {adjacent.next ? (
+            <Link
+              href={`/grammar/${adjacent.next.slug}`}
+              className="flex min-w-0 max-w-[46%] items-center justify-end gap-2.5 text-right text-ink"
+            >
+              <span className="min-w-0">
+                <small className="mb-1 block text-[11px] font-extrabold tracking-[0.14em] text-muted uppercase">
+                  Next
+                </small>
+                <b className="text-[15px] leading-snug font-extrabold">
+                  {adjacent.next.title}
+                </b>
+              </span>
+              <span className="flex size-11 shrink-0 items-center justify-center rounded-full border-2 border-line bg-surface">
+                <ChevronRight className="size-[18px]" strokeWidth={2.4} />
+              </span>
+            </Link>
+          ) : (
+            <div />
+          )}
+        </div>
       </footer>
     </NotebookPage>
   );
