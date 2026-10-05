@@ -1,0 +1,427 @@
+[
+  {
+    "id": "w-united-adjective",
+    "meaningVi": "đoàn kết, thống nhất",
+    "definitionEn": "joined together with a shared purpose or identity",
+    "examples": [
+      {
+        "en": "The community stayed united during the difficult year.",
+        "vi": "Cộng đồng vẫn đoàn kết trong suốt năm khó khăn đó."
+      },
+      {
+        "en": "A united team can solve problems more quickly.",
+        "vi": "Một đội ngũ thống nhất có thể giải quyết vấn đề nhanh hơn."
+      }
+    ],
+    "collocations": ["united front", "stay united", "united effort"],
+    "notes": null
+  },
+  {
+    "id": "w-universal-adjective",
+    "meaningVi": "phổ quát, toàn cầu",
+    "definitionEn": "true or existing for all people or in all places",
+    "examples": [
+      {
+        "en": "Clean water should be a universal right for everyone.",
+        "vi": "Nước sạch nên là quyền phổ quát của mọi người."
+      },
+      {
+        "en": "Music has a universal appeal across many cultures.",
+        "vi": "Âm nhạc có sức hấp dẫn phổ quát ở nhiều nền văn hóa."
+      }
+    ],
+    "collocations": ["universal access", "universal appeal", "universal health care"],
+    "notes": null
+  },
+  {
+    "id": "w-urban-adjective",
+    "meaningVi": "đô thị, thuộc thành phố",
+    "definitionEn": "relating to a city or life in a city",
+    "examples": [
+      {
+        "en": "Urban areas often have better public transport links.",
+        "vi": "Khu vực đô thị thường có giao thông công cộng thuận tiện hơn."
+      },
+      {
+        "en": "They moved from a village to an urban neighborhood.",
+        "vi": "Họ chuyển từ làng quê sang một khu phố thành thị."
+      }
+    ],
+    "collocations": ["urban area", "urban life", "urban planning"],
+    "notes": null
+  },
+  {
+    "id": "w-user-noun",
+    "meaningVi": "người dùng",
+    "definitionEn": "a person who uses a service, app, or product",
+    "examples": [
+      {
+        "en": "Each user needs a password to sign in safely.",
+        "vi": "Mỗi người dùng cần mật khẩu để đăng nhập an toàn."
+      },
+      {
+        "en": "The app asks users for feedback after each update.",
+        "vi": "Ứng dụng hỏi ý kiến người dùng sau mỗi lần cập nhật."
+      }
+    ],
+    "collocations": ["app user", "end user", "user account"],
+    "notes": null
+  },
+  {
+    "id": "w-vaccine-noun",
+    "meaningVi": "vắc-xin",
+    "definitionEn": "a medicine that helps the body fight certain diseases",
+    "examples": [
+      {
+        "en": "The clinic offers a free vaccine for local residents.",
+        "vi": "Phòng khám cung cấp vắc-xin miễn phí cho cư dân địa phương."
+      },
+      {
+        "en": "She got the vaccine before her trip abroad.",
+        "vi": "Cô ấy tiêm vắc-xin trước chuyến đi nước ngoài."
+      }
+    ],
+    "collocations": ["get a vaccine", "flu vaccine", "vaccine dose"],
+    "notes": null
+  },
+  {
+    "id": "w-value-verb",
+    "meaningVi": "coi trọng, đánh giá cao",
+    "definitionEn": "to think that someone or something is important",
+    "examples": [
+      {
+        "en": "Our company values honesty in every team meeting.",
+        "vi": "Công ty chúng tôi coi trọng sự trung thực trong mọi cuộc họp."
+      },
+      {
+        "en": "I value your advice when I plan my career.",
+        "vi": "Tôi trân trọng lời khuyên của bạn khi lập kế hoạch sự nghiệp."
+      }
+    ],
+    "collocations": ["value honesty", "highly valued", "value your time"],
+    "notes": "verb sense; not the noun meaning price or worth"
+  },
+  {
+    "id": "w-verse-verb",
+    "meaningVi": "viết thành thơ, sáng thành khổ thơ",
+    "definitionEn": "to put a story or idea into the form of poetry",
+    "examples": [
+      {
+        "en": "The writer versed the old legend for the school show.",
+        "vi": "Nhà văn đã viết truyền thuyết xưa thành thơ cho buổi biểu diễn trường."
+      },
+      {
+        "en": "They versed the tale so children could remember it.",
+        "vi": "Họ chuyển câu chuyện thành thơ để trẻ dễ nhớ."
+      }
+    ],
+    "collocations": ["verse a tale", "verse for children", "verse the story"],
+    "notes": "literary and rare; most learners meet verse as a noun"
+  },
+  {
+    "id": "w-very-adjective",
+    "meaningVi": "chính, đúng (nhấn mạnh trước danh từ)",
+    "definitionEn": "used before a noun to mean exact or true",
+    "examples": [
+      {
+        "en": "At the very start of the meeting, she apologized.",
+        "vi": "Ngay từ đầu cuộc họp, cô ấy đã xin lỗi."
+      },
+      {
+        "en": "It was the very same problem we fixed last month.",
+        "vi": "Đó chính là vấn đề chúng ta đã sửa tháng trước."
+      }
+    ],
+    "collocations": ["the very same", "at the very", "the very idea"],
+    "notes": "adjective before a noun; not the adverb meaning ‘rất’"
+  },
+  {
+    "id": "w-villa-noun",
+    "meaningVi": "biệt thự (thường ở vùng du lịch)",
+    "definitionEn": "a large house for a holiday, often near the sea",
+    "examples": [
+      {
+        "en": "We rented a villa with a pool for the summer break.",
+        "vi": "Chúng tôi thuê biệt thự có hồ bơi cho kỳ nghỉ hè."
+      },
+      {
+        "en": "The villa sits on a quiet hill above the town.",
+        "vi": "Biệt thự nằm trên đồi yên tĩnh nhìn xuống thị trấn."
+      }
+    ],
+    "collocations": ["holiday villa", "rent a villa", "villa with a pool"],
+    "notes": null
+  },
+  {
+    "id": "w-virtually-adverb",
+    "meaningVi": "gần như, hầu như hoàn toàn",
+    "definitionEn": "almost completely; nearly in every way",
+    "examples": [
+      {
+        "en": "The old files are virtually impossible to open now.",
+        "vi": "Các tệp cũ giờ gần như không mở được."
+      },
+      {
+        "en": "After the move, we were virtually strangers again.",
+        "vi": "Sau khi chuyển đi, chúng tôi gần như lại thành người lạ."
+      }
+    ],
+    "collocations": ["virtually impossible", "virtually every", "virtually unknown"],
+    "notes": null
+  },
+  {
+    "id": "w-vital-adjective",
+    "meaningVi": "vô cùng quan trọng, thiết yếu",
+    "definitionEn": "absolutely necessary for success, health, or life",
+    "examples": [
+      {
+        "en": "Sleep is vital if you want to stay focused at work.",
+        "vi": "Giấc ngủ rất quan trọng nếu bạn muốn tập trung khi làm việc."
+      },
+      {
+        "en": "Good communication is vital for a strong team.",
+        "vi": "Giao tiếp tốt là điều thiết yếu cho một đội ngũ vững mạnh."
+      }
+    ],
+    "collocations": ["vital role", "vitally important", "vital signs"],
+    "notes": null
+  },
+  {
+    "id": "w-vitamin-noun",
+    "meaningVi": "dưỡng chất thiết yếu trong thực phẩm",
+    "definitionEn": "a natural substance in food that keeps you healthy",
+    "examples": [
+      {
+        "en": "Oranges give you vitamin C for your immune system.",
+        "vi": "Cam cung cấp vitamin C cho hệ miễn dịch."
+      },
+      {
+        "en": "The doctor said I need more vitamin D from sunlight.",
+        "vi": "Bác sĩ nói tôi cần bổ sung thêm vitamin D từ ánh nắng."
+      }
+    ],
+    "collocations": ["vitamin C", "vitamin D", "take vitamins"],
+    "notes": null
+  },
+  {
+    "id": "w-volunteer-noun",
+    "meaningVi": "tình nguyện viên",
+    "definitionEn": "a person who offers to help without being paid",
+    "examples": [
+      {
+        "en": "Each volunteer helped pack food for local families.",
+        "vi": "Mỗi tình nguyện viên giúp đóng gói thực phẩm cho các gia đình địa phương."
+      },
+      {
+        "en": "We need one more volunteer for the weekend event.",
+        "vi": "Chúng tôi cần thêm một tình nguyện viên cho sự kiện cuối tuần."
+      }
+    ],
+    "collocations": ["local volunteer", "volunteer work", "become a volunteer"],
+    "notes": null
+  },
+  {
+    "id": "w-wage-noun",
+    "meaningVi": "tiền lương (trả theo giờ hoặc ngày)",
+    "definitionEn": "money paid regularly for work, often by the hour",
+    "examples": [
+      {
+        "en": "Her wage rose after she finished the training course.",
+        "vi": "Lương của cô ấy tăng sau khi hoàn thành khóa đào tạo."
+      },
+      {
+        "en": "They discussed fair wages during the union meeting.",
+        "vi": "Họ thảo luận về mức lương công bằng trong cuộc họp công đoàn."
+      }
+    ],
+    "collocations": ["minimum wage", "fair wage", "hourly wage"],
+    "notes": null
+  },
+  {
+    "id": "w-waist-noun",
+    "meaningVi": "eo",
+    "definitionEn": "the middle part of the body above the hips",
+    "examples": [
+      {
+        "en": "These trousers feel tight around my waist after lunch.",
+        "vi": "Quần này bó quanh eo sau bữa trưa."
+      },
+      {
+        "en": "She tied a light scarf around her waist.",
+        "vi": "Cô ấy buộc một chiếc khăn mỏng quanh eo."
+      }
+    ],
+    "collocations": ["around the waist", "waist size", "narrow waist"],
+    "notes": null
+  },
+  {
+    "id": "w-wartime-noun",
+    "meaningVi": "thời chiến",
+    "definitionEn": "the period when a country is fighting a war",
+    "examples": [
+      {
+        "en": "Wartime shortages made food hard to find in cities.",
+        "vi": "Thời chiến khan hiếm khiến thực phẩm khó kiếm ở thành phố."
+      },
+      {
+        "en": "The museum shows photos from wartime in the region.",
+        "vi": "Bảo tàng trưng bày ảnh từ thời chiến ở vùng này."
+      }
+    ],
+    "collocations": ["during wartime", "wartime economy", "wartime rationing"],
+    "notes": null
+  },
+  {
+    "id": "w-water-verb",
+    "meaningVi": "tưới nước (cây)",
+    "definitionEn": "to give plants enough liquid so they can grow",
+    "examples": [
+      {
+        "en": "Please water the herbs on the balcony every morning.",
+        "vi": "Nhờ bạn tưới cây thảo mộc trên ban công mỗi sáng."
+      },
+      {
+        "en": "I forgot to water the tomatoes before I left town.",
+        "vi": "Tôi quên tưới cà chua trước khi rời thị trấn."
+      }
+    ],
+    "collocations": ["water the plants", "water the garden", "water regularly"],
+    "notes": "verb sense; not the noun for drinking liquid"
+  },
+  {
+    "id": "w-welfare-noun",
+    "meaningVi": "phúc lợi xã hội, trợ cấp",
+    "definitionEn": "government help for people who need money or care",
+    "examples": [
+      {
+        "en": "She asked about welfare support after losing her job.",
+        "vi": "Cô ấy hỏi về hỗ trợ phúc lợi sau khi mất việc."
+      },
+      {
+        "en": "The office explains how to apply for welfare benefits.",
+        "vi": "Văn phòng hướng dẫn cách nộp đơn nhận trợ cấp phúc lợi."
+      }
+    ],
+    "collocations": ["welfare benefits", "social welfare", "welfare support"],
+    "notes": null
+  },
+  {
+    "id": "w-well-balanced-adjective",
+    "meaningVi": "cân bằng, điều độ",
+    "definitionEn": "having the right mix of parts for health or stability",
+    "examples": [
+      {
+        "en": "A well-balanced meal includes vegetables and protein.",
+        "vi": "Bữa ăn cân bằng gồm rau và chất đạm."
+      },
+      {
+        "en": "He tries to keep a well-balanced routine each week.",
+        "vi": "Anh ấy cố giữ thói quen sinh hoạt điều độ mỗi tuần."
+      }
+    ],
+    "collocations": ["well-balanced diet", "well-balanced meal", "well-balanced life"],
+    "notes": null
+  },
+  {
+    "id": "w-well-built-adjective",
+    "meaningVi": "cơ bắp chắc, thân hình khỏe",
+    "definitionEn": "with a strong, solid body or physical structure",
+    "examples": [
+      {
+        "en": "The coach is well-built and trains every morning.",
+        "vi": "Huấn luyện viên có thân hình chắc khỏe và tập luyện mỗi sáng."
+      },
+      {
+        "en": "That bridge looks well-built and safe for heavy trucks.",
+        "vi": "Cây cầu đó trông chắc chắn và an toàn cho xe tải nặng."
+      }
+    ],
+    "collocations": ["well-built bridge", "well-built frame", "well-built athlete"],
+    "notes": null
+  },
+  {
+    "id": "w-well-organized-adjective",
+    "meaningVi": "tổ chức tốt, ngăn nắp",
+    "definitionEn": "planned and arranged in a clear, orderly way",
+    "examples": [
+      {
+        "en": "Her desk is well-organized, so she finds files fast.",
+        "vi": "Bàn làm việc của cô ấy ngăn nắp nên tìm hồ sơ rất nhanh."
+      },
+      {
+        "en": "The event was well-organized from start to finish.",
+        "vi": "Sự kiện được tổ chức tốt từ đầu đến cuối."
+      }
+    ],
+    "collocations": ["well-organized event", "well-organized team", "well-organized files"],
+    "notes": "UK spelling: well-organised"
+  },
+  {
+    "id": "w-well-paid-adjective",
+    "meaningVi": "lương cao, được trả tốt",
+    "definitionEn": "earning a good amount of money for your work",
+    "examples": [
+      {
+        "en": "She found a well-paid job after the training program.",
+        "vi": "Cô ấy tìm được việc lương cao sau chương trình đào tạo."
+      },
+      {
+        "en": "Well-paid roles often need strong language skills.",
+        "vi": "Vị trí được trả lương tốt thường đòi hỏi kỹ năng ngoại ngữ."
+      }
+    ],
+    "collocations": ["well-paid job", "well-paid career", "well-paid position"],
+    "notes": null
+  },
+  {
+    "id": "w-western-adjective",
+    "meaningVi": "thuộc phương Tây",
+    "definitionEn": "from or relating to countries in the west of Europe or America",
+    "examples": [
+      {
+        "en": "Western music is popular in many cities here.",
+        "vi": "Nhạc phương Tây phổ biến ở nhiều thành phố tại đây."
+      },
+      {
+        "en": "The course compares eastern and western business styles.",
+        "vi": "Khóa học so sánh phong cách kinh doanh phương Đông và phương Tây."
+      }
+    ],
+    "collocations": ["western culture", "western country", "western Europe"],
+    "notes": null
+  },
+  {
+    "id": "w-wheat-noun",
+    "meaningVi": "lúa mì",
+    "definitionEn": "a grain used to make flour, bread, and pasta",
+    "examples": [
+      {
+        "en": "Farmers harvest wheat when the fields turn golden.",
+        "vi": "Nông dân thu hoạch lúa mì khi cánh đồng chuyển vàng."
+      },
+      {
+        "en": "This bread is made from whole wheat flour.",
+        "vi": "Bánh mì này làm từ bột lúa mì nguyên cám."
+      }
+    ],
+    "collocations": ["whole wheat", "wheat flour", "fields of wheat"],
+    "notes": null
+  },
+  {
+    "id": "w-widow-noun",
+    "meaningVi": "góa phụ, người vợ goá chồng",
+    "definitionEn": "a woman whose husband has died and who has not remarried",
+    "examples": [
+      {
+        "en": "The widow lived quietly with her daughter after he died.",
+        "vi": "Người vợ goá sống yên bình với con gái sau khi chồng mất."
+      },
+      {
+        "en": "Neighbors helped the widow carry groceries upstairs.",
+        "vi": "Hàng xóm giúp bà goá xách đồ lên lầu."
+      }
+    ],
+    "collocations": ["young widow", "war widow", "widow and children"],
+    "notes": null
+  }
+]

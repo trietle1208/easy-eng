@@ -1,0 +1,23 @@
+{
+  "promptVersion": "enrich.v1",
+  "failedIds": [
+    "w-with-preposition"
+  ],
+  "issues": [
+    {
+      "id": "w-with-preposition",
+      "word": "with",
+      "level": "A1",
+      "issues": [
+        {
+          "id": "w-with-preposition",
+          "code": "DEF_HEADWORD",
+          "message": "definitionEn contains the headword"
+        }
+      ],
+      "attempt": 1,
+      "at": "2026-10-02T08:39:16.406Z"
+    }
+  ],
+  "message": "Re-enrich only these ids; save as done-retry-NN.json then --apply"
+}

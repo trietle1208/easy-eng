@@ -1,0 +1,13 @@
+[
+  {
+    "id": "w-phone-verb",
+    "meaningVi": "gọi điện thoại",
+    "definitionEn": "to call someone by telephone",
+    "examples": [
+      { "en": "I will phone you after lunch.", "vi": "Ăn trưa xong mình sẽ gọi bạn." },
+      { "en": "Please phone the office tomorrow.", "vi": "Ngày mai nhớ gọi vào văn phòng." }
+    ],
+    "collocations": ["phone someone", "phone home", "phone back"],
+    "notes": "verb sense; also say ‘call’"
+  }
+]

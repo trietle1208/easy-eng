@@ -1,0 +1,13 @@
+[
+  {
+    "id": "w-right-adverb",
+    "meaningVi": "bên phải; ngay, đúng lúc",
+    "definitionEn": "toward the east when facing north; also exactly",
+    "examples": [
+      { "en": "Turn right at the next corner.", "vi": "Đến ngã rẽ sau rẽ phải nhé." },
+      { "en": "She arrived right on time today.", "vi": "Hôm nay cô ấy đến đúng giờ." }
+    ],
+    "collocations": ["turn right", "right now", "right away"],
+    "notes": null
+  }
+]

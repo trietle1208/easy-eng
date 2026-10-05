@@ -1,0 +1,427 @@
+[
+  {
+    "id": "w-therapy-noun",
+    "meaningVi": "liệu pháp, phương pháp điều trị",
+    "definitionEn": "treatment to help illness or mental health problems",
+    "examples": [
+      {
+        "en": "After the injury, she needed months of therapy.",
+        "vi": "Sau chấn thương, cô ấy cần liệu pháp trong nhiều tháng."
+      },
+      {
+        "en": "The doctor said physical therapy would help my back.",
+        "vi": "Bác sĩ nói vật lý trị liệu sẽ giúp lưng tôi khá hơn."
+      }
+    ],
+    "collocations": ["physical therapy", "therapy session", "undergo therapy"],
+    "notes": null
+  },
+  {
+    "id": "w-thesis-noun",
+    "meaningVi": "luận văn, luận án",
+    "definitionEn": "a long paper written for a university degree",
+    "examples": [
+      {
+        "en": "She spent a year writing her master's thesis.",
+        "vi": "Cô ấy dành một năm để viết luận văn thạc sĩ."
+      },
+      {
+        "en": "Your thesis must include clear research sources.",
+        "vi": "Luận văn của bạn phải có nguồn nghiên cứu rõ ràng."
+      }
+    ],
+    "collocations": ["write a thesis", "thesis defense", "master's thesis"],
+    "notes": null
+  },
+  {
+    "id": "w-thoroughly-adverb",
+    "meaningVi": "một cách kỹ lưỡng, triệt để",
+    "definitionEn": "in a complete and careful way",
+    "examples": [
+      {
+        "en": "Please wash the vegetables thoroughly before cooking.",
+        "vi": "Nhớ rửa kỹ rau trước khi nấu nhé."
+      },
+      {
+        "en": "We thoroughly reviewed the contract before signing it.",
+        "vi": "Chúng tôi xem kỹ hợp đồng trước khi ký."
+      }
+    ],
+    "collocations": ["check thoroughly", "wash thoroughly", "review thoroughly"],
+    "notes": null
+  },
+  {
+    "id": "w-though-adverb",
+    "meaningVi": "tuy nhiên, dù vậy (thường ở cuối câu)",
+    "definitionEn": "used to show contrast, often at sentence end",
+    "examples": [
+      {
+        "en": "The plan sounds good. It may cost too much, though.",
+        "vi": "Kế hoạch nghe ổn đấy. Tuy nhiên có thể tốn hơn dự kiến."
+      },
+      {
+        "en": "I do not agree. I respect your view, though.",
+        "vi": "Tôi không đồng ý. Dù vậy tôi vẫn tôn trọng quan điểm của bạn."
+      }
+    ],
+    "collocations": ["even though", "as though", "though not"],
+    "notes": "Khác với although ở đầu mệnh đề; though thường đứng cuối câu khi mang nghĩa tuy nhiên."
+  },
+  {
+    "id": "w-throat-noun",
+    "meaningVi": "họng, cổ họng",
+    "definitionEn": "the passage inside the neck used for swallowing",
+    "examples": [
+      {
+        "en": "My throat hurt after I spoke for hours.",
+        "vi": "Họng tôi đau sau khi nói liên tục mấy tiếng."
+      },
+      {
+        "en": "Drink warm water if your throat feels dry.",
+        "vi": "Uống nước ấm nếu cổ họng bạn bị khô."
+      }
+    ],
+    "collocations": ["sore throat", "clear your throat", "stuck in your throat"],
+    "notes": null
+  },
+  {
+    "id": "w-time-verb",
+    "meaningVi": "bấm giờ, đo thời gian",
+    "definitionEn": "to measure how long something takes",
+    "examples": [
+      {
+        "en": "The coach timed each runner at the finish line.",
+        "vi": "Huấn luyện viên bấm giờ từng vận động viên ở vạch đích."
+      },
+      {
+        "en": "Can you time how long the rice takes to cook?",
+        "vi": "Bạn bấm giúp mình xem nấu cơm mất bao lâu nhé?"
+      }
+    ],
+    "collocations": ["time the race", "well timed", "badly timed"],
+    "notes": null
+  },
+  {
+    "id": "w-trace-verb",
+    "meaningVi": "truy tìm nguồn gốc; tô theo nét",
+    "definitionEn": "to find where something came from originally",
+    "examples": [
+      {
+        "en": "Police tried to trace the source of the leak.",
+        "vi": "Cảnh sát cố truy tìm nguồn gốc của vụ rò rỉ."
+      },
+      {
+        "en": "She traced the outline of the map on paper.",
+        "vi": "Cô ấy tô theo nét bản đồ lên giấy."
+      }
+    ],
+    "collocations": ["trace the origin", "trace back to", "trace a pattern"],
+    "notes": null
+  },
+  {
+    "id": "w-track-verb",
+    "meaningVi": "theo dõi, truy tìm",
+    "definitionEn": "to follow progress or find where something went",
+    "examples": [
+      {
+        "en": "You can track your package online after it ships.",
+        "vi": "Sau khi gửi, bạn có thể theo dõi kiện hàng trực tuyến."
+      },
+      {
+        "en": "The app helps me track my daily steps.",
+        "vi": "Ứng dụng giúp tôi theo dõi số bước mỗi ngày."
+      }
+    ],
+    "collocations": ["track progress", "track a package", "keep track of"],
+    "notes": null
+  },
+  {
+    "id": "w-trade-verb",
+    "meaningVi": "trao đổi, đổi chác",
+    "definitionEn": "to exchange one thing for another with someone",
+    "examples": [
+      {
+        "en": "They traded seats so the couple could sit together.",
+        "vi": "Họ đổi chỗ để cặp đôi ngồi cạnh nhau."
+      },
+      {
+        "en": "Would you trade your old phone for a discount?",
+        "vi": "Bạn có muốn đổi điện thoại cũ lấy giảm giá không?"
+      }
+    ],
+    "collocations": ["trade places", "trade for", "trade with"],
+    "notes": null
+  },
+  {
+    "id": "w-transistor-noun",
+    "meaningVi": "bóng bán dẫn",
+    "definitionEn": "a small electronic part that controls electric current",
+    "examples": [
+      {
+        "en": "The radio stopped working when a transistor failed.",
+        "vi": "Đài ngừng hoạt động khi một bóng bán dẫn hỏng."
+      },
+      {
+        "en": "Modern chips contain millions of tiny transistors.",
+        "vi": "Chip hiện đại chứa hàng triệu bóng bán dẫn siêu nhỏ."
+      }
+    ],
+    "collocations": ["transistor radio", "transistor failure", "tiny transistor"],
+    "notes": null
+  },
+  {
+    "id": "w-translation-noun",
+    "meaningVi": "bản dịch, sự dịch",
+    "definitionEn": "words changed from one language into another",
+    "examples": [
+      {
+        "en": "I read the translation because my French is weak.",
+        "vi": "Tôi đọc bản dịch vì tiếng Pháp của mình còn yếu."
+      },
+      {
+        "en": "The translation kept the poem's meaning very well.",
+        "vi": "Bản dịch giữ được ý nghĩa bài thơ rất tốt."
+      }
+    ],
+    "collocations": ["accurate translation", "machine translation", "literary translation"],
+    "notes": null
+  },
+  {
+    "id": "w-transport-verb",
+    "meaningVi": "vận chuyển, chở",
+    "definitionEn": "to carry people or goods from place to place",
+    "examples": [
+      {
+        "en": "The hospital can transport patients by helicopter.",
+        "vi": "Bệnh viện có thể vận chuyển bệnh nhân bằng trực thăng."
+      },
+      {
+        "en": "Trucks transport goods across the country every day.",
+        "vi": "Xe tải vận chuyển hàng hóa khắp cả nước mỗi ngày."
+      }
+    ],
+    "collocations": ["transport goods", "transport patients", "public transport"],
+    "notes": null
+  },
+  {
+    "id": "w-treat-verb",
+    "meaningVi": "điều trị, chữa trị",
+    "definitionEn": "to give medical care to cure an illness",
+    "examples": [
+      {
+        "en": "The nurse will treat the wound right away.",
+        "vi": "Y tá sẽ xử lý vết thương ngay."
+      },
+      {
+        "en": "Doctors treat many patients at this clinic daily.",
+        "vi": "Bác sĩ ở phòng khám này điều trị nhiều bệnh nhân mỗi ngày."
+      }
+    ],
+    "collocations": ["treat a patient", "treat an illness", "treat with care"],
+    "notes": "Động từ y học; không nhầm với treat someone to coffee (đãi)."
+  },
+  {
+    "id": "w-treaty-noun",
+    "meaningVi": "hiệp ước, điều ước",
+    "definitionEn": "a formal agreement between countries or groups",
+    "examples": [
+      {
+        "en": "The two nations signed a peace treaty last week.",
+        "vi": "Hai nước đã ký hiệp ước hòa bình tuần trước."
+      },
+      {
+        "en": "The treaty limits weapons on both sides.",
+        "vi": "Hiệp ước giới hạn vũ khí ở cả hai phía."
+      }
+    ],
+    "collocations": ["sign a treaty", "peace treaty", "trade treaty"],
+    "notes": null
+  },
+  {
+    "id": "w-trip-verb",
+    "meaningVi": "vấp, ngã vấp",
+    "definitionEn": "to catch your foot and lose balance while walking",
+    "examples": [
+      {
+        "en": "Be careful not to trip on the loose step.",
+        "vi": "Cẩn thận đừng vấp vào bậc thang lỏng."
+      },
+      {
+        "en": "He tripped on a cable and dropped his coffee.",
+        "vi": "Anh ấy vấp dây điện và làm đổ cà phê."
+      }
+    ],
+    "collocations": ["trip over", "trip on something", "trip and fall"],
+    "notes": "Khác nghĩa chuyến đi (danh từ trip)."
+  },
+  {
+    "id": "w-tuberculosis-noun",
+    "meaningVi": "bệnh lao",
+    "definitionEn": "a serious infectious disease that affects the lungs",
+    "examples": [
+      {
+        "en": "Tuberculosis can spread through the air in crowds.",
+        "vi": "Bệnh lao có thể lây qua không khí ở nơi đông người."
+      },
+      {
+        "en": "The clinic tests for tuberculosis at no charge.",
+        "vi": "Phòng khám xét nghiệm lao miễn phí."
+      }
+    ],
+    "collocations": ["tuberculosis test", "spread of tuberculosis", "fight tuberculosis"],
+    "notes": null
+  },
+  {
+    "id": "w-tuition-noun",
+    "meaningVi": "học phí",
+    "definitionEn": "money paid for teaching at a school or college",
+    "examples": [
+      {
+        "en": "Tuition fees rose again at many public universities.",
+        "vi": "Học phí tại nhiều trường công lại tăng."
+      },
+      {
+        "en": "She works part time to pay her tuition.",
+        "vi": "Cô ấy làm thêm để trả học phí."
+      }
+    ],
+    "collocations": ["tuition fees", "pay tuition", "tuition increase"],
+    "notes": null
+  },
+  {
+    "id": "w-tumor-noun",
+    "meaningVi": "khối u",
+    "definitionEn": "an abnormal mass of cells growing in the body",
+    "examples": [
+      {
+        "en": "The scan showed a small tumor that needed checks.",
+        "vi": "Kết quả chụp cho thấy một khối u nhỏ cần theo dõi."
+      },
+      {
+        "en": "Early tests help find a tumor before it spreads.",
+        "vi": "Xét nghiệm sớm giúp phát hiện khối u trước khi lan."
+      }
+    ],
+    "collocations": ["brain tumor", "benign tumor", "tumor growth"],
+    "notes": "Mỹ: tumor; Anh thường viết tumour."
+  },
+  {
+    "id": "w-tunnel-noun",
+    "meaningVi": "đường hầm",
+    "definitionEn": "an underground passage for roads or trains",
+    "examples": [
+      {
+        "en": "The train passed through a long tunnel under the city.",
+        "vi": "Tàu đi qua một đường hầm dài dưới lòng thành phố."
+      },
+      {
+        "en": "We walked through the tunnel to reach the platform.",
+        "vi": "Chúng tôi đi bộ qua hầm để tới sân ga."
+      }
+    ],
+    "collocations": ["railway tunnel", "tunnel entrance", "through the tunnel"],
+    "notes": null
+  },
+  {
+    "id": "w-tyranny-noun",
+    "meaningVi": "sự chuyên quyền, áp bức",
+    "definitionEn": "cruel and unfair use of power over people",
+    "examples": [
+      {
+        "en": "Citizens protested against years of tyranny and fear.",
+        "vi": "Người dân biểu tình phản đối nhiều năm chuyên quyền và sợ hãi."
+      },
+      {
+        "en": "The film shows the cost of tyranny on daily life.",
+        "vi": "Phim cho thấy áp bức tàn phá đời sống hàng ngày thế nào."
+      }
+    ],
+    "collocations": ["political tyranny", "years of tyranny", "fight tyranny"],
+    "notes": null
+  },
+  {
+    "id": "w-ultimate-adjective",
+    "meaningVi": "cuối cùng; tốt nhất, lý tưởng nhất",
+    "definitionEn": "final, or the best possible example of something",
+    "examples": [
+      {
+        "en": "Our ultimate goal is to finish the project on time.",
+        "vi": "Mục tiêu cuối cùng của chúng ta là hoàn thành dự án đúng hạn."
+      },
+      {
+        "en": "This test is the ultimate challenge of the course.",
+        "vi": "Bài kiểm tra này là thử thách lớn nhất của khóa học."
+      }
+    ],
+    "collocations": ["ultimate goal", "ultimate decision", "ultimate responsibility"],
+    "notes": null
+  },
+  {
+    "id": "w-ultimately-adverb",
+    "meaningVi": "cuối cùng thì, rốt cuộc",
+    "definitionEn": "in the end, after everything else happens",
+    "examples": [
+      {
+        "en": "Ultimately, we chose the cheaper but safer option.",
+        "vi": "Rốt cuộc chúng tôi chọn phương án rẻ hơn nhưng an toàn hơn."
+      },
+      {
+        "en": "Ultimately, the team lost, but they played well.",
+        "vi": "Cuối cùng đội thua, nhưng họ chơi rất hay."
+      }
+    ],
+    "collocations": ["ultimately decide", "ultimately responsible", "ultimately fail"],
+    "notes": null
+  },
+  {
+    "id": "w-undergraduate-noun",
+    "meaningVi": "sinh viên đại học (chưa tốt nghiệp cử nhân)",
+    "definitionEn": "a university student who has not yet graduated",
+    "examples": [
+      {
+        "en": "Every undergraduate must complete this basic course.",
+        "vi": "Mọi sinh viên đại học đều phải hoàn thành môn cơ bản này."
+      },
+      {
+        "en": "She met her advisor as a first-year undergraduate.",
+        "vi": "Cô gặp cố vấn học tập khi còn là sinh viên năm nhất."
+      }
+    ],
+    "collocations": ["undergraduate student", "undergraduate degree", "first-year undergraduate"],
+    "notes": null
+  },
+  {
+    "id": "w-understanding-adjective",
+    "meaningVi": "thông cảm, biết lắng nghe",
+    "definitionEn": "willing to be kind and forgive others",
+    "examples": [
+      {
+        "en": "My manager was understanding when my child was sick.",
+        "vi": "Sếp thông cảm khi con tôi ốm."
+      },
+      {
+        "en": "Try to be understanding when your colleague makes mistakes.",
+        "vi": "Hãy thông cảm khi đồng nghiệp mắc lỗi."
+      }
+    ],
+    "collocations": ["very understanding", "understanding boss", "be understanding"],
+    "notes": "Tính từ; không nhầm với danh từ understanding (sự hiểu biết)."
+  },
+  {
+    "id": "w-undoubtedly-adverb",
+    "meaningVi": "chắc chắn, không nghi ngờ",
+    "definitionEn": "without any doubt; certainly true",
+    "examples": [
+      {
+        "en": "She is undoubtedly the best speaker on the team.",
+        "vi": "Cô ấy chắc chắn là người thuyết trình giỏi nhất trong đội."
+      },
+      {
+        "en": "The plan will undoubtedly take more time than we thought.",
+        "vi": "Kế hoạch chắc chắn sẽ tốn nhiều thời gian hơn ta nghĩ."
+      }
+    ],
+    "collocations": ["undoubtedly true", "almost undoubtedly", "undoubtedly the best"],
+    "notes": null
+  }
+]

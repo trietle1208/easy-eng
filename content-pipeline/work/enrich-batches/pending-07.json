@@ -1,0 +1,232 @@
+{
+  "promptVersion": "enrich.v1",
+  "batch": 7,
+  "batchCount": 8,
+  "inputs": [
+    {
+      "id": "w-therapy-noun",
+      "word": "therapy",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Health",
+      "ipa": "/θˈɛɹəpi/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-thesis-noun",
+      "word": "thesis",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/θˈisəs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-thoroughly-adverb",
+      "word": "thoroughly",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/θˈɝoʊli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-though-adverb",
+      "word": "though",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Grammar words",
+      "ipa": "/ðˈoʊ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-throat-noun",
+      "word": "throat",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Health",
+      "ipa": "/θɹˈoʊt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-time-verb",
+      "word": "time",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/tˈaɪm/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-trace-verb",
+      "word": "trace",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/tɹˈeɪs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-track-verb",
+      "word": "track",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/tɹˈæk/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-trade-verb",
+      "word": "trade",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/tɹˈeɪd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-transistor-noun",
+      "word": "transistor",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/tɹænzˈɪstɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-translation-noun",
+      "word": "translation",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Media",
+      "ipa": "/tɹænzlˈeɪʃən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-transport-verb",
+      "word": "transport",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Sports",
+      "ipa": "/tɹænspˈɔɹt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-treat-verb",
+      "word": "treat",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Health",
+      "ipa": "/tɹˈit/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-treaty-noun",
+      "word": "treaty",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/tɹˈiti/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-trip-verb",
+      "word": "trip",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Travel",
+      "ipa": "/tɹˈɪp/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-tuberculosis-noun",
+      "word": "tuberculosis",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Health",
+      "ipa": "/təbˌɝkjəlˈoʊsɪs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-tuition-noun",
+      "word": "tuition",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/tjuˈɪʃən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-tumor-noun",
+      "word": "tumor",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Health",
+      "ipa": "/tˈumɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-tunnel-noun",
+      "word": "tunnel",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Travel",
+      "ipa": "/tˈʌnəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-tyranny-noun",
+      "word": "tyranny",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/tˈɪɹəni/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-ultimate-adjective",
+      "word": "ultimate",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ˈʌltəmət/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-ultimately-adverb",
+      "word": "ultimately",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ˈʌltəmətli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-undergraduate-noun",
+      "word": "undergraduate",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/ˌʌndɚɡɹˈædʒəwət/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-understanding-adjective",
+      "word": "understanding",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Feelings",
+      "ipa": "/ˌʌndɚstˈændɪŋ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-undoubtedly-adverb",
+      "word": "undoubtedly",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/əndˈaʊtɪdli/",
+      "altSpelling": null
+    }
+  ]
+}

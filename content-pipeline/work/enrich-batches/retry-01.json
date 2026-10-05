@@ -1,0 +1,23 @@
+{
+  "promptVersion": "enrich.v1",
+  "failedIds": [
+    "w-speed-verb"
+  ],
+  "issues": [
+    {
+      "id": "w-speed-verb",
+      "word": "speed",
+      "level": "B1",
+      "issues": [
+        {
+          "id": "w-speed-verb",
+          "code": "EX_HEADWORD",
+          "message": "example[1].en missing headword/inflection"
+        }
+      ],
+      "attempt": 1,
+      "at": "2026-10-02T09:21:03.238Z"
+    }
+  ],
+  "message": "Re-enrich only these ids; save as done-retry-NN.json then --apply"
+}

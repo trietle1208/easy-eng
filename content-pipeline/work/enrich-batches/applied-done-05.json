@@ -1,0 +1,427 @@
+[
+  {
+    "id": "w-seldom-adverb",
+    "meaningVi": "hiếm khi, ít khi",
+    "definitionEn": "not often; on only a few occasions",
+    "examples": [
+      {
+        "en": "We seldom eat out because cooking at home is cheaper.",
+        "vi": "Chúng tôi hiếm khi ăn ngoài vì nấu ở nhà rẻ hơn."
+      },
+      {
+        "en": "She seldom complains, even when the work is hard.",
+        "vi": "Cô ấy hiếm khi phàn nàn, dù công việc khó."
+      }
+    ],
+    "collocations": ["seldom seen", "seldom used", "very seldom"],
+    "notes": null
+  },
+  {
+    "id": "w-select-verb",
+    "meaningVi": "chọn, lựa chọn",
+    "definitionEn": "to choose something carefully from a group",
+    "examples": [
+      {
+        "en": "Please select the correct answer on the form.",
+        "vi": "Vui lòng chọn đáp án đúng trên mẫu."
+      },
+      {
+        "en": "They selected a quiet hotel near the station.",
+        "vi": "Họ đã chọn một khách sạn yên tĩnh gần ga."
+      }
+    ],
+    "collocations": ["select carefully", "select from", "randomly selected"],
+    "notes": null
+  },
+  {
+    "id": "w-seller-noun",
+    "meaningVi": "người bán, bên bán",
+    "definitionEn": "a person or company that sells goods",
+    "examples": [
+      {
+        "en": "The seller agreed to replace the broken phone.",
+        "vi": "Người bán đồng ý đổi chiếc điện thoại bị hỏng."
+      },
+      {
+        "en": "Always check the seller rating before you pay online.",
+        "vi": "Luôn xem đánh giá người bán trước khi thanh toán online."
+      }
+    ],
+    "collocations": ["online seller", "private seller", "top seller"],
+    "notes": null
+  },
+  {
+    "id": "w-seminar-noun",
+    "meaningVi": "hội thảo, buổi thảo luận chuyên đề",
+    "definitionEn": "a meeting where people study and discuss a topic",
+    "examples": [
+      {
+        "en": "I attended a seminar on workplace communication last week.",
+        "vi": "Tuần trước tôi tham dự một hội thảo về giao tiếp nơi làm việc."
+      },
+      {
+        "en": "The seminar starts at two in the main hall.",
+        "vi": "Hội thảo bắt đầu lúc hai giờ ở hội trường chính."
+      }
+    ],
+    "collocations": ["attend a seminar", "research seminar", "day-long seminar"],
+    "notes": null
+  },
+  {
+    "id": "w-sense-verb",
+    "meaningVi": "cảm nhận, nhận ra",
+    "definitionEn": "to feel or notice something without being told",
+    "examples": [
+      {
+        "en": "I sensed that something was wrong from her tone.",
+        "vi": "Tôi cảm nhận được có gì đó không ổn qua giọng nói của cô ấy."
+      },
+      {
+        "en": "Do you sense any change in the team mood lately?",
+        "vi": "Gần đây bạn có nhận ra thay đổi nào trong không khí nhóm không?"
+      }
+    ],
+    "collocations": ["sense danger", "sense a change", "strongly sense"],
+    "notes": null
+  },
+  {
+    "id": "w-sensitive-adjective",
+    "meaningVi": "nhạy cảm, dễ tổn thương",
+    "definitionEn": "easily upset or aware of how others feel",
+    "examples": [
+      {
+        "en": "He is sensitive about comments on his work.",
+        "vi": "Anh ấy khá nhạy cảm với những nhận xét về công việc."
+      },
+      {
+        "en": "Be sensitive when you talk about family problems.",
+        "vi": "Hãy tinh tế khi nói về chuyện gia đình."
+      }
+    ],
+    "collocations": ["highly sensitive", "sensitive topic", "sensitive skin"],
+    "notes": null
+  },
+  {
+    "id": "w-sentence-verb",
+    "meaningVi": "tuyên án, kết án",
+    "definitionEn": "to officially declare punishment in a court",
+    "examples": [
+      {
+        "en": "The judge sentenced him to two years in prison.",
+        "vi": "Thẩm phán đã kết án anh ta hai năm tù."
+      },
+      {
+        "en": "She was sentenced last month after a long trial.",
+        "vi": "Cô ấy bị kết án tháng trước sau một phiên tòa kéo dài."
+      }
+    ],
+    "collocations": ["sentence to prison", "heavily sentenced", "be sentenced"],
+    "notes": "Động từ khác nghĩa danh từ sentence (câu)."
+  },
+  {
+    "id": "w-separate-verb",
+    "meaningVi": "tách ra, chia tách",
+    "definitionEn": "to divide things or move them apart",
+    "examples": [
+      {
+        "en": "Please separate the plastic from the paper waste.",
+        "vi": "Vui lòng tách rác nhựa khỏi rác giấy."
+      },
+      {
+        "en": "They separated the files into two folders for clarity.",
+        "vi": "Họ chia tài liệu thành hai thư mục cho dễ theo dõi."
+      }
+    ],
+    "collocations": ["separate into", "separate from", "completely separate"],
+    "notes": null
+  },
+  {
+    "id": "w-servant-noun",
+    "meaningVi": "người hầu, người phục vụ trong nhà",
+    "definitionEn": "a person paid to work in someone else's home",
+    "examples": [
+      {
+        "en": "In the past, wealthy families often had servants at home.",
+        "vi": "Ngày xưa các gia đình giàu thường có người hầu trong nhà."
+      },
+      {
+        "en": "The story is about a loyal servant and his master.",
+        "vi": "Câu chuyện kể về một người hầu trung thành và chủ của ông."
+      }
+    ],
+    "collocations": ["domestic servant", "faithful servant", "live-in servant"],
+    "notes": null
+  },
+  {
+    "id": "w-sexual-adjective",
+    "meaningVi": "liên quan đến giới tính, tình dục",
+    "definitionEn": "relating to sex or physical intimacy between people",
+    "examples": [
+      {
+        "en": "The clinic offers advice on sexual health and safety.",
+        "vi": "Phòng khám tư vấn về sức khỏe giới tính và an toàn."
+      },
+      {
+        "en": "Sexual harassment at work is never acceptable.",
+        "vi": "Quấy rối tình dục nơi làm việc không bao giờ được chấp nhận."
+      }
+    ],
+    "collocations": ["sexual health", "sexual orientation", "sexual violence"],
+    "notes": null
+  },
+  {
+    "id": "w-sharp-adverb",
+    "meaningVi": "đúng giờ, chính xác (về thời gian)",
+    "definitionEn": "exactly at the stated time",
+    "examples": [
+      {
+        "en": "The train leaves at six sharp, so do not be late.",
+        "vi": "Tàu khởi hành đúng sáu giờ, đừng đến muộn."
+      },
+      {
+        "en": "We need everyone here at nine sharp tomorrow.",
+        "vi": "Ngày mai mọi người cần có mặt đúng chín giờ."
+      }
+    ],
+    "collocations": ["at six sharp", "start sharp", "arrive sharp"],
+    "notes": "Trạng từ thời gian; khác nghĩa tính từ sharp (sắc, nhọn)."
+  },
+  {
+    "id": "w-shed-noun",
+    "meaningVi": "nhà kho, túp lều (sân vườn)",
+    "definitionEn": "a small building for tools or storage outdoors",
+    "examples": [
+      {
+        "en": "We keep the lawn mower in the garden shed.",
+        "vi": "Chúng tôi để máy cắt cỏ trong nhà kho sân vườn."
+      },
+      {
+        "en": "He built a small shed behind the house last summer.",
+        "vi": "Mùa hè ngoái anh ấy dựng một túp lều nhỏ sau nhà."
+      }
+    ],
+    "collocations": ["garden shed", "storage shed", "tool shed"],
+    "notes": null
+  },
+  {
+    "id": "w-shell-verb",
+    "meaningVi": "bóc vỏ, lột vỏ",
+    "definitionEn": "to remove the hard outer cover from food",
+    "examples": [
+      {
+        "en": "She shelled the peanuts while we talked in the kitchen.",
+        "vi": "Cô ấy bóc vỏ đậu phộng trong lúc chúng tôi nói chuyện ở bếp."
+      },
+      {
+        "en": "It takes time to shell fresh peas for dinner.",
+        "vi": "Bóc vỏ đậu Hà Lan tươi cho bữa tối mất khá nhiều thời gian."
+      }
+    ],
+    "collocations": ["shell peas", "shell nuts", "shell shrimp"],
+    "notes": null
+  },
+  {
+    "id": "w-shipping-noun",
+    "meaningVi": "vận chuyển hàng, giao hàng",
+    "definitionEn": "the business of sending goods to customers",
+    "examples": [
+      {
+        "en": "Shipping costs rose after fuel prices went up.",
+        "vi": "Chi phí vận chuyển tăng sau khi giá nhiên liệu leo thang."
+      },
+      {
+        "en": "The store offers free shipping on orders over fifty dollars.",
+        "vi": "Cửa hàng miễn phí giao hàng cho đơn trên năm mươi đô."
+      }
+    ],
+    "collocations": ["free shipping", "shipping cost", "international shipping"],
+    "notes": null
+  },
+  {
+    "id": "w-shock-verb",
+    "meaningVi": "gây sốc, làm bất ngờ",
+    "definitionEn": "to surprise or upset someone very much",
+    "examples": [
+      {
+        "en": "The news shocked everyone in the office yesterday.",
+        "vi": "Tin đó làm sốc cả văn phòng hôm qua."
+      },
+      {
+        "en": "I was shocked to hear that the shop had closed.",
+        "vi": "Tôi bất ngờ khi nghe tin cửa hàng đã đóng cửa."
+      }
+    ],
+    "collocations": ["shock deeply", "shock the public", "shocked to hear"],
+    "notes": null
+  },
+  {
+    "id": "w-short-term-adjective",
+    "meaningVi": "ngắn hạn",
+    "definitionEn": "lasting or planned for a brief period only",
+    "examples": [
+      {
+        "en": "We signed a short-term contract for three months.",
+        "vi": "Chúng tôi ký hợp đồng ngắn hạn ba tháng."
+      },
+      {
+        "en": "Short-term goals can help you stay motivated at work.",
+        "vi": "Mục tiêu ngắn hạn giúp bạn giữ động lực khi làm việc."
+      }
+    ],
+    "collocations": ["short-term plan", "short-term memory", "short-term loan"],
+    "notes": null
+  },
+  {
+    "id": "w-significantly-adverb",
+    "meaningVi": "một cách đáng kể, rõ rệt",
+    "definitionEn": "in a way that is large enough to matter",
+    "examples": [
+      {
+        "en": "Costs have risen significantly this year.",
+        "vi": "Chi phí năm nay tăng đáng kể."
+      },
+      {
+        "en": "Her health improved significantly after two weeks of rest.",
+        "vi": "Sau hai tuần nghỉ, sức khỏe cô ấy khá hơn rõ rệt."
+      }
+    ],
+    "collocations": ["significantly higher", "increase significantly", "differ significantly"],
+    "notes": null
+  },
+  {
+    "id": "w-since-adverb",
+    "meaningVi": "từ đó đến nay, kể từ lúc đó",
+    "definitionEn": "from a past time until now",
+    "examples": [
+      {
+        "en": "She moved here in 2019 and has lived here ever since.",
+        "vi": "Cô ấy chuyển đến đây năm 2019 và ở liên tục từ đó."
+      },
+      {
+        "en": "He left the company in May; I have not seen him since.",
+        "vi": "Anh ấy rời công ty tháng Năm; từ đó tôi chưa gặp lại."
+      }
+    ],
+    "collocations": ["ever since", "since then", "long since"],
+    "notes": "Trạng từ; thường đi với thì hoàn thành."
+  },
+  {
+    "id": "w-sister-in-law-noun",
+    "meaningVi": "chị dâu, em dâu, chị/em vợ",
+    "definitionEn": "the wife of your brother or your spouse's sister",
+    "examples": [
+      {
+        "en": "My sister-in-law helped us cook for the family dinner.",
+        "vi": "Chị dâu đã giúp chúng tôi nấu bữa tối gia đình."
+      },
+      {
+        "en": "We visited my sister-in-law during the holiday.",
+        "vi": "Kỳ nghỉ chúng tôi sang thăm em dâu."
+      }
+    ],
+    "collocations": ["younger sister-in-law", "visit sister-in-law", "my sister-in-law"],
+    "notes": null
+  },
+  {
+    "id": "w-slaughter-noun",
+    "meaningVi": "sự giết mổ hàng loạt, tàn sát",
+    "definitionEn": "the killing of many people or animals at once",
+    "examples": [
+      {
+        "en": "The report described the slaughter of cattle at the farm.",
+        "vi": "Báo cáo mô tả việc giết mổ gia súc tại trang trại."
+      },
+      {
+        "en": "Historians wrote about the slaughter that followed the battle.",
+        "vi": "Sử gia viết về cuộc tàn sát sau trận chiến."
+      }
+    ],
+    "collocations": ["mass slaughter", "cattle slaughter", "avoid slaughter"],
+    "notes": null
+  },
+  {
+    "id": "w-so-called-adjective",
+    "meaningVi": "cái gọi là, được gọi là (thường nghi ngờ)",
+    "definitionEn": "used to show doubt about a name or title",
+    "examples": [
+      {
+        "en": "He joined a so-called expert group online last year.",
+        "vi": "Năm ngoái anh ấy tham gia một nhóm được gọi là chuyên gia online."
+      },
+      {
+        "en": "The so-called miracle cure did not help her at all.",
+        "vi": "Cái thuốc được gọi là thần dược chẳng giúp được gì cho cô ấy."
+      }
+    ],
+    "collocations": ["so-called expert", "so-called friend", "so-called miracle"],
+    "notes": null
+  },
+  {
+    "id": "w-somewhat-adverb",
+    "meaningVi": "hơi, phần nào, tương đối",
+    "definitionEn": "to a small or moderate degree; rather",
+    "examples": [
+      {
+        "en": "I was somewhat tired after the long meeting today.",
+        "vi": "Sau cuộc họp dài hôm nay tôi hơi mệt."
+      },
+      {
+        "en": "The plan seems somewhat risky, but we can try it.",
+        "vi": "Kế hoạch có vẻ hơi rủi ro, nhưng ta có thể thử."
+      }
+    ],
+    "collocations": ["somewhat different", "somewhat surprised", "somewhat difficult"],
+    "notes": null
+  },
+  {
+    "id": "w-son-in-law-noun",
+    "meaningVi": "con rể",
+    "definitionEn": "the husband of your daughter or son",
+    "examples": [
+      {
+        "en": "My son-in-law works as an engineer in the city.",
+        "vi": "Con rể tôi làm kỹ sư ở thành phố."
+      },
+      {
+        "en": "We invited our son-in-law to stay for the weekend.",
+        "vi": "Chúng tôi mời con rể ở lại cuối tuần."
+      }
+    ],
+    "collocations": ["future son-in-law", "my son-in-law", "visit son-in-law"],
+    "notes": null
+  },
+  {
+    "id": "w-sort-verb",
+    "meaningVi": "phân loại, sắp xếp",
+    "definitionEn": "to arrange things into groups or order",
+    "examples": [
+      {
+        "en": "Please sort these documents by date before the meeting.",
+        "vi": "Vui lòng sắp xếp tài liệu theo ngày trước cuộc họp."
+      },
+      {
+        "en": "She sorted the clothes into piles for washing.",
+        "vi": "Cô ấy phân loại quần áo thành từng chồng để giặt."
+      }
+    ],
+    "collocations": ["sort by", "sort out", "sort into"],
+    "notes": null
+  },
+  {
+    "id": "w-sound-adjective",
+    "meaningVi": "hợp lý, vững chắc, đáng tin",
+    "definitionEn": "sensible and based on good judgment",
+    "examples": [
+      {
+        "en": "That is sound advice; you should follow it.",
+        "vi": "Đó là lời khuyên hợp lý; bạn nên làm theo."
+      },
+      {
+        "en": "We need a sound plan before we spend more money.",
+        "vi": "Chúng ta cần kế hoạch vững chắc trước khi chi thêm tiền."
+      }
+    ],
+    "collocations": ["sound advice", "sound judgment", "sound decision"],
+    "notes": "Tính từ nghĩa hợp lý; khác danh từ/động từ sound (âm thanh)."
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "w-arise-verb",
+    "meaningVi": "phát sinh, xuất hiện",
+    "definitionEn": "to begin to exist or happen, often as a problem",
+    "examples": [
+      { "en": "Problems may arise if we skip the safety check.", "vi": "Có thể phát sinh vấn đề nếu chúng ta bỏ qua kiểm tra an toàn." },
+      { "en": "New questions arise during every project review.", "vi": "Những câu hỏi mới phát sinh trong mỗi buổi đánh giá dự án." }
+    ],
+    "collocations": ["problems arise", "questions arise", "arise from"],
+    "notes": "irregular: arise / arose / arisen"
+  }
+]

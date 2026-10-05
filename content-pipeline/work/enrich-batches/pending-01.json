@@ -1,0 +1,61 @@
+{
+  "promptVersion": "enrich.v1",
+  "batch": 1,
+  "batchCount": 1,
+  "inputs": [
+    {
+      "id": "w-willing-adjective",
+      "word": "willing",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/wˈɪlɪŋ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-wire-verb",
+      "word": "wire",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/wˈaɪɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-wit-noun",
+      "word": "wit",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/wˈɪt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-worship-noun",
+      "word": "worship",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/wˈɝʃəp/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-worst-adverb",
+      "word": "worst",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/wˈɝst/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-yield-verb",
+      "word": "yield",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/jˈild/",
+      "altSpelling": null
+    }
+  ]
+}

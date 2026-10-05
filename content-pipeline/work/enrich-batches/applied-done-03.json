@@ -1,0 +1,427 @@
+[
+  {
+    "id": "w-province-noun",
+    "meaningVi": "tỉnh, vùng lãnh thổ (trong một quốc gia)",
+    "definitionEn": "a large area that is part of a country",
+    "examples": [
+      {
+        "en": "She grew up in a small province in the north.",
+        "vi": "Cô ấy lớn lên ở một tỉnh nhỏ phía bắc."
+      },
+      {
+        "en": "Each province has its own local government.",
+        "vi": "Mỗi tỉnh đều có chính quyền địa phương riêng."
+      }
+    ],
+    "collocations": ["northern province", "across the province", "province capital"],
+    "notes": null
+  },
+  {
+    "id": "w-psychology-noun",
+    "meaningVi": "tâm lý học",
+    "definitionEn": "the scientific study of the mind and behavior",
+    "examples": [
+      {
+        "en": "She decided to study psychology at university.",
+        "vi": "Cô ấy quyết định học tâm lý học ở đại học."
+      },
+      {
+        "en": "Psychology helps us understand why people act as they do.",
+        "vi": "Tâm lý học giúp ta hiểu vì sao mọi người hành xử như vậy."
+      }
+    ],
+    "collocations": ["study psychology", "clinical psychology", "psychology course"],
+    "notes": null
+  },
+  {
+    "id": "w-purchase-noun",
+    "meaningVi": "việc mua, hàng đã mua",
+    "definitionEn": "something you buy, or the act of buying it",
+    "examples": [
+      {
+        "en": "Keep the receipt for your purchase.",
+        "vi": "Giữ hóa đơn cho lần mua hàng của bạn."
+      },
+      {
+        "en": "Online purchase is faster than going to the shop.",
+        "vi": "Mua online nhanh hơn ra cửa hàng."
+      }
+    ],
+    "collocations": ["make a purchase", "online purchase", "proof of purchase"],
+    "notes": null
+  },
+  {
+    "id": "w-purchase-verb",
+    "meaningVi": "mua (trang trọng)",
+    "definitionEn": "to buy something, especially in a formal context",
+    "examples": [
+      {
+        "en": "You can purchase tickets on the official website.",
+        "vi": "Bạn có thể mua vé trên trang web chính thức."
+      },
+      {
+        "en": "We purchased new chairs for the meeting room.",
+        "vi": "Chúng tôi mua ghế mới cho phòng họp."
+      }
+    ],
+    "collocations": ["purchase online", "purchase tickets", "purchase goods"],
+    "notes": null
+  },
+  {
+    "id": "w-qualification-noun",
+    "meaningVi": "bằng cấp, trình độ chuyên môn",
+    "definitionEn": "an official record of skills or education for a job",
+    "examples": [
+      {
+        "en": "This job requires a university qualification.",
+        "vi": "Công việc này yêu cầu bằng đại học."
+      },
+      {
+        "en": "She added a new qualification to her CV last year.",
+        "vi": "Năm ngoái cô ấy bổ sung thêm một chứng chỉ vào CV."
+      }
+    ],
+    "collocations": ["professional qualification", "entry qualification", "gain a qualification"],
+    "notes": null
+  },
+  {
+    "id": "w-query-noun",
+    "meaningVi": "câu hỏi, thắc mắc (cần giải đáp)",
+    "definitionEn": "a question you ask to get information or help",
+    "examples": [
+      {
+        "en": "Please send your query by email before Friday.",
+        "vi": "Vui lòng gửi thắc mắc qua email trước thứ Sáu."
+      },
+      {
+        "en": "The support team answered my query within an hour.",
+        "vi": "Bộ phận hỗ trợ trả lời thắc mắc của tôi trong vòng một giờ."
+      }
+    ],
+    "collocations": ["answer a query", "customer query", "raise a query"],
+    "notes": null
+  },
+  {
+    "id": "w-quotation-noun",
+    "meaningVi": "trích dẫn; báo giá",
+    "definitionEn": "words taken from a text, or a price offer for work",
+    "examples": [
+      {
+        "en": "Include a quotation from the article in your essay.",
+        "vi": "Hãy đưa một trích dẫn từ bài báo vào bài luận."
+      },
+      {
+        "en": "We asked three firms for a quotation on the repairs.",
+        "vi": "Chúng tôi nhờ ba công ty báo giá sửa chữa."
+      }
+    ],
+    "collocations": ["direct quotation", "request a quotation", "quotation marks"],
+    "notes": null
+  },
+  {
+    "id": "w-quote-noun",
+    "meaningVi": "câu trích dẫn",
+    "definitionEn": "a short piece of text or speech from someone else",
+    "examples": [
+      {
+        "en": "The teacher asked us to find a quote from the book.",
+        "vi": "Giáo viên yêu cầu chúng tôi tìm một câu trích trong sách."
+      },
+      {
+        "en": "That quote on the poster really inspired me.",
+        "vi": "Câu trích trên poster thật sự truyền cảm hứng cho mình."
+      }
+    ],
+    "collocations": ["famous quote", "opening quote", "quote from a book"],
+    "notes": null
+  },
+  {
+    "id": "w-radical-noun",
+    "meaningVi": "người theo chủ nghĩa cực đoan",
+    "definitionEn": "a person who wants very big political or social change",
+    "examples": [
+      {
+        "en": "The debate included a speaker known as a radical.",
+        "vi": "Cuộc tranh luận có diễn giả được biết đến là người cực đoan."
+      },
+      {
+        "en": "Historians still discuss whether he was a radical or a reformer.",
+        "vi": "Các sử gia vẫn bàn liệu ông là người cực đoan hay cải cách."
+      }
+    ],
+    "collocations": ["political radical", "known radical", "young radical"],
+    "notes": null
+  },
+  {
+    "id": "w-range-verb",
+    "meaningVi": "dao động, nằm trong khoảng",
+    "definitionEn": "to vary between two limits in size, amount, or level",
+    "examples": [
+      {
+        "en": "Prices range from ten to fifty dollars here.",
+        "vi": "Giá ở đây dao động từ mười đến năm mươi đô."
+      },
+      {
+        "en": "Guest ages range widely at our weekend events.",
+        "vi": "Độ tuổi khách tham dự sự kiện cuối tuần rất đa dạng."
+      }
+    ],
+    "collocations": ["range from", "prices range", "range widely"],
+    "notes": null
+  },
+  {
+    "id": "w-rate-verb",
+    "meaningVi": "đánh giá, xếp hạng",
+    "definitionEn": "to judge how good or important something is",
+    "examples": [
+      {
+        "en": "Please rate the service after your meal.",
+        "vi": "Vui lòng đánh giá dịch vụ sau bữa ăn."
+      },
+      {
+        "en": "Users rated the app highly in the store.",
+        "vi": "Người dùng chấm điểm cao cho ứng dụng trên cửa hàng."
+      }
+    ],
+    "collocations": ["rate highly", "rate the service", "rate an app"],
+    "notes": null
+  },
+  {
+    "id": "w-readily-adverb",
+    "meaningVi": "dễ dàng, sẵn sàng",
+    "definitionEn": "quickly and without difficulty, or willingly",
+    "examples": [
+      {
+        "en": "Fresh fruit is readily available at the market.",
+        "vi": "Trái cây tươi dễ mua ở chợ."
+      },
+      {
+        "en": "She readily agreed to help with the presentation.",
+        "vi": "Cô ấy sẵn sàng giúp làm bài thuyết trình."
+      }
+    ],
+    "collocations": ["readily available", "readily accept", "readily agree"],
+    "notes": null
+  },
+  {
+    "id": "w-reasonably-adverb",
+    "meaningVi": "khá, ở mức hợp lý",
+    "definitionEn": "to a fair or moderate degree, not too much",
+    "examples": [
+      {
+        "en": "The hotel was reasonably priced for the city center.",
+        "vi": "Khách sạn có giá khá hợp lý so với trung tâm thành phố."
+      },
+      {
+        "en": "We finished the report reasonably quickly this week.",
+        "vi": "Tuần này chúng tôi hoàn thành báo cáo khá nhanh."
+      }
+    ],
+    "collocations": ["reasonably priced", "reasonably well", "reasonably quickly"],
+    "notes": null
+  },
+  {
+    "id": "w-recipe-noun",
+    "meaningVi": "công thức nấu ăn",
+    "definitionEn": "instructions that tell you how to cook a dish",
+    "examples": [
+      {
+        "en": "I found a simple recipe for chicken soup online.",
+        "vi": "Mình tìm được công thức nấu súp gà đơn giản trên mạng."
+      },
+      {
+        "en": "Follow the recipe carefully so the cake rises well.",
+        "vi": "Làm đúng công thức để bánh nở đẹp nhé."
+      }
+    ],
+    "collocations": ["follow a recipe", "simple recipe", "family recipe"],
+    "notes": null
+  },
+  {
+    "id": "w-recreation-noun",
+    "meaningVi": "giải trí, hoạt động thư giãn",
+    "definitionEn": "activities people do for enjoyment when not working",
+    "examples": [
+      {
+        "en": "Walking in the park is my favorite recreation.",
+        "vi": "Đi bộ trong công viên là hoạt động giải trí mình thích nhất."
+      },
+      {
+        "en": "The town built a new center for sports and recreation.",
+        "vi": "Thị trấn xây trung tâm thể thao và giải trí mới."
+      }
+    ],
+    "collocations": ["sports and recreation", "outdoor recreation", "recreation center"],
+    "notes": null
+  },
+  {
+    "id": "w-reform-noun",
+    "meaningVi": "cải cách",
+    "definitionEn": "changes made to improve a system, law, or organization",
+    "examples": [
+      {
+        "en": "The government announced education reform this spring.",
+        "vi": "Chính phủ công bố cải cách giáo dục mùa xuân này."
+      },
+      {
+        "en": "Many citizens supported the proposed tax reform.",
+        "vi": "Nhiều công dân ủng hộ đề xuất cải cách thuế."
+      }
+    ],
+    "collocations": ["education reform", "political reform", "proposed reform"],
+    "notes": null
+  },
+  {
+    "id": "w-refuge-noun",
+    "meaningVi": "nơi trú ẩn, chỗ an toàn",
+    "definitionEn": "a safe place where people go for protection or rest",
+    "examples": [
+      {
+        "en": "The library became a quiet refuge after a long day.",
+        "vi": "Thư viện trở thành chỗ trú ẩn yên tĩnh sau một ngày dài."
+      },
+      {
+        "en": "They sought refuge from the storm in a nearby school.",
+        "vi": "Họ tìm nơi trú ẩn khỏi cơn bão trong trường gần đó."
+      }
+    ],
+    "collocations": ["seek refuge", "safe refuge", "take refuge"],
+    "notes": null
+  },
+  {
+    "id": "w-refugee-noun",
+    "meaningVi": "người tị nạn",
+    "definitionEn": "someone who leaves their country because of war or danger",
+    "examples": [
+      {
+        "en": "The camp provides food and shelter for each refugee.",
+        "vi": "Trại cung cấp thực phẩm và chỗ ở cho từng người tị nạn."
+      },
+      {
+        "en": "Local volunteers helped a refugee family find housing.",
+        "vi": "Tình nguyện viên địa phương giúp một gia đình tị nạn tìm nhà."
+      }
+    ],
+    "collocations": ["refugee camp", "refugee family", "support refugees"],
+    "notes": null
+  },
+  {
+    "id": "w-regardless-adverb",
+    "meaningVi": "bất kể, dù sao đi nữa",
+    "definitionEn": "despite what happens or what someone says",
+    "examples": [
+      {
+        "en": "We will finish the project regardless of the weather.",
+        "vi": "Chúng tôi sẽ hoàn thành dự án bất kể thời tiết thế nào."
+      },
+      {
+        "en": "She kept training regardless because the match was near.",
+        "vi": "Cô ấy vẫn tập luyện vì trận đấu sắp tới."
+      }
+    ],
+    "collocations": ["regardless of", "continue regardless", "regardless of cost"],
+    "notes": null
+  },
+  {
+    "id": "w-related-adjective",
+    "meaningVi": "có quan hệ họ hàng",
+    "definitionEn": "belonging to the same family or connected by kinship",
+    "examples": [
+      {
+        "en": "Are you related to the woman who works at reception?",
+        "vi": "Bạn có họ hàng với người phụ nữ làm lễ tân không?"
+      },
+      {
+        "en": "We discovered we were related through our grandparents.",
+        "vi": "Chúng tôi phát hiện mình có họ với nhau qua ông bà."
+      }
+    ],
+    "collocations": ["closely related", "related by marriage", "distantly related"],
+    "notes": null
+  },
+  {
+    "id": "w-relaxation-noun",
+    "meaningVi": "sự thư giãn, nghỉ ngơi",
+    "definitionEn": "rest and activities that help you feel calm and less stressed",
+    "examples": [
+      {
+        "en": "Yoga is good relaxation after a busy workweek.",
+        "vi": "Yoga giúp thư giãn tốt sau một tuần làm việc bận rộn."
+      },
+      {
+        "en": "The spa offers massage and other forms of relaxation.",
+        "vi": "Spa có massage và các hình thức thư giãn khác."
+      }
+    ],
+    "collocations": ["deep relaxation", "relaxation techniques", "rest and relaxation"],
+    "notes": null
+  },
+  {
+    "id": "w-relevant-adjective",
+    "meaningVi": "liên quan, phù hợp",
+    "definitionEn": "connected to what is being discussed or needed now",
+    "examples": [
+      {
+        "en": "Please bring only relevant documents to the meeting.",
+        "vi": "Vui lòng chỉ mang tài liệu liên quan đến cuộc họp."
+      },
+      {
+        "en": "Her experience is highly relevant to this role.",
+        "vi": "Kinh nghiệm của cô ấy rất phù hợp với vị trí này."
+      }
+    ],
+    "collocations": ["highly relevant", "relevant information", "relevant experience"],
+    "notes": null
+  },
+  {
+    "id": "w-remaining-adjective",
+    "meaningVi": "còn lại",
+    "definitionEn": "still left after the rest has been used or taken",
+    "examples": [
+      {
+        "en": "Use the remaining time to check your answers.",
+        "vi": "Dùng thời gian còn lại để kiểm tra bài làm."
+      },
+      {
+        "en": "We shared the remaining food with our neighbors.",
+        "vi": "Chúng tôi chia phần thức ăn còn lại cho hàng xóm."
+      }
+    ],
+    "collocations": ["remaining time", "remaining balance", "remaining tasks"],
+    "notes": null
+  },
+  {
+    "id": "w-rental-noun",
+    "meaningVi": "việc thuê; đồ cho thuê",
+    "definitionEn": "an arrangement to pay to use something for a period",
+    "examples": [
+      {
+        "en": "Car rental was cheaper than we expected.",
+        "vi": "Thuê xe rẻ hơn chúng tôi nghĩ."
+      },
+      {
+        "en": "The rental includes insurance for the whole trip.",
+        "vi": "Gói thuê bao gồm bảo hiểm cho cả chuyến đi."
+      }
+    ],
+    "collocations": ["car rental", "rental agreement", "equipment rental"],
+    "notes": null
+  },
+  {
+    "id": "w-reprint-noun",
+    "meaningVi": "bản in lại",
+    "definitionEn": "a new printed copy of a book or article",
+    "examples": [
+      {
+        "en": "The publisher ordered a reprint after the first sold out.",
+        "vi": "Nhà xuất bản in lại sau khi lần đầu bán hết."
+      },
+      {
+        "en": "This reprint includes a short note from the author.",
+        "vi": "Bản in lại này có lời ngắn từ tác giả."
+      }
+    ],
+    "collocations": ["new reprint", "authorized reprint", "demand a reprint"],
+    "notes": null
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "w-willing-adjective",
+    "meaningVi": "sẵn lòng, vui lòng",
+    "definitionEn": "ready to do something without being forced",
+    "examples": [
+      { "en": "She is willing to work late this week.", "vi": "Cô ấy sẵn lòng làm muộn tuần này." },
+      { "en": "Are you willing to share the cost?", "vi": "Bạn có sẵn lòng chia sẻ chi phí không?" }
+    ],
+    "collocations": ["willing to", "perfectly willing", "willing helper"],
+    "notes": null
+  },
+  {
+    "id": "w-wire-verb",
+    "meaningVi": "gửi tiền điện tử; nối dây điện",
+    "definitionEn": "to send money electronically, or to fit cables",
+    "examples": [
+      { "en": "Please wire the payment to my account today.", "vi": "Hôm nay nhờ chuyển khoản thanh toán vào tài khoản của mình." },
+      { "en": "They wire the new flats before people move in.", "vi": "Họ lắp dây điện cho căn hộ mới trước khi người vào ở." }
+    ],
+    "collocations": ["wire money", "wire the payment", "wire a house"],
+    "notes": "verb sense; noun wire = dây điện / tin"
+  },
+  {
+    "id": "w-wit-noun",
+    "meaningVi": "trí hóm hỉnh; sự nhanh trí",
+    "definitionEn": "the ability to say clever and funny things",
+    "examples": [
+      { "en": "Her sharp wit made the lecture easy to enjoy.", "vi": "Sự hóm hỉnh sắc sảo của cô ấy khiến buổi giảng dễ nghe." },
+      { "en": "He answered the hard question with quick wit.", "vi": "Anh ấy trả lời câu hỏi khó bằng sự nhanh trí." }
+    ],
+    "collocations": ["sharp wit", "quick wit", "sense of wit"],
+    "notes": null
+  },
+  {
+    "id": "w-worship-noun",
+    "meaningVi": "sự thờ phụng, thờ kính",
+    "definitionEn": "strong respect and love shown to a god or belief",
+    "examples": [
+      { "en": "Sunday worship begins at nine in this community.", "vi": "Buổi thờ phụng Chủ nhật bắt đầu lúc chín giờ trong cộng đồng này." },
+      { "en": "Places of worship welcome visitors with quiet respect.", "vi": "Nơi thờ tự đón khách với thái độ tôn trọng, im lặng." }
+    ],
+    "collocations": ["place of worship", "Sunday worship", "act of worship"],
+    "notes": null
+  },
+  {
+    "id": "w-worst-adverb",
+    "meaningVi": "tệ nhất, xấu nhất",
+    "definitionEn": "in the most serious or unpleasant way possible",
+    "examples": [
+      { "en": "The storm hit the coast worst late at night.", "vi": "Bão đánh mạnh nhất vào bờ biển vào đêm khuya." },
+      { "en": "He felt worst after skipping lunch all day.", "vi": "Anh ấy thấy mệt nhất sau khi bỏ bữa trưa cả ngày." }
+    ],
+    "collocations": ["hurt worst", "suffer worst", "feel worst"],
+    "notes": "bad → worse → worst; adverb form of the superlative"
+  },
+  {
+    "id": "w-yield-verb",
+    "meaningVi": "nhường; mang lại (kết quả)",
+    "definitionEn": "to give way, or to produce a result or crop",
+    "examples": [
+      { "en": "Drivers must yield at this busy junction.", "vi": "Tài xế phải nhường đường tại ngã tư đông này." },
+      { "en": "The new method may yield better test scores.", "vi": "Phương pháp mới có thể mang lại điểm kiểm tra tốt hơn." }
+    ],
+    "collocations": ["yield to", "yield results", "yield better"],
+    "notes": null
+  }
+]

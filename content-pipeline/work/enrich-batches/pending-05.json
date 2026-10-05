@@ -1,0 +1,232 @@
+{
+  "promptVersion": "enrich.v1",
+  "batch": 5,
+  "batchCount": 8,
+  "inputs": [
+    {
+      "id": "w-seldom-adverb",
+      "word": "seldom",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/sˈɛldəm/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-select-verb",
+      "word": "select",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/səlˈɛkt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-seller-noun",
+      "word": "seller",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/sˈɛlɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-seminar-noun",
+      "word": "seminar",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/sˈɛmənˌɑɹ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-sense-verb",
+      "word": "sense",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/sˈɛns/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-sensitive-adjective",
+      "word": "sensitive",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Feelings",
+      "ipa": "/sˈɛnsətɪv/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-sentence-verb",
+      "word": "sentence",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Communication",
+      "ipa": "/sˈɛntəns/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-separate-verb",
+      "word": "separate",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/sˈɛpɚˌeɪt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-servant-noun",
+      "word": "servant",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "People",
+      "ipa": "/sˈɝvənt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-sexual-adjective",
+      "word": "sexual",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Health",
+      "ipa": "/sˈɛkʃuəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-sharp-adverb",
+      "word": "sharp",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ʃˈɑɹp/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-shed-noun",
+      "word": "shed",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Home",
+      "ipa": "/ʃˈɛd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-shell-verb",
+      "word": "shell",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ʃˈɛl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-shipping-noun",
+      "word": "shipping",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/ʃˈɪpɪŋ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-shock-verb",
+      "word": "shock",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Feelings",
+      "ipa": "/ʃˈɑk/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-short-term-adjective",
+      "word": "short-term",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/ʃˌɔɹttˈɝm/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-significantly-adverb",
+      "word": "significantly",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/sɪɡnˈɪfɪkəntli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-since-adverb",
+      "word": "since",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/sˈɪns/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-sister-in-law-noun",
+      "word": "sister-in-law",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "People",
+      "ipa": "/sˈɪstɚɪnlˌɔ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-slaughter-noun",
+      "word": "slaughter",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/slˈɔtɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-so-called-adjective",
+      "word": "so-called",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/sˈoʊkˈɔld/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-somewhat-adverb",
+      "word": "somewhat",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/sˈʌmwˈʌt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-son-in-law-noun",
+      "word": "son-in-law",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "People",
+      "ipa": "/sˈʌnɪnlˌɔ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-sort-verb",
+      "word": "sort",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/sˈɔɹt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-sound-adjective",
+      "word": "sound",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Communication",
+      "ipa": "/sˈaʊnd/",
+      "altSpelling": null
+    }
+  ]
+}

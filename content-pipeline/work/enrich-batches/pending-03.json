@@ -1,0 +1,232 @@
+{
+  "promptVersion": "enrich.v1",
+  "batch": 3,
+  "batchCount": 8,
+  "inputs": [
+    {
+      "id": "w-province-noun",
+      "word": "province",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/pɹˈɑvəns/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-psychology-noun",
+      "word": "psychology",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/saɪkˈɑlədʒi/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-purchase-noun",
+      "word": "purchase",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Shopping",
+      "ipa": "/pˈɝtʃəs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-purchase-verb",
+      "word": "purchase",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Shopping",
+      "ipa": "/pˈɝtʃəs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-qualification-noun",
+      "word": "qualification",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/kwˌɑləfəkˈeɪʃən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-query-noun",
+      "word": "query",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Communication",
+      "ipa": "/kwˈiɹi/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-quotation-noun",
+      "word": "quotation",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/kwoʊtˈeɪʃən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-quote-noun",
+      "word": "quote",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/kwˈoʊt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-radical-noun",
+      "word": "radical",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/ɹˈædəkəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-range-verb",
+      "word": "range",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ɹˈeɪndʒ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-rate-verb",
+      "word": "rate",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ɹˈeɪt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-readily-adverb",
+      "word": "readily",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ɹˈɛdəli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-reasonably-adverb",
+      "word": "reasonably",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ɹˈizənəbli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-recipe-noun",
+      "word": "recipe",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Food",
+      "ipa": "/ɹˈɛsəpi/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-recreation-noun",
+      "word": "recreation",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Sports",
+      "ipa": "/ɹˌɛkɹiˈeɪʃən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-reform-noun",
+      "word": "reform",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/ɹəfˈɔɹm/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-refuge-noun",
+      "word": "refuge",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/ɹˈɛfjudʒ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-refugee-noun",
+      "word": "refugee",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/ɹˈɛfjudʒi/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-regardless-adverb",
+      "word": "regardless",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ɹəɡˈɑɹdləs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-related-adjective",
+      "word": "related",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "People",
+      "ipa": "/ɹɪlˈeɪtɪd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-relaxation-noun",
+      "word": "relaxation",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Sports",
+      "ipa": "/ɹˌilæksˈeɪʃən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-relevant-adjective",
+      "word": "relevant",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/ɹˈɛləvənt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-remaining-adjective",
+      "word": "remaining",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ɹɪmˈeɪnɪŋ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-rental-noun",
+      "word": "rental",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Travel",
+      "ipa": "/ɹˈɛntəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-reprint-noun",
+      "word": "reprint",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Media",
+      "ipa": "/ɹipɹˈɪnt/",
+      "altSpelling": null
+    }
+  ]
+}

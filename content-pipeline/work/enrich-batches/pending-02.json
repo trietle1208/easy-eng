@@ -1,0 +1,232 @@
+{
+  "promptVersion": "enrich.v1",
+  "batch": 2,
+  "batchCount": 8,
+  "inputs": [
+    {
+      "id": "w-pearl-noun",
+      "word": "pearl",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Shopping",
+      "ipa": "/pˈɝl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-pension-noun",
+      "word": "pension",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Home",
+      "ipa": "/pˈɛnʃən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-picture-verb",
+      "word": "picture",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/pˈɪktʃɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-pin-noun",
+      "word": "pin",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Home",
+      "ipa": "/pˈɪn/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-plague-noun",
+      "word": "plague",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/plˈeɪɡ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-plot-noun",
+      "word": "plot",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Media",
+      "ipa": "/plˈɑt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-pneumonia-noun",
+      "word": "pneumonia",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Health",
+      "ipa": "/numˈoʊnjə/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-potential-adjective",
+      "word": "potential",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/pətˈɛnʃəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-potentially-adverb",
+      "word": "potentially",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/pətˈɛnʃəli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-practically-adverb",
+      "word": "practically",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/pɹˈæktɪkli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-precisely-adverb",
+      "word": "precisely",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/pɹɪsˈaɪsli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-presumably-adverb",
+      "word": "presumably",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/pɹəzˈuməbli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-previously-adverb",
+      "word": "previously",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/pɹˈiviəsli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-price-verb",
+      "word": "price",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Shopping",
+      "ipa": "/pɹˈaɪs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-primary-adjective",
+      "word": "primary",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/pɹˈaɪmˌɛɹi/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-prime-adjective",
+      "word": "prime",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/pɹˈaɪm/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-prior-adjective",
+      "word": "prior",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/pɹˈaɪɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-process-verb",
+      "word": "process",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/pɹˈɑsˌɛs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-profit-noun",
+      "word": "profit",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/pɹˈɑfət/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-programming-noun",
+      "word": "programming",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/pɹˈoʊɡɹˌæmɪŋ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-progress-verb",
+      "word": "progress",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/pɹˈɑɡɹˌɛs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-project-noun",
+      "word": "project",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/pɹˈɑdʒɛkt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-project-verb",
+      "word": "project",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/pɹˈɑdʒɛkt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-proposed-adjective",
+      "word": "proposed",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/pɹəpˈoʊzd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-prose-noun",
+      "word": "prose",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/pɹˈoʊz/",
+      "altSpelling": null
+    }
+  ]
+}

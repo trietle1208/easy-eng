@@ -1,0 +1,427 @@
+[
+  {
+    "id": "w-pearl-noun",
+    "meaningVi": "ngọc trai",
+    "definitionEn": "a small round white gem from inside an oyster",
+    "examples": [
+      {
+        "en": "She wore a simple pearl necklace to the wedding.",
+        "vi": "Cô ấy đeo vòng cổ ngọc trai giản dị đi dự đám cưới."
+      },
+      {
+        "en": "The pearl in this ring looks very bright under the light.",
+        "vi": "Viên ngọc trai trên chiếc nhẫn này dưới ánh đèn trông rất sáng."
+      }
+    ],
+    "collocations": ["pearl necklace", "cultured pearl", "pearl earrings"],
+    "notes": null
+  },
+  {
+    "id": "w-pension-noun",
+    "meaningVi": "lương hưu",
+    "definitionEn": "money paid regularly to someone after they retire",
+    "examples": [
+      {
+        "en": "My parents live on a small pension each month.",
+        "vi": "Bố mẹ tôi sống bằng khoản lương hưu nhỏ hàng tháng."
+      },
+      {
+        "en": "He asked when his pension would start after he retired.",
+        "vi": "Anh ấy hỏi khi nào lương hưu của mình bắt đầu sau khi nghỉ hưu."
+      }
+    ],
+    "collocations": ["state pension", "pension plan", "live on a pension"],
+    "notes": null
+  },
+  {
+    "id": "w-picture-verb",
+    "meaningVi": "hình dung, tưởng tượng",
+    "definitionEn": "to imagine something clearly in your mind",
+    "examples": [
+      {
+        "en": "I cannot picture living in a city without good public transport.",
+        "vi": "Tôi không hình dung nổi cuộc sống ở thành phố không có giao thông công cộng tốt."
+      },
+      {
+        "en": "She pictured herself finishing the course before the end of the year.",
+        "vi": "Cô ấy tưởng tượng mình hoàn thành khóa học trước cuối năm."
+      }
+    ],
+    "collocations": ["picture yourself", "hard to picture", "picture clearly"],
+    "notes": "Khác nghĩa danh từ ‘bức tranh, bức ảnh’."
+  },
+  {
+    "id": "w-pin-noun",
+    "meaningVi": "ghim, đinh ghim",
+    "definitionEn": "a short thin piece of metal that holds things together",
+    "examples": [
+      {
+        "en": "Use a pin to keep the notice on the board.",
+        "vi": "Dùng ghim để giữ tờ thông báo trên bảng."
+      },
+      {
+        "en": "I found a pin on the floor after fixing my shirt.",
+        "vi": "Sau khi may áo, tôi thấy một cái ghim rơi trên sàn."
+      }
+    ],
+    "collocations": ["safety pin", "pin on the board", "lose a pin"],
+    "notes": null
+  },
+  {
+    "id": "w-plague-noun",
+    "meaningVi": "tai họa lan rộng; nạn lớn",
+    "definitionEn": "something that causes widespread harm or serious trouble",
+    "examples": [
+      {
+        "en": "Traffic jams are a daily plague in this crowded city.",
+        "vi": "Tắc đường là nạn kinh niên mỗi ngày ở thành phố đông đúc này."
+      },
+      {
+        "en": "Fake news can become a plague on public trust online.",
+        "vi": "Tin giả có thể trở thành tai họa đối với niềm tin công chúng trên mạng."
+      }
+    ],
+    "collocations": ["a plague of", "avoid the plague", "social plague"],
+    "notes": "Thường dùng ẩn dụ; không chỉ bệnh dịch lịch sử."
+  },
+  {
+    "id": "w-plot-noun",
+    "meaningVi": "cốt truyện",
+    "definitionEn": "the main story events in a book or film",
+    "examples": [
+      {
+        "en": "The plot was simple, but the ending surprised everyone.",
+        "vi": "Cốt truyện đơn giản nhưng đoạn kết khiến mọi người bất ngờ."
+      },
+      {
+        "en": "We discussed the plot of the series after each episode.",
+        "vi": "Sau mỗi tập, chúng tôi bàn về cốt truyện của bộ phim."
+      }
+    ],
+    "collocations": ["main plot", "plot twist", "follow the plot"],
+    "notes": null
+  },
+  {
+    "id": "w-pneumonia-noun",
+    "meaningVi": "viêm phổi",
+    "definitionEn": "a serious illness that makes breathing difficult",
+    "examples": [
+      {
+        "en": "The doctor said he had pneumonia and needed rest at home.",
+        "vi": "Bác sĩ nói anh ấy bị viêm phổi và cần nghỉ ở nhà."
+      },
+      {
+        "en": "Pneumonia can be dangerous for older people in cold weather.",
+        "vi": "Viêm phổi có thể nguy hiểm với người lớn tuổi khi trời lạnh."
+      }
+    ],
+    "collocations": ["get pneumonia", "treat pneumonia", "severe pneumonia"],
+    "notes": null
+  },
+  {
+    "id": "w-potential-adjective",
+    "meaningVi": "tiềm năng, có thể trở thành",
+    "definitionEn": "possible in the future if things go well",
+    "examples": [
+      {
+        "en": "She is a potential leader for the new team next year.",
+        "vi": "Cô ấy là ứng viên tiềm năng làm lãnh đạo nhóm mới năm sau."
+      },
+      {
+        "en": "We listed every potential problem before starting the trip.",
+        "vi": "Trước chuyến đi, chúng tôi liệt kê mọi vấn đề tiềm ẩn có thể xảy ra."
+      }
+    ],
+    "collocations": ["potential risk", "potential buyer", "full potential"],
+    "notes": null
+  },
+  {
+    "id": "w-potentially-adverb",
+    "meaningVi": "có thể, tiềm năng",
+    "definitionEn": "used to say something could happen or be true",
+    "examples": [
+      {
+        "en": "This change could potentially save us a lot of time at work.",
+        "vi": "Thay đổi này có thể giúp chúng ta tiết kiệm khá nhiều thời gian ở công ty."
+      },
+      {
+        "en": "The road is potentially dangerous when it rains at night.",
+        "vi": "Con đường này có thể rất nguy hiểm khi trời mưa ban đêm."
+      }
+    ],
+    "collocations": ["potentially harmful", "potentially useful", "potentially serious"],
+    "notes": null
+  },
+  {
+    "id": "w-practically-adverb",
+    "meaningVi": "gần như, thực tế là",
+    "definitionEn": "almost completely; in a very real sense",
+    "examples": [
+      {
+        "en": "The shop was practically empty when we arrived after work.",
+        "vi": "Khi chúng tôi đến sau giờ làm, cửa hàng gần như không còn ai."
+      },
+      {
+        "en": "I have practically finished the report; I just need to check it.",
+        "vi": "Tôi gần như xong báo cáo rồi, chỉ cần kiểm tra lại thôi."
+      }
+    ],
+    "collocations": ["practically impossible", "practically everyone", "practically no time"],
+    "notes": null
+  },
+  {
+    "id": "w-precisely-adverb",
+    "meaningVi": "chính xác, đúng vậy",
+    "definitionEn": "exactly; with complete accuracy or detail",
+    "examples": [
+      {
+        "en": "Please tell me precisely what time the meeting will start.",
+        "vi": "Nhờ bạn nói chính xác cuộc họp bắt đầu lúc mấy giờ."
+      },
+      {
+        "en": "That is precisely why we need a written plan before we travel.",
+        "vi": "Đó chính xác là lý do chúng ta cần kế hoạch bằng văn bản trước khi đi."
+      }
+    ],
+    "collocations": ["more precisely", "precisely at", "precisely because"],
+    "notes": null
+  },
+  {
+    "id": "w-presumably-adverb",
+    "meaningVi": "có lẽ, có thể là",
+    "definitionEn": "used when you guess something is true",
+    "examples": [
+      {
+        "en": "Presumably, the package will arrive tomorrow if the weather is fine.",
+        "vi": "Có lẽ bưu kiện sẽ tới ngày mai nếu thời tiết thuận lợi."
+      },
+      {
+        "en": "He is not here yet, presumably because the train was delayed.",
+        "vi": "Anh ấy chưa tới, có thể vì tàu bị chậm."
+      }
+    ],
+    "collocations": ["presumably because", "presumably true", "presumably still"],
+    "notes": null
+  },
+  {
+    "id": "w-previously-adverb",
+    "meaningVi": "trước đây, trước đó",
+    "definitionEn": "at an earlier time before now",
+    "examples": [
+      {
+        "en": "I previously worked in sales before I moved to this department.",
+        "vi": "Trước đây tôi làm kinh doanh trước khi chuyển sang phòng ban này."
+      },
+      {
+        "en": "The file was saved previously, so you do not need to upload it again.",
+        "vi": "Tệp đã được lưu từ trước, bạn không cần tải lên lần nữa."
+      }
+    ],
+    "collocations": ["as previously stated", "previously mentioned", "previously unknown"],
+    "notes": null
+  },
+  {
+    "id": "w-price-verb",
+    "meaningVi": "định giá, gắn mức giá",
+    "definitionEn": "to decide how much something should cost",
+    "examples": [
+      {
+        "en": "The store priced the winter coats lower than last season.",
+        "vi": "Cửa hàng định giá áo khoác mùa đông thấp hơn mùa trước."
+      },
+      {
+        "en": "We need to price these items carefully for online customers.",
+        "vi": "Chúng ta cần gắn giá các mặt hàng này cẩn thận cho khách mua online."
+      }
+    ],
+    "collocations": ["price competitively", "price too high", "fairly priced"],
+    "notes": null
+  },
+  {
+    "id": "w-primary-adjective",
+    "meaningVi": "chính, quan trọng nhất; tiểu học",
+    "definitionEn": "most important; first in order of importance",
+    "examples": [
+      {
+        "en": "Our primary goal this term is to improve reading skills.",
+        "vi": "Mục tiêu chính của học kỳ này là nâng cao kỹ năng đọc."
+      },
+      {
+        "en": "She teaches at a primary school near her home.",
+        "vi": "Cô ấy dạy ở một trường tiểu học gần nhà."
+      }
+    ],
+    "collocations": ["primary school", "primary concern", "primary reason"],
+    "notes": null
+  },
+  {
+    "id": "w-prime-adjective",
+    "meaningVi": "tốt nhất, lý tưởng",
+    "definitionEn": "of the best quality or in the best condition",
+    "examples": [
+      {
+        "en": "The apartment is in a prime location near the metro station.",
+        "vi": "Căn hộ ở vị trí đắc địa gần ga metro."
+      },
+      {
+        "en": "This is prime time for sales, so the shop stays open late.",
+        "vi": "Đây là khung giờ vàng bán hàng nên cửa hàng mở muộn."
+      }
+    ],
+    "collocations": ["prime location", "prime time", "prime candidate"],
+    "notes": null
+  },
+  {
+    "id": "w-prior-adjective",
+    "meaningVi": "trước đó, ưu tiên",
+    "definitionEn": "existing or happening before something else",
+    "examples": [
+      {
+        "en": "Do you have any prior experience with customer service work?",
+        "vi": "Bạn có kinh nghiệm làm dịch vụ khách hàng từ trước không?"
+      },
+      {
+        "en": "Prior approval is required before you change the shared schedule.",
+        "vi": "Cần được phê duyệt trước khi bạn đổi lịch dùng chung."
+      }
+    ],
+    "collocations": ["prior experience", "prior notice", "prior agreement"],
+    "notes": "Thường đứng trước danh từ (prior experience), không dùng như ‘before’ trong câu đơn giản."
+  },
+  {
+    "id": "w-process-verb",
+    "meaningVi": "xử lý (hồ sơ, thanh toán)",
+    "definitionEn": "to deal with documents or data in an official way",
+    "examples": [
+      {
+        "en": "The bank processed my loan application within three working days.",
+        "vi": "Ngân hàng xử lý hồ sơ vay của tôi trong ba ngày làm việc."
+      },
+      {
+        "en": "Please wait while we process your payment on the website.",
+        "vi": "Vui lòng đợi trong lúc chúng tôi xử lý thanh toán trên trang web."
+      }
+    ],
+    "collocations": ["process an application", "process a payment", "process data"],
+    "notes": null
+  },
+  {
+    "id": "w-profit-noun",
+    "meaningVi": "lợi nhuận",
+    "definitionEn": "money a business earns after paying its costs",
+    "examples": [
+      {
+        "en": "The small shop made a good profit last quarter despite higher rent.",
+        "vi": "Quý vừa rồi cửa hàng nhỏ vẫn lãi tốt dù tiền thuê tăng."
+      },
+      {
+        "en": "We need to increase profit without raising prices for customers.",
+        "vi": "Chúng ta cần tăng lợi nhuận mà không tăng giá cho khách."
+      }
+    ],
+    "collocations": ["make a profit", "profit margin", "net profit"],
+    "notes": null
+  },
+  {
+    "id": "w-programming-noun",
+    "meaningVi": "lập trình",
+    "definitionEn": "writing instructions so computers can run software",
+    "examples": [
+      {
+        "en": "She took a course in programming to change her career path.",
+        "vi": "Cô ấy học khóa lập trình để đổi hướng nghề nghiệp."
+      },
+      {
+        "en": "Programming takes patience when you fix errors in your code.",
+        "vi": "Lập trình đòi hỏi kiên nhẫn khi bạn sửa lỗi trong mã."
+      }
+    ],
+    "collocations": ["learn programming", "programming language", "computer programming"],
+    "notes": null
+  },
+  {
+    "id": "w-progress-verb",
+    "meaningVi": "tiến triển, tiến bộ",
+    "definitionEn": "to move forward or get better over time",
+    "examples": [
+      {
+        "en": "Her English progressed quickly after she joined the speaking club.",
+        "vi": "Tiếng Anh của cô ấy tiến bộ nhanh sau khi tham gia câu lạc bộ nói."
+      },
+      {
+        "en": "The project progressed slower than we hoped because of staff changes.",
+        "vi": "Dự án tiến triển chậm hơn mong đợi vì thay đổi nhân sự."
+      }
+    ],
+    "collocations": ["progress steadily", "progress quickly", "work progresses"],
+    "notes": "Động từ; danh từ ‘tiến độ’ cùng chính tả nhưng nhấn âm khác."
+  },
+  {
+    "id": "w-project-noun",
+    "meaningVi": "dự án",
+    "definitionEn": "a planned piece of work with a clear goal",
+    "examples": [
+      {
+        "en": "Our team started a new project to improve the company website.",
+        "vi": "Nhóm chúng tôi bắt đầu dự án mới để cải thiện website công ty."
+      },
+      {
+        "en": "The project deadline is next Friday, so we meet every morning.",
+        "vi": "Hạn dự án là thứ Sáu tuần sau nên chúng tôi họp mỗi sáng."
+      }
+    ],
+    "collocations": ["group project", "project manager", "finish a project"],
+    "notes": null
+  },
+  {
+    "id": "w-project-verb",
+    "meaningVi": "phát ra, chiếu (âm thanh, hình ảnh)",
+    "definitionEn": "to send an image or sound outward to people",
+    "examples": [
+      {
+        "en": "She projects confidence when she presents ideas to the team.",
+        "vi": "Khi trình bày ý tưởng với nhóm, cô ấy toát ra sự tự tin."
+      },
+      {
+        "en": "The screen projects a clear image onto the wall in the meeting room.",
+        "vi": "Màn hình chiếu hình rõ ràng lên tường trong phòng họp."
+      }
+    ],
+    "collocations": ["project an image", "project confidence", "project onto"],
+    "notes": "Khác nghĩa danh từ ‘dự án’; nhấn âm giống nhau nhưng nghĩa khác."
+  },
+  {
+    "id": "w-proposed-adjective",
+    "meaningVi": "được đề xuất, dự kiến",
+    "definitionEn": "suggested but not yet accepted or official",
+    "examples": [
+      {
+        "en": "The proposed law would change how small businesses pay tax.",
+        "vi": "Luật được đề xuất sẽ thay đổi cách doanh nghiệp nhỏ nộp thuế."
+      },
+      {
+        "en": "Residents discussed the proposed park design at a public meeting.",
+        "vi": "Người dân bàn thiết kế công viên dự kiến tại cuộc họp công khai."
+      }
+    ],
+    "collocations": ["proposed changes", "proposed plan", "proposed budget"],
+    "notes": null
+  },
+  {
+    "id": "w-prose-noun",
+    "meaningVi": "văn xuôi",
+    "definitionEn": "written language in normal sentences, not poetry",
+    "examples": [
+      {
+        "en": "The exam asked us to compare prose and poetry from the same author.",
+        "vi": "Bài thi yêu cầu so sánh văn xuôi và thơ của cùng một tác giả."
+      },
+      {
+        "en": "Her prose is clear and easy to read for language learners.",
+        "vi": "Văn xuôi của cô ấy rõ ràng, dễ đọc với người học ngoại ngữ."
+      }
+    ],
+    "collocations": ["clear prose", "write in prose", "prose style"],
+    "notes": null
+  }
+]

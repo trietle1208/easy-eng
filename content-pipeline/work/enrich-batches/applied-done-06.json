@@ -1,0 +1,427 @@
+[
+  {
+    "id": "w-soviet-noun",
+    "meaningVi": "hội đồng xô viết; cơ quan đại diện (thời Liên Xô)",
+    "definitionEn": "a workers council in the former USSR political system",
+    "examples": [
+      {
+        "en": "The museum has files from the local soviet era.",
+        "vi": "Bảo tàng có hồ sơ từ thời hội đồng địa phương."
+      },
+      {
+        "en": "Historians still study how each soviet was elected.",
+        "vi": "Các sử gia vẫn nghiên cứu cách mỗi hội đồng xô viết được bầu."
+      }
+    ],
+    "collocations": ["local soviet", "soviet era", "workers soviet"],
+    "notes": null
+  },
+  {
+    "id": "w-specifically-adverb",
+    "meaningVi": "một cách cụ thể; đặc biệt là",
+    "definitionEn": "in an exact way; for one particular thing or reason",
+    "examples": [
+      {
+        "en": "We asked specifically about the delivery date for your order.",
+        "vi": "Chúng tôi hỏi cụ thể về ngày giao hàng cho đơn của bạn."
+      },
+      {
+        "en": "I specifically told you to save a copy before sending.",
+        "vi": "Mình đã nhắc rõ là lưu bản sao trước khi gửi."
+      }
+    ],
+    "collocations": ["ask specifically", "designed specifically", "specifically for"],
+    "notes": null
+  },
+  {
+    "id": "w-split-verb",
+    "meaningVi": "chia, tách, chia đôi",
+    "definitionEn": "to divide something into parts or separate groups",
+    "examples": [
+      {
+        "en": "Let us split the bill after dinner tonight.",
+        "vi": "Tối nay ăn xong mình chia hóa đơn nhé."
+      },
+      {
+        "en": "They split the team into two smaller groups for training.",
+        "vi": "Họ chia đội thành hai nhóm nhỏ để tập."
+      }
+    ],
+    "collocations": ["split the bill", "split into", "split up"],
+    "notes": null
+  },
+  {
+    "id": "w-spot-verb",
+    "meaningVi": "phát hiện, nhận ra",
+    "definitionEn": "to notice someone or something quickly",
+    "examples": [
+      {
+        "en": "I spotted a small error on page three of the report.",
+        "vi": "Mình phát hiện một lỗi nhỏ ở trang ba của báo cáo."
+      },
+      {
+        "en": "Can you spot the difference between these two photos?",
+        "vi": "Bạn có nhận ra sự khác biệt giữa hai ảnh này không?"
+      }
+    ],
+    "collocations": ["spot a mistake", "hard to spot", "spot the difference"],
+    "notes": null
+  },
+  {
+    "id": "w-spread-verb",
+    "meaningVi": "trải ra, lan rộng, phết lên",
+    "definitionEn": "to cover a wider area or reach more people",
+    "examples": [
+      {
+        "en": "Please spread the butter evenly on the warm bread.",
+        "vi": "Hãy phết bơ đều lên miếng bánh mì còn ấm."
+      },
+      {
+        "en": "Good news can spread quickly through the office chat.",
+        "vi": "Tin vui có thể lan nhanh qua nhóm chat công ty."
+      }
+    ],
+    "collocations": ["spread the word", "spread out", "spread butter"],
+    "notes": null
+  },
+  {
+    "id": "w-standard-adjective",
+    "meaningVi": "tiêu chuẩn, thông thường",
+    "definitionEn": "usual or accepted as normal in quality or type",
+    "examples": [
+      {
+        "en": "This is our standard price for lunch on weekdays.",
+        "vi": "Đây là giá thông thường cho bữa trưa ngày thường."
+      },
+      {
+        "en": "The room has standard heating and free Wi-Fi included.",
+        "vi": "Phòng có sưởi tiêu chuẩn và Wi-Fi miễn phí."
+      }
+    ],
+    "collocations": ["standard procedure", "standard room", "industry standard"],
+    "notes": null
+  },
+  {
+    "id": "w-state-adjective",
+    "meaningVi": "thuộc nhà nước, công",
+    "definitionEn": "provided or controlled by the government",
+    "examples": [
+      {
+        "en": "She works at a state hospital near the city center.",
+        "vi": "Cô ấy làm ở bệnh viện công gần trung tâm thành phố."
+      },
+      {
+        "en": "State schools in this area do not charge tuition fees.",
+        "vi": "Trường công ở khu vực này không thu học phí."
+      }
+    ],
+    "collocations": ["state hospital", "state school", "state-owned"],
+    "notes": null
+  },
+  {
+    "id": "w-state-verb",
+    "meaningVi": "phát biểu, nêu rõ",
+    "definitionEn": "to say or write something clearly and formally",
+    "examples": [
+      {
+        "en": "The rules state that phones must stay off during meetings.",
+        "vi": "Quy định nêu rõ điện thoại phải tắt trong cuộc họp."
+      },
+      {
+        "en": "He stated his full name at the front desk yesterday.",
+        "vi": "Hôm qua anh ấy nêu đầy đủ họ tên ở quầy lễ tân."
+      }
+    ],
+    "collocations": ["clearly state", "state a fact", "rules state"],
+    "notes": null
+  },
+  {
+    "id": "w-statistics-noun",
+    "meaningVi": "thống kê, số liệu thống kê",
+    "definitionEn": "numbers that show information about a topic or group",
+    "examples": [
+      {
+        "en": "I need reliable statistics for my economics report this week.",
+        "vi": "Tuần này mình cần số liệu thống kê đáng tin cho bài báo cáo kinh tế."
+      },
+      {
+        "en": "The statistics show fewer road accidents than last year.",
+        "vi": "Số liệu cho thấy tai nạn giao thông ít hơn năm ngoái."
+      }
+    ],
+    "collocations": ["official statistics", "crime statistics", "according to statistics"],
+    "notes": null
+  },
+  {
+    "id": "w-store-verb",
+    "meaningVi": "cất giữ, lưu trữ",
+    "definitionEn": "to put things in a place until they are needed",
+    "examples": [
+      {
+        "en": "Store the scanned files in a password-protected folder online.",
+        "vi": "Hãy lưu file đã quét trong thư mục trực tuyến có mật khẩu."
+      },
+      {
+        "en": "We store extra rice in clean plastic containers at home.",
+        "vi": "Nhà mình cất gạo dự trữ trong hộp nhựa sạch."
+      }
+    ],
+    "collocations": ["store data", "store safely", "store in"],
+    "notes": null
+  },
+  {
+    "id": "w-strain-verb",
+    "meaningVi": "làm căng quá; bị căng cơ",
+    "definitionEn": "to injure a muscle by using it too much",
+    "examples": [
+      {
+        "en": "Do not strain your back when you lift heavy boxes alone.",
+        "vi": "Đừng để lưng bị căng khi bạn tự nâng hộp nặng."
+      },
+      {
+        "en": "I strained my shoulder carrying bags up the stairs.",
+        "vi": "Mình bị căng vai khi xách túi lên cầu thang."
+      }
+    ],
+    "collocations": ["strain a muscle", "strain your back", "eye strain"],
+    "notes": null
+  },
+  {
+    "id": "w-stress-verb",
+    "meaningVi": "nhấn mạnh",
+    "definitionEn": "to give special importance or attention to something",
+    "examples": [
+      {
+        "en": "The doctor will stress the need for rest after surgery.",
+        "vi": "Bác sĩ sẽ nhấn mạnh cần nghỉ ngơi sau phẫu thuật."
+      },
+      {
+        "en": "Please stress this safety rule in your team briefing.",
+        "vi": "Hãy nhấn mạnh quy tắc an toàn này trong buổi họp nhóm."
+      }
+    ],
+    "collocations": ["stress the importance", "stress that", "stress a point"],
+    "notes": null
+  },
+  {
+    "id": "w-strictly-adverb",
+    "meaningVi": "một cách nghiêm ngặt; đúng nghĩa đen",
+    "definitionEn": "in a way that must be obeyed without any exception",
+    "examples": [
+      {
+        "en": "Smoking is strictly forbidden in this building at all times.",
+        "vi": "Nghiêm cấm hút thuốc trong tòa nhà này mọi lúc."
+      },
+      {
+        "en": "Strictly speaking, we should wait for written approval first.",
+        "vi": "Nói đúng nghĩa đen thì chúng ta nên chờ phê duyệt bằng văn bản."
+      }
+    ],
+    "collocations": ["strictly forbidden", "strictly speaking", "strictly necessary"],
+    "notes": null
+  },
+  {
+    "id": "w-struggle-verb",
+    "meaningVi": "vật lộn, gặp khó khăn",
+    "definitionEn": "to try hard when something is difficult for you",
+    "examples": [
+      {
+        "en": "Many students struggle with listening at the beginning.",
+        "vi": "Nhiều học viên ban đầu gặp khó với phần nghe."
+      },
+      {
+        "en": "I struggled to finish the report before the deadline.",
+        "vi": "Mình vật lộn để hoàn thành báo cáo trước hạn."
+      }
+    ],
+    "collocations": ["struggle with", "struggle to", "daily struggle"],
+    "notes": null
+  },
+  {
+    "id": "w-sufficiently-adverb",
+    "meaningVi": "đủ, một cách đủ",
+    "definitionEn": "enough for a particular purpose or need",
+    "examples": [
+      {
+        "en": "The water is not sufficiently hot for making tea yet.",
+        "vi": "Nước chưa đủ nóng để pha trà."
+      },
+      {
+        "en": "Have you practiced sufficiently before the speaking test?",
+        "vi": "Bạn đã luyện đủ trước bài thi nói chưa?"
+      }
+    ],
+    "collocations": ["sufficiently large", "sufficiently prepared", "not sufficiently"],
+    "notes": null
+  },
+  {
+    "id": "w-superintendent-noun",
+    "meaningVi": "người quản lý tòa nhà; giám đốc điều hành",
+    "definitionEn": "a person who manages a building or runs an organization",
+    "examples": [
+      {
+        "en": "The superintendent fixed the broken elevator in our building.",
+        "vi": "Người quản lý tòa nhà đã sửa thang máy hỏng."
+      },
+      {
+        "en": "Ask the superintendent about parking rules for visitors.",
+        "vi": "Hỏi quản lý tòa nhà về quy định đỗ xe cho khách."
+      }
+    ],
+    "collocations": ["building superintendent", "school superintendent", "call the superintendent"],
+    "notes": null
+  },
+  {
+    "id": "w-supervisor-noun",
+    "meaningVi": "người giám sát, cấp trên trực tiếp",
+    "definitionEn": "a person who watches and guides your work",
+    "examples": [
+      {
+        "en": "My supervisor approved my leave request this morning.",
+        "vi": "Sáng nay cấp trên đã duyệt đơn nghỉ phép của tôi."
+      },
+      {
+        "en": "Talk to your supervisor if the task still feels unclear.",
+        "vi": "Nếu công việc vẫn chưa rõ, hãy nói với người giám sát."
+      }
+    ],
+    "collocations": ["direct supervisor", "line supervisor", "report to a supervisor"],
+    "notes": null
+  },
+  {
+    "id": "w-supply-verb",
+    "meaningVi": "cung cấp",
+    "definitionEn": "to give people what they need in enough amount",
+    "examples": [
+      {
+        "en": "The farm supplies fresh vegetables to markets every week.",
+        "vi": "Trang trại cung cấp rau tươi cho chợ mỗi tuần."
+      },
+      {
+        "en": "We supply office paper to small businesses in the area.",
+        "vi": "Chúng tôi cung cấp giấy văn phòng cho doanh nghiệp nhỏ trong khu vực."
+      }
+    ],
+    "collocations": ["supply food", "supply with", "supply chain"],
+    "notes": null
+  },
+  {
+    "id": "w-syllable-noun",
+    "meaningVi": "âm tiết",
+    "definitionEn": "a single unit of sound in a spoken word",
+    "examples": [
+      {
+        "en": "The word hello has two syllables when you say it.",
+        "vi": "Từ hello có hai âm tiết khi bạn đọc."
+      },
+      {
+        "en": "Count each syllable when you practice new vocabulary aloud.",
+        "vi": "Khi luyện từ mới, hãy đếm từng âm tiết khi đọc to."
+      }
+    ],
+    "collocations": ["stressed syllable", "count syllables", "final syllable"],
+    "notes": null
+  },
+  {
+    "id": "w-teaspoon-noun",
+    "meaningVi": "thìa cà phê",
+    "definitionEn": "a small spoon used for drinks or measuring ingredients",
+    "examples": [
+      {
+        "en": "Add one teaspoon of sugar to your coffee, please.",
+        "vi": "Cho một thìa cà phê đường vào cà phê giúp mình nhé."
+      },
+      {
+        "en": "The recipe calls for two teaspoons of salt in total.",
+        "vi": "Công thức cần tổng cộng hai thìa cà phê muối."
+      }
+    ],
+    "collocations": ["a teaspoon of", "teaspoon measure", "level teaspoon"],
+    "notes": null
+  },
+  {
+    "id": "w-technical-adjective",
+    "meaningVi": "kỹ thuật, chuyên môn",
+    "definitionEn": "relating to machines, science, or special skills",
+    "examples": [
+      {
+        "en": "I had a technical problem with my laptop after the update.",
+        "vi": "Sau bản cập nhật, laptop của mình gặp sự cố kỹ thuật."
+      },
+      {
+        "en": "The manual uses very technical language for beginners.",
+        "vi": "Sách hướng dẫn dùng ngôn ngữ chuyên môn khá khó cho người mới."
+      }
+    ],
+    "collocations": ["technical support", "technical issue", "technical skills"],
+    "notes": null
+  },
+  {
+    "id": "w-terrace-noun",
+    "meaningVi": "sân thượng, ban công",
+    "definitionEn": "a flat outdoor area joined to a house or building",
+    "examples": [
+      {
+        "en": "We had coffee on the terrace this sunny morning.",
+        "vi": "Sáng nắng hôm nay chúng tôi uống cà phê trên sân thượng."
+      },
+      {
+        "en": "The terrace gets plenty of sun in the late afternoon.",
+        "vi": "Buổi chiều muộn ban công nhận rất nhiều nắng."
+      }
+    ],
+    "collocations": ["roof terrace", "on the terrace", "terrace garden"],
+    "notes": null
+  },
+  {
+    "id": "w-territory-noun",
+    "meaningVi": "lãnh thổ, vùng đất",
+    "definitionEn": "an area of land that a country or group controls",
+    "examples": [
+      {
+        "en": "The map shows the border and the nearby disputed territory.",
+        "vi": "Bản đồ thể hiện biên giới và vùng lãnh thổ đang tranh chấp gần đó."
+      },
+      {
+        "en": "Wild animals need large territory to find enough food.",
+        "vi": "Động vật hoang cần lãnh thổ rộng để kiếm đủ thức ăn."
+      }
+    ],
+    "collocations": ["disputed territory", "enter territory", "territory of"],
+    "notes": null
+  },
+  {
+    "id": "w-that-adverb",
+    "meaningVi": "đến mức, như vậy (nhấn mức độ)",
+    "definitionEn": "to such a degree; so, with adjectives or adverbs",
+    "examples": [
+      {
+        "en": "It is not that difficult if you practice a little each day.",
+        "vi": "Không khó đến vậy nếu bạn luyện một chút mỗi ngày."
+      },
+      {
+        "en": "Are you that sure about the meeting date on Friday?",
+        "vi": "Bạn chắc đến mức vậy về ngày họp thứ Sáu à?"
+      }
+    ],
+    "collocations": ["not that bad", "that much", "that far"],
+    "notes": null
+  },
+  {
+    "id": "w-therapist-noun",
+    "meaningVi": "bác sĩ trị liệu, nhà trị liệu",
+    "definitionEn": "a trained person who helps with physical or mental health",
+    "examples": [
+      {
+        "en": "My therapist suggested short walks after a long workday.",
+        "vi": "Nhà trị liệu gợi ý mình đi bộ ngắn sau ngày làm dài."
+      },
+      {
+        "en": "The therapist showed me simple exercises for my sore knee.",
+        "vi": "Bác sĩ trị liệu hướng dẫn tôi vài bài tập đơn giản cho đầu gối đau."
+      }
+    ],
+    "collocations": ["physical therapist", "see a therapist", "speech therapist"],
+    "notes": null
+  }
+]

@@ -1,0 +1,232 @@
+{
+  "promptVersion": "enrich.v1",
+  "batch": 6,
+  "batchCount": 8,
+  "inputs": [
+    {
+      "id": "w-soviet-noun",
+      "word": "soviet",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/sˈoʊviət/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-specifically-adverb",
+      "word": "specifically",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/spəsˈɪfɪkli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-split-verb",
+      "word": "split",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/splˈɪt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-spot-verb",
+      "word": "spot",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/spˈɑt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-spread-verb",
+      "word": "spread",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/spɹˈɛd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-standard-adjective",
+      "word": "standard",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/stˈændɚd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-state-adjective",
+      "word": "state",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/stˈeɪt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-state-verb",
+      "word": "state",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/stˈeɪt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-statistics-noun",
+      "word": "statistics",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/stətˈɪstɪks/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-store-verb",
+      "word": "store",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Shopping",
+      "ipa": "/stˈɔɹ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-strain-verb",
+      "word": "strain",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/stɹˈeɪn/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-stress-verb",
+      "word": "stress",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Health",
+      "ipa": "/stɹˈɛs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-strictly-adverb",
+      "word": "strictly",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/stɹˈɪktli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-struggle-verb",
+      "word": "struggle",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/stɹˈʌɡəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-sufficiently-adverb",
+      "word": "sufficiently",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/səfˈɪʃəntli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-superintendent-noun",
+      "word": "superintendent",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/sˌupɚəntˈɛndənt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-supervisor-noun",
+      "word": "supervisor",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/sˈupɚvˌaɪzɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-supply-verb",
+      "word": "supply",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/səplˈaɪ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-syllable-noun",
+      "word": "syllable",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/sˈɪləbəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-teaspoon-noun",
+      "word": "teaspoon",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Shopping",
+      "ipa": "/tˈispˌun/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-technical-adjective",
+      "word": "technical",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Technology",
+      "ipa": "/tˈɛknɪkəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-terrace-noun",
+      "word": "terrace",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Home",
+      "ipa": "/tˈɛɹəs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-territory-noun",
+      "word": "territory",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/tˈɛɹɪtˌɔɹi/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-that-adverb",
+      "word": "that",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ðˈæt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-therapist-noun",
+      "word": "therapist",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/θˈɛɹəpəst/",
+      "altSpelling": null
+    }
+  ]
+}

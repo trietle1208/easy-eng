@@ -1,0 +1,427 @@
+[
+  {
+    "id": "w-research-verb",
+    "meaningVi": "nghiên cứu, tìm hiểu kỹ",
+    "definitionEn": "to study a subject carefully to discover new information",
+    "examples": [
+      {
+        "en": "I need to research the history of this region.",
+        "vi": "Mình cần nghiên cứu lịch sử vùng này."
+      },
+      {
+        "en": "They researched online before writing the report.",
+        "vi": "Họ tìm hiểu trên mạng trước khi viết báo cáo."
+      }
+    ],
+    "collocations": ["research a topic", "research online", "research thoroughly"],
+    "notes": null
+  },
+  {
+    "id": "w-residence-noun",
+    "meaningVi": "nơi cư trú, chỗ ở chính thức",
+    "definitionEn": "the home where someone officially lives",
+    "examples": [
+      {
+        "en": "Please write your current residence on the form.",
+        "vi": "Vui lòng ghi nơi cư trú hiện tại trên mẫu đơn."
+      },
+      {
+        "en": "His official residence is in the capital city.",
+        "vi": "Nơi cư trú chính thức của ông ấy ở thủ đô."
+      }
+    ],
+    "collocations": ["permanent residence", "place of residence", "official residence"],
+    "notes": null
+  },
+  {
+    "id": "w-resignation-noun",
+    "meaningVi": "đơn từ chức; sự từ chức",
+    "definitionEn": "the act of telling an employer you leave your job",
+    "examples": [
+      {
+        "en": "She handed in her resignation after the meeting.",
+        "vi": "Sau cuộc họp, cô ấy nộp đơn từ chức."
+      },
+      {
+        "en": "The manager accepted his resignation last Friday.",
+        "vi": "Sếp đã chấp nhận đơn từ chức của anh ấy hôm thứ Sáu."
+      }
+    ],
+    "collocations": ["hand in resignation", "accept a resignation", "letter of resignation"],
+    "notes": null
+  },
+  {
+    "id": "w-retirement-noun",
+    "meaningVi": "nghỉ hưu",
+    "definitionEn": "the time in life when you permanently stop working",
+    "examples": [
+      {
+        "en": "They are saving money for a comfortable retirement.",
+        "vi": "Họ đang tiết kiệm để nghỉ hưu thoải mái."
+      },
+      {
+        "en": "Retirement gave him more time for family trips.",
+        "vi": "Nghỉ hưu giúp ông ấy có thêm thời gian đi chơi cùng gia đình."
+      }
+    ],
+    "collocations": ["early retirement", "plan for retirement", "after retirement"],
+    "notes": null
+  },
+  {
+    "id": "w-reverse-verb",
+    "meaningVi": "đảo ngược; lùi lại",
+    "definitionEn": "to change direction so you go the opposite way",
+    "examples": [
+      {
+        "en": "Please reverse the car into the parking space.",
+        "vi": "Nhờ lùi xe vào chỗ đỗ giúp mình."
+      },
+      {
+        "en": "The court reversed the earlier decision yesterday.",
+        "vi": "Hôm qua tòa đã đảo ngược quyết định trước đó."
+      }
+    ],
+    "collocations": ["reverse direction", "reverse a decision", "reverse into"],
+    "notes": null
+  },
+  {
+    "id": "w-review-verb",
+    "meaningVi": "ôn tập; xem xét lại",
+    "definitionEn": "to look at notes again to prepare for a test",
+    "examples": [
+      {
+        "en": "We should review the key points before the exam.",
+        "vi": "Trước kỳ thi, chúng ta nên ôn lại các ý chính."
+      },
+      {
+        "en": "She reviewed her essay and fixed a few errors.",
+        "vi": "Cô ấy xem lại bài luận và sửa vài lỗi."
+      }
+    ],
+    "collocations": ["review notes", "review carefully", "review for a test"],
+    "notes": null
+  },
+  {
+    "id": "w-revolutionary-adjective",
+    "meaningVi": "mang tính cách mạng, đột phá",
+    "definitionEn": "completely new and causing major change in society",
+    "examples": [
+      {
+        "en": "The app uses revolutionary technology for language learning.",
+        "vi": "Ứng dụng dùng công nghệ đột phá để học ngoại ngữ."
+      },
+      {
+        "en": "Their revolutionary ideas changed how people share news.",
+        "vi": "Những ý tưởng cách mạng của họ đã thay đổi cách mọi người chia sẻ tin."
+      }
+    ],
+    "collocations": ["revolutionary idea", "revolutionary change", "revolutionary technology"],
+    "notes": null
+  },
+  {
+    "id": "w-rider-noun",
+    "meaningVi": "người đi xe; hành khách",
+    "definitionEn": "a person who travels on a bus, train, or bike",
+    "examples": [
+      {
+        "en": "Every rider must wear a helmet on this route.",
+        "vi": "Mọi người đi xe trên tuyến này phải đội mũ bảo hiểm."
+      },
+      {
+        "en": "The bus driver helped a rider with heavy bags.",
+        "vi": "Tài xế xe buýt giúp một hành khách xách túi nặng."
+      }
+    ],
+    "collocations": ["bus rider", "bike rider", "daily rider"],
+    "notes": null
+  },
+  {
+    "id": "w-risk-verb",
+    "meaningVi": "mạo hiểm, liều",
+    "definitionEn": "to do something despite possible danger or loss",
+    "examples": [
+      {
+        "en": "Do not risk your health by skipping sleep.",
+        "vi": "Đừng liều sức khỏe bằng cách thiếu ngủ."
+      },
+      {
+        "en": "They risked a long drive through the storm.",
+        "vi": "Họ liều lái xe đường dài giữa cơn bão."
+      }
+    ],
+    "collocations": ["risk losing", "risk health", "risk too much"],
+    "notes": null
+  },
+  {
+    "id": "w-rite-noun",
+    "meaningVi": "nghi lễ, nghi thức",
+    "definitionEn": "a formal action that is part of a ceremony",
+    "examples": [
+      {
+        "en": "The wedding rite was short but very meaningful.",
+        "vi": "Nghi lễ cưới ngắn nhưng rất ý nghĩa."
+      },
+      {
+        "en": "Villagers follow an ancient rite each spring.",
+        "vi": "Dân làng làm một nghi lễ cổ mỗi mùa xuân."
+      }
+    ],
+    "collocations": ["funeral rite", "ancient rite", "religious rite"],
+    "notes": null
+  },
+  {
+    "id": "w-ritual-noun",
+    "meaningVi": "nghi thức; thói quen cố định",
+    "definitionEn": "a series of fixed actions done in the same way",
+    "examples": [
+      {
+        "en": "Morning coffee became a daily ritual for her.",
+        "vi": "Cà phê buổi sáng trở thành nghi thức hàng ngày của cô ấy."
+      },
+      {
+        "en": "The team kept a simple ritual before each game.",
+        "vi": "Đội giữ một nghi thức đơn giản trước mỗi trận."
+      }
+    ],
+    "collocations": ["daily ritual", "morning ritual", "family ritual"],
+    "notes": null
+  },
+  {
+    "id": "w-rival-noun",
+    "meaningVi": "đối thủ, kẻ cạnh tranh",
+    "definitionEn": "a person or team competing against you for success",
+    "examples": [
+      {
+        "en": "Our main rival opened a new shop nearby.",
+        "vi": "Đối thủ chính của chúng ta mở cửa hàng mới gần đây."
+      },
+      {
+        "en": "She respects her rival but still wants to win.",
+        "vi": "Cô ấy tôn trọng đối thủ nhưng vẫn muốn thắng."
+      }
+    ],
+    "collocations": ["main rival", "business rival", "long-time rival"],
+    "notes": null
+  },
+  {
+    "id": "w-rock-verb",
+    "meaningVi": "lay đưa, chao đảo",
+    "definitionEn": "to move slowly back and forth or from side to side",
+    "examples": [
+      {
+        "en": "The boat began to rock in the strong waves.",
+        "vi": "Chiếc thuyền bắt đầu chao đảo trong sóng lớn."
+      },
+      {
+        "en": "Tall trees rock gently when the wind blows hard.",
+        "vi": "Cây cao lay đưa nhẹ khi gió thổi mạnh."
+      }
+    ],
+    "collocations": ["rock back and forth", "rock gently", "begin to rock"],
+    "notes": null
+  },
+  {
+    "id": "w-round-verb",
+    "meaningVi": "làm tròn số; đi vòng qua",
+    "definitionEn": "to express a number as the nearest whole value",
+    "examples": [
+      {
+        "en": "Please round the total to the nearest thousand.",
+        "vi": "Làm tròn tổng tiền đến hàng nghìn gần nhất giúp mình."
+      },
+      {
+        "en": "The driver will round the corner at low speed.",
+        "vi": "Tài xế sẽ đi vòng qua góc cua với tốc độ chậm."
+      }
+    ],
+    "collocations": ["round the corner", "round up", "round to the nearest"],
+    "notes": null
+  },
+  {
+    "id": "w-route-noun",
+    "meaningVi": "lộ trình, tuyến đường đi",
+    "definitionEn": "the way taken to get from one place to another",
+    "examples": [
+      {
+        "en": "We chose a scenic route through the mountains.",
+        "vi": "Chúng tôi chọn lộ trình qua núi đẹp."
+      },
+      {
+        "en": "This bus route stops near the old market.",
+        "vi": "Tuyến xe buýt này dừng gần chợ cũ."
+      }
+    ],
+    "collocations": ["bus route", "scenic route", "change route"],
+    "notes": null
+  },
+  {
+    "id": "w-row-verb",
+    "meaningVi": "chèo thuyền",
+    "definitionEn": "to push a boat through water using two oars",
+    "examples": [
+      {
+        "en": "We row across the lake on quiet weekends.",
+        "vi": "Cuối tuần yên tĩnh, chúng tôi chèo thuyền qua hồ."
+      },
+      {
+        "en": "They rowed for an hour before reaching the shore.",
+        "vi": "Họ chèo một tiếng rồi mới tới bờ."
+      }
+    ],
+    "collocations": ["row a boat", "row across", "row to shore"],
+    "notes": null
+  },
+  {
+    "id": "w-rule-verb",
+    "meaningVi": "cai trị, nắm quyền",
+    "definitionEn": "to have power and make decisions as a leader",
+    "examples": [
+      {
+        "en": "A small council will rule the town for now.",
+        "vi": "Một hội đồng nhỏ sẽ cai trị thị trấn tạm thời."
+      },
+      {
+        "en": "Judges rule on cases using clear written laws.",
+        "vi": "Thẩm phán phán quyết các vụ theo luật viết sẵn."
+      }
+    ],
+    "collocations": ["rule a country", "rule on", "rule with care"],
+    "notes": null
+  },
+  {
+    "id": "w-rural-adjective",
+    "meaningVi": "thuộc nông thôn, vùng quê",
+    "definitionEn": "located in or typical of the countryside not cities",
+    "examples": [
+      {
+        "en": "They moved to a quiet rural area last year.",
+        "vi": "Năm ngoái họ chuyển về vùng quê yên tĩnh."
+      },
+      {
+        "en": "Rural roads can be narrow after heavy rain.",
+        "vi": "Đường nông thôn có thể hẹp sau mưa lớn."
+      }
+    ],
+    "collocations": ["rural area", "rural life", "rural community"],
+    "notes": null
+  },
+  {
+    "id": "w-salary-noun",
+    "meaningVi": "lương tháng, tiền lương",
+    "definitionEn": "fixed pay that employees receive each month from work",
+    "examples": [
+      {
+        "en": "Her salary covers rent and basic living costs.",
+        "vi": "Lương của cô ấy đủ trả tiền thuê nhà và sinh hoạt."
+      },
+      {
+        "en": "The company raised his salary after the review.",
+        "vi": "Công ty tăng lương cho anh ấy sau đợt đánh giá."
+      }
+    ],
+    "collocations": ["monthly salary", "salary increase", "basic salary"],
+    "notes": null
+  },
+  {
+    "id": "w-saw-verb",
+    "meaningVi": "cưa, dùng cưa cắt",
+    "definitionEn": "to cut wood using a tool with sharp teeth",
+    "examples": [
+      {
+        "en": "He sawed the plank to fit the small shelf.",
+        "vi": "Anh ấy cưa tấm ván cho vừa kệ nhỏ."
+      },
+      {
+        "en": "Please saw slowly so the line stays straight.",
+        "vi": "Cưa chậm thôi để đường cắt thẳng nhé."
+      }
+    ],
+    "collocations": ["saw wood", "saw a plank", "saw carefully"],
+    "notes": null
+  },
+  {
+    "id": "w-scandal-noun",
+    "meaningVi": "vụ bê bối, tin gây chấn động",
+    "definitionEn": "public anger about wrong or shocking behavior by someone",
+    "examples": [
+      {
+        "en": "The scandal dominated news headlines for several days.",
+        "vi": "Vụ bê bối chiếm tin chính vài ngày liền."
+      },
+      {
+        "en": "Leaders promised reforms after the latest scandal.",
+        "vi": "Sau vụ bê bối mới nhất, lãnh đạo hứa cải cách."
+      }
+    ],
+    "collocations": ["political scandal", "latest scandal", "cause a scandal"],
+    "notes": null
+  },
+  {
+    "id": "w-schedule-verb",
+    "meaningVi": "lên lịch, ấn định thời gian",
+    "definitionEn": "to arrange for something to happen at a set time",
+    "examples": [
+      {
+        "en": "Can we schedule the meeting for next Tuesday?",
+        "vi": "Mình lên lịch họp vào thứ Ba tuần sau được không?"
+      },
+      {
+        "en": "They scheduled maintenance during the quiet night hours.",
+        "vi": "Họ lên lịch bảo trì vào đêm ít người."
+      }
+    ],
+    "collocations": ["schedule a meeting", "schedule maintenance", "schedule for Tuesday"],
+    "notes": null
+  },
+  {
+    "id": "w-screen-verb",
+    "meaningVi": "sàng lọc, kiểm tra sơ bộ",
+    "definitionEn": "to examine people or content to decide who may pass",
+    "examples": [
+      {
+        "en": "HR will screen all applicants before the interviews.",
+        "vi": "Nhân sự sẽ sàng lọc hồ sơ trước khi phỏng vấn."
+      },
+      {
+        "en": "The app screens videos for harmful content automatically.",
+        "vi": "Ứng dụng tự kiểm tra video để lọc nội dung có hại."
+      }
+    ],
+    "collocations": ["screen applicants", "screen content", "screen for issues"],
+    "notes": null
+  },
+  {
+    "id": "w-second-person-phrase",
+    "meaningVi": "ngôi thứ hai (xưng hô với người nghe)",
+    "definitionEn": "the grammatical form that refers to the listener as you",
+    "examples": [
+      {
+        "en": "In English, the second person uses the word you.",
+        "vi": "Trong tiếng Anh, ngôi thứ hai dùng đại từ chỉ người nghe."
+      },
+      {
+        "en": "Our teacher explained second person with clear examples.",
+        "vi": "Cô giáo giải thích ngôi thứ hai bằng ví dụ rõ ràng."
+      }
+    ],
+    "collocations": ["second person singular", "second person plural", "use second person"],
+    "notes": null
+  },
+  {
+    "id": "w-secondary-adjective",
+    "meaningVi": "trung học; thứ yếu, phụ",
+    "definitionEn": "relating to high school level education for adolescents",
+    "examples": [
+      {
+        "en": "She teaches at a secondary school near home.",
+        "vi": "Cô ấy dạy ở một trường trung học gần nhà."
+      },
+      {
+        "en": "Secondary education is free for students in this town.",
+        "vi": "Giáo dục trung học miễn phí cho học sinh ở thị trấn này."
+      }
+    ],
+    "collocations": ["secondary school", "secondary education", "secondary level"],
+    "notes": null
+  }
+]

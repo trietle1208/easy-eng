@@ -1,0 +1,232 @@
+{
+  "promptVersion": "enrich.v1",
+  "batch": 8,
+  "batchCount": 8,
+  "inputs": [
+    {
+      "id": "w-united-adjective",
+      "word": "united",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/junˈaɪtɪd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-universal-adjective",
+      "word": "universal",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/jˌunəvˈɝsəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-urban-adjective",
+      "word": "urban",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Nature",
+      "ipa": "/ˈɝbən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-user-noun",
+      "word": "user",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "People",
+      "ipa": "/jˈuzɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-vaccine-noun",
+      "word": "vaccine",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Health",
+      "ipa": "/vˌæksˈin/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-value-verb",
+      "word": "value",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/vˈælju/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-verse-verb",
+      "word": "verse",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/vˈɝs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-very-adjective",
+      "word": "very",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/vˈɛɹi/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-villa-noun",
+      "word": "villa",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Travel",
+      "ipa": "/vˈɪlə/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-virtually-adverb",
+      "word": "virtually",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/vˈɝtʃuəli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-vital-adjective",
+      "word": "vital",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Health",
+      "ipa": "/vˈaɪtəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-vitamin-noun",
+      "word": "vitamin",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Health",
+      "ipa": "/vˈaɪtəmən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-volunteer-noun",
+      "word": "volunteer",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "People",
+      "ipa": "/vˌɑləntˈɪɹ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-wage-noun",
+      "word": "wage",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/wˈeɪdʒ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-waist-noun",
+      "word": "waist",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Health",
+      "ipa": "/wˈeɪst/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-wartime-noun",
+      "word": "wartime",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/wˈɔɹtˌaɪm/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-water-verb",
+      "word": "water",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Food",
+      "ipa": "/wˈɔtɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-welfare-noun",
+      "word": "welfare",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Shopping",
+      "ipa": "/wˈɛlfˌɛɹ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-well-balanced-adjective",
+      "word": "well-balanced",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Health",
+      "ipa": "/wˈɛl-bˈælənst/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-well-built-adjective",
+      "word": "well-built",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Appearance",
+      "ipa": "/wˈɛl-bˈɪlt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-well-organized-adjective",
+      "word": "well-organized",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/wˈɛl-ˈɔɹɡənˌaɪzd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-well-paid-adjective",
+      "word": "well-paid",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/wˈɛl-pˈeɪd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-western-adjective",
+      "word": "western",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/wˈɛstɚn/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-wheat-noun",
+      "word": "wheat",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Food",
+      "ipa": "/wˈit/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-widow-noun",
+      "word": "widow",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "People",
+      "ipa": "/wˈɪdoʊ/",
+      "altSpelling": null
+    }
+  ]
+}

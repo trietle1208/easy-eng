@@ -1,0 +1,907 @@
+{
+  "promptVersion": "enrich.v1",
+  "seed": 4,
+  "count": 100,
+  "words": [
+    {
+      "id": "w-black-adjective",
+      "word": "black",
+      "partOfSpeech": "adjective",
+      "level": "A1",
+      "topicId": "Appearance",
+      "ipa": "/blˈæk/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-mean-verb",
+      "word": "mean",
+      "partOfSpeech": "verb",
+      "level": "A1",
+      "topicId": "Appearance",
+      "ipa": "/mˈin/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-write-verb",
+      "word": "write",
+      "partOfSpeech": "verb",
+      "level": "A1",
+      "topicId": "Communication",
+      "ipa": "/ɹˈaɪt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-break-verb",
+      "word": "break",
+      "partOfSpeech": "verb",
+      "level": "A1",
+      "topicId": "Daily life",
+      "ipa": "/bɹˈeɪk/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-may-noun",
+      "word": "may",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "topicId": "Daily life",
+      "ipa": "/mˈeɪ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-miss-verb",
+      "word": "miss",
+      "partOfSpeech": "verb",
+      "level": "A1",
+      "topicId": "Feelings",
+      "ipa": "/mˈɪs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-butter-noun",
+      "word": "butter",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "topicId": "Food",
+      "ipa": "/bˈʌtɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-good-afternoon-interjection",
+      "word": "good afternoon",
+      "partOfSpeech": "interjection",
+      "level": "A1",
+      "topicId": "Grammar words",
+      "ipa": "/ɡˈʊd ˌæftɚnˈun/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-good-morning-interjection",
+      "word": "good morning",
+      "partOfSpeech": "interjection",
+      "level": "A1",
+      "topicId": "Grammar words",
+      "ipa": "/ɡˈʊd mˈɔɹnɪŋ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-good-night-interjection",
+      "word": "good night",
+      "partOfSpeech": "interjection",
+      "level": "A1",
+      "topicId": "Grammar words",
+      "ipa": "/ɡˈʊd nˈaɪt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-up-preposition",
+      "word": "up",
+      "partOfSpeech": "preposition",
+      "level": "A1",
+      "topicId": "Grammar words",
+      "ipa": "/ˈʌp/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-town-noun",
+      "word": "town",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "topicId": "Home",
+      "ipa": "/tˈaʊn/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-e-mail-noun",
+      "word": "e-mail",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "topicId": "Media",
+      "ipa": "/ˈimˌeɪl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-dry-adjective",
+      "word": "dry",
+      "partOfSpeech": "adjective",
+      "level": "A1",
+      "topicId": "Nature",
+      "ipa": "/dɹˈaɪ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-grow-verb",
+      "word": "grow",
+      "partOfSpeech": "verb",
+      "level": "A1",
+      "topicId": "Nature",
+      "ipa": "/ɡɹˈoʊ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-friend-noun",
+      "word": "friend",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "topicId": "People",
+      "ipa": "/fɹˈɛnd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-know-verb",
+      "word": "know",
+      "partOfSpeech": "verb",
+      "level": "A1",
+      "topicId": "School",
+      "ipa": "/nˈoʊ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-note-verb",
+      "word": "note",
+      "partOfSpeech": "verb",
+      "level": "A1",
+      "topicId": "Shopping",
+      "ipa": "/nˈoʊt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-supermarket-noun",
+      "word": "supermarket",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "topicId": "Shopping",
+      "ipa": "/sˈupɚmˌɑɹkɪt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-fine-adjective",
+      "word": "fine",
+      "partOfSpeech": "adjective",
+      "level": "A1",
+      "topicId": "Society",
+      "ipa": "/fˈaɪn/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-hobby-noun",
+      "word": "hobby",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "topicId": "Sports",
+      "ipa": "/hˈɑbi/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-play-verb",
+      "word": "play",
+      "partOfSpeech": "verb",
+      "level": "A1",
+      "topicId": "Sports",
+      "ipa": "/plˈeɪ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-run-verb",
+      "word": "run",
+      "partOfSpeech": "verb",
+      "level": "A1",
+      "topicId": "Sports",
+      "ipa": "/ɹˈʌn/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-phone-verb",
+      "word": "phone",
+      "partOfSpeech": "verb",
+      "level": "A1",
+      "topicId": "Technology",
+      "ipa": "/fˈoʊn/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-smith-noun",
+      "word": "smith",
+      "partOfSpeech": "noun",
+      "level": "A1",
+      "topicId": "Work",
+      "ipa": "/smˈɪθ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-bra-noun",
+      "word": "bra",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "topicId": "Appearance",
+      "ipa": "/bɹˈɑ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-mean-adjective",
+      "word": "mean",
+      "partOfSpeech": "adjective",
+      "level": "A2",
+      "topicId": "Appearance",
+      "ipa": "/mˈin/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-batch-noun",
+      "word": "batch",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "topicId": "Communication",
+      "ipa": "/bˈætʃ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-end-verb",
+      "word": "end",
+      "partOfSpeech": "verb",
+      "level": "A2",
+      "topicId": "Daily life",
+      "ipa": "/ˈɛnd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-perfect-adjective",
+      "word": "perfect",
+      "partOfSpeech": "adjective",
+      "level": "A2",
+      "topicId": "Feelings",
+      "ipa": "/pɚfˈɛkt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-lunchtime-noun",
+      "word": "lunchtime",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "topicId": "Food",
+      "ipa": "/lˈʌntʃtˌaɪm/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-order-verb",
+      "word": "order",
+      "partOfSpeech": "verb",
+      "level": "A2",
+      "topicId": "Food",
+      "ipa": "/ˈɔɹdɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-patient-noun",
+      "word": "patient",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "topicId": "Health",
+      "ipa": "/pˈeɪʃənt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-container-noun",
+      "word": "container",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "topicId": "Home",
+      "ipa": "/kəntˈeɪnɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-petrol-station-phrase",
+      "word": "petrol station",
+      "partOfSpeech": "phrase",
+      "level": "A2",
+      "topicId": "Home",
+      "ipa": "/pˈɛtɹoʊl stˈeɪʃən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-curse-noun",
+      "word": "curse",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "topicId": "Media",
+      "ipa": "/kˈɝs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-dry-verb",
+      "word": "dry",
+      "partOfSpeech": "verb",
+      "level": "A2",
+      "topicId": "Nature",
+      "ipa": "/dɹˈaɪ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-personality-noun",
+      "word": "personality",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "topicId": "People",
+      "ipa": "/pˌɝsənˈælɪti/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-understand-verb",
+      "word": "understand",
+      "partOfSpeech": "verb",
+      "level": "A2",
+      "topicId": "School",
+      "ipa": "/ˌʌndɚstˈænd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-wisdom-noun",
+      "word": "wisdom",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "topicId": "School",
+      "ipa": "/wˈɪzdəm/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-basket-noun",
+      "word": "basket",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "topicId": "Shopping",
+      "ipa": "/bˈæskət/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-department-store-phrase",
+      "word": "department store",
+      "partOfSpeech": "phrase",
+      "level": "A2",
+      "topicId": "Shopping",
+      "ipa": "/dɪpˈɑɹtmənt stˈɔɹ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-traditional-adjective",
+      "word": "traditional",
+      "partOfSpeech": "adjective",
+      "level": "A2",
+      "topicId": "Society",
+      "ipa": "/tɹədˈɪʃənəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-lose-verb",
+      "word": "lose",
+      "partOfSpeech": "verb",
+      "level": "A2",
+      "topicId": "Sports",
+      "ipa": "/lˈuz/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-surfing-noun",
+      "word": "surfing",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "topicId": "Sports",
+      "ipa": "/sˈɝfɪŋ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-online-adjective",
+      "word": "online",
+      "partOfSpeech": "adjective",
+      "level": "A2",
+      "topicId": "Technology",
+      "ipa": "/ˈɔnlˌaɪn/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-bus-station-phrase",
+      "word": "bus station",
+      "partOfSpeech": "phrase",
+      "level": "A2",
+      "topicId": "Travel",
+      "ipa": "/bˈʌs stˈeɪʃən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-drive-verb",
+      "word": "drive",
+      "partOfSpeech": "verb",
+      "level": "A2",
+      "topicId": "Travel",
+      "ipa": "/dɹˈaɪv/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-train-verb",
+      "word": "train",
+      "partOfSpeech": "verb",
+      "level": "A2",
+      "topicId": "Travel",
+      "ipa": "/tɹˈeɪn/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-labor-noun",
+      "word": "labor",
+      "partOfSpeech": "noun",
+      "level": "A2",
+      "topicId": "Work",
+      "ipa": "/lˈeɪbɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-mention-verb",
+      "word": "mention",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "topicId": "Communication",
+      "ipa": "/mˈɛnʃən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-fight-verb",
+      "word": "fight",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "topicId": "Daily life",
+      "ipa": "/fˈaɪt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-rise-verb",
+      "word": "rise",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "topicId": "Daily life",
+      "ipa": "/ɹˈaɪz/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-emotional-adjective",
+      "word": "emotional",
+      "partOfSpeech": "adjective",
+      "level": "B1",
+      "topicId": "Feelings",
+      "ipa": "/ɪmˈoʊʃənəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-flavor-noun",
+      "word": "flavor",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "topicId": "Food",
+      "ipa": "/flˈeɪvɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-because-of-preposition",
+      "word": "because of",
+      "partOfSpeech": "preposition",
+      "level": "B1",
+      "topicId": "Grammar words",
+      "ipa": "/bɪkˈɔz ˈʌv/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-on-to-preposition",
+      "word": "on to",
+      "partOfSpeech": "preposition",
+      "level": "B1",
+      "topicId": "Grammar words",
+      "ipa": "/ˈɑn tˈu/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-hip-noun",
+      "word": "hip",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "topicId": "Health",
+      "ipa": "/hˈɪp/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-ground-floor-phrase",
+      "word": "ground floor",
+      "partOfSpeech": "phrase",
+      "level": "B1",
+      "topicId": "Home",
+      "ipa": "/ɡɹˈaʊnd flˈɔɹ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-prison-noun",
+      "word": "prison",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "topicId": "Home",
+      "ipa": "/pɹˈɪzən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-literature-noun",
+      "word": "literature",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "topicId": "Media",
+      "ipa": "/lˈɪtɚətʃɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-global-adjective",
+      "word": "global",
+      "partOfSpeech": "adjective",
+      "level": "B1",
+      "topicId": "Nature",
+      "ipa": "/ɡlˈoʊbəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-plant-verb",
+      "word": "plant",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "topicId": "Nature",
+      "ipa": "/plˈænt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-air-force-phrase",
+      "word": "air force",
+      "partOfSpeech": "phrase",
+      "level": "B1",
+      "topicId": "People",
+      "ipa": "/ˈɛɹ fˈɔɹs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-respect-noun",
+      "word": "respect",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "topicId": "People",
+      "ipa": "/ɹɪspˈɛkt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-biology-noun",
+      "word": "biology",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "topicId": "School",
+      "ipa": "/baɪˈɑlədʒi/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-expense-noun",
+      "word": "expense",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "topicId": "Shopping",
+      "ipa": "/ɪkspˈɛns/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-present-adjective",
+      "word": "present",
+      "partOfSpeech": "adjective",
+      "level": "B1",
+      "topicId": "Shopping",
+      "ipa": "/pɹˈɛzənt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-immigration-noun",
+      "word": "immigration",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "topicId": "Society",
+      "ipa": "/ˌɪməɡɹˈeɪʃən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-orchestra-noun",
+      "word": "orchestra",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "topicId": "Sports",
+      "ipa": "/ˈɔɹkəstɹə/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-charge-verb",
+      "word": "charge",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "topicId": "Technology",
+      "ipa": "/tʃˈɑɹdʒ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-nuclear-adjective",
+      "word": "nuclear",
+      "partOfSpeech": "adjective",
+      "level": "B1",
+      "topicId": "Technology",
+      "ipa": "/nˈukliɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-cabin-noun",
+      "word": "cabin",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "topicId": "Travel",
+      "ipa": "/kˈæbən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-lead-verb",
+      "word": "lead",
+      "partOfSpeech": "verb",
+      "level": "B1",
+      "topicId": "Work",
+      "ipa": "/lˈɛd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-transportation-noun",
+      "word": "transportation",
+      "partOfSpeech": "noun",
+      "level": "B1",
+      "topicId": "Work",
+      "ipa": "/tɹˌænspɚtˈeɪʃən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-linen-noun",
+      "word": "linen",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Appearance",
+      "ipa": "/lˈɪnən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-conjunction-noun",
+      "word": "conjunction",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Communication",
+      "ipa": "/kəndʒˈʌŋkʃən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-first-language-phrase",
+      "word": "first language",
+      "partOfSpeech": "phrase",
+      "level": "B2",
+      "topicId": "Communication",
+      "ipa": "/fˈɝst lˈæŋɡwədʒ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-necessarily-adverb",
+      "word": "necessarily",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/nˌɛsəsˈɛɹəli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-question-verb",
+      "word": "question",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/kwˈɛstʃən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-self-confident-adjective",
+      "word": "self-confident",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Feelings",
+      "ipa": "/sˌɛlfkˈɑnfədənt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-barley-noun",
+      "word": "barley",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Food",
+      "ipa": "/bˈɑɹli/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-junk-food-phrase",
+      "word": "junk food",
+      "partOfSpeech": "phrase",
+      "level": "B2",
+      "topicId": "Food",
+      "ipa": "/dʒˈʌŋk fˈud/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-now-conjunction",
+      "word": "now",
+      "partOfSpeech": "conjunction",
+      "level": "B2",
+      "topicId": "Grammar words",
+      "ipa": "/nˈaʊ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-pulse-noun",
+      "word": "pulse",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Health",
+      "ipa": "/pˈʌls/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-outside-adjective",
+      "word": "outside",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Home",
+      "ipa": "/ˈaʊtsˈaɪd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-holocaust-noun",
+      "word": "holocaust",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Media",
+      "ipa": "/hˈɑləkˌɔst/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-wind-verb",
+      "word": "wind",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Nature",
+      "ipa": "/wˈaɪnd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-chief-noun",
+      "word": "chief",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "People",
+      "ipa": "/tʃˈif/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-third-person-phrase",
+      "word": "third person",
+      "partOfSpeech": "phrase",
+      "level": "B2",
+      "topicId": "People",
+      "ipa": "/θˈɝd pˈɝsən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-test-verb",
+      "word": "test",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/tˈɛst/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-headquarters-noun",
+      "word": "headquarters",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Shopping",
+      "ipa": "/hˈɛdkwˌɔɹtɚz/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-present-verb",
+      "word": "present",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Shopping",
+      "ipa": "/pɹˈɛzənt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-commonwealth-noun",
+      "word": "commonwealth",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/kˈɑmənwˌɛlθ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-fine-verb",
+      "word": "fine",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/fˈaɪn/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-fine-adverb",
+      "word": "fine",
+      "partOfSpeech": "adverb",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/fˈaɪn/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-spectacle-noun",
+      "word": "spectacle",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Sports",
+      "ipa": "/spˈɛktəkəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-data-noun",
+      "word": "data",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Technology",
+      "ipa": "/dˈeɪtə/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-toll-noun",
+      "word": "toll",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Travel",
+      "ipa": "/tˈoʊl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-employee-noun",
+      "word": "employee",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/ɛmplˈɔɪi/",
+      "altSpelling": null
+    }
+  ]
+}

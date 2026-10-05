@@ -1,0 +1,232 @@
+{
+  "promptVersion": "enrich.v1",
+  "batch": 4,
+  "batchCount": 8,
+  "inputs": [
+    {
+      "id": "w-research-verb",
+      "word": "research",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/ɹisˈɝtʃ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-residence-noun",
+      "word": "residence",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "People",
+      "ipa": "/ɹˈɛzɪdəns/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-resignation-noun",
+      "word": "resignation",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/ɹˌɛzəɡnˈeɪʃən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-retirement-noun",
+      "word": "retirement",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/ɹitˈaɪɚmənt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-reverse-verb",
+      "word": "reverse",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ɹɪvˈɝs/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-review-verb",
+      "word": "review",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/ɹˌivjˈu/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-revolutionary-adjective",
+      "word": "revolutionary",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/ɹˌɛvəlˈuʃənˌɛɹi/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-rider-noun",
+      "word": "rider",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Travel",
+      "ipa": "/ɹˈaɪdɚ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-risk-verb",
+      "word": "risk",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ɹˈɪsk/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-rite-noun",
+      "word": "rite",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/ɹˈaɪt/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-ritual-noun",
+      "word": "ritual",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Society",
+      "ipa": "/ɹˈɪtʃuəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-rival-noun",
+      "word": "rival",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "People",
+      "ipa": "/ɹˈaɪvəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-rock-verb",
+      "word": "rock",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Nature",
+      "ipa": "/ɹˈɑk/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-round-verb",
+      "word": "round",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ɹˈaʊnd/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-route-noun",
+      "word": "route",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Travel",
+      "ipa": "/ɹˈut/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-row-verb",
+      "word": "row",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ɹˈoʊ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-rule-verb",
+      "word": "rule",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/ɹˈul/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-rural-adjective",
+      "word": "rural",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "Nature",
+      "ipa": "/ɹˈʊɹəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-salary-noun",
+      "word": "salary",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/sˈælɚi/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-saw-verb",
+      "word": "saw",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Daily life",
+      "ipa": "/sˈɔ/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-scandal-noun",
+      "word": "scandal",
+      "partOfSpeech": "noun",
+      "level": "B2",
+      "topicId": "Media",
+      "ipa": "/skˈændəl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-schedule-verb",
+      "word": "schedule",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Work",
+      "ipa": "/skˈɛdʒʊl/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-screen-verb",
+      "word": "screen",
+      "partOfSpeech": "verb",
+      "level": "B2",
+      "topicId": "Technology",
+      "ipa": "/skɹˈin/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-second-person-phrase",
+      "word": "second person",
+      "partOfSpeech": "phrase",
+      "level": "B2",
+      "topicId": "People",
+      "ipa": "/sˈɛkənd pˈɝsən/",
+      "altSpelling": null
+    },
+    {
+      "id": "w-secondary-adjective",
+      "word": "secondary",
+      "partOfSpeech": "adjective",
+      "level": "B2",
+      "topicId": "School",
+      "ipa": "/sˈɛkəndˌɛɹi/",
+      "altSpelling": null
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "w-speed-verb",
+    "meaningVi": "tăng tốc, đi nhanh hơn",
+    "definitionEn": "to move or happen faster than before",
+    "examples": [
+      {
+        "en": "Drivers must not speed near the hospital zone.",
+        "vi": "Lái xe không được chạy quá tốc gần khu bệnh viện."
+      },
+      {
+        "en": "The team will speed up delivery after many complaints.",
+        "vi": "Sau nhiều phàn nàn, nhóm sẽ giao hàng nhanh hơn."
+      }
+    ],
+    "collocations": ["speed up", "do not speed", "speed past"],
+    "notes": "Quá khứ thường gặp: sped hoặc speeded."
+  }
+]
